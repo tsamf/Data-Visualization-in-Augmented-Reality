@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class CommonData : MonoBehaviour {
 
-    private bool editMode = true;
+
+    //The common data  (flags and alarm definitions will go here)
+
+    private bool editMode = false;
 
 	public bool EditMode { get { return editMode; } set { editMode = value; } }
 

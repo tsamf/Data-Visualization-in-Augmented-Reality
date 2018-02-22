@@ -559,7 +559,13 @@ PlayerSettings:
   metroCertificateIssuer: DefaultCompany
   metroCertificateNotAfter: 801311dc2ecad401
   metroApplicationDescription: UHCL
-  wsaImages: {}
+  wsaImages:
+    2162788: Assets/Images/Icons/space hawks logo 150x150.png
+    2228324: Assets/Images/Icons/space hawks logo 310x310.png
+    2228349: Assets/Images/Icons/space hawks logo 388x388.png
+    2228374: Assets/Images/Icons/space hawks logo 465x465.png
+    2228424: Assets/Images/Icons/space hawks logo 620x620.png
+    2228624: Assets/Images/Icons/space hawks logo 1240x1240.png
   metroTileShortName: UHCL
   metroCommandLineArgsFile: 
   metroTileShowName: 0

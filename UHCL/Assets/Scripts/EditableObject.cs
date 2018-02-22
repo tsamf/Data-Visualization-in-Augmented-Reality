@@ -6,6 +6,14 @@ using System;
 
 namespace HoloToolkit.Unity.InputModule
 {
+
+    /// This code was copied from the draggable script in the Holo Tool kit
+    /// It will be attached on fixed holograms that highlight objects of interest
+    /// When a user gives the voice command for edit mode these objects become configurable
+
+
+
+
     /// <summary>
     /// Component that allows dragging an object with your hand on HoloLens.
     /// Dragging is done by calculating the angular delta and z-delta between the current and previous hand positions,
@@ -79,6 +87,10 @@ namespace HoloToolkit.Unity.InputModule
 
         void RemoveAnchor()
         {
+            //This statement keeps the program from throwing an error when testing from the editor
+            if (store == null)
+                return;
+
             if (this.store.Load(this.gameObject.name,this.gameObject) != null)
             {
                 DestroyImmediate(gameObject.GetComponent<WorldAnchor>());
@@ -88,6 +100,10 @@ namespace HoloToolkit.Unity.InputModule
 
         void AddAnchor()
         {
+            //This statement keeps the program from throwing an error when testing from the editor
+            if (store == null)
+                return;
+
             if (this.store.Load(this.gameObject.name, this.gameObject) == null)
             {
                 worldAnchor = gameObject.AddComponent<WorldAnchor>();

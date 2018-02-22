@@ -6,6 +6,9 @@ using System;
 
 public class Keywords : MonoBehaviour,ISpeechHandler {
 
+    ///This script is where voice command functionality is defined 
+    ///The buisness layer will recieve voice commands and resolve them
+
     //Need Instance of buisnees layer 
     public bool IsGlobalListener = true;
 
