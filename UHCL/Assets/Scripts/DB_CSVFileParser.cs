@@ -3,25 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 
-public class DB_CSVFileParser : MonoBehaviour {
-
-    // Use this for initialization
-    void Start()
-    {
-        string filePathRead = Application.streamingAssetsPath + "/Disabling Alarm Procedure.csv";
-        string filePathWrite = Application.streamingAssetsPath + "/Disabling Alarm Procedure Write Test.csv";
-
-        List<string[]> fileContents = readfile(filePathRead, true);
-        WriteFile(filePathWrite, fileContents);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    List<string[]> readfile(string path, bool removeHeader)
+public static  class DB_CSVFileParser {
+    
+    public static List<string[]> readfile(string path, bool removeHeader)
     {
 
         StreamReader reader = new StreamReader(path);
@@ -44,7 +28,7 @@ public class DB_CSVFileParser : MonoBehaviour {
         return rows;
     }
 
-    void WriteFile(string path, List<string[]> rows)
+    public static void WriteFile(string path, List<string[]> rows)
     {
         StreamWriter writer = new StreamWriter(path);
 
