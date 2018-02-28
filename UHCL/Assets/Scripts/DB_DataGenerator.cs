@@ -34,17 +34,18 @@ public class DB_DataGenerator : MonoBehaviour {
         _commonData = CommonData.GetInstance();
 
         //Consumables
-        pipes.Add(new Pipe("Oxygen", 0.0f, 100.0f, 100.0f, 25.0f, 0.0f, 0.0f, 100.0f, .1f, true));
-        pipes.Add(new Pipe("Oxygen2", 0.0f, 100.0f, 100.0f, 25.0f, 0.0f, 0.0f, 100.0f, .1f, false));
-        pipes.Add(new Pipe("Water", 0.0f, 32.0f, 32.0f, 25.0f, 0.0f, 0.0f, 32.0f, .01f, true));
-        pipes.Add(new Pipe("Battery", 0.0f, 100.0f, 100.0f, 25.0f, 0.0f, 0.0f, 100.0f, .01f, true));
+        pipes.Add(new Pipe("Oxygen", 0.0f, 100.0f, 25.0f, 0.0f, .1f,100.0f, true));
+        pipes.Add(new Pipe("Oxygen2", 0.0f, 100.0f, 25.0f, 0.0f, .1f,100.0f, false));
+        pipes.Add(new Pipe("Water", 0.0f, 32.0f, 25.0f, 0.0f, .01f, 32.0f, true));
+
+        pipes.Add(new Pipe("Battery", 0.0f, 100.0f, 25.0f, 0.0f, .01f,100.0f, true));
 
         //Biometric Data
-        pipes.Add(new Pipe("Body Temperature", 91.0f, 110.0f, 110.0f, 10.0f, 91.0f, 10.0f, 98.7f, 0.01f, true));
-        pipes.Add(new Pipe("Heart Rate", 62.0f, 70.0f, 70.0f, 10.0f, 62.0f, 10.0f, 65.0f, .01f, true));
+        pipes.Add(new Pipe("Body Temperature", 91.0f, 110.0f, 10.0f, 10.0f, 0.01f,99.6f, true));
+        pipes.Add(new Pipe("Heart Rate", 62.0f, 70.0f, 10.0f, 10.0f, .01f,65.0f, true));
 
         //Suit Data
-        pipes.Add(new Pipe("Suit Pressure", 3.0f, 4.9f, 4.9f, 10.0f, 0.0f, 0.0f, 4.9f, .01f, true));
+        pipes.Add(new Pipe("Suit Pressure", 3.0f, 4.9f, 10.0f, 0.0f, .01f,4.9f, true));
 
         //Example of accesing a pipe in the list by its name and toggeling inactive
         //pipes.Where(pipe => pipe.PipeName == "Oxygen2").First().ToggleActive();
@@ -164,11 +165,8 @@ class Pipe
     string pipeName;
     float min;
     float max;
-    float threshold1;
     float threshold1Percentage;
-    float threshold2;
     float threshold2Percentage;
-    float initial;
     float current;
     float increment;
     bool isActive;
@@ -176,18 +174,15 @@ class Pipe
     public float Current { get { return current; } }
     public string PipeName { get { return pipeName; } }
 
-    public Pipe(string pipeName, float min, float max, float threshold1, float threshold1Percentage, float threshold2, float threshold2Percentage, float initial, float increment, bool isActive)
+    public Pipe(string pipeName, float min, float max,  float threshold1Percentage, float threshold2Percentage,  float increment,float initialValue, bool isActive)
     {
         this.pipeName = pipeName;
         this.min = min;
         this.max = max;
-        this.threshold1 = threshold1;
-        this.threshold2 = threshold2;
         this.threshold1Percentage = threshold1Percentage;
         this.threshold2Percentage = threshold2Percentage;
-        this.initial = initial;
         this.increment = increment;
-        this.current = initial;
+        this.current = initialValue;
         this.isActive = isActive;
     }
 
