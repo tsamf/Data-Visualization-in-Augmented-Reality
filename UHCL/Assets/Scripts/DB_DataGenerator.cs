@@ -26,10 +26,13 @@ public class DB_DataGenerator : MonoBehaviour {
     private int currentCannedIndex = 0;
     private List<string[]> cannedData = new List<string[]>();
 
+    private CommonData _commonData;
 
     //Initialize list of pipes
     private void Start()
     {
+        _commonData = CommonData.GetInstance();
+
         //Consumables
         pipes.Add(new Pipe("Oxygen", 0.0f, 100.0f, 100.0f, 25.0f, 0.0f, 0.0f, 100.0f, .1f, true));
         pipes.Add(new Pipe("Oxygen2", 0.0f, 100.0f, 100.0f, 25.0f, 0.0f, 0.0f, 100.0f, .1f, false));
@@ -65,7 +68,6 @@ public class DB_DataGenerator : MonoBehaviour {
 
         if (timesinceLastUpdate > dataUpdateSpeed)
         {
-            Debug.Log(timesinceLastUpdate);
             timesinceLastUpdate -= dataUpdateSpeed;
             switch (operation)
             {
@@ -80,8 +82,18 @@ public class DB_DataGenerator : MonoBehaviour {
                             currentCannedIndex = 0;
                         }
                         
+                        //Get row from canned data
                         string[] row = cannedData[currentCannedIndex];
-                        Debug.Log(row[0].ToString() + row[1].ToString()+row[6].ToString());
+
+                        //Update common data with row values
+                        _commonData.OxygenOneValue = float.Parse(row[0]);
+                        _commonData.OxygenTwoValue = float.Parse(row[1]);
+                        _commonData.WaterValue = float.Parse(row[2]);
+                        _commonData.BatteryValue = float.Parse(row[3]);
+                        _commonData.BodyTemperatureValue = float.Parse(row[4]);
+                        _commonData.HeartRateValue = float.Parse(row[5]);
+                        _commonData.SuitPressureValue = float.Parse(row[6]);
+
                         break;
                     }
                 case dataType.Dynamic:

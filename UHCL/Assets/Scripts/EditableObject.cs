@@ -82,7 +82,7 @@ namespace HoloToolkit.Unity.InputModule
 
         void Awake()
         {
-            data = commonData.GetComponent<CommonData>();
+            CommonData.GetInstance();
         }
 
         void RemoveAnchor()

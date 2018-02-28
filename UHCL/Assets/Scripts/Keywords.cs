@@ -24,7 +24,7 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
 
     void Awake()
     {
-        data = commonData.GetComponent<CommonData>();
+        data = CommonData.GetInstance();
     }
 
     public void OnSpeechKeywordRecognized(SpeechEventData eventData)
