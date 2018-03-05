@@ -380,8 +380,32 @@
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Assets\Square310x310Logo.scale-100.png">
+      <PackagePath>Assets\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Assets\Square310x310Logo.scale-125.png">
+      <PackagePath>Assets\Square310x310Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Assets\Square310x310Logo.scale-150.png">
+      <PackagePath>Assets\Square310x310Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Assets\Square310x310Logo.scale-200.png">
+      <PackagePath>Assets\Square310x310Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Assets\Square310x310Logo.scale-400.png">
+      <PackagePath>Assets\Square310x310Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Assets\Square44x44Logo.scale-200.png">
@@ -447,6 +471,18 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Data\StreamingAssets\Disabling Alarm Procedure Write Test.csv">
+      <PackagePath>Data\StreamingAssets\Disabling Alarm Procedure Write Test.csv</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Data\StreamingAssets\Disabling Alarm Procedure.csv">
+      <PackagePath>Data\StreamingAssets\Disabling Alarm Procedure.csv</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Data\StreamingAssets\LowPressure.csv">
+      <PackagePath>Data\StreamingAssets\LowPressure.csv</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Data\StreamingAssets\test.csv">
+      <PackagePath>Data\StreamingAssets\test.csv</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>

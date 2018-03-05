@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\bin\x86\Release\AppX</LayoutDir>
-    <RegisteredManifestChecksum>59189DC98DC670A57E1C3216958DC0BEF8656F574D1C6EF4C804FE2BAF0803A1</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>B675C90D5D37460745DBE312E13A5132E005E992136D9742BCCE6FBA3A6EA173</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>UHCL_1.0.0.0_x86__pzq3xp76mxafg</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>UHCL_pzq3xp76mxafg!App</RegisteredUserModeAppID>
     <RegisteredPackageID>UHCL</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\bin\x86\Release\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-02-22T01:19:21.435</Modified>
+      <Modified>2018-03-05T19:37:56.673</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\bin\x86\Release\UHCL.exe">
       <PackagePath>entrypoint\UHCL.exe</PackagePath>
-      <Modified>2018-02-22T01:19:08.113</Modified>
+      <Modified>2018-03-05T19:37:37.692</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\.nuget\packages\microsoft.applicationinsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -501,17 +501,47 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Resource.res">
       <PackagePath>Resource.res</PackagePath>
-      <Modified>2018-02-22T01:18:21.580</Modified>
+      <Modified>2018-03-05T19:35:31.874</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-12-06T09:22:04.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-02-12T17:12:29.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-12-06T09:22:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Assets\Square310x310Logo.scale-100.png">
+      <PackagePath>Assets\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-02-12T17:28:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Assets\Square310x310Logo.scale-125.png">
+      <PackagePath>Assets\Square310x310Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-02-12T17:29:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Assets\Square310x310Logo.scale-150.png">
+      <PackagePath>Assets\Square310x310Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-02-12T17:31:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Assets\Square310x310Logo.scale-200.png">
+      <PackagePath>Assets\Square310x310Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-02-12T17:32:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Assets\Square310x310Logo.scale-400.png">
+      <PackagePath>Assets\Square310x310Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-02-12T17:33:29.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
@@ -555,15 +585,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
-      <Modified>2018-02-22T01:17:40.035</Modified>
+      <Modified>2018-03-05T19:34:46.136</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
-      <Modified>2018-02-22T01:17:39.040</Modified>
+      <Modified>2018-03-05T19:34:45.091</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Data\level0">
       <PackagePath>Data\level0</PackagePath>
-      <Modified>2018-02-22T01:17:37.545</Modified>
+      <Modified>2018-03-05T19:34:43.545</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
@@ -571,31 +601,47 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
-      <Modified>2018-02-22T01:17:40.033</Modified>
+      <Modified>2018-03-05T19:34:46.131</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
-      <Modified>2018-02-22T01:17:39.256</Modified>
+      <Modified>2018-03-05T19:34:45.324</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
-      <Modified>2018-02-22T01:17:39.744</Modified>
+      <Modified>2018-03-05T19:34:45.823</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
-      <Modified>2018-02-22T01:17:37.537</Modified>
+      <Modified>2018-03-05T19:34:43.538</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
-      <Modified>2018-02-22T01:17:39.741</Modified>
+      <Modified>2018-03-05T19:34:45.820</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
-      <Modified>2018-02-22T01:18:21.522</Modified>
+      <Modified>2018-03-05T19:35:31.805</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
-      <Modified>2018-02-22T01:18:21.524</Modified>
+      <Modified>2018-03-05T19:35:31.807</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Data\StreamingAssets\Disabling Alarm Procedure Write Test.csv">
+      <PackagePath>Data\StreamingAssets\Disabling Alarm Procedure Write Test.csv</PackagePath>
+      <Modified>2018-02-27T17:45:13.800</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Data\StreamingAssets\Disabling Alarm Procedure.csv">
+      <PackagePath>Data\StreamingAssets\Disabling Alarm Procedure.csv</PackagePath>
+      <Modified>2018-02-26T20:13:16.969</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Data\StreamingAssets\LowPressure.csv">
+      <PackagePath>Data\StreamingAssets\LowPressure.csv</PackagePath>
+      <Modified>2018-02-28T16:25:56.086</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Data\StreamingAssets\test.csv">
+      <PackagePath>Data\StreamingAssets\test.csv</PackagePath>
+      <Modified>2018-02-28T16:59:22.806</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -604,207 +650,207 @@
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\bin\x86\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-02-21T19:38:35.940</Modified>
+      <Modified>2018-03-05T19:37:39.044</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.238</Modified>
+      <Modified>2018-03-05T19:37:50.446</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.TextRenderingModule.dll">
       <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.264</Modified>
+      <Modified>2018-03-05T19:37:50.477</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.288</Modified>
+      <Modified>2018-03-05T19:37:50.497</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.330</Modified>
+      <Modified>2018-03-05T19:37:50.549</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.344</Modified>
+      <Modified>2018-03-05T19:37:50.565</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.357</Modified>
+      <Modified>2018-03-05T19:37:50.580</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.PhysicsModule.dll">
       <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.381</Modified>
+      <Modified>2018-03-05T19:37:50.619</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.408</Modified>
+      <Modified>2018-03-05T19:37:50.634</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.429</Modified>
+      <Modified>2018-03-05T19:37:50.660</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.StyleSheetsModule.dll">
       <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.448</Modified>
+      <Modified>2018-03-05T19:37:50.685</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.UNETModule.dll">
       <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.476</Modified>
+      <Modified>2018-03-05T19:37:50.714</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.509</Modified>
+      <Modified>2018-03-05T19:37:50.744</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.526</Modified>
+      <Modified>2018-03-05T19:37:50.767</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.VehiclesModule.dll">
       <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.542</Modified>
+      <Modified>2018-03-05T19:37:50.782</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.554</Modified>
+      <Modified>2018-03-05T19:37:50.795</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.WebModule.dll">
       <PackagePath>UnityEngine.WebModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.574</Modified>
+      <Modified>2018-03-05T19:37:50.815</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.588</Modified>
+      <Modified>2018-03-05T19:37:50.831</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.604</Modified>
+      <Modified>2018-03-05T19:37:50.846</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.UnityAnalyticsModule.dll">
       <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.621</Modified>
+      <Modified>2018-03-05T19:37:50.864</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.637</Modified>
+      <Modified>2018-03-05T19:37:50.880</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.652</Modified>
+      <Modified>2018-03-05T19:37:50.895</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.UnityWebRequestModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.674</Modified>
+      <Modified>2018-03-05T19:37:50.916</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.697</Modified>
+      <Modified>2018-03-05T19:37:50.932</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.AudioModule.dll">
       <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.719</Modified>
+      <Modified>2018-03-05T19:37:50.955</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.ARModule.dll">
       <PackagePath>UnityEngine.ARModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.739</Modified>
+      <Modified>2018-03-05T19:37:50.975</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.754</Modified>
+      <Modified>2018-03-05T19:37:50.991</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.CrashReportingModule.dll">
       <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:19.770</Modified>
+      <Modified>2018-03-05T19:37:51.005</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:20.129</Modified>
+      <Modified>2018-03-05T19:37:51.308</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
-      <Modified>2018-02-22T01:19:20.379</Modified>
+      <Modified>2018-03-05T19:37:51.562</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.AnimationModule.dll">
       <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:20.406</Modified>
+      <Modified>2018-03-05T19:37:51.586</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.AIModule.dll">
       <PackagePath>UnityEngine.AIModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:20.429</Modified>
+      <Modified>2018-03-05T19:37:51.605</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:20.448</Modified>
+      <Modified>2018-03-05T19:37:51.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
-      <Modified>2018-02-22T01:18:00.715</Modified>
+      <Modified>2018-03-05T19:35:08.771</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:20.467</Modified>
+      <Modified>2018-03-05T19:37:51.640</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:20.482</Modified>
+      <Modified>2018-03-05T19:37:51.661</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.Physics2DModule.dll">
       <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:20.509</Modified>
+      <Modified>2018-03-05T19:37:51.694</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:20.524</Modified>
+      <Modified>2018-03-05T19:37:51.710</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.ParticleSystemModule.dll">
       <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:20.563</Modified>
+      <Modified>2018-03-05T19:37:51.763</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.GridModule.dll">
       <PackagePath>UnityEngine.GridModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:20.579</Modified>
+      <Modified>2018-03-05T19:37:51.778</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.GameCenterModule.dll">
       <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:20.599</Modified>
+      <Modified>2018-03-05T19:37:51.798</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.InputModule.dll">
       <PackagePath>UnityEngine.InputModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:20.616</Modified>
+      <Modified>2018-03-05T19:37:51.818</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.IMGUIModule.dll">
       <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:20.652</Modified>
+      <Modified>2018-03-05T19:37:51.851</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.ImageConversionModule.dll">
       <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
-      <Modified>2018-02-22T01:19:20.673</Modified>
+      <Modified>2018-03-05T19:37:51.867</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2018-02-22T01:19:20.734</Modified>
+      <Modified>2018-03-05T19:37:51.946</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
-      <Modified>2018-02-22T01:19:20.775</Modified>
+      <Modified>2018-03-05T19:37:52.003</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
-      <Modified>2018-02-22T01:19:20.822</Modified>
+      <Modified>2018-03-05T19:37:52.068</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
-      <Modified>2018-02-22T01:19:20.900</Modified>
+      <Modified>2018-03-05T19:37:52.165</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
-      <Modified>2018-02-22T01:19:20.927</Modified>
+      <Modified>2018-03-05T19:37:52.191</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
-      <Modified>2018-02-22T01:19:20.993</Modified>
+      <Modified>2018-03-05T19:37:52.257</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\bin\x86\Release\Core\UHCL.exe">
       <PackagePath>UHCL.exe</PackagePath>
-      <Modified>2018-02-22T01:19:21.427</Modified>
+      <Modified>2018-03-05T19:37:56.665</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

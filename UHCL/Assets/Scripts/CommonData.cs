@@ -31,4 +31,8 @@ public class CommonData {
     public float SuitPressureValue { get; set; }
     public float BatteryValue { get; set; }
     public float WaterValue { get; set; }
+
+
+    public double SuitPressureMax { get; set;}
+    public double SuitPressureMin { get; set;}
 }
