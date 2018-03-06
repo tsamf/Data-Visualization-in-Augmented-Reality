@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 94
+  controlID: 11
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,7 +143,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 95
+  controlID: 12
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 96
+  controlID: 13
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -254,14 +254,14 @@ MonoBehaviour:
     height: 442
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 17}
   - {fileID: 18}
   - {fileID: 13}
   - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 3
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -291,25 +291,20 @@ MonoBehaviour:
   m_IgnoreNextPostprocessEvent: 0
   m_SelectedAssetPath: Assets/FireShot Capture 3 -  - https___microgravityuniversity.jsc.nasa.gov_docs_FY18%20NASA%20SUITS%20De.png
   m_Selected:
-    m_Name: FireShot Capture 3 -  - https___microgravityuniversity.jsc.nasa.gov_docs_FY18%20NASA%20SUITS%20De
+    m_Name: 
     m_OriginalName: 
-    m_Pivot: {x: 0.5, y: 0.5}
+    m_Pivot: {x: 0, y: 0}
     m_Alignment: 0
     m_Border: {x: 0, y: 0, z: 0, w: 0}
     m_Rect:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 238
-      height: 147
-    m_Outline:
-    - m_Path:
-      - {x: -113.52749, y: 68.869415}
-      - {x: -113.10653, y: -70.1323}
-      - {x: 113.948456, y: -69.71134}
-      - {x: 113.948456, y: 68.869415}
+      width: 0
+      height: 0
+    m_Outline: []
     m_PhysicsShape: []
-    m_TessellationDetail: -1
+    m_TessellationDetail: 0
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -384,9 +379,9 @@ MonoBehaviour:
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: be2d0000
-    m_LastClickedID: 11710
-    m_ExpandedIDs: 00000000be2d00007a2f0000bc310000d832000000ca9a3bffffff7f
+    m_SelectedIDs: b82d0000
+    m_LastClickedID: 11704
+    m_ExpandedIDs: 00000000b82d0000742f0000ba310000d632000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -414,7 +409,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000be2d00007a2f0000bc310000d8320000
+    m_ExpandedIDs: 00000000b82d0000742f0000ba310000d6320000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -530,9 +525,9 @@ MonoBehaviour:
     height: 421
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 72370000
-    m_LastClickedID: 0
-    m_ExpandedIDs: 50fbffff9efbffff00000000
+    m_SelectedIDs: fa350000
+    m_LastClickedID: 13818
+    m_ExpandedIDs: 52fbffffa0fbffff00000000c835000014360000323600004a360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -582,14 +577,14 @@ MonoBehaviour:
     width: 918
     height: 421
   m_SceneLighting: 1
-  lastFramingTime: 1608.6923821697674
+  lastFramingTime: 512.2915376401153
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.18405, y: 0.018179998, z: 1}
+    m_Target: {x: 0.18405, y: 0, z: 1}
     speed: 2
-    m_Value: {x: 0.18405, y: 0.018179998, z: 1}
+    m_Value: {x: 0.18405, y: 0, z: 1}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -614,11 +609,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.045293614, y: -0.0053972914, z: 0.00024469843, w: -0.9989587}
     speed: 2
-    m_Value: {x: -0.045293633, y: -0.0053972937, z: 0.00024469855, w: -0.9989591}
+    m_Value: {x: -0.04529361, y: -0.0053972914, z: 0.00024469843, w: -0.9989587}
   m_Size:
-    m_Target: 0.15665464
+    m_Target: 0.24224125
     speed: 2
-    m_Value: 0.15665464
+    m_Value: 0.24224125
   m_Ortho:
     m_Target: 0
     speed: 2
