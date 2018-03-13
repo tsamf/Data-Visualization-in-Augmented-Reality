@@ -14,11 +14,20 @@ public class PrimaryO2 : MonoBehaviour {
     private BL_Main pressurelog;
 
     void Start () {
-        currentHealth = (Console.Read());
         //Assign max value to cuurent health status for initialization
-        pressurelog = busLayer.GetComponent<BL_Main>();
-        
+       // currentHealth = (Console.Read());
 
+        //Attach the pressurelog from the buslayer if the buslayer was assigned in the editor
+        if (busLayer != null)
+        {
+            pressurelog = busLayer.GetComponent<BL_Main>();
+        }
+        //If not attached in the editor find one in the current scene
+        else
+        {
+            busLayer = GameObject.FindGameObjectWithTag("Bus Layer");
+            pressurelog = busLayer.GetComponent<BL_Main>();
+        }
     }
 	
 	// Update is called once per frame
