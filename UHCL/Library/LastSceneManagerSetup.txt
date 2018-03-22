@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/UI - BUILDER/Scenes - All Elements In One Place/UI - Builder Scene.unity
-  isLoaded: 1
-  isActive: 1
