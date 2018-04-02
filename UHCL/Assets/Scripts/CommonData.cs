@@ -22,6 +22,35 @@ public class CommonData {
     private bool editMode = false;
 	public bool EditMode { get { return editMode; } set { editMode = value; } }
 
+    public bool viewPieDetails = false;
+    public bool closePieDetails = false;
+    public bool viewBattery = false;
+    public bool viewPrimaryOTwo = false;
+    public bool viewSecondaryOTwo = false;
+    public bool viewBodyTemperature = false;
+    public bool viewPressure = false;
+    public bool viewHTwoO = false;
+    public bool viewHeartRate = false;
+    public bool closeDetailWindow = false;
+    public bool pinDetailWindow = false;
+    public bool closePinnedWindows = false;
+    public bool viewErrors = false;
+    public bool closeErrors = false;
+    public bool nextError = false;
+    public bool previousError = false;
+    public bool viewWarnings = false;
+    public bool closeWarnings = false;
+    public bool nextWarning = false;
+    public bool previousWarning = false;
+
+    public bool startProcedure = false;
+    public bool nextStep = false;
+    public bool previousStep = false;
+    public bool showStepImage = false;
+    public bool hideStepImage = false;
+    public bool pinTaskList = false;
+    public bool closeTaskList = false;
+
 
     //Health UI Values
     public float OxygenOneValue { get; set; }
