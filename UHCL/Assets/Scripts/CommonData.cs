@@ -22,15 +22,6 @@ public class CommonData {
     private bool editMode = false;
 	public bool EditMode { get { return editMode; } set { editMode = value; } }
 
-    public Task previousTask;
-    public Task currentTask;
-    public Task nextTask;
-
-    public Task GetPreviousTask { get { return previousTask; } }
-    public Task GetCurrentTask { get { return currentTask; } }
-    public Task GetNextTask { get { return nextTask; } }
-
-
     public bool viewPieDetails = false;
     public bool closePieDetails = false;
     public bool viewBattery = false;
