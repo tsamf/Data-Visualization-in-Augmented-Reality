@@ -10,36 +10,37 @@ public class Pressure : MonoBehaviour {
     public float radius = 1.0f;
     public Image objP;
     public float currentP;
+    public CommonData commonData = CommonData.GetInstance();
+
     void Start () {
-        currentP = (Console.Read());
     }
 	
 	// Update is called once per frame
 	void Update () {
-        radius = currentP;
+        radius = commonData.SuitPressureValue;
 
 
-        if (currentP >= 0.80)
+        if (commonData.SuitPressureValue >= 0.80)
         {
             Debug.Log("HH");
             objP.color = Color.red;
         }
-        else if (0.79f >= currentP && currentP >= 0.61f)
+        else if (0.79f >= commonData.SuitPressureValue && commonData.SuitPressureValue >= 0.61f)
         {
             Debug.Log("H");
             objP.color = Color.yellow;
         }
-        else if (0.60 >= currentP && currentP >= 0.41f)
+        else if (0.60 >= commonData.SuitPressureValue && commonData.SuitPressureValue >= 0.41f)
         {
             Debug.Log("Ideal");
             objP.color = Color.green;
         }
-        else if (0.40f >= currentP && currentP >= 0.21f)
+        else if (0.40f >= commonData.SuitPressureValue && commonData.SuitPressureValue >= 0.21f)
         {
             Debug.Log("L");
             objP.color = Color.yellow;
         }
-        else if (0.20f >= currentP && currentP >= 0.01f)
+        else if (0.20f >= commonData.SuitPressureValue && commonData.SuitPressureValue >= 0.01f)
         {
             Debug.Log("LL");
             objP.color = Color.red;
@@ -49,7 +50,7 @@ public class Pressure : MonoBehaviour {
             Debug.Log(" unable to record heart Rate Error");
 
 
-        if (currentP >= 0.009f)
+        if (commonData.SuitPressureValue >= 0.009f)
             objP.transform.localScale = new Vector3(radius, radius, 1.0f);
 
 
