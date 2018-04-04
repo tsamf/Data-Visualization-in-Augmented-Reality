@@ -2,8 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+public enum consumableType
+{
+    Oxygen,
+    Oxygen2,
+    SuitPressure,
+    Battery,
+    BodyTemperature,
+    Water,
+    HeartRate
+};
+
 public class DB_GenerateData : MonoBehaviour {
 
+    
+
+    public consumableType type;
     public float min;
     public float max;
     public float threshold1;
@@ -25,6 +41,32 @@ public class DB_GenerateData : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        switch(type)
+        {
+            case consumableType.Water:
+                commonData.WaterValue = current;
+                break;
+            case consumableType.Oxygen:
+                commonData.OxygenOneValue = current;
+                break;
+            case consumableType.Oxygen2:
+                commonData.OxygenTwoValue = current;
+                break;
+            case consumableType.Battery:
+                commonData.BatteryValue = current;
+                break;
+            case consumableType.SuitPressure:
+                commonData.SuitPressureValue = current;
+                break;
+            case consumableType.BodyTemperature:
+                commonData.BodyTemperatureValue = current;
+                break;
+            case consumableType.HeartRate:
+                commonData.HeartRateValue = current;
+                break;
+
+        }
+
         commonData.SuitPressureValue = current;
 
         //If the pipe has been deactivated return with out advancing
