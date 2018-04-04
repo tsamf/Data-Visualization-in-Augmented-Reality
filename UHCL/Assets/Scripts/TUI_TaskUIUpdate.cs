@@ -20,7 +20,7 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //currentTask.text = commonData.getCurrentTask().Text;
-        imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>("eva box");
+      //  imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>("eva box");
 
 	}
 }
