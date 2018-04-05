@@ -13,7 +13,7 @@ public class SecondaryO2 : MonoBehaviour {
 
     void Start () {
         //Assign max value to cuurent health status for initialization
-        currentSO2 = (Console.Read());
+
     }
 	
 	// Update is called once per frame

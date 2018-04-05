@@ -16,7 +16,6 @@ public class SuitBattery : MonoBehaviour
     {
 
         //Assign max value to current health status for initialization
-        currentBatt = (Console.Read());
     }
 
     // Update is called once per frame

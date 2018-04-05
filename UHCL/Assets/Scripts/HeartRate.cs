@@ -11,8 +11,7 @@ public class HeartRate : MonoBehaviour {
     public Image objHR;
     public float currentHeart;
     void Start () {
-        //Assign max value to current health status for initialization
-        currentHeart = (Console.Read());
+    
     }
 	
 	// Update is called once per frame

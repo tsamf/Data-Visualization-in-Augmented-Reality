@@ -22,13 +22,13 @@ public class CommonData {
     private bool editMode = false;
 	public bool EditMode { get { return editMode; } set { editMode = value; } }
 
-    public Task previousTask;
-    public Task currentTask;
-    public Task nextTask;
+    public UITask previousTask;
+    public UITask currentTask;
+    public UITask nextTask;
 
-    public Task GetPreviousTask { get { return previousTask; } }
-    public Task GetCurrentTask { get { return currentTask; } }
-    public Task GetNextTask { get { return nextTask; } }
+    public UITask GetPreviousTask { get { return previousTask; } }
+    public UITask GetCurrentTask { get { return currentTask; } }
+    public UITask GetNextTask { get { return nextTask; } }
 
 
     public bool viewPieDetails = false;

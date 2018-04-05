@@ -15,7 +15,6 @@ public class Water : MonoBehaviour {
 
     
     void Start () {
-        currentW = (Console.Read());
     }
 	
 	// Update is called once per frame

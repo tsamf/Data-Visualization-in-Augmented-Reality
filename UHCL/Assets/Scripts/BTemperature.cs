@@ -12,7 +12,6 @@ public class BTemperature : MonoBehaviour {
     public Image objBT;
     public float currentBT;
     void Start () {
-        currentBT = (Console.Read());
     }
 	
 	// Update is called once per frame

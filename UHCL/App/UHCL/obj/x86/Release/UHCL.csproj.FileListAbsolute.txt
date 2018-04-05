@@ -293,3 +293,4 @@ C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\obj\x86\Release\qualifiers.tx
 C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\obj\x86\Release\qualifiers.txt.intermediate
 C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\obj\x86\Release\MultipleQualifiersPerDimensionFound.txt
 C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\obj\x86\Release\ProjectArchitectures.txt
+C:\Users\samfo\Documents\GitHub\UHCL\UHCL\App\UHCL\obj\x86\Release\UHCL.csproj.CopyComplete
