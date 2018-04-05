@@ -71,6 +71,26 @@ public class CommonData {
     public float WaterValue { get; set; }
 
 
-    public double SuitPressureMax { get; set;}
-    public double SuitPressureMin { get; set;}
+    public double SuitPressureMax { get; set; }
+    public double SuitPressureMin { get; set; }
+
+    public double SuitPressHiHiSP { get; set; }
+    public double SuitPressHiHiDB { get; set; }
+
+    public double SuitPressHiSP { get; set; }
+    public double SuitPressHiDB { get; set; }
+
+    public double SuitPressLoSP { get; set; }
+    public double SuitPressLoDB { get; set; }
+
+    public double SuitPressLoLoSP { get; set; }
+    public double SuitPressLoLoDB { get; set; }
+
+
+    //Task UI Values
+    public string[][] PREVIOUS { get; set; }
+    public string[][] CURRENT { get; set; }
+    public string[][] NEXT { get; set; }
+
+    public string[][] TASK_TABLE { get; set; }
 }
