@@ -11,6 +11,7 @@ public class Pressure : MonoBehaviour {
     public Image objP;
     public float currentP;
     public CommonData commonData = CommonData.GetInstance();
+    public EmergencyWindow ewindow;
 
     void Start () {
     }
@@ -44,10 +45,12 @@ public class Pressure : MonoBehaviour {
         {
             Debug.Log("LL");
             objP.color = Color.red;
+            ewindow.Show("Suit Pressure Low. Return Back to the Ship."+ 
+               "Pressure:" + commonData.SuitPressureValue);
         }
 
         else
-            Debug.Log(" unable to record heart Rate Error");
+            Debug.Log(" unable to record pressure Error");
 
 
         if (commonData.SuitPressureValue >= 0.009f)
