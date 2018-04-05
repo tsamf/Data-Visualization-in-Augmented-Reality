@@ -14,7 +14,7 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
 
     public TextMesh testText;
 
-    public GameObject commonData;
+
     private CommonData data;
 
     private void OnEnable()
