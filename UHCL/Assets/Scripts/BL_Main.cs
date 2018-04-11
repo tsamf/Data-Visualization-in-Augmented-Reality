@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,12 +8,15 @@ public class BL_Main : MonoBehaviour
     public float tickSpeed = 0.05f;
     private float timeSinceLastTick = 0.0f;
 
-    private BL_Scalling bl_scalling;
+
+    public BL_Alarming bl_alarming;
+    public BL_Scalling bl_scaling;
 
     // Use this for initialization
     void Start()
     {
-        bl_scalling = new BL_Scalling();
+        bl_scaling = new BL_Scalling();
+        bl_alarming = new BL_Alarming(); 
     }
 
     // Update is called once per frame
@@ -24,7 +27,7 @@ public class BL_Main : MonoBehaviour
         if(timeSinceLastTick > tickSpeed)
         {
 
-      
+            Debug.Log("Its been 50ms");
 
             timeSinceLastTick -= tickSpeed;
         }

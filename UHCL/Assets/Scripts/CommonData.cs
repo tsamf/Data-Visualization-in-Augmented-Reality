@@ -71,20 +71,20 @@ public class CommonData {
     public float WaterValue { get; set; }
 
 
-    public double SuitPressureMax { get; set; }
-    public double SuitPressureMin { get; set; }
+    public float SuitPressureMax { get; set; }
+    public float SuitPressureMin { get; set; }
 
-    public double SuitPressHiHiSP { get; set; }
-    public double SuitPressHiHiDB { get; set; }
+    public float SuitPressHiHiSP { get; set; }
+    public float SuitPressHiHiDB { get; set; }
 
-    public double SuitPressHiSP { get; set; }
-    public double SuitPressHiDB { get; set; }
+    public float SuitPressHiSP { get; set; }
+    public float SuitPressHiDB { get; set; }
 
-    public double SuitPressLoSP { get; set; }
-    public double SuitPressLoDB { get; set; }
+    public float SuitPressLoSP { get; set; }
+    public float SuitPressLoDB { get; set; }
 
-    public double SuitPressLoLoSP { get; set; }
-    public double SuitPressLoLoDB { get; set; }
+    public float SuitPressLoLoSP { get; set; }
+    public float SuitPressLoLoDB { get; set; }
 
 
     //Task UI Values

@@ -34,16 +34,16 @@ public class BL_ResetingAcknow : MonoBehaviour {
         //Setting up initial value
 
         commonData.SuitPressHiHiSP = 18;
-        commonData.SuitPressHiHiDB = 17.8;
+        commonData.SuitPressHiHiDB = 17.8f;
 
         commonData.SuitPressHiSP = 16;
-        commonData.SuitPressHiDB = 15.8;
+        commonData.SuitPressHiDB = 15.8f;
 
         commonData.SuitPressLoSP = 4;
-        commonData.SuitPressLoDB = 4.2;
+        commonData.SuitPressLoDB = 4.2f;
 
         commonData.SuitPressLoLoSP = 3;
-        commonData.SuitPressLoLoDB = 3.2;
+        commonData.SuitPressLoLoDB = 3.2f;
     }
 
     // Update is called once per frame

@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BL_Alarming : MonoBehaviour {
+public class BL_Alarming {
 
     private CommonData commonData = CommonData.GetInstance();
+
+   
 
     // Alarming function
     public void BLAlarming(
@@ -64,15 +66,5 @@ public class BL_Alarming : MonoBehaviour {
             Debug.Log("Something wrong here!");
         }
     }
-    // Use this for initialization
-    void Start()
-    {
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }
