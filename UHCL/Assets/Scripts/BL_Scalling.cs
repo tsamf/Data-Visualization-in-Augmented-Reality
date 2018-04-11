@@ -12,6 +12,13 @@ public class BL_Scalling {
 
     private CommonData commonData = CommonData.GetInstance();
 
+
+    //Sending out actual oxygen2
+    public float actualOxygen2 ()
+    {
+        return commonData.OxygenTwoValue;
+    }
+
     //Sending out actual suitpressure value
     public float actualSuitPressure ()
     {
