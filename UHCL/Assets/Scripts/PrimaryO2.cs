@@ -7,7 +7,7 @@ using System;
 public class PrimaryO2 : MonoBehaviour {
 
     // Use this for initialization
-    public float radius = 1.0f;
+    public float radius = 100.0f;
     public Image obj;
     public float currentHealth;
    // public GameObject busLayer;
@@ -35,27 +35,27 @@ public class PrimaryO2 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        float normalizedOxygen = commonData.OxygenOneValue / 100;
+        float normalizedOxygen = commonData.OxygenOneValue;
 
         radius = normalizedOxygen;
 
 
-        if (normalizedOxygen >= 0.5)
+        if (normalizedOxygen >= 50.00f)
         {  //  Debug.Log("HH");
             ccPO.HHCol();
             obj.color = ccPO.HHColor;
         }
-        else if (0.499f >= normalizedOxygen && normalizedOxygen >= 0.31f)
+        else if (49.99f >= normalizedOxygen && normalizedOxygen >= 31.00f)
         { // Debug.Log("H");
             ccPO.HCol();
             obj.color = ccPO.HColor;
         }
-        else if (0.3099 >= normalizedOxygen && normalizedOxygen >= 0.21f)
+        else if (30.99 >= normalizedOxygen && normalizedOxygen >= 21.00f)
         {  //  Debug.Log("L");
             ccPO.HCol();
             obj.color = ccPO.HColor;
         }
-        else if (0.2099f >= normalizedOxygen )
+        else if (20.99f >= normalizedOxygen )
         { //  Debug.Log("LL");
             ccPO.LCol();
             obj.color = ccPO.LColor;
@@ -66,7 +66,7 @@ public class PrimaryO2 : MonoBehaviour {
 
 
 
-        if (normalizedOxygen >= 0.05f)
-            obj.transform.localScale = new Vector3(radius, radius, 1.0f);
+        if (normalizedOxygen >= 0.009f)
+            obj.transform.localScale = new Vector3(radius/100, radius/100, 1.0f);
     }
 }

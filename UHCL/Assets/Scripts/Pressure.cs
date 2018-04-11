@@ -7,9 +7,9 @@ public class Pressure : MonoBehaviour {
 
     // Use this for initialization
 
-    public float radius = 1.0f;
+    public float radius = 100.0f;
     public Image objP;
-    public float currentP;
+    public float actualP;
     public CommonData commonData;
     public EmergencyWindow ewindow;
     public ColorCode cc;
@@ -25,34 +25,33 @@ public class Pressure : MonoBehaviour {
     void Update()
     {
         radius = bl_main.GetComponent<BL_Main>().bl_scaling.ScalingFunction();
-
-        if (radius >= 0.80)
+        actualP = bl_main.GetComponent<BL_Main>().bl_scaling.actualSuitPressure();
+        if (radius >= 80.00)
         {
-            Debug.Log("HH");
-            objP.color = Color.red;
+            cc.LLCol();
+            objP.color = cc.LLColor;
         }
-        else if (0.79f >= radius && radius >= 0.61f)
+        else if (79.99f >= radius && radius >= 61.00f)
         {
-            Debug.Log("H");
-            objP.color = Color.yellow;
+            cc.LCol();
+            objP.color = cc.LColor;
         }
-        else if (0.60 >= radius && radius >= 0.41f)
+        else if (60.99 >= radius && radius >= 41.00f)
         {
-            Debug.Log("Ideal");
-
-            objP.color = Color.green;
+            cc.HCol();
+            objP.color = cc.HColor;
         }
-        else if (0.40f >= radius && radius >= 0.21f)
+        else if (40.99f >= radius && radius >= 21.00f)
         {
-            Debug.Log("L");
-            objP.color = Color.yellow;
+            cc.LCol();
+            objP.color = cc.LColor;
         }
-        else if (0.20f >= radius && radius >= 0.01f)
+        else if (20.99f >= radius && radius >= 0.01f)
         {
-            Debug.Log("LL");
-            objP.color = Color.red;
-            ewindow.Show("Suit Pressure Low. Return Back to the Ship." +
-               "Pressure:" + radius);
+            cc.LLCol();
+            objP.color = cc.LLColor;
+            ewindow.Show("Suit Pressure Low. Return Back to the Ship." + '\n' +
+               "Pressure:" + actualP);
         }
 
         else
@@ -60,7 +59,7 @@ public class Pressure : MonoBehaviour {
 
 
         if (commonData.SuitPressureValue >= 0.009f)
-            objP.transform.localScale = new Vector3(radius, radius, 1.0f);
+            objP.transform.localScale = new Vector3(radius/100, radius/100, 1.0f);
 
 
     }
