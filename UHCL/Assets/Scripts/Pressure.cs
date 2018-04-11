@@ -24,7 +24,8 @@ public class Pressure : MonoBehaviour {
         if (commonData.SuitPressureValue >= 0.80)
         {
             Debug.Log("HH");
-            objP.color = Color.red;
+            Color newColor = new Color(0.3f,0.8f,0.9f,1.0f);
+            objP.color = newColor;
         }
         else if (0.79f >= commonData.SuitPressureValue && commonData.SuitPressureValue >= 0.61f)
         {

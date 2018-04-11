@@ -11,7 +11,6 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
 
     //Need Instance of buisnees layer 
     public bool IsGlobalListener = true;
-
     public TextMesh testText;
 
 
