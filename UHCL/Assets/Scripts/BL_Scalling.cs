@@ -24,7 +24,6 @@ public class BL_Scalling {
     {
         commonData.SuitPressureValue = BLScalingLimiting(commonData.SuitPressureValue);
         float SuitPressure_normalize = (commonData.SuitPressureValue) / (commonData.SuitPressureMax - commonData.SuitPressureMin);
-        Debug.Log(SuitPressure_normalize);
         return SuitPressure_normalize;
     }
 

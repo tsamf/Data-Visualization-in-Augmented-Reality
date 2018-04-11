@@ -1445,11 +1445,11 @@ MonoBehaviour:
   - Keyword: Previous Warning
     KeyCode: 0
   - Keyword: Start Procedure
-    KeyCode: 0
+    KeyCode: 32
   - Keyword: Next Step
-    KeyCode: 0
+    KeyCode: 8
   - Keyword: Previous Step
-    KeyCode: 0
+    KeyCode: 27
   - Keyword: Show Step Image
     KeyCode: 0
   - Keyword: Hide Step Image

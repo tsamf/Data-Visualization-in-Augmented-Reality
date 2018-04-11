@@ -17,9 +17,12 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
     public GameObject cautionPanel;
     public Image cautionImage;
 
+    public BL_Tasks bl_tasks;
+
 
 	// Use this for initialization
 	void Start () {
+        bl_tasks = new BL_Tasks();
         taskPanel.gameObject.SetActive(false);
         cautionPanel.gameObject.SetActive(false);
         imagePanel.gameObject.SetActive(false);
@@ -35,12 +38,12 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
         if (commonData.startProcedure)
         {
             taskPanel.gameObject.SetActive(true);
-            previousTask.text = commonData.GetPreviousTask.text;
-            currentTask.text = commonData.GetCurrentTask.text;
-            nextTask.text = commonData.GetNextTask.text;
+            previousTask.text = bl_tasks.previousTask.text;
+            currentTask.text = bl_tasks.currentTask.text;
+            nextTask.text = bl_tasks.nextTask.text;
             imagePanel.gameObject.SetActive(true);
             imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>("key");
-            cautionText.text = commonData.GetCurrentTask.caution;
+            cautionText.text = bl_tasks.currentTask.caution;
             if (cautionText.text != null)
             {
                 cautionPanel.gameObject.SetActive(true);
@@ -51,34 +54,50 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
 
             if (commonData.nextStep)
             {
-                nextTask.color = Color.white;
-                nextTask.fontSize = 16;
+                bl_tasks.nextFunction(true);
+                //nextTask.color = Color.white;
+                //nextTask.fontSize = 16;
 
-                imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>("3");
+                //imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>("3");
 
-                cautionText.text = commonData.GetNextTask.caution;
-                cautionPanel.GetComponent<Image>().color = Color.yellow;
-                previousTask.color = new Color32(93, 226, 238, 255);
-                previousTask.fontSize = 14;
-                currentTask.color = new Color32(93, 226, 238, 255);
-                currentTask.fontSize = 14;
+                //cautionText.text = commonData.GetNextTask.caution;
+                //cautionPanel.GetComponent<Image>().color = Color.yellow;
+                //previousTask.color = new Color32(93, 226, 238, 255);
+                //previousTask.fontSize = 14;
+                //currentTask.color = new Color32(93, 226, 238, 255);
+                //currentTask.fontSize = 14;
+                previousTask.text = bl_tasks.previousTask.text;
+                currentTask.text = bl_tasks.currentTask.text;
+                nextTask.text = bl_tasks.nextTask.text;
+                imagePanel.gameObject.SetActive(true);
+                imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>("key");
+                cautionText.text = bl_tasks.currentTask.caution;
+                commonData.nextStep = false;
 
 
             }
 
             if (commonData.previousStep)
             {
-                previousTask.color = Color.white;
-                previousTask.fontSize = 16;
-         
-                imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>("4");
+                bl_tasks.previousFunction(true);
+                //previousTask.color = Color.white;
+                //previousTask.fontSize = 16;
 
-                cautionText.text = commonData.GetPreviousTask.warning;
-                cautionPanel.GetComponent<Image>().color = Color.red;
-                currentTask.color = new Color32(93,226,238,255);
-                currentTask.fontSize = 14;
-                nextTask.color = new Color32(93, 226, 238, 255);
-                nextTask.fontSize = 14;
+                //imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>("4");
+
+                //cautionText.text = commonData.GetPreviousTask.warning;
+                //cautionPanel.GetComponent<Image>().color = Color.red;
+                //currentTask.color = new Color32(93,226,238,255);
+                //currentTask.fontSize = 14;
+                //nextTask.color = new Color32(93, 226, 238, 255);
+                //nextTask.fontSize = 14;
+                previousTask.text = bl_tasks.previousTask.text;
+                currentTask.text = bl_tasks.currentTask.text;
+                nextTask.text = bl_tasks.nextTask.text;
+                imagePanel.gameObject.SetActive(true);
+                imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>("key");
+                cautionText.text = bl_tasks.currentTask.caution;
+                commonData.previousStep = false;
 
             }
          
