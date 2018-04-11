@@ -6,16 +6,16 @@ public class BL_Alarming {
 
     private CommonData commonData = CommonData.GetInstance();
 
-   
+    public bool SuitPressureHiStatus;
+    public bool SuitPressureHiHiStatus;
+    public bool SuitPressureLoStatus;
+    public bool SuitPressureLoLoStatus;
+    public double SuitPressure;
+    public string alarmText;
+
 
     // Alarming function
-    public void BLAlarming(
-        bool SuitPressureHiStatus,
-        bool SuitPressureHiHiStatus,
-        bool SuitPressureLoStatus,
-        bool SuitPressureLoLoStatus,
-        double SuitPressure
-        )
+    public void BLAlarming()
     {
 
         bool SuitPressureHiHiEn = false;
@@ -49,6 +49,7 @@ public class BL_Alarming {
                 if (SuitPressure >= commonData.SuitPressLoSP && SuitPressure <= commonData.SuitPressLoDB)
                 {
                     SuitPressureLoStatus = true;
+                    alarmText = "Low SuitPressure";
                 }
             }
 
