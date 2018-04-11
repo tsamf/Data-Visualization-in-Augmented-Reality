@@ -10,10 +10,13 @@ public class Pressure : MonoBehaviour {
     public float radius = 1.0f;
     public Image objP;
     public float currentP;
-    public CommonData commonData = CommonData.GetInstance();
+    public CommonData commonData;
     public EmergencyWindow ewindow;
-
+    public ColorCode cc;
+   
+   // public Color HHColor = new Color(0.39f, 0.58f, 0.93f, 1.0f);
     void Start () {
+        commonData = CommonData.GetInstance();
     }
 	
 	// Update is called once per frame
@@ -23,29 +26,28 @@ public class Pressure : MonoBehaviour {
 
         if (commonData.SuitPressureValue >= 0.80)
         {
-            Debug.Log("HH");
-            Color newColor = new Color(0.3f,0.8f,0.9f,1.0f);
-            objP.color = newColor;
+            cc.LLCol();
+            objP.color = cc.LLColor;
         }
         else if (0.79f >= commonData.SuitPressureValue && commonData.SuitPressureValue >= 0.61f)
         {
-            Debug.Log("H");
-            objP.color = Color.yellow;
+            cc.LCol();
+            objP.color = cc.LColor;
         }
         else if (0.60 >= commonData.SuitPressureValue && commonData.SuitPressureValue >= 0.41f)
         {
-            Debug.Log("Ideal");
-            objP.color = Color.green;
+            cc.HCol();
+            objP.color = cc.HColor;
         }
         else if (0.40f >= commonData.SuitPressureValue && commonData.SuitPressureValue >= 0.21f)
         {
-            Debug.Log("L");
-            objP.color = Color.yellow;
+            cc.LCol();
+            objP.color = cc.LColor;
         }
         else if (0.20f >= commonData.SuitPressureValue && commonData.SuitPressureValue >= 0.01f)
         {
-            Debug.Log("LL");
-            objP.color = Color.red;
+            cc.LLCol();
+            objP.color = cc.LLColor;
             ewindow.Show("Suit Pressure Low. Return Back to the Ship."+ 
                "Pressure:" + commonData.SuitPressureValue);
         }

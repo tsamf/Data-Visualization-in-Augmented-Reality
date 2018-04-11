@@ -24,7 +24,7 @@ public class BL_Main : MonoBehaviour
         if(timeSinceLastTick > tickSpeed)
         {
 
-            Debug.Log("Its been 50ms");
+      
 
             timeSinceLastTick -= tickSpeed;
         }

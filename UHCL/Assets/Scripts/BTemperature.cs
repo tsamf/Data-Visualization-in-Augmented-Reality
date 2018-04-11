@@ -21,32 +21,32 @@ public class BTemperature : MonoBehaviour {
 
         if (currentBT >= 0.80)
         {
-            Debug.Log("HH");
+           // Debug.Log("HH");
             objBT.color = Color.red;
         }
         else if (0.79f >= currentBT && currentBT >= 0.61f)
         {
-            Debug.Log("H");
+           // Debug.Log("H");
             objBT.color = Color.yellow;
         }
         else if (0.60 >= currentBT && currentBT >= 0.41f)
         {
-            Debug.Log("Ideal");
+          //  Debug.Log("Ideal");
             objBT.color = Color.green;
         }
         else if (0.40f >= currentBT && currentBT >= 0.21f)
         {
-            Debug.Log("L");
+         //   Debug.Log("L");
             objBT.color = Color.yellow;
         }
         else if (0.20f >= currentBT && currentBT >= 0.01f)
         {
-            Debug.Log("LL");
+           // Debug.Log("LL");
             objBT.color = Color.red;
         }
 
         else
-            Debug.Log(" unable to record heart Rate Error");
+           // Debug.Log(" unable to record heart Rate Error");
 
 
         if (currentBT >= 0.009f)

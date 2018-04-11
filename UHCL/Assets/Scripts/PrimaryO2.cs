@@ -10,8 +10,9 @@ public class PrimaryO2 : MonoBehaviour {
     public float radius = 1.0f;
     public Image obj;
     public float currentHealth;
-    public GameObject busLayer;
-    private BL_Main pressurelog;
+   // public GameObject busLayer;
+   // private BL_Main pressurelog;
+    public ColorCode ccPO;
 
     public CommonData commonData = CommonData.GetInstance();
 
@@ -20,7 +21,7 @@ public class PrimaryO2 : MonoBehaviour {
        // currentHealth = (Console.Read());
 
         //Attach the pressurelog from the buslayer if the buslayer was assigned in the editor
-        if (busLayer != null)
+      /*  if (busLayer != null)
         {
             pressurelog = busLayer.GetComponent<BL_Main>();
         }
@@ -29,7 +30,7 @@ public class PrimaryO2 : MonoBehaviour {
         {
             busLayer = GameObject.FindGameObjectWithTag("Bus Layer");
             pressurelog = busLayer.GetComponent<BL_Main>();
-        }
+        }*/
     }
 	
 	// Update is called once per frame
@@ -40,19 +41,29 @@ public class PrimaryO2 : MonoBehaviour {
 
 
         if (normalizedOxygen >= 0.5)
-            Debug.Log("HH");
+        {  //  Debug.Log("HH");
+            ccPO.HHCol();
+            obj.color = ccPO.HHColor;
+        }
+        else if (0.499f >= normalizedOxygen && normalizedOxygen >= 0.31f)
+        { // Debug.Log("H");
+            ccPO.HCol();
+            obj.color = ccPO.HColor;
+        }
+        else if (0.3099 >= normalizedOxygen && normalizedOxygen >= 0.21f)
+        {  //  Debug.Log("L");
+            ccPO.HCol();
+            obj.color = ccPO.HColor;
+        }
+        else if (0.2099f >= normalizedOxygen )
+        { //  Debug.Log("LL");
+            ccPO.LCol();
+            obj.color = ccPO.LColor;
+        }
 
-        else if (0.49f >= normalizedOxygen && normalizedOxygen >= 0.31f)
-            Debug.Log("H");
+      //  else
+        // Debug.Log("Error");
 
-        else if (0.30 >= normalizedOxygen && normalizedOxygen >= 0.21f)
-            Debug.Log("L");
-
-        else if (normalizedOxygen >= 0.20f)
-            Debug.Log("LL");
-
-        else
-            Debug.Log("Error");
 
 
         if (normalizedOxygen >= 0.05f)

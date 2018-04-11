@@ -26,28 +26,28 @@ public class Water : MonoBehaviour {
 
         if (currentW >= 0.80)
         {
-            Debug.Log("HH");
+          //  Debug.Log("HH");
             objW.color = Color.blue;
         }
         else if (0.79f >= currentW && currentW >= 0.50f)
         {
-            Debug.Log("H");
+         //   Debug.Log("H");
             objW.color = Color.green;
         }
         else if (0.49 >= currentW && currentW >= 0.25f)
         {
-            Debug.Log("L");
+           // Debug.Log("L");
             objW.color = Color.yellow;
         }
 
         else if (0.24 >= currentW && currentW >= 0.01f)
         {
-            Debug.Log("LL");
+            //Debug.Log("LL");
             objW.color = Color.red;
         }
 
         else
-            Debug.Log("Battery Error");
+           // Debug.Log("Battery Error");
 
 
         if (currentW >= 0.009f)

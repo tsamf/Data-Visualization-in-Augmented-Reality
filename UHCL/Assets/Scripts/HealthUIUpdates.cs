@@ -24,5 +24,10 @@ public class HealthUIUpdates : MonoBehaviour {
         {
             detailedPie.SetActive(true);
         }
+       else if (commonData.closePieDetails)
+        {
+            
+            detailedPie.SetActive(false);
+        }
     }
 }

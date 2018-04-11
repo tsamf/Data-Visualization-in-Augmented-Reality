@@ -21,32 +21,32 @@ public class HeartRate : MonoBehaviour {
 
         if (currentHeart >= 0.80)
         {
-            Debug.Log("HH");
+           // Debug.Log("HH");
             objHR.color = Color.red;
         }
         else if (0.79f >= currentHeart && currentHeart >= 0.61f)
         {
-            Debug.Log("H");
+           // Debug.Log("H");
             objHR.color = Color.yellow;
         }
         else if (0.60 >= currentHeart && currentHeart >= 0.41f)
         {
-            Debug.Log("Ideal");
+           // Debug.Log("Ideal");
             objHR.color = Color.green;
         }
         else if (0.40f >= currentHeart && currentHeart >= 0.21f)
         {
-            Debug.Log("L");
+            //Debug.Log("L");
             objHR.color = Color.yellow;
         }
         else if (0.20f >= currentHeart && currentHeart >= 0.01f)
         {
-            Debug.Log("LL");
+           // Debug.Log("LL");
             objHR.color = Color.red;
         }
 
         else
-            Debug.Log(" unable to record heart Rate Error");
+           // Debug.Log(" unable to record heart Rate Error");
 
 
         if (currentHeart >= 0.009f)

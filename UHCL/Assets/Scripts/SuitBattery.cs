@@ -26,28 +26,28 @@ public class SuitBattery : MonoBehaviour
 
         if (currentBatt >= 0.80)
         {
-            Debug.Log("HH");
+          //  Debug.Log("HH");
             objB.color = Color.blue;
         }
         else if (0.79f >= currentBatt && currentBatt >= 0.50f)
         {
-            Debug.Log("H");
+           // Debug.Log("H");
             objB.color = Color.green;
         }
         else if (0.49 >= currentBatt && currentBatt >= 0.25f)
         {
-            Debug.Log("L");
+           // Debug.Log("L");
             objB.color = Color.yellow;
         }
 
         else if (0.24 >= currentBatt && currentBatt >= 0.01f)
         {
-            Debug.Log("LL");
+          //  Debug.Log("LL");
             objB.color = Color.red;
         }
 
         else
-            Debug.Log("Battery Error");
+          //  Debug.Log("Battery Error");
 
 
         if (currentBatt >= 0.009f)

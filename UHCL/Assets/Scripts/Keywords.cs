@@ -292,6 +292,7 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
     private void ClosePieDetails()
     {
         testText.text = "Close Pie Details";
+        data.viewPieDetails = false;
         data.closePieDetails = true;
     }
 
