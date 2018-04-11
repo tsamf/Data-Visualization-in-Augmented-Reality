@@ -67,8 +67,6 @@ public class DB_GenerateData : MonoBehaviour {
 
         }
 
-        commonData.SuitPressureValue = current;
-
         //If the pipe has been deactivated return with out advancing
         if (!isActive)
         {

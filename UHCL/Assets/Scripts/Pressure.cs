@@ -13,43 +13,46 @@ public class Pressure : MonoBehaviour {
     public CommonData commonData;
     public EmergencyWindow ewindow;
     public ColorCode cc;
-   
-   // public Color HHColor = new Color(0.39f, 0.58f, 0.93f, 1.0f);
+
+    public GameObject bl_main;
+
+    // public Color HHColor = new Color(0.39f, 0.58f, 0.93f, 1.0f);
     void Start () {
         commonData = CommonData.GetInstance();
     }
-	
-	// Update is called once per frame
-	void Update () {
-        radius = commonData.SuitPressureValue;
 
+    // Update is called once per frame
+    void Update()
+    {
+        radius = bl_main.GetComponent<BL_Main>().bl_scaling.ScalingFunction();
 
-        if (commonData.SuitPressureValue >= 0.80)
+        if (radius >= 0.80)
         {
-            cc.LLCol();
-            objP.color = cc.LLColor;
+            Debug.Log("HH");
+            objP.color = Color.red;
         }
-        else if (0.79f >= commonData.SuitPressureValue && commonData.SuitPressureValue >= 0.61f)
+        else if (0.79f >= radius && radius >= 0.61f)
         {
-            cc.LCol();
-            objP.color = cc.LColor;
+            Debug.Log("H");
+            objP.color = Color.yellow;
         }
-        else if (0.60 >= commonData.SuitPressureValue && commonData.SuitPressureValue >= 0.41f)
+        else if (0.60 >= radius && radius >= 0.41f)
         {
-            cc.HCol();
-            objP.color = cc.HColor;
+            Debug.Log("Ideal");
+
+            objP.color = Color.green;
         }
-        else if (0.40f >= commonData.SuitPressureValue && commonData.SuitPressureValue >= 0.21f)
+        else if (0.40f >= radius && radius >= 0.21f)
         {
-            cc.LCol();
-            objP.color = cc.LColor;
+            Debug.Log("L");
+            objP.color = Color.yellow;
         }
-        else if (0.20f >= commonData.SuitPressureValue && commonData.SuitPressureValue >= 0.01f)
+        else if (0.20f >= radius && radius >= 0.01f)
         {
-            cc.LLCol();
-            objP.color = cc.LLColor;
-            ewindow.Show("Suit Pressure Low. Return Back to the Ship."+ 
-               "Pressure:" + commonData.SuitPressureValue);
+            Debug.Log("LL");
+            objP.color = Color.red;
+            ewindow.Show("Suit Pressure Low. Return Back to the Ship." +
+               "Pressure:" + radius);
         }
 
         else

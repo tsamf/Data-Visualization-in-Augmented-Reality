@@ -12,6 +12,7 @@ public class BL_Main : MonoBehaviour
     public BL_Alarming bl_alarming;
     public BL_Scalling bl_scaling;
 
+
     // Use this for initialization
     void Start()
     {

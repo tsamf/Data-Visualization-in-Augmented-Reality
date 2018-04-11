@@ -12,12 +12,19 @@ public class BL_Scalling {
 
     private CommonData commonData = CommonData.GetInstance();
 
+    //Sending out actual suitpressure value
+    public float actualSuitPressure ()
+    {
+        return commonData.SuitPressureValue;
+    }
+
     //Scaling from number to percentage
     public float ScalingFunction(
         )
     {
         commonData.SuitPressureValue = BLScalingLimiting(commonData.SuitPressureValue);
         float SuitPressure_normalize = (commonData.SuitPressureValue) / (commonData.SuitPressureMax - commonData.SuitPressureMin);
+        Debug.Log(SuitPressure_normalize);
         return SuitPressure_normalize;
     }
 
