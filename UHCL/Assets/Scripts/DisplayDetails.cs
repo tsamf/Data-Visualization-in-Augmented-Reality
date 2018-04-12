@@ -6,9 +6,12 @@ using UnityEngine.EventSystems;
 
 public class DisplayDetails : MonoBehaviour
 {
+    public GameObject displaywindow;
+    public Text title;
+    public Text content;
     List<string> names = new List<string>() { "Warning / Caution", "Oxygen Warning", "Battery Warning", "Pressure Warning" };
 
-    public Dropdown dropdown;
+   /* public Dropdown dropdown;
     public Text selectedName;
 
     
@@ -27,20 +30,25 @@ public class DisplayDetails : MonoBehaviour
        {
        selectedName.text = "Warning: Check Pressure";
        }
+    }*/
+
+    public void Display(string header, string values)
+    {
+        title.text = header;
+        content.text = values;
+        displaywindow.SetActive(true);
     }
-
-
 
     void Start()
     {
-        PopulateList();
+       // PopulateList();
     }
   
 
-    void PopulateList()
+   /* void PopulateList()
     {
         dropdown.AddOptions(names);
-    }
+    }*/
 
 
 }

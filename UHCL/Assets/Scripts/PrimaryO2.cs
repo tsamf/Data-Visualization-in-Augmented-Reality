@@ -11,7 +11,7 @@ public class PrimaryO2 : MonoBehaviour {
     public Image obj;
     public float currentHealth;
    // public GameObject busLayer;
-   // private BL_Main pressurelog;
+   //private BL_Main pressurelog;
     public ColorCode ccPO;
 
     public CommonData commonData = CommonData.GetInstance();
