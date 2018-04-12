@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Bus Layer
   - detailedPie
+  - PieUI
+  - AlternatePieUI
   layers:
   - Default
   - TransparentFX
