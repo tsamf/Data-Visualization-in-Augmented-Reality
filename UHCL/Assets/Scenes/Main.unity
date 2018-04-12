@@ -771,6 +771,11 @@ Prefab:
       propertyPath: m_Name
       value: AltContent
       objectReference: {fileID: 0}
+    - target: {fileID: 114385449189540820, guid: 708b7b6ce2b4a324a9ae62af06198dfd,
+        type: 2}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 708b7b6ce2b4a324a9ae62af06198dfd, type: 2}
   m_IsPrefabParent: 0
@@ -1461,6 +1466,11 @@ Prefab:
       propertyPath: cc
       value: 
       objectReference: {fileID: 719648568}
+    - target: {fileID: 114662604692846024, guid: e737c1c4529d567498b41590ba46db25,
+        type: 2}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114073613488183034, guid: e737c1c4529d567498b41590ba46db25, type: 2}
     - {fileID: 114085997277389866, guid: e737c1c4529d567498b41590ba46db25, type: 2}
@@ -2003,7 +2013,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2826,7 +2836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2987,7 +2997,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3567,7 +3577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3644,7 +3654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.9191176, g: 0.9191176, b: 0.9191176, a: 0.972}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5323,10 +5333,6 @@ GameObject:
   - component: {fileID: 1519171558}
   - component: {fileID: 1519171557}
   - component: {fileID: 1519171556}
-  - component: {fileID: 1519171555}
-  - component: {fileID: 1519171554}
-  - component: {fileID: 1519171553}
-  - component: {fileID: 1519171552}
   - component: {fileID: 1519171551}
   m_Layer: 5
   m_Name: Task UI HUD
@@ -5378,82 +5384,6 @@ MonoBehaviour:
   taskPanel: {fileID: 425429681}
   cautionPanel: {fileID: 1667881202}
   cautionImage: {fileID: 0}
---- !u!114 &1519171552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114109442299650262, guid: e4d566ced4584734786023dc57c91adf,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1519171549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac8d5b128a1d8204fb76c86f47b75912, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PivotAxis: 0
-  TargetTransform: {fileID: 0}
---- !u!114 &1519171553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114763140964112924, guid: e4d566ced4584734786023dc57c91adf,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1519171549}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c655338633f4544180b3d90a593ac17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TagalongDistance: 2
-  EnforceDistance: 1
-  PositionUpdateSpeed: 9.8
-  SmoothMotion: 1
-  SmoothingFactor: 0.75
-  MinimumHorizontalOverlap: 0.1
-  TargetHorizontalOverlap: 1
-  MinimumVerticalOverlap: 0.1
-  TargetVerticalOverlap: 1
-  HorizontalRayCount: 3
-  VerticalRayCount: 3
-  MinimumTagalongDistance: 1
-  MaintainFixedSize: 1
-  DepthUpdateSpeed: 4
-  DebugDrawLines: 0
-  DebugPointLight: {fileID: 0}
---- !u!114 &1519171554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114435898667469850, guid: e4d566ced4584734786023dc57c91adf,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1519171549}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb69de839bd015f4099b5bd2c45e53e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseUnscaledTime: 1
-  PositionPerSecond: 30
-  RotationDegreesPerSecond: 720
-  RotationSpeedScaler: 0
-  ScalePerSecond: 5
-  SmoothLerpToTarget: 0
-  SmoothPositionLerpRatio: 0.5
-  SmoothRotationLerpRatio: 0.5
-  SmoothScaleLerpRatio: 0.5
---- !u!65 &1519171555
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 65676747841578870, guid: e4d566ced4584734786023dc57c91adf,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1519171549}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1519171556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6134,7 +6064,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.99264705, g: 0.61310554, b: 0.61310554, a: 0.392}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
