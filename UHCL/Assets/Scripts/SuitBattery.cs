@@ -8,7 +8,7 @@ public class SuitBattery : MonoBehaviour
 {
 
     // Use this for initialization
-    public float radius = 1.0f;
+    public float radius;
     public Image objB;
     public float currentBatt;
     public CommonData commanData;
@@ -22,29 +22,29 @@ public class SuitBattery : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        radius = (commanData.BatteryValue)/100;
+        radius = commanData.BatteryValue;
         currentBatt = radius;
 
-        if (currentBatt >= 0.80f)
+        if (currentBatt >= 80.00f)
         {
             //  Debug.Log("HH");
             cc.HHCol();
             objB.color = cc.HHColor;
         }
-        else if (0.79f >= currentBatt && currentBatt >= 0.50f)
+        else if (79.99f >= currentBatt && currentBatt >= 50.00f)
         {
             // Debug.Log("H");
             cc.HCol();
             objB.color = cc.HColor;
         }
-        else if (0.49 >= currentBatt && currentBatt >= 0.25f)
+        else if (49.99 >= currentBatt && currentBatt >= 25.00f)
         {
             // Debug.Log("L");
             cc.LCol();
             objB.color = cc.LColor;
         }
 
-        else if (0.24 >= currentBatt && currentBatt >= 0.01f)
+        else if (24.99 >= currentBatt && currentBatt >= 0.01f)
         {
             //  Debug.Log("LL");
             cc.LLCol();
@@ -52,11 +52,11 @@ public class SuitBattery : MonoBehaviour
         }
 
         else
-          //  Debug.Log("Battery Error");
-
+        { //  Debug.Log("Battery Error");
+        }
 
         if (currentBatt >= 0.009f)
-            objB.transform.localScale = new Vector3(radius, radius, 1.0f);
+            objB.transform.localScale = new Vector3(radius/100, radius/100, 1.0f);
     }
 }
 

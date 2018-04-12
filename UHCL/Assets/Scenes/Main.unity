@@ -891,6 +891,7 @@ MonoBehaviour:
   radius: 1
   objHR: {fileID: 239795311}
   currentHeart: 0
+  cc: {fileID: 239795313}
 --- !u!114 &239795311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1306,6 +1307,46 @@ Prefab:
       propertyPath: cc
       value: 
       objectReference: {fileID: 1770474959}
+    - target: {fileID: 114636110477531180, guid: e737c1c4529d567498b41590ba46db25,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 114636110477531180, guid: e737c1c4529d567498b41590ba46db25,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.58431375
+      objectReference: {fileID: 0}
+    - target: {fileID: 114636110477531180, guid: e737c1c4529d567498b41590ba46db25,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0.9764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 114343900870061770, guid: e737c1c4529d567498b41590ba46db25,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 114343900870061770, guid: e737c1c4529d567498b41590ba46db25,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.5686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 114343900870061770, guid: e737c1c4529d567498b41590ba46db25,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0.9764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 114963785752847996, guid: e737c1c4529d567498b41590ba46db25,
+        type: 2}
+      propertyPath: cc
+      value: 
+      objectReference: {fileID: 1683448491}
+    - target: {fileID: 114557233361382278, guid: e737c1c4529d567498b41590ba46db25,
+        type: 2}
+      propertyPath: cc
+      value: 
+      objectReference: {fileID: 1237096432}
     m_RemovedComponents:
     - {fileID: 114073613488183034, guid: e737c1c4529d567498b41590ba46db25, type: 2}
     - {fileID: 114085997277389866, guid: e737c1c4529d567498b41590ba46db25, type: 2}
@@ -2597,6 +2638,7 @@ MonoBehaviour:
   radius: 1
   objW: {fileID: 769880310}
   currentW: 0
+  cc: {fileID: 769880312}
 --- !u!114 &769880310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2610,7 +2652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3216,7 +3258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.39215687, g: 0.5686275, b: 0.9764706, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6879,6 +6921,41 @@ Prefab:
         type: 2}
       propertyPath: threshold1Percentage
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114548369642452588, guid: e483ad673f90da545ace027a9ffcbb10,
+        type: 2}
+      propertyPath: increment
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 114986287976550922, guid: e483ad673f90da545ace027a9ffcbb10,
+        type: 2}
+      propertyPath: max
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114986287976550922, guid: e483ad673f90da545ace027a9ffcbb10,
+        type: 2}
+      propertyPath: current
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114986287976550922, guid: e483ad673f90da545ace027a9ffcbb10,
+        type: 2}
+      propertyPath: initial
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114986287976550922, guid: e483ad673f90da545ace027a9ffcbb10,
+        type: 2}
+      propertyPath: threshold1Percentage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114986287976550922, guid: e483ad673f90da545ace027a9ffcbb10,
+        type: 2}
+      propertyPath: threshold1
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114986287976550922, guid: e483ad673f90da545ace027a9ffcbb10,
+        type: 2}
+      propertyPath: increment
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e483ad673f90da545ace027a9ffcbb10, type: 2}
