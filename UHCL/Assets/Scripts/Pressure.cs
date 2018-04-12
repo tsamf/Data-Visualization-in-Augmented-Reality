@@ -12,6 +12,7 @@ public class Pressure : MonoBehaviour {
     public float actualP;
     public CommonData commonData;
     public EmergencyWindow ewindow;
+   
     public ColorCode cc;
 
     public GameObject bl_main;

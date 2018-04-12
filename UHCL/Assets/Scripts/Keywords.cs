@@ -341,6 +341,13 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
     private void CloseDetailWindow()
     {
         testText.text = "Close Detail Window";
+        data.viewPressure = false;
+        data.viewPrimaryOTwo = false;
+        data.viewSecondaryOTwo = false;
+        data.viewHeartRate = false;
+        data.viewBattery = false;
+        data.viewBodyTemperature = false;
+        data.viewHTwoO = false;
         data.closeDetailWindow = true;
     }
 
