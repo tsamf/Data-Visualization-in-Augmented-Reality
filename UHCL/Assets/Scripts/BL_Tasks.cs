@@ -235,8 +235,6 @@ public class BL_Tasks {
 
         currentTask = task1;
         nextTask = task2;
-
-        Debug.Log(commonData.currentTask.text);
     }
 
     public Procedure GetProcedure()

@@ -175,12 +175,35 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
                     CloseTaskList();
                     break;
                 }
+            case "display pie":
+                {
+                    DisplayPie();
+                    break;
+                }
+            case "display alternate":
+                {
+                    DisplayAlternate();
+                    break;
+                }
     
             default:
                 break;
         }
     }
-   
+
+    private void DisplayAlternate()
+    {
+        GameObject.FindGameObjectWithTag("PieUI").GetComponent<Canvas>().enabled = false;
+        GameObject.FindGameObjectWithTag("AlternatePieUI").GetComponent<Canvas>().enabled = true;
+    }
+
+    private void DisplayPie()
+    {
+        GameObject.FindGameObjectWithTag("PieUI").GetComponent<Canvas>().enabled = true;
+        GameObject.FindGameObjectWithTag("AlternatePieUI").GetComponent<Canvas>().enabled = false;
+
+    }
+
     private void CloseTaskList()
     {
         testText.text = "Close Task List";
