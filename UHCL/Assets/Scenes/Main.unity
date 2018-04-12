@@ -1456,6 +1456,11 @@ Prefab:
       propertyPath: cc
       value: 
       objectReference: {fileID: 1237096432}
+    - target: {fileID: 114253450465632618, guid: e737c1c4529d567498b41590ba46db25,
+        type: 2}
+      propertyPath: cc
+      value: 
+      objectReference: {fileID: 719648568}
     m_RemovedComponents:
     - {fileID: 114073613488183034, guid: e737c1c4529d567498b41590ba46db25, type: 2}
     - {fileID: 114085997277389866, guid: e737c1c4529d567498b41590ba46db25, type: 2}
@@ -3214,7 +3219,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab9183a3f911284099b9ff4fb271aef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pie: {fileID: 0}
   displayDetails: {fileID: 1229135400}
   dd: {fileID: 1229135402}
   bl_main: {fileID: 242413103}
@@ -6592,6 +6596,7 @@ MonoBehaviour:
   radius: 1
   objBT: {fileID: 1780833740}
   currentBT: 0
+  cc: {fileID: 1780833742}
 --- !u!114 &1780833740
 MonoBehaviour:
   m_ObjectHideFlags: 0
