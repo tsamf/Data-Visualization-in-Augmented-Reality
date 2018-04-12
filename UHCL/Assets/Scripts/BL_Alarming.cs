@@ -26,7 +26,7 @@ public class BL_Alarming {
         bool SuitPressureHiHiEn = false;
         bool SuitPressureHiEn = false;
         bool SuitPressureLoLoEn = false;
-        bool SuitPressureLoEn = false;
+        bool SuitPressureLoEn = true;
 
 
         if (SuitPressure >= commonData.SuitPressureMin && SuitPressure <= commonData.SuitPressureMax)
