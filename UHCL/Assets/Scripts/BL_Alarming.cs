@@ -13,6 +13,11 @@ public class BL_Alarming {
     public double SuitPressure;
     public string alarmText;
 
+    public BL_Alarming()
+    {
+        SuitPressure = commonData.SuitPressureValue;
+    } 
+
 
     // Alarming function
     public void BLAlarming()
