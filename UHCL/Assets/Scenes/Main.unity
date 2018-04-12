@@ -2912,7 +2912,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 1
   objSO2: {fileID: 941126081}
-  currentSO2: 0
+  intialSO2: 1
   ccSO: {fileID: 941126083}
 --- !u!114 &941126081
 MonoBehaviour:
@@ -6471,7 +6471,7 @@ Prefab:
     - target: {fileID: 114651492203267428, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}
       propertyPath: threshold1Percentage
-      value: 30
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114651492203267428, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}
@@ -6486,12 +6486,17 @@ Prefab:
     - target: {fileID: 114651492203267428, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}
       propertyPath: increment
-      value: 0.1
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 114651492203267428, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}
       propertyPath: current
-      value: 20
+      value: 15.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114324679799464102, guid: e483ad673f90da545ace027a9ffcbb10,
+        type: 2}
+      propertyPath: current
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e483ad673f90da545ace027a9ffcbb10, type: 2}
