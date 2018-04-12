@@ -43,6 +43,7 @@ public class HealthUIUpdates : MonoBehaviour {
             detailedPie.SetActive(false);
             pie.SetActive(true);
         }
+
     }
 
     void UpdateViewDetails()
@@ -54,6 +55,18 @@ public class HealthUIUpdates : MonoBehaviour {
             dd.Display("Suit Pressure Details", "Pressure value " + bl_main.GetComponent<BL_Main >().bl_scaling.actualSuitPressure());
 
         }
+        else if (commonData.viewPrimaryOTwo)
+        {
+            displayDetails.SetActive(true);
+            dd.Display("Primary Oxygen Details", "Primary O2 left: " + (commonData.OxygenOneValue) + "%");
+        }
+
+        else if (commonData.viewSecondaryOTwo)
+        {
+            displayDetails.SetActive(true);
+            dd.Display("Secondary Oxygen Details", "Secondary O2 left: " + (commonData.OxygenTwoValue) + "%");
+        }
+
         else if (commonData.closeDetailWindow)
         {
             displayDetails.SetActive(false);
