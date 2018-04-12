@@ -6,6 +6,7 @@ using System;
 
 public class TUI_TaskUIUpdate : MonoBehaviour {
     CommonData commonData = CommonData.GetInstance();
+    
 
 
     public Text previousTask;
@@ -26,53 +27,84 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
         taskPanel.gameObject.SetActive(false);
         cautionPanel.gameObject.SetActive(false);
         imagePanel.gameObject.SetActive(false);
+       
 
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
+        taskPanel.gameObject.SetActive(true);
 
         currentTask.text = "TASK ARRIVED";
 
         if (commonData.startProcedure)
         {
-            taskPanel.gameObject.SetActive(true);
+            GameObject[] SceneHolograms = GameObject.FindGameObjectsWithTag("Hologram");
+            foreach(GameObject h in SceneHolograms)
+            {
+                h.GetComponent<Renderer>().enabled = false;
+                h.GetComponent<BoxCollider>().enabled = false;
+            }
+
+
+            if(bl_tasks.currentTask.holograms != "")
+            {
+                String[] holograms = bl_tasks.currentTask.holograms.Split(',');
+                foreach(string h in holograms)
+                {
+                  GameObject hologram = GameObject.Find(bl_tasks.currentTask.holograms);
+                    
+
+                  hologram.GetComponent<Renderer>().enabled = true;
+                }
+                
+            }
+
+
             previousTask.text = bl_tasks.previousTask.text;
             currentTask.text = bl_tasks.currentTask.text;
             nextTask.text = bl_tasks.nextTask.text;
             imagePanel.gameObject.SetActive(true);
-            imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>("key");
-            cautionText.text = bl_tasks.currentTask.caution;
-            if (cautionText.text != null)
+            imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>(Convert.ToString(bl_tasks.currentTask.stepNumber));
+            cautionPanel.gameObject.SetActive(false);
+
+            string warning = bl_tasks.currentTask.warning.ToString();
+            string caution = bl_tasks.currentTask.caution.ToString();
+            string images = bl_tasks.currentTask.images.ToString();
+
+
+            if (warning != "")
             {
                 cautionPanel.gameObject.SetActive(true);
-                cautionPanel.GetComponent<Image>().color = Color.yellow;
-               //cautionPanel.GetComponent<Image>().
-
+                cautionPanel.GetComponent<Image>().color = new Color32(208,46,40,214);
+                cautionText.text = bl_tasks.currentTask.warning;
             }
+            if (caution != "")
+            {
+                cautionPanel.gameObject.SetActive(true);
+                cautionPanel.GetComponent<Image>().color = new Color32(255,255,114,249);
+                cautionText.text = bl_tasks.currentTask.caution;
+            }
+            //if (images != "")
+            //{
+            //    imagePanel.gameObject.SetActive(true);
+            //    imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>(Convert.ToString(bl_tasks.currentTask.stepNumber));
 
+
+            //}
             if (commonData.nextStep)
             {
                 bl_tasks.nextFunction(true);
-                //nextTask.color = Color.white;
-                //nextTask.fontSize = 16;
-
-                //imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>("3");
-
-                //cautionText.text = commonData.GetNextTask.caution;
-                //cautionPanel.GetComponent<Image>().color = Color.yellow;
-                //previousTask.color = new Color32(93, 226, 238, 255);
-                //previousTask.fontSize = 14;
-                //currentTask.color = new Color32(93, 226, 238, 255);
-                //currentTask.fontSize = 14;
+                
                 previousTask.text = bl_tasks.previousTask.text;
                 currentTask.text = bl_tasks.currentTask.text;
                 nextTask.text = bl_tasks.nextTask.text;
                 imagePanel.gameObject.SetActive(true);
-                imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>("key");
-                cautionText.text = bl_tasks.currentTask.caution;
+                Debug.Log(bl_tasks.currentTask.stepNumber);
+                imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>(Convert.ToString(bl_tasks.currentTask.stepNumber));
                 commonData.nextStep = false;
+            
 
 
             }
@@ -80,23 +112,11 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
             if (commonData.previousStep)
             {
                 bl_tasks.previousFunction(true);
-                //previousTask.color = Color.white;
-                //previousTask.fontSize = 16;
-
-                //imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>("4");
-
-                //cautionText.text = commonData.GetPreviousTask.warning;
-                //cautionPanel.GetComponent<Image>().color = Color.red;
-                //currentTask.color = new Color32(93,226,238,255);
-                //currentTask.fontSize = 14;
-                //nextTask.color = new Color32(93, 226, 238, 255);
-                //nextTask.fontSize = 14;
                 previousTask.text = bl_tasks.previousTask.text;
                 currentTask.text = bl_tasks.currentTask.text;
                 nextTask.text = bl_tasks.nextTask.text;
                 imagePanel.gameObject.SetActive(true);
-                imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>("key");
-                cautionText.text = bl_tasks.currentTask.caution;
+                imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>(Convert.ToString(bl_tasks.currentTask.stepNumber));
                 commonData.previousStep = false;
 
             }
@@ -104,24 +124,8 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
         }
      
 
-
-
-
-
-
     }
 
 }
 	
 
-
-/*  
-    taskPanel.gameObject.SetActive(true);
-     currentTask.text = commonData.GetCurrentTask.text;
-               nextTask.text = commonData.GetNextTask.text;
-               cautionText.text = commonData.GetCurrentTask.caution;
-           if (cautionText.text != null)
-           {
-               cautionPanel.gameObject.SetActive(true);
-               cautionPanel.GetComponent<Image>(). }
- */

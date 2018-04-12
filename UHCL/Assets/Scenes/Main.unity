@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1540,6 +1540,66 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0849648ce5fecc1459601eb92216d8cd, type: 2}
+    - target: {fileID: 1951846947491906, guid: d477459dcc8cb51488bbeb085451e0df, type: 2}
+      propertyPath: m_Name
+      value: Aux_PowerInputP
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194625235264262, guid: d477459dcc8cb51488bbeb085451e0df, type: 2}
+      propertyPath: m_Name
+      value: BusBarsP
+      objectReference: {fileID: 0}
+    - target: {fileID: 1097063821688160, guid: d477459dcc8cb51488bbeb085451e0df, type: 2}
+      propertyPath: m_Name
+      value: IndicatorBoxP
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042128549618704, guid: d477459dcc8cb51488bbeb085451e0df, type: 2}
+      propertyPath: m_Name
+      value: FusibleDisconnectBoxP
+      objectReference: {fileID: 0}
+    - target: {fileID: 1938144391843312, guid: d477459dcc8cb51488bbeb085451e0df, type: 2}
+      propertyPath: m_Name
+      value: PowerBoxP
+      objectReference: {fileID: 0}
+    - target: {fileID: 1407531088223898, guid: d477459dcc8cb51488bbeb085451e0df, type: 2}
+      propertyPath: m_Name
+      value: PowerOutputBoxP
+      objectReference: {fileID: 0}
+    - target: {fileID: 1304678449101304, guid: d477459dcc8cb51488bbeb085451e0df, type: 2}
+      propertyPath: m_Name
+      value: E-StopP
+      objectReference: {fileID: 0}
+    - target: {fileID: 1304051334503892, guid: d477459dcc8cb51488bbeb085451e0df, type: 2}
+      propertyPath: m_Name
+      value: E-Stop
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721419279708468, guid: d477459dcc8cb51488bbeb085451e0df, type: 2}
+      propertyPath: m_TagString
+      value: Hologram
+      objectReference: {fileID: 0}
+    - target: {fileID: 1512745748268772, guid: d477459dcc8cb51488bbeb085451e0df, type: 2}
+      propertyPath: m_TagString
+      value: Hologram
+      objectReference: {fileID: 0}
+    - target: {fileID: 1063538213093176, guid: d477459dcc8cb51488bbeb085451e0df, type: 2}
+      propertyPath: m_TagString
+      value: Hologram
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295140975359204, guid: d477459dcc8cb51488bbeb085451e0df, type: 2}
+      propertyPath: m_TagString
+      value: Hologram
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090494807634350, guid: d477459dcc8cb51488bbeb085451e0df, type: 2}
+      propertyPath: m_TagString
+      value: Hologram
+      objectReference: {fileID: 0}
+    - target: {fileID: 1493911472802360, guid: d477459dcc8cb51488bbeb085451e0df, type: 2}
+      propertyPath: m_TagString
+      value: Hologram
+      objectReference: {fileID: 0}
+    - target: {fileID: 1304051334503892, guid: d477459dcc8cb51488bbeb085451e0df, type: 2}
+      propertyPath: m_TagString
+      value: Hologram
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d477459dcc8cb51488bbeb085451e0df, type: 2}
   m_IsPrefabParent: 0
