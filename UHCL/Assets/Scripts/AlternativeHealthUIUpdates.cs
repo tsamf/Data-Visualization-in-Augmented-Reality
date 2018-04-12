@@ -5,7 +5,7 @@ using UnityEngine;
 public class AlternativeHealthUIUpdates : MonoBehaviour {
 
     //public GameObject detailedPie;
-    public GameObject pie;
+
     public GameObject displayDetails;
     public DisplayDetails dd;
     public BL_Main bl_main;
@@ -28,16 +28,16 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
 
     void UpdateDetailPiePanel()
     {
-        if (commonData.viewPieDetails)
-        {
-            //detailedPie.SetActive(true);
-            pie.SetActive(false);
-        }
-        else if (commonData.closePieDetails)
-        {
-            //detailedPie.SetActive(false);
-            pie.SetActive(true);
-        }
+        //if (commonData.viewPieDetails)
+        //{
+        //    //detailedPie.SetActive(true);
+        //    pie.SetActive(false);
+        //}
+        //else if (commonData.closePieDetails)
+        //{
+        //    //detailedPie.SetActive(false);
+        //    pie.SetActive(true);
+        //}
     }
 
     void UpdateViewDetails()
