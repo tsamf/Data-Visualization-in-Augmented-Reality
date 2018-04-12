@@ -1104,6 +1104,11 @@ Prefab:
       propertyPath: ccSO
       value: 
       objectReference: {fileID: 1232708109}
+    - target: {fileID: 114995641812131994, guid: e737c1c4529d567498b41590ba46db25,
+        type: 2}
+      propertyPath: cc
+      value: 
+      objectReference: {fileID: 1770474959}
     m_RemovedComponents:
     - {fileID: 114073613488183034, guid: e737c1c4529d567498b41590ba46db25, type: 2}
     - {fileID: 114085997277389866, guid: e737c1c4529d567498b41590ba46db25, type: 2}
@@ -3766,6 +3771,7 @@ MonoBehaviour:
   radius: 1
   objB: {fileID: 1312897915}
   currentBatt: 0
+  cc: {fileID: 1312897917}
 --- !u!114 &1312897915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6497,6 +6503,11 @@ Prefab:
         type: 2}
       propertyPath: current
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114548369642452588, guid: e483ad673f90da545ace027a9ffcbb10,
+        type: 2}
+      propertyPath: threshold1Percentage
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e483ad673f90da545ace027a9ffcbb10, type: 2}

@@ -32,12 +32,12 @@ public class Pressure : MonoBehaviour {
             cc.LLCol();
             objP.color = cc.LLColor;
         }
-        else if (79.99f >= radius && radius >= 61.00f)
+        else if (79.99f >= radius && radius >= 71.00f)
         {
             cc.LCol();
             objP.color = cc.LColor;
         }
-        else if (60.99 >= radius && radius >= 41.00f)
+        else if (70.99 >= radius && radius >= 41.00f)
         {
             cc.HCol();
             objP.color = cc.HColor;
