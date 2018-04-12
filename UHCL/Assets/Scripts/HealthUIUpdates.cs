@@ -66,13 +66,15 @@ public class HealthUIUpdates : MonoBehaviour {
         if(commonData.viewWarnings)
         {
             DetailPanel.SetActive(true);
+            WarningText.color = Color.yellow;
             WarningText.text = "Pressure Low";
-           
+            commonData.viewWarnings = false;
         }
         else if(commonData.closeWarnings)
         {
             DetailPanel.SetActive(false);
             WarningText.text = "";
+            commonData.closeWarnings = false;
         }
     }
 }

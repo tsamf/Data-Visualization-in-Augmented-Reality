@@ -1748,11 +1748,11 @@ MonoBehaviour:
   - Keyword: Previous Error
     KeyCode: 0
   - Keyword: View Warnings
-    KeyCode: 0
+    KeyCode: 44
   - Keyword: Close Warnings
-    KeyCode: 0
+    KeyCode: 59
   - Keyword: Next Warning
-    KeyCode: 0
+    KeyCode: 40
   - Keyword: Previous Warning
     KeyCode: 0
   - Keyword: Start Procedure
