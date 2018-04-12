@@ -8,8 +8,10 @@ public class HealthUIUpdates : MonoBehaviour {
     public GameObject detailedPie;
     public GameObject pie;
     public GameObject displayDetails;
+    public GameObject DetailPanel;
     public DisplayDetails dd;
     public BL_Main bl_main;
+    public Text WarningText;
 
     CommonData commonData = CommonData.GetInstance();
 
@@ -17,12 +19,15 @@ public class HealthUIUpdates : MonoBehaviour {
     void Start () {
         detailedPie.SetActive(false);
         displayDetails.SetActive(false);
+        DetailPanel.SetActive(false);
+        WarningText.text = "";
 	}
 	
 	// Update is called once per frame
 	void Update () {
         UpdateDetailPiePanel();
         UpdateViewDetails();
+        UpdateWarningWindow();
     }
 
     void UpdateDetailPiePanel()
@@ -53,6 +58,21 @@ public class HealthUIUpdates : MonoBehaviour {
         {
             displayDetails.SetActive(false);
             Debug.Log("CLose DEtail");
+        }
+    }
+
+    void UpdateWarningWindow()
+    {
+        if(commonData.viewWarnings)
+        {
+            DetailPanel.SetActive(true);
+            WarningText.text = "Pressure Low";
+           
+        }
+        else if(commonData.closeWarnings)
+        {
+            DetailPanel.SetActive(false);
+            WarningText.text = "";
         }
     }
 }
