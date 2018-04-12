@@ -1301,6 +1301,11 @@ Prefab:
       propertyPath: ccSO
       value: 
       objectReference: {fileID: 1232708109}
+    - target: {fileID: 114995641812131994, guid: e737c1c4529d567498b41590ba46db25,
+        type: 2}
+      propertyPath: cc
+      value: 
+      objectReference: {fileID: 1770474959}
     m_RemovedComponents:
     - {fileID: 114073613488183034, guid: e737c1c4529d567498b41590ba46db25, type: 2}
     - {fileID: 114085997277389866, guid: e737c1c4529d567498b41590ba46db25, type: 2}
@@ -3129,7 +3134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 1
   objSO2: {fileID: 941126081}
-  currentSO2: 0
+  intialSO2: 1
   ccSO: {fileID: 941126083}
 --- !u!114 &941126081
 MonoBehaviour:
@@ -4019,6 +4024,7 @@ MonoBehaviour:
   radius: 1
   objB: {fileID: 1312897915}
   currentBatt: 0
+  cc: {fileID: 1312897917}
 --- !u!114 &1312897915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6650,7 +6656,7 @@ Prefab:
     - target: {fileID: 114651492203267428, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}
       propertyPath: threshold1Percentage
-      value: 30
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114651492203267428, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}
@@ -6665,11 +6671,21 @@ Prefab:
     - target: {fileID: 114651492203267428, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}
       propertyPath: increment
-      value: 0.1
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 114651492203267428, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}
       propertyPath: current
+      value: 15.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114324679799464102, guid: e483ad673f90da545ace027a9ffcbb10,
+        type: 2}
+      propertyPath: current
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114548369642452588, guid: e483ad673f90da545ace027a9ffcbb10,
+        type: 2}
+      propertyPath: threshold1Percentage
       value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
