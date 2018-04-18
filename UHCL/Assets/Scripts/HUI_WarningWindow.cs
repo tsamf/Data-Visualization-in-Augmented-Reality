@@ -18,35 +18,28 @@ public class HUI_WarningWindow : MonoBehaviour {
 
         warningDetailPanel.SetActive(true);
 	}
-<<<<<<< HEAD
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-=======
+
 
 
     // Update is called once per frame
     void Update()
     {
-        if (bl_main.bl_alarming.CurrentAlarm != null)
-        {
-            Debug.Log("Current Warning");
-            currentwarning.text = bl_main.bl_alarming.CurrentAlarm.message;
-        }
+        //if (bl_main.bl_alarming.CurrentAlarm != null)
+        //{
+        //    Debug.Log("Current Warning");
+        //    currentwarning.text = bl_main.bl_alarming.CurrentAlarm.message;
+        //}
 
-        if (bl_main.bl_alarming.PreviousAlarm != null)
-        {
-            Debug.Log("Previous Warning");
-            previouswarning.text = bl_main.bl_alarming.PreviousAlarm.message;
-        }
-        if (bl_main.bl_alarming.NextAlarm != null)
-        {
-            Debug.Log("Next Warning");
-            nextwarning.text = bl_main.bl_alarming.CurrentAlarm.message;
-        }
+        //if (bl_main.bl_alarming.PreviousAlarm != null)
+        //{
+        //    Debug.Log("Previous Warning");
+        //    previouswarning.text = bl_main.bl_alarming.PreviousAlarm.message;
+        //}
+        //if (bl_main.bl_alarming.NextAlarm != null)
+        //{
+        //    Debug.Log("Next Warning");
+        //    nextwarning.text = bl_main.bl_alarming.CurrentAlarm.message;
+        //}
     }
->>>>>>> 93fe6c318cee790556ee7c7273c840b77e418758
 }
 
