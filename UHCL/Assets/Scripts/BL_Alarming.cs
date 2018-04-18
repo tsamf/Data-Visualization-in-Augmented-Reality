@@ -15,6 +15,13 @@ public class BL_Alarming {
     public Alarm PreviousAlarm;
     public Alarm NextAlarm;
     public Alarm CurrentAlarm;
+<<<<<<< HEAD
+=======
+    int index;
+    public String AlarmMessage;
+
+    public List<Alarm> alarmList;
+>>>>>>> 93fe6c318cee790556ee7c7273c840b77e418758
 
 
     int index = 0;
@@ -118,9 +125,17 @@ public class BL_Alarming {
 
     public void PerviousAlarmFunction()
     {
+<<<<<<< HEAD
         if(index > 0)
         {
             index--;
+=======
+        alarmList = alarms.alarms;
+        if(alarms.alarms != null && alarms.alarms.Count != 0)
+        {
+            CurrentAlarm = alarms.alarms[0];
+            //NextAlarm = alarms.alarms[2];
+>>>>>>> 93fe6c318cee790556ee7c7273c840b77e418758
         }
     }
 
@@ -138,8 +153,15 @@ public class BL_Alarming {
                 {
                     if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.SuitPressureHiHiStatus) == null)
                     {
+<<<<<<< HEAD
                         Alarm alarm = new Alarm(AlarmType.SuitPressureHiHiStatus,"HiHi Suit Pressure");
                         alarms.alarms.Insert(0,alarm);
+=======
+                        Alarm alarm = new Alarm(AlarmType.SuitPressureHiHiStatus, index+1, "High Suit Pressure");
+                        alarmList.Add(alarm);
+                        index++;
+                       AlarmMessage ="High Suit Pressure" ;
+>>>>>>> 93fe6c318cee790556ee7c7273c840b77e418758
                     }
                 }
             }

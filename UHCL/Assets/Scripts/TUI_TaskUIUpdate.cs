@@ -84,7 +84,7 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
             nextTask.text = bl_tasks.nextTask.text;
             imagePanel.gameObject.SetActive(true);
 
-            imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>(Convert.ToString(bl_tasks.currentTask.stepNumber));
+            imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>(Convert.ToString(bl_tasks.currentTask.images));
             cautionPanel.gameObject.SetActive(false);
 
 
