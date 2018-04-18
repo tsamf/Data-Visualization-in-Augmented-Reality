@@ -185,10 +185,32 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
                     DisplayAlternate();
                     break;
                 }
+            case "load task one":
+                {
+                    LoadTaskOne();
+                    break;
+                }
+            case "load task two":
+                {
+                    LoadTaskTwo();
+                    break;
+                }
     
             default:
                 break;
         }
+    }
+
+    private void LoadTaskTwo()
+    {
+        testText.text = "Load Task Two";
+        data.loadTaskTwo = true;
+    }
+
+    private void LoadTaskOne()
+    {
+        testText.text = "Load Task One";
+        data.loadTaskOne = true;
     }
 
     private void DisplayAlternate()

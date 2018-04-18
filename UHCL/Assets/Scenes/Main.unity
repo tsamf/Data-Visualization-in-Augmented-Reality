@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1963,6 +1963,10 @@ MonoBehaviour:
     KeyCode: 100
   - Keyword: Display Alternate
     KeyCode: 97
+  - Keyword: Load Task One
+    KeyCode: 49
+  - Keyword: Load Task Two
+    KeyCode: 50
   recognitionConfidenceLevel: 1
 --- !u!1 &378870496
 GameObject:
@@ -3055,8 +3059,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -172.4, y: 119}
-  m_SizeDelta: {x: 4.7, y: -71.5}
+  m_AnchoredPosition: {x: -162.8, y: 122.07}
+  m_SizeDelta: {x: 23.9, y: -77.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &830075544
 MonoBehaviour:
@@ -3620,7 +3624,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &980243394
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3686,9 +3690,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61023950003c1b045a32aacabbaacb1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bl_main: {fileID: 242413101}
+  bl_main: {fileID: 242413103}
   warningDetailPanel: {fileID: 980243393}
-  prevwarning: {fileID: 168102456}
+  previouswarning: {fileID: 168102456}
   currentwarning: {fileID: 1266867094}
   nextwarning: {fileID: 1772559631}
 --- !u!114 &1008906476 stripped
@@ -3822,6 +3826,7 @@ MonoBehaviour:
   actualP: 0
   ewindow: {fileID: 590417532}
   cc: {fileID: 1108191029}
+  AlarmText: {fileID: 1522167257}
   bl_main: {fileID: 242413101}
 --- !u!114 &1108191027
 MonoBehaviour:
@@ -4989,6 +4994,7 @@ MonoBehaviour:
   actualP: 0
   ewindow: {fileID: 590417532}
   cc: {fileID: 1422485871}
+  AlarmText: {fileID: 0}
   bl_main: {fileID: 242413101}
 --- !u!114 &1422485869 stripped
 MonoBehaviour:
@@ -5203,7 +5209,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1470889621
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5235,11 +5241,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61023950003c1b045a32aacabbaacb1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bl_main: {fileID: 242413101}
-  warningDetailPanel: {fileID: 0}
-  prevwarning: {fileID: 0}
-  currentwarning: {fileID: 0}
-  nextwarning: {fileID: 0}
+  bl_main: {fileID: 242413103}
+  warningDetailPanel: {fileID: 980243393}
+  previouswarning: {fileID: 168102456}
+  currentwarning: {fileID: 1266867094}
+  nextwarning: {fileID: 1772559631}
 --- !u!1 &1475318301
 GameObject:
   m_ObjectHideFlags: 0
@@ -5562,6 +5568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffd66bc67c185da4cb428b1618aa8509, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textToSpeech: {fileID: 1519171552}
   previousTask: {fileID: 1954594665}
   currentTask: {fileID: 1493390079}
   nextTask: {fileID: 1188968080}
@@ -5755,8 +5762,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -172.4, y: 120.299995}
-  m_SizeDelta: {x: 104.7, y: 18.8}
+  m_AnchoredPosition: {x: -162.79997, y: 120.299995}
+  m_SizeDelta: {x: 123.9, y: 18.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1522167257
 MonoBehaviour:
@@ -6326,7 +6333,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 24.6, y: 124.1}
+  m_AnchoredPosition: {x: 17, y: 124.15}
   m_SizeDelta: {x: -252.7, y: -248.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1667881204
@@ -7844,7 +7851,7 @@ MonoBehaviour:
   DetailPanel: {fileID: 980243393}
   dd: {fileID: 1684428820}
   bl_main: {fileID: 242413103}
-  WarningText: {fileID: 168102456}
+  WarningText: {fileID: 1522167257}
 --- !u!1 &2092985965
 GameObject:
   m_ObjectHideFlags: 0
