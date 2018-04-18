@@ -24,6 +24,7 @@ public class BL_Alarming {
     public Alarm NextAlarm;
     public Alarm CurrentAlarm;
     int index;
+    public String AlarmMessage;
 
     public List<Alarm> alarmList;
 
@@ -120,6 +121,7 @@ public class BL_Alarming {
                         Alarm alarm = new Alarm(AlarmType.SuitPressureHiHiStatus, index+1, "High Suit Pressure");
                         alarmList.Add(alarm);
                         index++;
+                       AlarmMessage ="High Suit Pressure" ;
                     }
                 }
             }

@@ -19,16 +19,25 @@ public class HUI_WarningWindow : MonoBehaviour {
         warningDetailPanel.SetActive(true);
         
 	}
-	
-	// Update is called once per frame
-	void Update () {
-      for (int i = 1; i<= bl_main.bl_alarming.alarmList.Count ; i++)
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (bl_main.bl_alarming.CurrentAlarm != null)
         {
-            previouswarning.text = bl_main.bl_alarming.alarmList[i-1].message;
-            Debug.Log("Previous WArning");
-            currentwarning.text = bl_main.bl_alarming.alarmList[i].message;
-            nextwarning.text = bl_main.bl_alarming.alarmList[i+1].message;
+            Debug.Log("Current Warning");
+            currentwarning.text = bl_main.bl_alarming.CurrentAlarm.message;
         }
-		
-	}
+        if (bl_main.bl_alarming.PreviousAlarm != null)
+        {
+            Debug.Log("Previous Warning");
+            previouswarning.text = bl_main.bl_alarming.PreviousAlarm.message;
+        }
+        if (bl_main.bl_alarming.NextAlarm != null)
+        {
+            Debug.Log("Next Warning");
+            nextwarning.text = bl_main.bl_alarming.CurrentAlarm.message;
+        }
+    }
 }
+
