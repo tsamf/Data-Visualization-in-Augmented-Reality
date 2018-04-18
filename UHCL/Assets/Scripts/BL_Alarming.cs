@@ -30,9 +30,6 @@ public class BL_Alarming {
         SuitPressure = commonData.SuitPressureValue;
 
         index = alarms.alarms.Count;
-
-        CurrentAlarm = alarms.alarms[index];
-        NextAlarm = alarms.alarms[index+1];
     }
 
     public void PreviousAlarmFunction()
@@ -104,6 +101,11 @@ public class BL_Alarming {
 
         if (SuitPressure >= commonData.SuitPressureMin && SuitPressure <= commonData.SuitPressureMax)
         {
+
+            if(index !=0)
+            {
+                CurrentAlarm = alarms.alarms[index];
+            }
 
             // If SuitPressureHiHi enables, it will check how much suit pressure is and turn the alarm on or off, depends on suit pressure value
             if (SuitPressureHiHiEn == true)
