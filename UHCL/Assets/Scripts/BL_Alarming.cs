@@ -25,8 +25,11 @@ public class BL_Alarming {
     public Alarm CurrentAlarm;
     int index;
 
+    public List<Alarm> alarmList;
+
     public BL_Alarming()
     {
+        alarmList = new List<Alarm>();
         SuitPressure = commonData.SuitPressureValue;
 
         index = alarms.alarms.Count;
@@ -114,8 +117,8 @@ public class BL_Alarming {
                 {
                     if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.SuitPressureHiHiStatus) == null)
                     {
-                        Alarm alarm = new Alarm(AlarmType.SuitPressureHiHiStatus, index+1, "HiHi Suit Pressure");
-                        alarms.alarms.Add(alarm);
+                        Alarm alarm = new Alarm(AlarmType.SuitPressureHiHiStatus, index+1, "High Suit Pressure");
+                        alarmList.Add(alarm);
                         index++;
                     }
                 }
@@ -129,7 +132,7 @@ public class BL_Alarming {
                     if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.SuitPressureHiStatus) == null)
                     {
                         Alarm alarm = new Alarm(AlarmType.SuitPressureHiStatus, index + 1, "Hi Suit Pressure");
-                        alarms.alarms.Add(alarm);
+                        alarmList.Add(alarm);
                         index++;
                     }
                 }
@@ -142,7 +145,7 @@ public class BL_Alarming {
                     if(alarms.alarms.FirstOrDefault(x => x.type == AlarmType.SuitPressureLoStatus) == null)
                     {
                         Alarm alarm = new Alarm(AlarmType.SuitPressureLoStatus, index + 1, "Low Suit Pressure");
-                        alarms.alarms.Add(alarm);
+                        alarmList.Add(alarm);
                         index++;
                     }
                 }
@@ -155,7 +158,7 @@ public class BL_Alarming {
                     if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.SuitPressureLoLoStatus) == null)
                     {
                         Alarm alarm = new Alarm(AlarmType.SuitPressureLoLoStatus, index + 1, "LowLow Suit Pressure");
-                        alarms.alarms.Add(alarm);
+                        alarmList.Add(alarm);
                         index++;
                     }
                 }
