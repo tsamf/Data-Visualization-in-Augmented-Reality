@@ -52,7 +52,7 @@ public class BL_Tasks {
                 //do nothing we are at the end
                 commonData.nextTask = new UITask();
                 commonData.currentTask = new UITask();
-                commonData.currentTask.text = "Test Complete!~~";
+                commonData.currentTask.text = "Task Complete!";
                 commonData.currentTask.stepNumber = procedure.tasks.Count;
                 commonData.previousTask = new UITask();
             }
@@ -150,7 +150,7 @@ public class BL_Tasks {
         task5.caution = "Notice the TETHER CABLE is adjustable";
         task5.warning = "";
         task5.holograms = "";
-        task5.images = "5";
+        task5.images = "";
         UITask task6 = new UITask();
         task6.stepNumber = 6;
         task6.text = "Locate the E-stop button and gently press down to temporarily disable the alarm";
@@ -431,7 +431,7 @@ public class BL_Tasks {
         task12.caution = "";
         task12.warning = "All tethers are under spring tension and can retract quickly";
         task12.holograms = "";
-        task12.images = "2.12";
+        task12.images = "";
         UITask task13 = new UITask();
         task13.stepNumber = 13;
         task13.text = "In STORAGE, locate the GRAY 220 Volt PLUG";
@@ -445,7 +445,7 @@ public class BL_Tasks {
         task14.caution = "Outlet and plug mate are stiff, ensure the full engagement of the plug into the outlet";
         task14.warning = "";
         task14.holograms = "PowerOutputBox";
-        task14.images = "";
+        task14.images = "2.12";
         UITask task15 = new UITask();
         task15.stepNumber = 15;
         task15.text = "Locate the metal BUSS BAR and verify there are BLACK, GREEN & WHITE BUSSES, each with 2 openings";
