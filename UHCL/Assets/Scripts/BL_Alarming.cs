@@ -15,7 +15,6 @@ public class BL_Alarming {
     public bool SuitPressureLoStatus;
     public bool SuitPressureLoLoStatus;
     public double SuitPressure;
-    public string alarmText;
 
     public bool AcknowldegeFlag;
 
@@ -24,6 +23,7 @@ public class BL_Alarming {
     public Alarm NextAlarm;
     public Alarm CurrentAlarm;
     int index;
+    public String AlarmMessage;
 
     public List<Alarm> alarmList;
 
@@ -33,6 +33,12 @@ public class BL_Alarming {
         SuitPressure = commonData.SuitPressureValue;
 
         index = alarms.alarms.Count;
+
+        PreviousAlarm = null;
+        CurrentAlarm = null;
+        NextAlarm = null;
+
+        BLAlarmingFunction();
     }
 
     public void PreviousAlarmFunction()
@@ -91,24 +97,27 @@ public class BL_Alarming {
         AcknowldegeFlag = true;
     }
 
-    // Alarming function
-    public void BLAlarming()
+
+    public void getAlarm()
     {
+        alarmList = alarms.alarms;
+        if(alarms.alarms != null)
+        {
+            CurrentAlarm = alarms.alarms[0];
+            NextAlarm = alarms.alarms[1];
+        }
+    }
 
-
+    // Alarming function
+    public void BLAlarmingFunction()
+    {
         bool SuitPressureHiHiEn = true;
         bool SuitPressureHiEn = true;
         bool SuitPressureLoLoEn = true;
         bool SuitPressureLoEn = true;
 
-
         if (SuitPressure >= commonData.SuitPressureMin && SuitPressure <= commonData.SuitPressureMax)
         {
-
-            if(index !=0)
-            {
-                CurrentAlarm = alarms.alarms[index];
-            }
 
             // If SuitPressureHiHi enables, it will check how much suit pressure is and turn the alarm on or off, depends on suit pressure value
             if (SuitPressureHiHiEn == true)
@@ -120,6 +129,7 @@ public class BL_Alarming {
                         Alarm alarm = new Alarm(AlarmType.SuitPressureHiHiStatus, index+1, "High Suit Pressure");
                         alarmList.Add(alarm);
                         index++;
+                       AlarmMessage ="High Suit Pressure" ;
                     }
                 }
             }
@@ -163,7 +173,7 @@ public class BL_Alarming {
                     }
                 }
             }
-
+            getAlarm();
         }
         else
         {
