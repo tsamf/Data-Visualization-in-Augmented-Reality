@@ -59,6 +59,8 @@ public class CommonData {
     public bool hideStepImage = false;
     public bool pinTaskList = false;
     public bool closeTaskList = false;
+    public bool loadTaskOne = false;
+    public bool loadTaskTwo = false;
 
 
     //Health UI Values

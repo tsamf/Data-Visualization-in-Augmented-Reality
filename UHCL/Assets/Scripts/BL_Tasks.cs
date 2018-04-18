@@ -8,18 +8,113 @@ public class BL_Tasks {
     private CommonData commonData = CommonData.GetInstance();
 
     private Procedure procedure;
-    private Procedure procedure2;
 
     public UITask previousTask;
     public UITask currentTask;
     public UITask nextTask;
 
-    void AwakeFunction()
+    public void AwakeFunction()
     {
         previousTask = new UITask();
         currentTask = new UITask();
         nextTask = new UITask();
 
+        procedure = new Procedure();
+
+        LoadTaskOne();
+       
+         //LoadProcedure2();
+    }
+
+    public Procedure GetProcedure()
+    {
+        return procedure;
+    }
+
+
+    public BL_Tasks ()
+    {
+        AwakeFunction();
+        //Example for databse - map json data to C# object
+    }
+
+    public void nextFunction(
+        bool nextStep
+        )
+    {
+        if(nextStep == true)
+        {
+            int index = commonData.currentTask.stepNumber - 1;
+
+
+            if (index == procedure.tasks.Count-1)
+            {
+                //do nothing we are at the end
+                commonData.nextTask = new UITask();
+                commonData.currentTask = new UITask();
+                commonData.currentTask.text = "Test Complete!~~";
+                commonData.currentTask.stepNumber = procedure.tasks.Count;
+                commonData.previousTask = new UITask();
+            }
+            else if (index == procedure.tasks.Count -2)
+            {
+                //Go back one step only
+                commonData.nextTask = new UITask(); 
+                commonData.currentTask = procedure.tasks[index +1];
+                commonData.previousTask = procedure.tasks[index];
+            }
+            else
+            {
+                commonData.nextTask = procedure.tasks[index + 2];
+                commonData.currentTask = procedure.tasks[index + 1];
+                commonData.previousTask = procedure.tasks[index];
+            }
+
+
+
+            //whatever
+            previousTask = commonData.previousTask;
+            currentTask = commonData.currentTask;
+            nextTask = commonData.nextTask;
+        }
+    }
+
+    public void previousFunction(
+        bool previousStep
+        )
+    {
+        if (previousStep == true)
+        {
+            int index = commonData.currentTask.stepNumber-1;
+
+
+            if(index == 0)
+            {
+                //do nothing we are at the beginning
+            }
+            else if (index == 1)
+            {
+                //Go back one step only
+                commonData.nextTask = procedure.tasks[index];
+                commonData.currentTask = procedure.tasks[index - 1];
+                commonData.previousTask = new UITask();
+            }
+            else
+            {
+                commonData.nextTask = procedure.tasks[index];
+                commonData.currentTask = procedure.tasks[index - 1];
+                commonData.previousTask = procedure.tasks[index - 2];
+            }
+
+            previousTask = commonData.previousTask;
+            currentTask = commonData.currentTask;
+            nextTask = commonData.nextTask;
+
+        }
+    }
+
+    public void LoadTaskOne()
+    {
         procedure = new Procedure();
         UITask task1 = new UITask();
         task1.stepNumber = 1;
@@ -29,7 +124,7 @@ public class BL_Tasks {
         task1.holograms = "";
         task1.images = "";
         UITask task2 = new UITask();
-        task2.stepNumber = 2; 
+        task2.stepNumber = 2;
         task2.text = "Use the PANEL ACCESS KEY to unlock the PANEL ACCESS DOOR LOCKS.";
         task2.caution = "";
         task2.warning = "";
@@ -240,124 +335,25 @@ public class BL_Tasks {
         procedure.tasks.Add(task27);
         procedure.tasks.Add(task28);
 
+        commonData.previousTask = new UITask();
         commonData.currentTask = task1;
         commonData.nextTask = task2;
 
+        previousTask = new UITask();
         currentTask = task1;
         nextTask = task2;
 
-        procedure2 = CreateProcedure2();
     }
 
-    public Procedure GetProcedure()
+    public void LoadTaskTwo()
     {
-        return procedure;
-    }
-
-    public Procedure GetProcedure2()
-    {
-        return procedure2;
-    }
-
-    public BL_Tasks ()
-    {
-        AwakeFunction();
-
-        //Example for databse - map json data to C# object
-        
-    }
-
-    public void nextFunction(
-        bool nextStep
-        )
-    {
-        if(nextStep == true)
-        {
-
-
-            int index = commonData.currentTask.stepNumber - 1;
-
-
-            if (index == procedure.tasks.Count-1)
-            {
-                //do nothing we are at the end
-                commonData.nextTask = new UITask();
-                commonData.currentTask = new UITask();
-                commonData.currentTask.text = "Test Complete!~~";
-                commonData.currentTask.stepNumber = procedure.tasks.Count;
-                commonData.previousTask = new UITask();
-            }
-            else if (index == procedure.tasks.Count -2)
-            {
-                //Go back one step only
-                commonData.nextTask = new UITask(); 
-                commonData.currentTask = procedure.tasks[index +1];
-                commonData.previousTask = procedure.tasks[index];
-            }
-            else
-            {
-                commonData.nextTask = procedure.tasks[index + 2];
-                commonData.currentTask = procedure.tasks[index + 1];
-                commonData.previousTask = procedure.tasks[index];
-            }
-
-
-
-            //whatever
-            previousTask = commonData.previousTask;
-            currentTask = commonData.currentTask;
-            nextTask = commonData.nextTask;
-        }
-    }
-
-    public void previousFunction(
-        bool previousStep
-        )
-    {
-        if (previousStep == true)
-        {
-
-
-            int index = commonData.currentTask.stepNumber-1;
-
-
-            if(index == 0)
-            {
-                //do nothing we are at the beginning
-            }
-            else if (index == 1)
-            {
-                //Go back one step only
-                commonData.nextTask = procedure.tasks[index];
-                commonData.currentTask = procedure.tasks[index - 1];
-                commonData.previousTask = new UITask();
-            }
-            else
-            {
-                commonData.nextTask = procedure.tasks[index];
-                commonData.currentTask = procedure.tasks[index - 1];
-                commonData.previousTask = procedure.tasks[index - 2];
-            }
-
-            
-
-            //whatever
-            previousTask = commonData.previousTask;
-            currentTask = commonData.currentTask;
-            nextTask = commonData.nextTask;
-
-        }
-    }
-
-    private Procedure CreateProcedure2()
-    {
-        Procedure result = new Procedure();
+        procedure = new Procedure();
         UITask task1 = new UITask();
         task1.stepNumber = 1;
         task1.text = "Locate the Aux. Power Input";
         task1.caution = "";
         task1.warning = "";
-        task1.holograms = "Aux_PowerInputP";
+        task1.holograms = "Aux_PowerInput";
         task1.images = "";
         UITask task2 = new UITask();
         task2.stepNumber = 2;
@@ -584,41 +580,47 @@ public class BL_Tasks {
         task33.holograms = "";
         task33.images = "LastImage.png";
 
-        result.tasks.Add(task1);
-        result.tasks.Add(task2);
-        result.tasks.Add(task3);
-        result.tasks.Add(task4);
-        result.tasks.Add(task5);
-        result.tasks.Add(task6);
-        result.tasks.Add(task7);
-        result.tasks.Add(task8);
-        result.tasks.Add(task9);
-        result.tasks.Add(task10);
-        result.tasks.Add(task11);
-        result.tasks.Add(task12);
-        result.tasks.Add(task13);
-        result.tasks.Add(task14);
-        result.tasks.Add(task15);
-        result.tasks.Add(task16);
-        result.tasks.Add(task17);
-        result.tasks.Add(task18);
-        result.tasks.Add(task19);
-        result.tasks.Add(task20);
-        result.tasks.Add(task21);
-        result.tasks.Add(task22);
-        result.tasks.Add(task23);
-        result.tasks.Add(task24);
-        result.tasks.Add(task25);
-        result.tasks.Add(task26);
-        result.tasks.Add(task27);
-        result.tasks.Add(task28);
-        result.tasks.Add(task29);
-        result.tasks.Add(task30);
-        result.tasks.Add(task31);
-        result.tasks.Add(task32);
-        result.tasks.Add(task33);
+        procedure.tasks.Add(task1);
+        procedure.tasks.Add(task2);
+        procedure.tasks.Add(task3);
+        procedure.tasks.Add(task4);
+        procedure.tasks.Add(task5);
+        procedure.tasks.Add(task6);
+        procedure.tasks.Add(task7);
+        procedure.tasks.Add(task8);
+        procedure.tasks.Add(task9);
+        procedure.tasks.Add(task10);
+        procedure.tasks.Add(task11);
+        procedure.tasks.Add(task12);
+        procedure.tasks.Add(task13);
+        procedure.tasks.Add(task14);
+        procedure.tasks.Add(task15);
+        procedure.tasks.Add(task16);
+        procedure.tasks.Add(task17);
+        procedure.tasks.Add(task18);
+        procedure.tasks.Add(task19);
+        procedure.tasks.Add(task20);
+        procedure.tasks.Add(task21);
+        procedure.tasks.Add(task22);
+        procedure.tasks.Add(task23);
+        procedure.tasks.Add(task24);
+        procedure.tasks.Add(task25);
+        procedure.tasks.Add(task26);
+        procedure.tasks.Add(task27);
+        procedure.tasks.Add(task28);
+        procedure.tasks.Add(task29);
+        procedure.tasks.Add(task30);
+        procedure.tasks.Add(task31);
+        procedure.tasks.Add(task32);
+        procedure.tasks.Add(task33);
 
-        return result;
+        commonData.previousTask = new UITask();
+        commonData.currentTask = task1;
+        commonData.nextTask = task2;
+
+        previousTask = new UITask();
+        currentTask = task1;
+        nextTask = task2;
     }
 }
 
