@@ -27,7 +27,7 @@ public class Pressure : MonoBehaviour {
     void Update()
     {
 
-        if (bl_main.GetComponent<BL_Main>().bl_alarming.CurrentAlarm.message != null)
+        if (bl_main.GetComponent<BL_Main>().bl_alarming.CurrentAlarm != null)
         {
             Debug.Log(bl_main.GetComponent<BL_Main>().bl_alarming.CurrentAlarm.message);
         }

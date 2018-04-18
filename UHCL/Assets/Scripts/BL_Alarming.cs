@@ -101,10 +101,10 @@ public class BL_Alarming {
     public void getAlarm()
     {
         alarmList = alarms.alarms;
-        if(alarms.alarms != null)
+        if(alarms.alarms != null && alarms.alarms.Count != 0)
         {
             CurrentAlarm = alarms.alarms[0];
-            NextAlarm = alarms.alarms[1];
+            //NextAlarm = alarms.alarms[2];
         }
     }
 
