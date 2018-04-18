@@ -24,33 +24,13 @@ public class BL_Tasks {
         UITask task1 = new UITask();
         task1.stepNumber = 1;
         task1.text = "On the RIGHT side of the EVA Kit, locate the PANEL ACCESS KEY.";
-<<<<<<< HEAD
-        task1.caution = "Tension-spring cable";
-        task1.warning = "";
-        task1.holograms = "";
-        task1.images = " ";
-=======
         task1.caution = "The keys are on a tension-spring cable";
         task1.warning = "";
         task1.holograms = "";
         task1.images = "";
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
         UITask task2 = new UITask();
         task2.stepNumber = 2; 
         task2.text = "Use the PANEL ACCESS KEY to unlock the PANEL ACCESS DOOR LOCKS.";
-<<<<<<< HEAD
-        task2.caution = "The keys are on a tension-spring cable.";
-        task2.warning = "";
-        task2.holograms = " ";
-        task2.images = " ";
-        UITask task3 = new UITask();
-        task3.stepNumber = 3;
-        task3.text = "Carefully return keys to the side of the EVA kit.";
-        task3.caution = "Door can accidentally close";
-        task3.warning = "";
-        task3.holograms = " ";
-        task3.images = " ";
-=======
         task2.caution = "";
         task2.warning = "";
         task2.holograms = "";
@@ -62,7 +42,6 @@ public class BL_Tasks {
         task3.warning = "";
         task3.holograms = "";
         task3.images = "";
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
         UITask task4 = new UITask();
         task4.stepNumber = 4;
         task4.text = "Insert your fingers in the CENTER OPENING and secure the PANEL ACCESS DOOR in an OPEN position.";
@@ -75,180 +54,100 @@ public class BL_Tasks {
         task5.text = "On your belt, use the BLUE CARABINEER to securely tether to the TETHER CABLE inside the STORAGE.";
         task5.caution = "Notice the TETHER CABLE is adjustable";
         task5.warning = "";
-<<<<<<< HEAD
-        task5.holograms = " ";
-        task5.images = " ";
-=======
         task5.holograms = "";
         task5.images = "5";
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
         UITask task6 = new UITask();
         task6.stepNumber = 6;
         task6.text = "Locate the E-stop button and gently press down to temporarily disable the alarm";
         task6.warning = "";
-<<<<<<< HEAD
-        task6.holograms = "E-Stop ";
-        task6.images = " ";
-=======
         task6.holograms = "E-Stop";
         task6.images = "6";
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
         UITask task7 = new UITask();
         task7.stepNumber = 7;
         task7.text = "Locate the FUSIBLE DISCONNECT box";
         task7.warning = "";
-<<<<<<< HEAD
-        task7.holograms = "FusibleDisconnectBox ";
-        task7.images = " ";
-=======
         task7.holograms = "FusibleDisconnectBox";
         task7.images = "";
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
         UITask task8 = new UITask();
         task8.stepNumber = 8;
         task8.text = "Tether the BLUE CARABINEER to the TETHER CABLE";
         task8.warning = "";
-<<<<<<< HEAD
-        task8.holograms = " ";
-        task8.images = " ";
-=======
         task8.holograms = "";
         task8.images = "";
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
         UITask task9 = new UITask();
         task9.stepNumber = 9;
         task9.text = "Remove the BLUE CARABINEER from the FUSIBLE DISCONNECT BOX";
         task9.warning = "";
-<<<<<<< HEAD
-        task9.holograms = " ";
-        task9.images = " ";
-=======
         task9.holograms = "FusibleDisconnectBox";
         task9.images = "9";
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
         UITask task10 = new UITask();
         task10.stepNumber = 10;
         task10.text = " Transfer the BLUE CARABINEER to STORAGE";
         task10.warning = "";
-<<<<<<< HEAD
-        task10.holograms = " ";
-        task10.images = " ";
-=======
         task10.holograms = "";
         task10.images = "";
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
         UITask task11 = new UITask();
         task11.stepNumber = 11;
         task11.text = " Open the FUSIBLE DISCONNECT box and secure the lid in the open position";
         task11.caution = " Pull the locking tab towards STORAGE with the thumb ";
         task11.warning = "";
-<<<<<<< HEAD
-        task11.holograms = " ";
-        task11.images = " ";
-=======
         task11.holograms = "FusibleDisconnectBox";
         task11.images = "11";
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
         UITask task12 = new UITask();
         task12.stepNumber = 12;
         task12.text = "Locate the BLACK DISCONNECT";
         task12.warning = "";
-<<<<<<< HEAD
-        task12.holograms = " ";
-        task12.images = " ";
-=======
         task12.holograms = "FusibleDisconnectBox";
         task12.images = "";
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
         UITask task13 = new UITask();
         task13.stepNumber = 13;
         task13.text = " Tether it to the TETHER CABLE";
         task13.warning = "";
-<<<<<<< HEAD
-        task13.holograms = " ";
-        task13.images = " ";
-=======
         task13.holograms = "";
         task13.images = "";
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
         UITask task14 = new UITask();
         task14.stepNumber = 14;
         task14.text = "Remove the DISCONNECT";
         task14.caution = " Pull up with the index and middle fingers while pushing down on the FUSE ACCESS PANEL with the thumb ";
         task14.warning = "";
-<<<<<<< HEAD
-        task14.holograms = " ";
-        task14.images = " ";
-=======
         task14.holograms = "FusibleDisconnectBox";
         task14.images = "14";
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
         UITask task15 = new UITask();
         task15.stepNumber = 15;
         task15.text = "Place the DISCONNECT in the STORAGE";
         task15.warning = "";
-<<<<<<< HEAD
-        task15.holograms = " ";
-        task15.images = " ";
-=======
         task15.holograms = "";
         task15.images = "";
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
         UITask task16 = new UITask();
         task16.stepNumber = 16;
         task16.text = "Tether the FUSE ACCESS PANEL to the TETHER CABLE";
         task16.warning = "";
-<<<<<<< HEAD
-        task16.holograms = " ";
-        task16.images = " ";
-=======
         task16.holograms = "";
         task16.images = "";
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
         UITask task17 = new UITask();
         task17.stepNumber = 17;
         task17.text = "Remove the FUSE ACCESS PANEL by pulling straght up";
         task17.warning = "";
-<<<<<<< HEAD
-        task17.holograms = " ";
-        task17.images = " ";
-=======
         task17.holograms = "";
         task17.images = "17";
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
         UITask task18 = new UITask();
         task18.stepNumber = 18;
         task18.text = "Place the FUSE ACCESS PANEL into STORAGE";
         task18.warning = "";
-<<<<<<< HEAD
-        task18.holograms = " ";
-        task18.images = " ";
-=======
         task18.holograms = "";
         task18.images = "";
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
         UITask task19 = new UITask();
         task19.stepNumber = 19;
         task19.text = " Tether the ALARM FUSE to the TETHER CABLE";
         task19.warning = "";
-<<<<<<< HEAD
-        task19.holograms = " ";
-        task19.images = " ";
-=======
         task19.holograms = "";
         task19.images = "";
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
         UITask task20 = new UITask();
         task20.stepNumber = 20;
         task20.text = "In Storage, locate the BLUE FUSE PULLER";
         task20.warning = "";
-<<<<<<< HEAD
-        task20.holograms = " ";
-        task20.images = " ";
-=======
         task20.holograms = "";
         task20.images = "";
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
         UITask task21 = new UITask();
         task21.stepNumber = 21;
         task21.text = "Use the BLUE FUSE PULLER to remove ONLY the ALARM FUSE";
@@ -259,29 +158,6 @@ public class BL_Tasks {
         task22.stepNumber = 22;
         task22.text = "Return the ALARM FUSE and the FUSE PULLER to STORAGE";
         task22.warning = "";
-<<<<<<< HEAD
-        task22.holograms = " ";
-        task22.images = " ";
-        UITask task23 = new UITask();
-        task23.stepNumber = 23;
-        task23.text = "Locate the E-stop button and gently press down to temporarily disable the alarm";
-        task23.warning = "";
-        task23.holograms = " ";
-        task23.images = " ";
-        UITask task24 = new UITask();
-        task24.stepNumber = 24;
-        task24.text = "Reinstall it into the FUSIBLE DISCONNECT BOX";
-        task24.warning = "";
-        task24.holograms = " FusibleDisconnectBox ";
-        task24.images = " ";
-        UITask task25 = new UITask();
-        task25.stepNumber = 25;
-        task25.text = "Remove the FUSE ACCESS PANEL tether from the TETHER CABLE and store inside";
-        task25.warning = " All tethers are under  spring tension and can retract quickly";
-        task25.caution = "";
-        task25.holograms = " ";
-        task25.images = " ";
-=======
         task22.holograms = "";
         task22.images = "";
         UITask task23 = new UITask();
@@ -304,23 +180,10 @@ public class BL_Tasks {
         task25.warning = "";
         task25.holograms = "FusibleDisconnectBox";
         task25.images = "25";
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
         UITask task26 = new UITask();
         task26.stepNumber = 26;
         task26.text = " Remove the DISCONNECT tether from the TETHER CABLE";
         task26.caution = "";
-<<<<<<< HEAD
-        task26.warning = "";
-        task26.holograms = "FusibleDisconnectBox ";
-        task26.images = " ";
-        UITask task27 = new UITask();
-        task27.stepNumber = 27;
-        task27.text = "Reinstall it into the DISCONNECT"; ;
-        task27.caution = "The DISCONNECT must read ON in the upper right corner to restore Conductivity";
-        task27.warning = "";
-        task27.holograms = "FusibleDisconnectBox ";
-        task27.images = " ";
-=======
         task26.warning = "All tethers are under spring tension and can retract quickly";
         task26.holograms = "";
         task26.images = "";
@@ -331,16 +194,10 @@ public class BL_Tasks {
         task27.warning = "";
         task27.holograms = "FusibleDisconnectBox";
         task27.images = "";
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
         UITask task28 = new UITask();
         task28.stepNumber = 28;
         task28.text = "In STORAGE, use the BLUE CARABINEER to clip and lock the FUSIBLE DISCONNECT box cover";
         task28.caution = "";
-<<<<<<< HEAD
-        task28.warning = "tension-spring cable.";
-        task28.holograms = " ";
-        task28.images = " ";
-=======
         task28.warning = "";
         task28.holograms = "FusibleDisconnectBox";
         task28.images = "28";
@@ -351,9 +208,6 @@ public class BL_Tasks {
         task29.warning = "All tethers are under spring tension and can retract quickly";
         task29.holograms = "";
         task29.images = "";
-
-
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
 
 
 
@@ -391,10 +245,8 @@ public class BL_Tasks {
 
         currentTask = task1;
         nextTask = task2;
-<<<<<<< HEAD
-=======
+
         procedure2 = CreateProcedure2();
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
     }
 
     public Procedure GetProcedure()

@@ -26,11 +26,6 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
     private int currentstep = 0;
     private bool spoke = false;
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 0535f4254df9ccb9236166311c8b79feb63362b4
-    // Use this for initialization
     void Start () {
         bl_tasks = new BL_Tasks();
         taskPanel.gameObject.SetActive(false);
@@ -46,14 +41,7 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
         taskPanel.gameObject.SetActive(true);
 
         currentTask.text = "TASK ARRIVED";
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-        textToSpeech.StartSpeaking("Task Arrived");
->>>>>>> 0535f4254df9ccb9236166311c8b79feb63362b4
 
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
         if (commonData.startProcedure)
         {
             GameObject[] SceneHolograms = GameObject.FindGameObjectsWithTag("Hologram");
@@ -83,32 +71,7 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
             //String voiceData = bl_tasks.currentTask.text;
             nextTask.text = bl_tasks.nextTask.text;
             imagePanel.gameObject.SetActive(true);
-<<<<<<< HEAD
-            imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>("key");
 
-            cautionPanel.gameObject.SetActive(false);
-
-            string warning = bl_tasks.currentTask.warning.ToString();
-            string caution = bl_tasks.currentTask.caution.ToString();
-
-            if (warning != "" )
-            {
-                cautionPanel.gameObject.SetActive(true);
-                cautionPanel.GetComponent<Image>().color = Color.red;
-                cautionText.text = bl_tasks.currentTask.warning;
-            } 
-            if( caution != "")
-            {
-                cautionPanel.gameObject.SetActive(true);
-                cautionPanel.GetComponent<Image>().color = Color.yellow;
-                cautionText.text = bl_tasks.currentTask.caution;
-            }
-            
-
-            if (commonData.nextStep)
-            {
-                bl_tasks.nextFunction(true);
-=======
             imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>(Convert.ToString(bl_tasks.currentTask.stepNumber));
             cautionPanel.gameObject.SetActive(false);
 
@@ -138,7 +101,7 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
                 currentstep = commonData.currentTask.stepNumber;
             }
 
-            //If has not spoke then speek
+           
             if (spoke == false)
             {
                 textToSpeech.StartSpeaking(bl_tasks.currentTask.text);
@@ -148,66 +111,16 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
             if (commonData.nextStep)
             {
                 bl_tasks.nextFunction(true);
-<<<<<<< HEAD
                 commonData.nextStep = false;
-=======
-                
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
-                previousTask.text = bl_tasks.previousTask.text;
-                currentTask.text = bl_tasks.currentTask.text;
-                nextTask.text = bl_tasks.nextTask.text;
-                textToSpeech.StartSpeaking(bl_tasks.currentTask.text);
-                imagePanel.gameObject.SetActive(true);
-<<<<<<< HEAD
-                imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>("key");
-                commonData.nextStep = false;
-                //cautionPanel.SetActive(false);
-=======
-                Debug.Log(bl_tasks.currentTask.stepNumber);
-                imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>(Convert.ToString(bl_tasks.currentTask.stepNumber));
-                commonData.nextStep = false;
-                textToSpeech.StartSpeaking("");
-
-
-
-
-
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
->>>>>>> 0535f4254df9ccb9236166311c8b79feb63362b4
             }
 
 
             if (commonData.previousStep)
             {
-<<<<<<< HEAD
-=======
                 bl_tasks.previousFunction(true);
-<<<<<<< HEAD
-=======
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
-                previousTask.text = bl_tasks.previousTask.text;
-                currentTask.text = bl_tasks.currentTask.text;
-                nextTask.text = bl_tasks.nextTask.text;
-                textToSpeech.StartSpeaking(bl_tasks.currentTask.text);
-                imagePanel.gameObject.SetActive(true);
-<<<<<<< HEAD
-                imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>("key");
-=======
-                imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>(Convert.ToString(bl_tasks.currentTask.stepNumber));
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
->>>>>>> 0535f4254df9ccb9236166311c8b79feb63362b4
                 commonData.previousStep = false;
-                //cautionPanel.SetActive(false);
             }
         }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-     
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
-
->>>>>>> 0535f4254df9ccb9236166311c8b79feb63362b4
     }
 }
 	
