@@ -28,7 +28,9 @@ public class BL_Main : MonoBehaviour
         timeSinceLastTick += Time.deltaTime;
 
         if(timeSinceLastTick > tickSpeed)
-        { 
+        {
+
+            bl_alarming.BLAlarmingFunction();
             timeSinceLastTick -= tickSpeed;
         }
     }

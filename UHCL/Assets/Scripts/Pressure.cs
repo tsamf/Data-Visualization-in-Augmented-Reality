@@ -12,9 +12,8 @@ public class Pressure : MonoBehaviour {
     public float actualP;
     public CommonData commonData;
     public EmergencyWindow ewindow;
-    public BL_Alarming bl_alarm;
+   
     public ColorCode cc;
-    public Text AlarmText;
 
     public GameObject bl_main;
 
@@ -27,7 +26,7 @@ public class Pressure : MonoBehaviour {
     void Update()
     {
 
-        if (bl_main.GetComponent<BL_Main>().bl_alarming.CurrentAlarm.message != null)
+        if (bl_main.GetComponent<BL_Main>().bl_alarming.CurrentAlarm != null)
         {
             Debug.Log(bl_main.GetComponent<BL_Main>().bl_alarming.CurrentAlarm.message);
         }
@@ -47,7 +46,6 @@ public class Pressure : MonoBehaviour {
         {
             cc.LCol();
             objP.color = cc.LColor;
-          //  AlarmText = bl_alarm.BLAlarming.CurrentAlarm.message;
         }
         else if (70.99 >= radius && radius >= 41.00f)
         {
