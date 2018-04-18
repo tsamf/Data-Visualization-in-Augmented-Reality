@@ -25,6 +25,16 @@ public class Pressure : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+
+        if (bl_main.GetComponent<BL_Main>().bl_alarming.CurrentAlarm.message != null)
+        {
+            Debug.Log(bl_main.GetComponent<BL_Main>().bl_alarming.CurrentAlarm.message);
+        }
+        else
+        {
+            Debug.Log("WRONG");
+        }
+
         radius = bl_main.GetComponent<BL_Main>().bl_scaling.ScalingFunction();
         actualP = bl_main.GetComponent<BL_Main>().bl_scaling.actualSuitPressure();
         if (radius >= 80.00)

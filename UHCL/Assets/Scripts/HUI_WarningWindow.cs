@@ -21,6 +21,7 @@ public class HUI_WarningWindow : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        
 
     //    bl_main.GetComponent<BL_Main>().bl_alarming.BLAlarming();
     //    bool flagL = bl_main.GetComponent<BL_Main>().bl_alarming.SuitPressureLoStatus;
