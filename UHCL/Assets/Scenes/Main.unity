@@ -5516,11 +5516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca6f3b91ea1f9634db308846d1cdfb7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   audioSource: {fileID: 225997174}
-=======
-  audioSource: {fileID: 1519171553}
->>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
   voice: 0
 --- !u!82 &1519171553
 AudioSource:
