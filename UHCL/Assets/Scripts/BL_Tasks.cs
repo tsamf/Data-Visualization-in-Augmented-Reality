@@ -33,7 +33,7 @@ public class BL_Tasks {
         task2.caution = "";
         task2.warning = "";
         task2.holograms = "";
-        task2.images = "";
+        task2.images = "2";
         UITask task3 = new UITask();
         task3.stepNumber = 3;
         task3.text = "Carefully return keys to the side of the EVA kit.";
@@ -47,20 +47,20 @@ public class BL_Tasks {
         task4.caution = "";
         task4.warning = "Door can accidentally close ";
         task4.holograms = "";
-        task4.images = "";
+        task4.images = "4";
         UITask task5 = new UITask();
         task5.stepNumber = 5;
         task5.text = "On your belt, use the BLUE CARABINEER to securely tether to the TETHER CABLE inside the STORAGE.";
         task5.caution = "Notice the TETHER CABLE is adjustable";
         task5.warning = "";
         task5.holograms = "";
-        task5.images = "";
+        task5.images = "5";
         UITask task6 = new UITask();
         task6.stepNumber = 6;
         task6.text = "Locate the E-stop button and gently press down to temporarily disable the alarm";
         task6.warning = "";
         task6.holograms = "E-Stop";
-        task6.images = "";
+        task6.images = "6";
         UITask task7 = new UITask();
         task7.stepNumber = 7;
         task7.text = "Locate the FUSIBLE DISCONNECT box";
@@ -78,7 +78,7 @@ public class BL_Tasks {
         task9.text = "Remove the BLUE CARABINEER from the FUSIBLE DISCONNECT BOX";
         task9.warning = "";
         task9.holograms = "FusibleDisconnectBox";
-        task9.images = "";
+        task9.images = "9";
         UITask task10 = new UITask();
         task10.stepNumber = 10;
         task10.text = " Transfer the BLUE CARABINEER to STORAGE";
@@ -91,7 +91,7 @@ public class BL_Tasks {
         task11.caution = " Pull the locking tab towards STORAGE with the thumb ";
         task11.warning = "";
         task11.holograms = "FusibleDisconnectBox";
-        task11.images = "";
+        task11.images = "11";
         UITask task12 = new UITask();
         task12.stepNumber = 12;
         task12.text = "Locate the BLACK DISCONNECT";
@@ -110,7 +110,7 @@ public class BL_Tasks {
         task14.caution = " Pull up with the index and middle fingers while pushing down on the FUSE ACCESS PANEL with the thumb ";
         task14.warning = "";
         task14.holograms = "FusibleDisconnectBox";
-        task14.images = "";
+        task14.images = "14";
         UITask task15 = new UITask();
         task15.stepNumber = 15;
         task15.text = "Place the DISCONNECT in the STORAGE";
@@ -128,7 +128,7 @@ public class BL_Tasks {
         task17.text = "Remove the FUSE ACCESS PANEL by pulling straght up";
         task17.warning = "";
         task17.holograms = "";
-        task17.images = "";
+        task17.images = "17";
         UITask task18 = new UITask();
         task18.stepNumber = 18;
         task18.text = "Place the FUSE ACCESS PANEL into STORAGE";
@@ -152,7 +152,7 @@ public class BL_Tasks {
         task21.text = "Use the BLUE FUSE PULLER to remove ONLY the ALARM FUSE";
         task21.caution = " Rock the ALARM FUSE with the FUSE PULLER when pulling up ";
         task21.holograms = "";
-        task21.images = "";
+        task21.images = "21";
         UITask task22 = new UITask();
         task22.stepNumber = 22;
         task22.text = "Return the ALARM FUSE and the FUSE PULLER to STORAGE";
@@ -164,7 +164,7 @@ public class BL_Tasks {
         task23.text = "In STORAGE, locate the FUSE ACCESS PANEL and reinstall it into the FUSIBLE DISCONNECT box.";
         task23.warning = "";
         task23.holograms = "FusibleDisconnectBox";
-        task23.images = "";
+        task23.images = "23";
         UITask task24 = new UITask();
         task24.stepNumber = 24;
         task24.text = "Remove the FUSE ACCESS PANEL tether from the TETHER CABLE and stow inside";
@@ -178,7 +178,7 @@ public class BL_Tasks {
         task25.caution = "The DISCONNECT must read ON in the upper right corner to restore Conductivity";
         task25.warning = "";
         task25.holograms = "FusibleDisconnectBox";
-        task25.images = "";
+        task25.images = "25";
         UITask task26 = new UITask();
         task26.stepNumber = 26;
         task26.text = " Remove the DISCONNECT tether from the TETHER CABLE";
@@ -199,7 +199,7 @@ public class BL_Tasks {
         task28.caution = "";
         task28.warning = "";
         task28.holograms = "FusibleDisconnectBox";
-        task28.images = "";
+        task28.images = "28";
         UITask task29 = new UITask();
         task29.stepNumber = 29;
         task29.text = "Remove the BLUE CARABINEER’s tether from the TETHER CABLE";
