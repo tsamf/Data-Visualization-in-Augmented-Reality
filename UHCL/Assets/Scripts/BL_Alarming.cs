@@ -12,12 +12,6 @@ public class BL_Alarming {
   
     public double SuitPressure;
 
-    public Alarm PreviousAlarm;
-    public Alarm NextAlarm;
-    public Alarm CurrentAlarm;
-
-
-
     int index = 0;
 
     public Alarm GetCurrentAlarm
@@ -31,7 +25,6 @@ public class BL_Alarming {
             {
                 return alarms.alarms[index];
             }
-
         }
     }
 
@@ -48,10 +41,6 @@ public class BL_Alarming {
     public BL_Alarming()
     {
         SuitPressure = commonData.SuitPressureValue;
-
-        PreviousAlarm = null;
-        CurrentAlarm = null;
-        NextAlarm = null;
     }
 
     //public void PreviousAlarmFunction()
@@ -128,7 +117,7 @@ public class BL_Alarming {
     // Alarming function
     public void BLAlarmingFunction()
     {
-       
+        SuitPressure = commonData.SuitPressureValue;
         if (SuitPressure >= commonData.SuitPressureMin && SuitPressure <= commonData.SuitPressureMax)
         {
 
@@ -186,6 +175,12 @@ public class BL_Alarming {
         else
         {
             Debug.Log("Something wrong here!");
+        }
+
+        if(GetCurrentAlarm != null)
+        {
+            Debug.Log("HI got thrown");
+            Debug.Log(GetCurrentAlarm.message);
         }
     }
 }

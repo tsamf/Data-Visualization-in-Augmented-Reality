@@ -8,7 +8,19 @@ public class BL_Scalling {
     {
         commonData.SuitPressureMax = 20;
         commonData.SuitPressureMin = 0;
-    }
+
+        commonData.SuitPressHiHiSP = 18.0f;
+        commonData.SuitPressHiHiDB = 17.8f;
+
+        commonData.SuitPressHiSP = 16.0f;
+        commonData.SuitPressHiDB = 15.8f;
+
+        commonData.SuitPressLoSP = 4.0f;
+        commonData.SuitPressLoDB = 4.2f;
+
+        commonData.SuitPressLoLoSP = 3.0f;
+        commonData.SuitPressLoLoDB = 3.2f;
+}
 
     private CommonData commonData = CommonData.GetInstance();
 

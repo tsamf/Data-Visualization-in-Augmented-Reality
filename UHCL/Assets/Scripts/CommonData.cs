@@ -76,7 +76,7 @@ public class CommonData {
     public float SuitPressureMax { get; set; }
     public float SuitPressureMin { get; set; }
 
-    public float SuitPressHiHiSP { get; set; }
+    public float SuitPressHiHiSP { get; set; } 
     public float SuitPressHiHiDB { get; set; }
 
     public float SuitPressHiSP { get; set; }

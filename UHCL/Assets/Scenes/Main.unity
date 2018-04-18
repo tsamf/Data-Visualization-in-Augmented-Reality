@@ -3690,9 +3690,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61023950003c1b045a32aacabbaacb1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bl_main: {fileID: 242413103}
+  bl_main: {fileID: 0}
   warningDetailPanel: {fileID: 980243393}
-  previouswarning: {fileID: 168102456}
+  prevwarning: {fileID: 0}
   currentwarning: {fileID: 1266867094}
   nextwarning: {fileID: 1772559631}
 --- !u!114 &1008906476 stripped
@@ -3826,7 +3826,6 @@ MonoBehaviour:
   actualP: 0
   ewindow: {fileID: 590417532}
   cc: {fileID: 1108191029}
-  AlarmText: {fileID: 1522167257}
   bl_main: {fileID: 242413101}
 --- !u!114 &1108191027
 MonoBehaviour:
@@ -4994,7 +4993,6 @@ MonoBehaviour:
   actualP: 0
   ewindow: {fileID: 590417532}
   cc: {fileID: 1422485871}
-  AlarmText: {fileID: 0}
   bl_main: {fileID: 242413101}
 --- !u!114 &1422485869 stripped
 MonoBehaviour:
@@ -5241,9 +5239,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61023950003c1b045a32aacabbaacb1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bl_main: {fileID: 242413103}
+  bl_main: {fileID: 0}
   warningDetailPanel: {fileID: 980243393}
-  previouswarning: {fileID: 168102456}
+  prevwarning: {fileID: 0}
   currentwarning: {fileID: 1266867094}
   nextwarning: {fileID: 1772559631}
 --- !u!1 &1475318301
@@ -7443,7 +7441,7 @@ Prefab:
     - target: {fileID: 114651492203267428, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}
       propertyPath: current
-      value: 15.5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 114324679799464102, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}

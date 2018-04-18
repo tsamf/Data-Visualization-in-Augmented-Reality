@@ -80,7 +80,7 @@ public class HealthUIUpdates : MonoBehaviour {
         {
             DetailPanel.SetActive(true);
             WarningText.color = Color.yellow;
-            WarningText.text = bl_main.bl_alarming.CurrentAlarm.message;
+            WarningText.text = bl_main.bl_alarming.GetCurrentAlarm.message;
             commonData.viewWarnings = false;
         }
         else if(commonData.closeWarnings)
