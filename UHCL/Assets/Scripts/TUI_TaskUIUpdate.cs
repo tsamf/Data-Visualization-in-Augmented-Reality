@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using HoloToolkit.Unity;
 
 public class TUI_TaskUIUpdate : MonoBehaviour {
     CommonData commonData = CommonData.GetInstance();
+    TextToSpeech textToSpeech = new TextToSpeech();
+    
     
 
 
@@ -37,6 +40,7 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
         taskPanel.gameObject.SetActive(true);
 
         currentTask.text = "TASK ARRIVED";
+        textToSpeech.StartSpeaking("Task Arrived");
 
         if (commonData.startProcedure)
         {
@@ -64,10 +68,13 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
 
             previousTask.text = bl_tasks.previousTask.text;
             currentTask.text = bl_tasks.currentTask.text;
+            //String voiceData = bl_tasks.currentTask.text;
             nextTask.text = bl_tasks.nextTask.text;
             imagePanel.gameObject.SetActive(true);
             imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>(Convert.ToString(bl_tasks.currentTask.stepNumber));
             cautionPanel.gameObject.SetActive(false);
+            textToSpeech.StartSpeaking(bl_tasks.currentTask.text);
+            
 
             string warning = bl_tasks.currentTask.warning.ToString();
             string caution = bl_tasks.currentTask.caution.ToString();
@@ -86,13 +93,8 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
                 cautionPanel.GetComponent<Image>().color = new Color32(255,255,114,249);
                 cautionText.text = bl_tasks.currentTask.caution;
             }
-            //if (images != "")
-            //{
-            //    imagePanel.gameObject.SetActive(true);
-            //    imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>(Convert.ToString(bl_tasks.currentTask.stepNumber));
-
-
-            //}
+            
+            
             if (commonData.nextStep)
             {
                 bl_tasks.nextFunction(true);
@@ -100,14 +102,19 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
                 previousTask.text = bl_tasks.previousTask.text;
                 currentTask.text = bl_tasks.currentTask.text;
                 nextTask.text = bl_tasks.nextTask.text;
+                textToSpeech.StartSpeaking(bl_tasks.currentTask.text);
                 imagePanel.gameObject.SetActive(true);
                 Debug.Log(bl_tasks.currentTask.stepNumber);
                 imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>(Convert.ToString(bl_tasks.currentTask.stepNumber));
                 commonData.nextStep = false;
-            
+                textToSpeech.StartSpeaking("");
+
+
+
 
 
             }
+            textToSpeech.StartSpeaking("");
 
             if (commonData.previousStep)
             {
@@ -115,12 +122,14 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
                 previousTask.text = bl_tasks.previousTask.text;
                 currentTask.text = bl_tasks.currentTask.text;
                 nextTask.text = bl_tasks.nextTask.text;
+                textToSpeech.StartSpeaking(bl_tasks.currentTask.text);
                 imagePanel.gameObject.SetActive(true);
                 imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>(Convert.ToString(bl_tasks.currentTask.stepNumber));
                 commonData.previousStep = false;
 
             }
-         
+            textToSpeech.StartSpeaking("");
+
         }
      
 
