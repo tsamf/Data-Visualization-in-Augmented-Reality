@@ -95,9 +95,15 @@ public class BL_Alarming {
     public void BLAlarming()
     {
 
+<<<<<<< HEAD
         bool SuitPressureHiHiEn = true;
         bool SuitPressureHiEn = true;
         bool SuitPressureLoLoEn = true;
+=======
+        bool SuitPressureHiHiEn = false;
+        bool SuitPressureHiEn = false;
+        bool SuitPressureLoLoEn = false;
+>>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
         bool SuitPressureLoEn = true;
 
 
