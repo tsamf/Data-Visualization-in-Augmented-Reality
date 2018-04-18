@@ -1,10 +1,14 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class BL_Alarming {
 
     private CommonData commonData = CommonData.GetInstance();
+    private Alarms alarms = new Alarms();
+    private Alarms alarmsHistory = new Alarms();
 
     public bool SuitPressureHiStatus;
     public bool SuitPressureHiHiStatus;
@@ -13,19 +17,93 @@ public class BL_Alarming {
     public double SuitPressure;
     public string alarmText;
 
+    public bool AcknowldegeFlag;
+
+    public Alarm PreviousAlarm;
+    public Alarm AcknowldegeAlarm;
+    public Alarm NextAlarm;
+    public Alarm CurrentAlarm;
+    int index;
+
     public BL_Alarming()
     {
         SuitPressure = commonData.SuitPressureValue;
-    } 
 
+        index = alarms.alarms.Count;
+
+        CurrentAlarm = alarms.alarms[index];
+        NextAlarm = alarms.alarms[index+1];
+    }
+
+    public void PreviousAlarmFunction()
+    {
+        int num = CurrentAlarm.num - 1;
+
+        if(num == 0)
+        {
+            //doing nothing
+        }else
+        {
+            if(index == 1)
+            {
+                PreviousAlarm = alarms.alarms[num - 2];
+                CurrentAlarm = alarms.alarms[num - 1];
+                NextAlarm = null;
+            }else
+            {
+                PreviousAlarm = alarms.alarms[num - 2];
+                CurrentAlarm = alarms.alarms[num - 1];
+                NextAlarm = alarms.alarms[num];
+            }
+        }
+    }
+
+    public void NextAlarmFunction()
+    {
+        int num = CurrentAlarm.num -1;
+
+        if(num == alarms.alarms.Count - 1)
+        {
+            PreviousAlarm = null;
+            CurrentAlarm = null;
+            NextAlarm = null;
+        }else
+        {
+            if(num == alarms.alarms.Count - 2)
+            {
+                NextAlarm = null;
+                PreviousAlarm = alarms.alarms[num];
+                CurrentAlarm = alarms.alarms[num + 1];
+            } else
+            {
+                PreviousAlarm = alarms.alarms[num];
+                CurrentAlarm = alarms.alarms[num + 1];
+                NextAlarm = alarms.alarms[num + 2];
+            }
+        }
+    }
+
+
+    public void AcknowldegeAlarmFunction()
+    {
+        //Take Alarm from alarms
+        //Put in alarm history 
+        AcknowldegeFlag = true;
+    }
 
     // Alarming function
     public void BLAlarming()
     {
 
+<<<<<<< HEAD
+        bool SuitPressureHiHiEn = true;
+        bool SuitPressureHiEn = true;
+        bool SuitPressureLoLoEn = true;
+=======
         bool SuitPressureHiHiEn = false;
         bool SuitPressureHiEn = false;
         bool SuitPressureLoLoEn = false;
+>>>>>>> 156d387e287ead252de6f4b365f715d59a134ab9
         bool SuitPressureLoEn = true;
 
 
@@ -37,7 +115,12 @@ public class BL_Alarming {
             {
                 if (SuitPressure >= commonData.SuitPressHiHiDB && SuitPressure <= commonData.SuitPressHiHiSP)
                 {
-                    SuitPressureHiHiStatus = true;
+                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.SuitPressureHiHiStatus) == null)
+                    {
+                        Alarm alarm = new Alarm(AlarmType.SuitPressureHiHiStatus, index+1, "HiHi Suit Pressure");
+                        alarms.alarms.Add(alarm);
+                        index++;
+                    }
                 }
             }
 
@@ -45,7 +128,13 @@ public class BL_Alarming {
             {
                 if (SuitPressure >= commonData.SuitPressHiDB && SuitPressure <= commonData.SuitPressHiSP)
                 {
-                    SuitPressureHiStatus = true;
+
+                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.SuitPressureHiStatus) == null)
+                    {
+                        Alarm alarm = new Alarm(AlarmType.SuitPressureHiStatus, index + 1, "Hi Suit Pressure");
+                        alarms.alarms.Add(alarm);
+                        index++;
+                    }
                 }
             }
 
@@ -53,8 +142,12 @@ public class BL_Alarming {
             {
                 if (SuitPressure >= commonData.SuitPressLoSP && SuitPressure <= commonData.SuitPressLoDB)
                 {
-                    SuitPressureLoStatus = true;
-                    alarmText = "Low SuitPressure";
+                    if(alarms.alarms.FirstOrDefault(x => x.type == AlarmType.SuitPressureLoStatus) == null)
+                    {
+                        Alarm alarm = new Alarm(AlarmType.SuitPressureLoStatus, index + 1, "Low Suit Pressure");
+                        alarms.alarms.Add(alarm);
+                        index++;
+                    }
                 }
             }
 
@@ -62,7 +155,12 @@ public class BL_Alarming {
             {
                 if (SuitPressure >= commonData.SuitPressLoLoSP && SuitPressure <= commonData.SuitPressLoLoDB)
                 {
-                    SuitPressureLoLoStatus = true;
+                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.SuitPressureLoLoStatus) == null)
+                    {
+                        Alarm alarm = new Alarm(AlarmType.SuitPressureLoLoStatus, index + 1, "LowLow Suit Pressure");
+                        alarms.alarms.Add(alarm);
+                        index++;
+                    }
                 }
             }
 
@@ -72,5 +170,40 @@ public class BL_Alarming {
             Debug.Log("Something wrong here!");
         }
     }
+}
 
+public class Alarms {
+
+    public Alarms()
+    {
+        alarms = new List<Alarm>();
+    }
+
+    public List<Alarm> alarms;
+    }
+
+public class Alarm
+{
+    public Alarm(AlarmType type, int num, string message = "Message not set.")
+    {
+        this.type = type;
+        this.message = message;
+        timeCreated = DateTime.Now;
+        active = true;
+    }
+
+    public AlarmType type;
+    public string message;
+    public int num;
+    public bool active;
+    public DateTime timeCreated;
+    
+}
+
+public enum AlarmType
+{
+ SuitPressureHiStatus,
+ SuitPressureHiHiStatus,
+ SuitPressureLoStatus,
+ SuitPressureLoLoStatus,
 }
