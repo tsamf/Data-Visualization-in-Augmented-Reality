@@ -7,7 +7,7 @@ using HoloToolkit.Unity;
 
 public class TUI_TaskUIUpdate : MonoBehaviour {
     CommonData commonData = CommonData.GetInstance();
-    TextToSpeech textToSpeech = new TextToSpeech();
+    public TextToSpeech textToSpeech;
 
     
 
@@ -38,6 +38,18 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        if(commonData.loadTaskOne)
+        {
+            bl_tasks.LoadTaskOne();
+            commonData.loadTaskOne = false;
+        }
+
+        if(commonData.loadTaskTwo)
+        {
+            bl_tasks.LoadTaskTwo();
+            commonData.loadTaskTwo = false;
+        }
+
         taskPanel.gameObject.SetActive(true);
 
         currentTask.text = "TASK ARRIVED";
