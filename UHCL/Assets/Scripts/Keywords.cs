@@ -195,10 +195,21 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
                     LoadTaskTwo();
                     break;
                 }
+            case "warning acknowledged":
+                {
+                    WarningAcknowledged();
+                    break;
+                }
     
             default:
                 break;
         }
+    }
+
+    private void WarningAcknowledged()
+    {
+        testText.text = "Warning acknowledged";
+        data.warningAcknowledged = true;
     }
 
     private void LoadTaskTwo()
