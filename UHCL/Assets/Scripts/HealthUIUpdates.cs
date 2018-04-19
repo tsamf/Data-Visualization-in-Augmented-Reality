@@ -11,7 +11,7 @@ public class HealthUIUpdates : MonoBehaviour {
     public GameObject DetailPanel;
     public DisplayDetails dd;
     public BL_Main bl_main;
-    public Text WarningText;
+   
 
     CommonData commonData = CommonData.GetInstance();
 
@@ -20,7 +20,7 @@ public class HealthUIUpdates : MonoBehaviour {
         detailedPie.SetActive(false);
         displayDetails.SetActive(false);
         DetailPanel.SetActive(false);
-        WarningText.text = "";
+       
 	}
 	
 	// Update is called once per frame
@@ -79,15 +79,14 @@ public class HealthUIUpdates : MonoBehaviour {
         if(commonData.viewWarnings)
         {
             DetailPanel.SetActive(true);
-           // WarningText.color = Color.yellow;
-           // WarningText.text = bl_main.bl_alarming.GetCurrentAlarm.message;
-           // commonData.viewWarnings = false;
+     
+       
+           commonData.viewWarnings = false;
         }
         else if(commonData.closeWarnings)
         {
             DetailPanel.SetActive(false);
-            WarningText.text = "";
-            commonData.closeWarnings = false;
+             commonData.closeWarnings = false;
         }
     }
 }

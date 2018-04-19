@@ -18,6 +18,7 @@ public class HUI_WarningWindow : MonoBehaviour {
 	void Start () {
 
         warningDetailPanel.SetActive(true);
+        singleWarningDisplay.SetActive(false);
 	}
 
 
@@ -28,8 +29,9 @@ public class HUI_WarningWindow : MonoBehaviour {
        if (bl_main.GetComponent<BL_Main>().bl_alarming.GetCurrentAlarm != null)
        {
         Debug.Log("Current Warning");
+            singleWarningDisplay.SetActive(true);
         currentwarning.text = bl_main.GetComponent<BL_Main>().bl_alarming.GetCurrentAlarm.message;
-         WarningText.text = bl_main.GetComponent<BL_Main>().bl_alarming.GetCurrentAlarm.message;
+        WarningText.text = bl_main.GetComponent<BL_Main>().bl_alarming.GetCurrentAlarm.message;
         }
 
         //if (bl_main.bl_alarming.PreviousAlarm != null)
