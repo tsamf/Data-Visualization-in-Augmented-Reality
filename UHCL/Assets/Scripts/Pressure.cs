@@ -52,8 +52,8 @@ public class Pressure : MonoBehaviour {
         {
             cc.LLCol();
             objP.color = cc.LLColor;
-          //  ewindow.Show("Suit Pressure Low. Return Back to the Ship." + '\n' +
-           //    "Pressure:" + actualP);
+          ewindow.Show("Suit Pressure Low. Return Back to the Ship." + '\n' +
+              "Pressure:" + actualP);
         }
 
         else
