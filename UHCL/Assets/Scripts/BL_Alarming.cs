@@ -161,7 +161,13 @@ public class BL_Alarming {
     public void BLAlarmingFunction()
     {
         ProcessVoiceCommands();
+        ProcessPressure();
 
+
+    }
+
+    private void ProcessPressure()
+    {
         SuitPressure = commonData.SuitPressureValue;
         if (SuitPressure >= commonData.SuitPressureMin && SuitPressure <= commonData.SuitPressureMax)
         {
@@ -173,9 +179,9 @@ public class BL_Alarming {
                 {
                     if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.SuitPressureHiHiStatus) == null)
                     {
-                        Alarm alarm = new Alarm(AlarmType.SuitPressureHiHiStatus,"HiHi Suit Pressure");
-                        alarms.alarms.Insert(0,alarm);
-           
+                        Alarm alarm = new Alarm(AlarmType.SuitPressureHiHiStatus, "HiHi Suit Pressure");
+                        alarms.alarms.Insert(0, alarm);
+
                     }
                 }
             }
@@ -188,7 +194,7 @@ public class BL_Alarming {
                     if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.SuitPressureHiStatus) == null)
                     {
                         Alarm alarm = new Alarm(AlarmType.SuitPressureHiStatus, "Hi Suit Pressure");
-                        alarms.alarms.Insert(0,alarm);
+                        alarms.alarms.Insert(0, alarm);
                     }
                 }
             }
@@ -197,7 +203,7 @@ public class BL_Alarming {
             {
                 if (SuitPressure >= commonData.SuitPressLoSP && SuitPressure <= commonData.SuitPressLoDB)
                 {
-                    if(alarms.alarms.FirstOrDefault(x => x.type == AlarmType.SuitPressureLoStatus) == null)
+                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.SuitPressureLoStatus) == null)
                     {
                         Alarm alarm = new Alarm(AlarmType.SuitPressureLoStatus, "Low Suit Pressure");
                         alarms.alarms.Insert(0, alarm);
@@ -220,12 +226,6 @@ public class BL_Alarming {
         else
         {
             Debug.Log("Something wrong here!");
-        }
-
-        if(GetCurrentAlarm != null)
-        {
-            Debug.Log("HI got thrown");
-            Debug.Log(GetCurrentAlarm.message);
         }
     }
 
@@ -289,8 +289,3 @@ public enum AlarmType
  SuitPressureLoStatus,
  SuitPressureLoLoStatus,
 }
-
-//public bool SuitPressureHiStatus;
-//public bool SuitPressureHiHiStatus;
-//public bool SuitPressureLoStatus;
-//public bool SuitPressureLoLoStatus;
