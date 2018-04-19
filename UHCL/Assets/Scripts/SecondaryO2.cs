@@ -53,8 +53,8 @@ public class SecondaryO2 : MonoBehaviour
                 //Debug.Log("LL");
                 ccSO.LLCol();
                 objSO2.color = ccSO.LLColor;
-                ewindow.Show("Oxygen Low. Return Back to the Ship." + '\n' +
-              "Secondary O2:" + commanData.OxygenTwoValue);
+              //  ewindow.Show("Oxygen Low. Return Back to the Ship." + '\n' +
+              //"Secondary O2:" + commanData.OxygenTwoValue);
             }
 
             //  else
