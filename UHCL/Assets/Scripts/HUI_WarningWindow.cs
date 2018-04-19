@@ -34,16 +34,16 @@ public class HUI_WarningWindow : MonoBehaviour {
         WarningText.text = bl_main.GetComponent<BL_Main>().bl_alarming.GetCurrentAlarm.message;
         }
 
-        //if (bl_main.bl_alarming.PreviousAlarm != null)
-        //{
-        //    Debug.Log("Previous Warning");
-        //    previouswarning.text = bl_main.bl_alarming.PreviousAlarm.message;
-        //}
-        //if (bl_main.bl_alarming.NextAlarm != null)
-        //{
-        //    Debug.Log("Next Warning");
-        //    nextwarning.text = bl_main.bl_alarming.CurrentAlarm.message;
-        //}
+        if (bl_main.GetComponent<BL_Main>().bl_alarming.GetPerviousAlarm != null)
+        {
+        Debug.Log("Previous Warning");
+        prevwarning.text = bl_main.GetComponent<BL_Main>().bl_alarming.GetPerviousAlarm.message;
+        }
+       if (bl_main.GetComponent<BL_Main>().bl_alarming.GetNextAlarm != null)
+        {
+          Debug.Log("Next Warning");
+            nextwarning.text = bl_main.GetComponent<BL_Main>().bl_alarming.GetNextAlarm.message;
+        }
     }
 }
 
