@@ -28,6 +28,35 @@ public class BL_Alarming {
         }
     }
 
+    public Alarm GetPerviousAlarm
+    {
+        get{
+            if(index == 0)
+            {
+                return null;
+            }
+            else
+            {
+                return alarms.alarms[index - 1];
+            }
+        }
+    }
+
+    public Alarm GetNextAlarm
+    {
+        get
+        {
+            if(index == alarms.alarms.Count -1)
+            {
+                return null;
+            }
+            else
+            {
+                return alarms.alarms[index + 1];
+            }
+        }
+    }
+
     
 
     //Turn flag checking on and off
