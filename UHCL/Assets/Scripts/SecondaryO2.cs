@@ -13,6 +13,7 @@ public class SecondaryO2 : MonoBehaviour
     public float intialSO2 = 1.0f;
     public ColorCode ccSO;
     public CommonData commanData;
+    public EmergencyWindow ewindow;
     void Start()
     {
         commanData = CommonData.GetInstance();
@@ -52,6 +53,8 @@ public class SecondaryO2 : MonoBehaviour
                 //Debug.Log("LL");
                 ccSO.LLCol();
                 objSO2.color = ccSO.LLColor;
+              //  ewindow.Show("Oxygen Low. Return Back to the Ship." + '\n' +
+              //"Secondary O2:" + commanData.OxygenTwoValue);
             }
 
             //  else
