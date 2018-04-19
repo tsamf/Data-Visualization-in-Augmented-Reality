@@ -31,7 +31,7 @@ public class BL_Alarming {
     public Alarm GetPerviousAlarm
     {
         get{
-            if(index == 0)
+            if(index <= 0)
             {
                 return null;
             }
@@ -46,7 +46,7 @@ public class BL_Alarming {
     {
         get
         {
-            if(index == alarms.alarms.Count -1)
+            if(index >= alarms.alarms.Count -1)
             {
                 return null;
             }
