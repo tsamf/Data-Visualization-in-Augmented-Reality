@@ -1968,7 +1968,11 @@ MonoBehaviour:
   - Keyword: Load Task Two
     KeyCode: 50
   - Keyword: Warning Acknowledged
-    KeyCode: 50
+    KeyCode: 53
+  - Keyword: Green
+    KeyCode: 51
+  - Keyword: Not Green
+    KeyCode: 52
   recognitionConfidenceLevel: 1
 --- !u!1 &378870496
 GameObject:

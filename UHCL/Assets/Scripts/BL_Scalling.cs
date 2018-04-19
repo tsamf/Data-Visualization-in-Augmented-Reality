@@ -34,7 +34,8 @@ public class BL_Scalling {
     //Sending out actual suitpressure value
     public float actualSuitPressure ()
     {
-        return commonData.SuitPressureValue;
+        float num = commonData.SuitPressureValue / (commonData.SuitPressureMax - commonData.SuitPressureMin);
+        return (num*4)/10 + 3.9f;
     }
 
     //Scaling from number to percentage

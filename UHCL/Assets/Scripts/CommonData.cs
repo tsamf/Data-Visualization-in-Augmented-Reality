@@ -62,6 +62,8 @@ public class CommonData {
     public bool loadTaskOne = false;
     public bool loadTaskTwo = false;
     internal bool warningAcknowledged = false;
+    public static bool notgreen = false;
+    public static bool green = false;
 
 
     //Health UI Values
@@ -96,4 +98,13 @@ public class CommonData {
     public string[][] NEXT { get; set; }
 
     public string[][] TASK_TABLE { get; set; }
+
+    public bool getGreen()
+    {
+        return CommonData.green;
+    }
+    public bool getNotGreen()
+    {
+        return CommonData.notgreen;
+    }
 }

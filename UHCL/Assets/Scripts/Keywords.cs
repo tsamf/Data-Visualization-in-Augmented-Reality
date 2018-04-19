@@ -200,10 +200,32 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
                     WarningAcknowledged();
                     break;
                 }
-    
+            case "green":
+            {
+                    Green();
+                    break;
+             }
+            case "not green":
+                {
+                    NotGreen();
+                    break;
+                }
+
             default:
                 break;
         }
+    }
+
+    private void NotGreen()
+    {
+        testText.text = "Not Green light";
+        CommonData.notgreen = true;
+    }
+
+    private void Green()
+    {
+        testText.text = "Green light";
+        CommonData.green = true;
     }
 
     private void WarningAcknowledged()

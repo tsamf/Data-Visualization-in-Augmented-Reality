@@ -42,8 +42,61 @@ public class BL_Tasks {
         bool nextStep
         )
     {
+
+        bool greenFlag = commonData.getGreen();
+        bool notGreenFlag = commonData.getNotGreen();
+
+        if (nextStep == true)
+        {
+
+            int index = commonData.currentTask.stepNumber - 1;
+
+
+            if (index == procedure.tasks.Count - 1)
+            {
+                //do nothing we are at the end
+                commonData.nextTask = new UITask();
+                commonData.currentTask = new UITask();
+                commonData.currentTask.text = "Task Complete!";
+                commonData.currentTask.stepNumber = procedure.tasks.Count;
+                commonData.previousTask = new UITask();
+            }
+            else if (index == procedure.tasks.Count - 2)
+            {
+                //Go back one step only
+                commonData.nextTask = new UITask();
+                commonData.currentTask = procedure.tasks[index + 1];
+                commonData.previousTask = procedure.tasks[index];
+            }
+            else
+            {
+
+                commonData.nextTask = procedure.tasks[index + 2];
+                commonData.currentTask = procedure.tasks[index + 1];
+                commonData.previousTask = procedure.tasks[index];
+
+            }
+
+
+
+            //whatever
+            previousTask = commonData.previousTask;
+            currentTask = commonData.currentTask;
+            nextTask = commonData.nextTask;
+        }
+    }
+
+    public void nextFunction2(
+        bool nextStep
+        )
+    {
+
+        bool greenFlag = commonData.getGreen();
+        bool notGreenFlag = commonData.getNotGreen();
+
         if(nextStep == true)
         {
+
             int index = commonData.currentTask.stepNumber - 1;
 
 
@@ -65,11 +118,75 @@ public class BL_Tasks {
             }
             else
             {
-                commonData.nextTask = procedure.tasks[index + 2];
-                commonData.currentTask = procedure.tasks[index + 1];
-                commonData.previousTask = procedure.tasks[index];
-            }
+                if (index == 29)
+                {
+                    commonData.nextTask = new UITask();
+                    commonData.currentTask = procedure.tasks[30];
+                    commonData.previousTask = procedure.tasks[29];
+                } else
+                {
+                    if (greenFlag == true)
+                    {
+                        if ((index == 30) || (index == 29))
+                        {
+                            commonData.nextTask = new UITask();
+                            commonData.currentTask = procedure.tasks[31];
+                            commonData.previousTask = procedure.tasks[30];
+                            commonData.currentTask.stepNumber = 32;
+                        }
 
+                        if (index == 31)
+                        {
+                            commonData.nextTask = new UITask();
+                            commonData.currentTask = new UITask();
+                            commonData.currentTask.text = "Task Complete!";
+                            commonData.currentTask.stepNumber = 41;
+                            commonData.previousTask = new UITask();
+                        }
+
+
+                    }
+                    else
+                    {
+
+                        if (notGreenFlag == true)
+                        {
+
+                            if (index == 30)
+                            {
+                                commonData.nextTask = procedure.tasks[34];
+                                commonData.currentTask = procedure.tasks[32];
+                                commonData.previousTask = new UITask();
+                                commonData.currentTask.stepNumber = 33;
+                            }
+
+                            if (index >= 32)
+                            {
+                                commonData.nextTask = procedure.tasks[index + 2];
+                                commonData.currentTask = procedure.tasks[index + 1];
+                                commonData.previousTask = procedure.tasks[index];
+                            }
+                        }
+                        else
+                        {
+                            if (index < 30)
+                            {
+                                commonData.nextTask = procedure.tasks[index + 2];
+                                commonData.currentTask = procedure.tasks[index + 1];
+                                commonData.previousTask = procedure.tasks[index];
+                            }
+                            else
+                            {
+                                commonData.nextTask = new UITask();
+                                commonData.currentTask = procedure.tasks[30];
+                                commonData.previousTask = procedure.tasks[29];
+                            }
+
+                        }
+
+                    }
+                }          
+            }
 
 
             //whatever
@@ -79,6 +196,7 @@ public class BL_Tasks {
         }
     }
 
+    
     public void previousFunction(
         bool previousStep
         )
@@ -89,6 +207,40 @@ public class BL_Tasks {
 
 
             if(index == 0)
+            {
+                //do nothing we are at the beginning
+            }
+            else if (index == 1)
+            {
+                //Go back one step only
+                commonData.nextTask = procedure.tasks[index];
+                commonData.currentTask = procedure.tasks[index - 1];
+                commonData.previousTask = new UITask();
+            }
+            else
+            {
+                commonData.nextTask = procedure.tasks[index];
+                commonData.currentTask = procedure.tasks[index - 1];
+                commonData.previousTask = procedure.tasks[index - 2];
+            }
+
+            previousTask = commonData.previousTask;
+            currentTask = commonData.currentTask;
+            nextTask = commonData.nextTask;
+
+        }
+    }
+
+    public void previousFunction2(
+        bool previousStep
+        )
+    {
+        if (previousStep == true)
+        {
+            int index = commonData.currentTask.stepNumber - 1;
+
+
+            if (index == 0)
             {
                 //do nothing we are at the beginning
             }
@@ -567,18 +719,75 @@ public class BL_Tasks {
         task31.images = "2.last";
         UITask task32 = new UITask();
         task32.stepNumber = 32;
-        task32.text = "IF GREEN, read this script: EVA 1, this is Houston Mission Control. Congratulations. PHALCON is reporting that they are reading a successful power restoration on their console. You are a go to untether from the TETHER CABLE and return to space station. Mission Control out";
+        task32.text = "EVA 1, this is Houston Mission Control. Congratulations. PHALCON is reporting that they are reading a successful power restoration on their console. You are a go to untether from the TETHER CABLE and return to space station. Mission Control out";
         task32.caution = "";
         task32.warning = "";
         task32.holograms = "";
         task32.images = "";
         UITask task33 = new UITask();
         task33.stepNumber = 33;
-        task33.text = "IF NOT GREEN, read this script: EVA 1, this is Houston Mission Control. PHALCON confirms and is not able to report a successful power restoration on their console. EVA-1, please be advised that we have prepared some trouble-shooting steps for you to conduct on a future spacewalk";
+        task33.text = "EVA 1, this is Houston Mission Control. PHALCON confirms and is not able to report a successful power restoration on their console. EVA-1, please be advised that we have prepared some trouble-shooting steps for you to conduct on a future spacewalk";
         task33.caution = "";
         task33.warning = "";
         task33.holograms = "";
         task33.images = "";
+        UITask task34 = new UITask();
+        task34.stepNumber = 34;
+        task34.text = "There might be problem with power going into the circuit, Please go through the following check points";
+        task34.caution = "";
+        task34.warning = "";
+        task34.holograms = "";
+        task34.images = "";
+        UITask task35 = new UITask();
+        task35.stepNumber = 35;
+        task35.text = "BATTERY PACK is switched OFF";
+        task35.caution = "";
+        task35.warning = "";
+        task35.holograms = "";
+        task35.images = "";
+        UITask task36 = new UITask();
+        task36.stepNumber = 36;
+        task36.text = "BATTERY PACK leads are not inserted into their ports";
+        task36.caution = "";
+        task36.warning = "";
+        task36.holograms = "";
+        task36.images = "";
+        UITask task37 = new UITask();
+        task37.stepNumber = 37;
+        task37.text = "220V PLUG or leads where not installed correctly";
+        task37.caution = "";
+        task37.warning = "";
+        task37.holograms = "";
+        task37.images = "";
+        UITask task38 = new UITask();
+        task38.stepNumber = 38;
+        task38.text = "110V PLUG or leads where not installed correctly";
+        task38.caution = "";
+        task38.warning = "";
+        task38.holograms = "";
+        task38.images = "";
+        UITask task39 = new UITask();
+        task39.stepNumber = 39;
+        task39.text = "AUX. POWER SWITCH is in the OFF position";
+        task39.caution = "";
+        task39.warning = "";
+        task39.holograms = "";
+        task39.images = "";
+        UITask task40 = new UITask();
+        task40.stepNumber = 40;
+        task40.text = "E-STOP is still engaged";
+        task40.caution = "";
+        task40.warning = "";
+        task40.holograms = "";
+        task40.images = "";
+        UITask task41 = new UITask();
+        task41.stepNumber = 41;
+        task41.text = "Batteries in the BATTERY PACK are depleted";
+        task41.caution = "";
+        task41.warning = "";
+        task41.holograms = "";
+        task41.images = "";
+
 
         procedure.tasks.Add(task1);
         procedure.tasks.Add(task2);
@@ -613,6 +822,15 @@ public class BL_Tasks {
         procedure.tasks.Add(task31);
         procedure.tasks.Add(task32);
         procedure.tasks.Add(task33);
+        procedure.tasks.Add(task34);
+        procedure.tasks.Add(task35);
+        procedure.tasks.Add(task36);
+        procedure.tasks.Add(task37);
+        procedure.tasks.Add(task38);
+        procedure.tasks.Add(task39);
+        procedure.tasks.Add(task40);
+        procedure.tasks.Add(task41);
+
 
         commonData.previousTask = new UITask();
         commonData.currentTask = task1;

@@ -26,6 +26,8 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
     private int currentstep = 0;
     private bool spoke = false;
 
+    private int num;
+
     void Start () {
         bl_tasks = new BL_Tasks();
         taskPanel.gameObject.SetActive(false);
@@ -42,12 +44,14 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
         {
             bl_tasks.LoadTaskOne();
             commonData.loadTaskOne = false;
+            num = 1;
         }
 
         if(commonData.loadTaskTwo)
         {
             bl_tasks.LoadTaskTwo();
             commonData.loadTaskTwo = false;
+            num = 2;
         }
 
         taskPanel.gameObject.SetActive(true);
@@ -122,14 +126,16 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
             
             if (commonData.nextStep)
             {
-                bl_tasks.nextFunction(true);
+                if( num == 1 ) bl_tasks.nextFunction(true);
+                if (num == 2) bl_tasks.nextFunction2(true);
                 commonData.nextStep = false;
             }
 
 
             if (commonData.previousStep)
             {
-                bl_tasks.previousFunction(true);
+                if(num ==1 ) bl_tasks.previousFunction(true);
+                if (num == 2) bl_tasks.previousFunction2(true);
                 commonData.previousStep = false;
             }
         }
