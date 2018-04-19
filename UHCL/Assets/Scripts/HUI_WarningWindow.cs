@@ -10,7 +10,8 @@ public class HUI_WarningWindow : MonoBehaviour {
     public Text prevwarning;
     public Text currentwarning;
     public Text nextwarning;
-  
+    public Text WarningText;
+        public GameObject singleWarningDisplay;
 
 
 	// Use this for initialization
@@ -24,11 +25,12 @@ public class HUI_WarningWindow : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        //if (bl_main.bl_alarming.CurrentAlarm != null)
-        //{
-        //    Debug.Log("Current Warning");
-        //    currentwarning.text = bl_main.bl_alarming.CurrentAlarm.message;
-        //}
+       if (bl_main.GetComponent<BL_Main>().bl_alarming.GetCurrentAlarm != null)
+       {
+        Debug.Log("Current Warning");
+        currentwarning.text = bl_main.GetComponent<BL_Main>().bl_alarming.GetCurrentAlarm.message;
+         WarningText.text = bl_main.GetComponent<BL_Main>().bl_alarming.GetCurrentAlarm.message;
+        }
 
         //if (bl_main.bl_alarming.PreviousAlarm != null)
         //{
