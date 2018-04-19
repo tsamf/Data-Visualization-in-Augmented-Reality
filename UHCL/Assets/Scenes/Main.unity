@@ -1967,6 +1967,10 @@ MonoBehaviour:
     KeyCode: 49
   - Keyword: Load Task Two
     KeyCode: 50
+  - Keyword: Next Warning
+    KeyCode: 50
+  - Keyword: Previous Warning
+    KeyCode: 50
   recognitionConfidenceLevel: 1
 --- !u!1 &378870496
 GameObject:
@@ -7416,12 +7420,12 @@ Prefab:
     - target: {fileID: 114651492203267428, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}
       propertyPath: threshold1
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 114651492203267428, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}
       propertyPath: threshold1Percentage
-      value: 10
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 114651492203267428, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}
@@ -7436,7 +7440,7 @@ Prefab:
     - target: {fileID: 114651492203267428, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}
       propertyPath: increment
-      value: 0.01
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 114651492203267428, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}

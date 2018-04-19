@@ -123,8 +123,22 @@ public class BL_Alarming {
 
     public void AcknowldegeAlarmFunction()
     {
-        //Take Alarm from alarms
-        //Put in alarm history 
+        //Put alarm in temp variable and remove from alarms
+        Alarm ackAlarm = alarms.alarms[index];
+        alarms.alarms.RemoveAt(index);
+
+        //Set Acknowleged time
+        ackAlarm.timeAcknowledged = DateTime.Now;
+
+        //Insert into History
+        alarmsHistory.alarms.Insert(0, ackAlarm);
+
+        //if we clear the last alarm we have to shrink the index
+        if(index > alarms.alarms.Count-1)
+        {
+            index--;
+        }
+        
     }
 
     public void NextAlarmFunction()
@@ -135,7 +149,7 @@ public class BL_Alarming {
         }
     }
 
-    public void PerviousAlarmFunction()
+    public void PreviousAlarmFunction()
     {
         if(index > 0)
         {
@@ -146,6 +160,8 @@ public class BL_Alarming {
     // Alarming function
     public void BLAlarmingFunction()
     {
+        ProcessVoiceCommands();
+
         SuitPressure = commonData.SuitPressureValue;
         if (SuitPressure >= commonData.SuitPressureMin && SuitPressure <= commonData.SuitPressureMax)
         {
@@ -212,7 +228,31 @@ public class BL_Alarming {
             Debug.Log(GetCurrentAlarm.message);
         }
     }
+
+    private void ProcessVoiceCommands()
+    {
+       if(commonData.nextWarning)
+        {
+            NextAlarmFunction();
+            commonData.nextWarning = false;
+        }
+
+       if(commonData.previousWarning)
+        {
+            PreviousAlarmFunction();
+            commonData.previousWarning = false;
+        }
+
+       if(commonData.warningAcknowledged)
+        {
+            AcknowldegeAlarmFunction();
+            commonData.warningAcknowledged = false;
+        }
+    }
 }
+
+
+
 
 public class Alarms {
 
@@ -238,6 +278,7 @@ public class Alarm
     public string message;
     public bool active;
     public DateTime timeCreated;
+    public DateTime timeAcknowledged;
     
 }
 

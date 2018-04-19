@@ -61,6 +61,7 @@ public class CommonData {
     public bool closeTaskList = false;
     public bool loadTaskOne = false;
     public bool loadTaskTwo = false;
+    internal bool warningAcknowledged = false;
 
 
     //Health UI Values
