@@ -75,7 +75,7 @@ public class CommonData {
     public float BatteryValue { get; set; }
     public float WaterValue { get; set; }
 
-
+    //SuitPressure
     public float SuitPressureMax { get; set; }
     public float SuitPressureMin { get; set; }
 
@@ -90,6 +90,38 @@ public class CommonData {
 
     public float SuitPressLoLoSP { get; set; }
     public float SuitPressLoLoDB { get; set; }
+
+    // Heartrate 
+    public float HeartRateMax { get; set; }
+    public float HeartRateMin { get; set; }
+
+    public float HeartRateHiHiSP { get; set; }
+    public float HeartRateHiHiDB { get; set; }
+
+    public float HeartRateHiSP { get; set; }
+    public float HeartRateHiDB { get; set; }
+
+    public float HeartRateLoSP { get; set; }
+    public float HeartRateLoDB { get; set; }
+
+    public float HeartRateLoLoSP { get; set; }
+    public float HeartRateLoLoDB { get; set; }
+
+    //Bodytemperature
+    public float BodyTemperatureMax { get; set; }
+    public float BodyTemperatureMin { get; set; }
+
+    public float BodyTemperatureHiHiSP { get; set; }
+    public float BodyTemperatureHiHiDB { get; set; }
+
+    public float BodyTemperatureHiSP { get; set; }
+    public float BodyTemperatureHiDB { get; set; }
+
+    public float BodyTemperatureLoSP { get; set; }
+    public float BodyTemperatureLoDB { get; set; }
+
+    public float BodyTemperatureLoLoSP { get; set; }
+    public float BodyTemperatureLoLoDB { get; set; }
 
 
     //Task UI Values

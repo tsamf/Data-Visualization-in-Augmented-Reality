@@ -11,6 +11,8 @@ public class BL_Alarming {
     private Alarms alarmsHistory = new Alarms();
   
     public double SuitPressure;
+    public double HeartRate;
+    public double BodyTemperature;
 
     int index = 0;
 
@@ -60,16 +62,31 @@ public class BL_Alarming {
     
 
     //Turn flag checking on and off
+
+    //Suit Pressure
     private bool SuitPressureHiHiEn = true;
     private bool SuitPressureHiEn = true;
     private bool SuitPressureLoLoEn = true;
     private bool SuitPressureLoEn = true;
 
+    //HearRate
+    private bool HeartRateHiHiEn = true;
+    private bool HeartRateHiEn = true;
+    private bool HeartRateLoLoEn = true;
+    private bool HeartRateLoEn = true;
+
+    //BodyTemperature
+    private bool BodyTemperatureHiHiEn = true;
+    private bool BodyTemperatureHiEn = true;
+    private bool BodyTemperatureLoLoEn = true;
+    private bool BodyTemperatureLoEn = true;
 
 
     public BL_Alarming()
     {
         SuitPressure = commonData.SuitPressureValue;
+        HeartRate = commonData.HeartRateValue;
+        BodyTemperature = commonData.BodyTemperatureValue;
     }
 
     //public void PreviousAlarmFunction()
@@ -162,10 +179,10 @@ public class BL_Alarming {
     {
         ProcessVoiceCommands();
         ProcessPressure();
-
-
+        ProcessHeartRate();
     }
 
+    //SuitPressure
     private void ProcessPressure()
     {
         SuitPressure = commonData.SuitPressureValue;
@@ -229,6 +246,133 @@ public class BL_Alarming {
         }
     }
 
+
+    //HearRate
+    private void ProcessHeartRate ()
+    {
+        if (HeartRate >= commonData.HeartRateMin && HeartRate <= commonData.HeartRateMax)
+        {
+
+            // If HearRateHiHi enables, it will check how much hear rate is and turn the alarm on or off, depends on heart rate value
+            if (HeartRateHiHiEn == true)
+            {
+                if (HeartRate >= commonData.HeartRateHiHiDB && HeartRate <= commonData.HeartRateHiHiSP)
+                {
+                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.HeartRateHiHiStatus) == null)
+                    {
+                        Alarm alarm = new Alarm(AlarmType.HeartRateHiHiStatus, "HiHi Heart rate");
+                        alarms.alarms.Insert(0, alarm);
+
+                    }
+                }
+            }
+
+            if (HeartRateHiEn == true)
+            {
+                if (HeartRate >= commonData.HeartRateHiDB && HeartRate <= commonData.HeartRateHiSP)
+                {
+
+                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.HeartRateHiStatus) == null)
+                    {
+                        Alarm alarm = new Alarm(AlarmType.HeartRateHiStatus, "Hi Heart Rate");
+                        alarms.alarms.Insert(0, alarm);
+                    }
+                }
+            }
+
+            if (HeartRateLoEn == true)
+            {
+                if (HeartRate >= commonData.HeartRateLoSP && HeartRate <= commonData.HeartRateLoDB)
+                {
+                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.HeartRateLoStatus) == null)
+                    {
+                        Alarm alarm = new Alarm(AlarmType.HeartRateLoLoStatus, "Low Heart Rate");
+                        alarms.alarms.Insert(0, alarm);
+                    }
+                }
+            }
+
+            if (HeartRateLoLoEn == true)
+            {
+                if (HeartRate >= commonData.HeartRateLoLoSP && HeartRate <= commonData.HeartRateLoLoDB)
+                {
+                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.HeartRateLoLoStatus) == null)
+                    {
+                        Alarm alarm = new Alarm(AlarmType.HeartRateLoLoStatus, "LowLow Heart Rate");
+                        alarms.alarms.Insert(0, alarm);
+                    }
+                }
+            }
+        }
+        else
+        {
+            Debug.Log("Heart Rate Something wrong here!");
+        }
+    }
+
+
+    //BodyTemperature
+    private void ProcessBodyTemperature()
+    {
+        if (BodyTemperature >= commonData.BodyTemperatureMin && BodyTemperature <= commonData.BodyTemperatureMax)
+        {
+
+            // If BodyTemperatureHiHi enables, it will check how much body temperature is and turn the alarm on or off, depends on body temperature value
+            if (BodyTemperatureHiHiEn == true)
+            {
+                if (BodyTemperature >= commonData.BodyTemperatureHiHiDB && BodyTemperature <= commonData.BodyTemperatureHiHiSP)
+                {
+                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.BodyTemperatureHiHiStatus) == null)
+                    {
+                        Alarm alarm = new Alarm(AlarmType.BodyTemperatureHiHiStatus, "HiHi Body Temperature");
+                        alarms.alarms.Insert(0, alarm);
+
+                    }
+                }
+            }
+
+            if (BodyTemperatureHiEn == true)
+            {
+                if (BodyTemperature >= commonData.BodyTemperatureHiDB && BodyTemperature <= commonData.BodyTemperatureHiSP)
+                {
+
+                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.BodyTemperatureHiStatus) == null)
+                    {
+                        Alarm alarm = new Alarm(AlarmType.BodyTemperatureHiStatus, "Hi Body Temperature");
+                        alarms.alarms.Insert(0, alarm);
+                    }
+                }
+            }
+
+            if (BodyTemperatureLoEn == true)
+            {
+                if (BodyTemperature >= commonData.BodyTemperatureLoSP && BodyTemperature <= commonData.BodyTemperatureLoDB)
+                {
+                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.BodyTemperatureLoStatus) == null)
+                    {
+                        Alarm alarm = new Alarm(AlarmType.BodyTemperatureLoLoStatus, "Low Body Temperature");
+                        alarms.alarms.Insert(0, alarm);
+                    }
+                }
+            }
+
+            if (BodyTemperatureLoLoEn == true)
+            {
+                if (BodyTemperature >= commonData.BodyTemperatureLoLoSP && BodyTemperature <= commonData.BodyTemperatureLoLoDB)
+                {
+                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.BodyTemperatureLoLoStatus) == null)
+                    {
+                        Alarm alarm = new Alarm(AlarmType.BodyTemperatureLoLoStatus, "LowLow Body Temperature");
+                        alarms.alarms.Insert(0, alarm);
+                    }
+                }
+            }
+        }
+        else
+        {
+            Debug.Log("Body Temperature Something wrong here!");
+        }
+    }
     private void ProcessVoiceCommands()
     {
        if(commonData.nextWarning)
@@ -284,8 +428,21 @@ public class Alarm
 
 public enum AlarmType
 {
+ //SuitPressure
  SuitPressureHiStatus,
  SuitPressureHiHiStatus,
  SuitPressureLoStatus,
  SuitPressureLoLoStatus,
+
+ //HeartRate
+HeartRateHiStatus,
+HeartRateHiHiStatus,
+HeartRateLoStatus,
+HeartRateLoLoStatus,
+
+    //BodyTemperature
+    BodyTemperatureHiStatus,
+    BodyTemperatureHiHiStatus,
+    BodyTemperatureLoStatus,
+    BodyTemperatureLoLoStatus,
 }
