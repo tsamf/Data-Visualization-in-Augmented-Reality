@@ -124,6 +124,35 @@ public class CommonData {
     public float BodyTemperatureLoLoDB { get; set; }
 
 
+    //PrimaryOxygen
+    public float PrimaryOxygenMax { get; set; }
+    public float PrimaryOxygenMin { get; set; }
+    public float PrimaryOxygenLoDB { get; set; }
+
+
+    //SecondaryOxygen
+    public float SecondaryOxygenMax { get; set; }
+    public float SecondaryOxygenMin { get; set; }
+    public float SecondaryOxygenLoDB { get; set; }
+    public float SecondaryOxygenLoLoDB { get; set; }
+
+
+    //Water
+    public float WaterMax { get; set; }
+    public float WaterMin { get; set; }
+
+    public float WaterLoDB { get; set; }
+
+    public float WaterLoLoDB { get; set; }
+
+    //Battery
+    public float BatteryMax { get; set; }
+    public float BatteryMin { get; set; }
+
+    public float BatteryLoDB { get; set; }
+
+    public float BatteryLoLoDB { get; set; }
+
     //Task UI Values
     public string[][] PREVIOUS { get; set; }
     public string[][] CURRENT { get; set; }

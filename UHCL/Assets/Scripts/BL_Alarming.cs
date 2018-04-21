@@ -13,6 +13,10 @@ public class BL_Alarming {
     public double SuitPressure;
     public double HeartRate;
     public double BodyTemperature;
+    public double PrimaryOxygen;
+    public double SecondaryOxygen;
+    public double Water;
+    public double Battery;
 
     int index = 0;
 
@@ -59,8 +63,6 @@ public class BL_Alarming {
         }
     }
 
-    
-
     //Turn flag checking on and off
 
     //Suit Pressure
@@ -81,62 +83,32 @@ public class BL_Alarming {
     private bool BodyTemperatureLoLoEn = true;
     private bool BodyTemperatureLoEn = true;
 
+    //PrimaryOxygen
+    private bool PrimaryOxygenLoEn = true;
 
+    //SecondaryOxygen
+    private bool SecondaryOxygenLoEn = true;
+    private bool SecondaryOxygenLoLoEn = true;
+
+    //Water
+    private bool WaterLoEn = true;
+    private bool WaterLoLoEn = true;
+
+    //Battery
+    private bool BatteryLoEn = true;
+    private bool BatteryLoLoEn = true;
+
+    //Constructor
     public BL_Alarming()
     {
         SuitPressure = commonData.SuitPressureValue;
         HeartRate = commonData.HeartRateValue;
         BodyTemperature = commonData.BodyTemperatureValue;
+        PrimaryOxygen = commonData.OxygenOneValue;
+        SecondaryOxygen = commonData.OxygenTwoValue;
+        Water = commonData.WaterValue;
+        Battery = commonData.BatteryValue;
     }
-
-    //public void PreviousAlarmFunction()
-    //{
-    //    int num = CurrentAlarm.num - 1;
-
-    //    if(num == 0)
-    //    {
-    //        //doing nothing
-    //    }else
-    //    {
-    //        if(index == 1)
-    //        {
-    //            PreviousAlarm = alarms.alarms[num - 2];
-    //            CurrentAlarm = alarms.alarms[num - 1];
-    //            NextAlarm = null;
-    //        }else
-    //        {
-    //            PreviousAlarm = alarms.alarms[num - 2];
-    //            CurrentAlarm = alarms.alarms[num - 1];
-    //            NextAlarm = alarms.alarms[num];
-    //        }
-    //    }
-    //}
-
-    //public void NextAlarmFunction()
-    //{
-    //    int num = CurrentAlarm.num -1;
-
-    //    if(num == alarms.alarms.Count - 1)
-    //    {
-    //        PreviousAlarm = null;
-    //        CurrentAlarm = null;
-    //        NextAlarm = null;
-    //    }else
-    //    {
-    //        if(num == alarms.alarms.Count - 2)
-    //        {
-    //            NextAlarm = null;
-    //            PreviousAlarm = alarms.alarms[num];
-    //            CurrentAlarm = alarms.alarms[num + 1];
-    //        } else
-    //        {
-    //            PreviousAlarm = alarms.alarms[num];
-    //            CurrentAlarm = alarms.alarms[num + 1];
-    //            NextAlarm = alarms.alarms[num + 2];
-    //        }
-    //    }
-    //}
-
 
     public void AcknowldegeAlarmFunction()
     {
@@ -180,6 +152,10 @@ public class BL_Alarming {
         ProcessVoiceCommands();
         ProcessPressure();
         ProcessHeartRate();
+        ProcessPrimaryOxygen();
+        ProcessSecondaryOxygen();
+        ProcessWater();
+        ProcessBattery();
     }
 
     //SuitPressure
@@ -246,7 +222,6 @@ public class BL_Alarming {
         }
     }
 
-
     //HearRate
     private void ProcessHeartRate ()
     {
@@ -310,7 +285,6 @@ public class BL_Alarming {
         }
     }
 
-
     //BodyTemperature
     private void ProcessBodyTemperature()
     {
@@ -350,7 +324,7 @@ public class BL_Alarming {
                 {
                     if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.BodyTemperatureLoStatus) == null)
                     {
-                        Alarm alarm = new Alarm(AlarmType.BodyTemperatureLoLoStatus, "Low Body Temperature");
+                        Alarm alarm = new Alarm(AlarmType.BodyTemperatureLoStatus, "Low Body Temperature");
                         alarms.alarms.Insert(0, alarm);
                     }
                 }
@@ -362,7 +336,7 @@ public class BL_Alarming {
                 {
                     if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.BodyTemperatureLoLoStatus) == null)
                     {
-                        Alarm alarm = new Alarm(AlarmType.BodyTemperatureLoLoStatus, "LowLow Body Temperature");
+                        Alarm alarm = new Alarm(AlarmType.BodyTemperatureLoLoStatus, "Low Low Body Temperature");
                         alarms.alarms.Insert(0, alarm);
                     }
                 }
@@ -373,6 +347,137 @@ public class BL_Alarming {
             Debug.Log("Body Temperature Something wrong here!");
         }
     }
+
+    //PrimaryOxygen
+    private void ProcessPrimaryOxygen()
+    {
+        if (PrimaryOxygen >= commonData.PrimaryOxygenMin && PrimaryOxygen <= commonData.PrimaryOxygenMax)
+        {
+
+            if (PrimaryOxygenLoEn == true)
+            {
+                if (PrimaryOxygen <= commonData.PrimaryOxygenLoDB)
+                {
+                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.PrimaryOxygenLoStatus) == null)
+                    {
+                        Alarm alarm = new Alarm(AlarmType.PrimaryOxygenLoStatus, "Low Primary Oxygen");
+                        alarms.alarms.Insert(0, alarm);
+                    }
+                }
+            }
+        }
+        else
+        {
+            Debug.Log("Primary Oxygen Something wrong here!");
+        }
+    }
+
+    //SecondaryOxygen
+    private void ProcessSecondaryOxygen()
+    {
+        if (SecondaryOxygen >= commonData.SecondaryOxygenMin && SecondaryOxygen <= commonData.SecondaryOxygenMax)
+        {
+            if (SecondaryOxygenLoEn == true)
+            {
+                if (SecondaryOxygen <= commonData.SecondaryOxygenLoDB)
+                {
+                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.SecondaryOxygenLoStatus) == null)
+                    {
+                        Alarm alarm = new Alarm(AlarmType.SecondaryOxygenLoStatus, "Low Secondary Oxygen");
+                        alarms.alarms.Insert(0, alarm);
+                    }
+                }
+            }
+
+            if (SecondaryOxygenLoLoEn == true)
+            {
+                if (SecondaryOxygen <= commonData.SecondaryOxygenLoLoDB)
+                {
+                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.SecondaryOxygenLoLoStatus) == null)
+                    {
+                        Alarm alarm = new Alarm(AlarmType.SecondaryOxygenLoLoStatus, "Low Low Secondary Oxygen");
+                        alarms.alarms.Insert(0, alarm);
+                    }
+                }
+            }
+        }
+        else
+        {
+            Debug.Log("Secondary Oxygen Something wrong here!");
+        }
+    }
+
+    //Water
+    private void ProcessWater()
+    {
+        if (Water >= commonData.WaterMin && Water <= commonData.WaterMax)
+        {
+            if (WaterLoEn == true)
+            {
+                if (Water <= commonData.WaterLoDB)
+                {
+                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.WaterLoStatus) == null)
+                    {
+                        Alarm alarm = new Alarm(AlarmType.SecondaryOxygenLoStatus, "Low Water");
+                        alarms.alarms.Insert(0, alarm);
+                    }
+                }
+            }
+
+            if (WaterLoLoEn == true)
+            {
+                if (Water <= commonData.WaterLoLoDB)
+                {
+                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.WaterLoLoStatus) == null)
+                    {
+                        Alarm alarm = new Alarm(AlarmType.WaterLoLoStatus, "Low Low Water");
+                        alarms.alarms.Insert(0, alarm);
+                    }
+                }
+            }
+        }
+        else
+        {
+            Debug.Log("Water Something wrong here!");
+        }
+    }
+
+    //Battery
+    private void ProcessBattery()
+    {
+        if (Battery >= commonData.BatteryMin && Battery <= commonData.BatteryMax)
+        {
+            if (BatteryLoEn == true)
+            {
+                if (Battery <= commonData.BatteryLoDB)
+                {
+                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.BatteryLoStatus) == null)
+                    {
+                        Alarm alarm = new Alarm(AlarmType.BatteryLoStatus, "Low Battery");
+                        alarms.alarms.Insert(0, alarm);
+                    }
+                }
+            }
+
+            if (BatteryLoLoEn == true)
+            {
+                if (Battery <= commonData.BatteryLoLoDB)
+                {
+                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.BatteryLoLoStatus) == null)
+                    {
+                        Alarm alarm = new Alarm(AlarmType.BatteryLoLoStatus, "Low Low Battery");
+                        alarms.alarms.Insert(0, alarm);
+                    }
+                }
+            }
+        }
+        else
+        {
+            Debug.Log("Battery Something wrong here!");
+        }
+    }
+
+    //Voice Commands
     private void ProcessVoiceCommands()
     {
        if(commonData.nextWarning)
@@ -395,9 +500,7 @@ public class BL_Alarming {
     }
 }
 
-
-
-
+//Alarms class
 public class Alarms {
 
     public Alarms()
@@ -440,9 +543,24 @@ HeartRateHiHiStatus,
 HeartRateLoStatus,
 HeartRateLoLoStatus,
 
-    //BodyTemperature
-    BodyTemperatureHiStatus,
-    BodyTemperatureHiHiStatus,
-    BodyTemperatureLoStatus,
-    BodyTemperatureLoLoStatus,
+//BodyTemperature
+BodyTemperatureHiStatus,
+BodyTemperatureHiHiStatus,
+BodyTemperatureLoStatus,
+BodyTemperatureLoLoStatus,
+
+//Primary Oxygen
+PrimaryOxygenLoStatus,
+
+//Secondary Oxygen
+SecondaryOxygenLoStatus,
+SecondaryOxygenLoLoStatus,
+
+//Water
+WaterLoStatus,
+WaterLoLoStatus,
+
+//Battery
+BatteryLoStatus,
+BatteryLoLoStatus,
 }
