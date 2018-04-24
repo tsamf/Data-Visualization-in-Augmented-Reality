@@ -12,17 +12,18 @@ public class BTemperature : MonoBehaviour {
     public Image objBT;
     public float currentBT;
     public ColorCode cc;
+    public GameObject bl_main;
     void Start () {
     }
 	
 	// Update is called once per frame
 	void Update () {
 
-        currentBT = 0.59f;
+        currentBT = (bl_main.GetComponent<BL_Main>().bl_scaling.scallingBodyTemperature());
         radius = currentBT;
 
 
-        if (currentBT >= 0.80)
+        if (currentBT >= 0.80f)
         {
             // Debug.Log("HH");
             cc.LLCol();
