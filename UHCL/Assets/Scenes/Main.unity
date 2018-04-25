@@ -7575,9 +7575,6 @@ Prefab:
     - target: {fileID: 114829179039878032, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}
       propertyPath: initial
-<<<<<<< HEAD
-      value: 80
-=======
       value: 68
       objectReference: {fileID: 0}
     - target: {fileID: 114829179039878032, guid: e483ad673f90da545ace027a9ffcbb10,
@@ -7589,7 +7586,6 @@ Prefab:
         type: 2}
       propertyPath: threshold1Percentage
       value: 20
->>>>>>> 5e316a12467f7a6f75726e2cd9a22fc526180819
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e483ad673f90da545ace027a9ffcbb10, type: 2}
