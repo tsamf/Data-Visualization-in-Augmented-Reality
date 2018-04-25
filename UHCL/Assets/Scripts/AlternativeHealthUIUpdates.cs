@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AlternativeHealthUIUpdates : MonoBehaviour {
 
@@ -10,12 +11,16 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
     public DisplayDetails dd;
     public BL_Main bl_main;
 
+    public Image pressureFillImage;
+    public ColorCode pressureColors;
+
     CommonData commonData = CommonData.GetInstance();
 
     // Use this for initialization
     void Start()
     {
         //detailedPie.SetActive(false);
+        
         displayDetails.SetActive(false);
     }
 
@@ -24,7 +29,39 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
     {
         UpdateDetailPiePanel();
         UpdateViewDetails();
+        UpdateSliders();
     }
+
+    void UpdateSliders()
+    {
+        UpdatePressureSlider();
+    }
+
+    void UpdatePressureSlider()
+    {
+        float newPressurePosition = bl_main.bl_scaling.ScalingFunction().Map(0, 100, -66, 68);
+        pressureFillImage.rectTransform.localPosition = new Vector3(newPressurePosition, 0f, 0f);
+
+        float SuitPressure = commonData.SuitPressureValue;
+        if (SuitPressure >= commonData.SuitPressHiHiDB && SuitPressure <= commonData.SuitPressHiHiSP)
+        {
+            pressureFillImage.color = pressureColors.HHColor;
+        }
+        else if (SuitPressure >= commonData.SuitPressHiDB && SuitPressure <= commonData.SuitPressHiSP)
+        {
+            pressureFillImage.color = pressureColors.HColor;
+        }
+        else if (SuitPressure >= commonData.SuitPressLoSP && SuitPressure <= commonData.SuitPressLoDB)
+        {
+            pressureFillImage.color = pressureColors.LColor;
+        }
+        else if (SuitPressure >= commonData.SuitPressLoLoSP && SuitPressure <= commonData.SuitPressLoLoDB)
+        {
+            pressureFillImage.color = pressureColors.LLColor;
+        }
+    }
+
+
 
     void UpdateDetailPiePanel()
     {
@@ -54,5 +91,13 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
             displayDetails.SetActive(false);
             Debug.Log("CLose DEtail");
         }
+    }
+}
+
+public static class ExtensionMethods
+{
+    public static float Map(this float value, float low1,float high1,float low2, float high2)
+    {
+        return low2 + (value - low1) * (high2 - low2) / (high1 - low1);
     }
 }

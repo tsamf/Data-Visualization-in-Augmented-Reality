@@ -1717,7 +1717,7 @@ GameObject:
   - component: {fileID: 338625796}
   - component: {fileID: 338625797}
   m_Layer: 5
-  m_Name: Slider (4)
+  m_Name: Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1737,7 +1737,7 @@ RectTransform:
   - {fileID: 1464638743}
   - {fileID: 623665757}
   m_Father: {fileID: 869073743}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2576,7 +2576,7 @@ GameObject:
   - component: {fileID: 693025725}
   - component: {fileID: 693025726}
   m_Layer: 5
-  m_Name: Slider (1)
+  m_Name: HeartRate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2661,8 +2661,9 @@ GameObject:
   - component: {fileID: 710821656}
   - component: {fileID: 710821658}
   - component: {fileID: 710821657}
+  - component: {fileID: 710821659}
   m_Layer: 5
-  m_Name: Fill
+  m_Name: PressureFill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2683,8 +2684,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 10, y: 0}
+  m_AnchoredPosition: {x: 79, y: 0}
+  m_SizeDelta: {x: 25, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &710821657
 MonoBehaviour:
@@ -2698,7 +2699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5661765, g: 1, b: 0.65892506, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2719,6 +2720,21 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 710821655}
+--- !u!114 &710821659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 710821655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f0d93e1c05efd469da539675d02f75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HHColor: {r: 0, g: 0, b: 0, a: 0}
+  HColor: {r: 0, g: 0, b: 0, a: 0}
+  LColor: {r: 0, g: 0, b: 0, a: 0}
+  LLColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &716523283
 GameObject:
   m_ObjectHideFlags: 0
@@ -3310,10 +3326,10 @@ RectTransform:
   - {fileID: 1802733513}
   - {fileID: 693025725}
   - {fileID: 2004492424}
+  - {fileID: 870506372}
   - {fileID: 1378449150}
   - {fileID: 338625796}
   - {fileID: 1588656511}
-  - {fileID: 870506372}
   m_Father: {fileID: 1720417823}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3368,7 +3384,7 @@ Canvas:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 869073742}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 1655562324}
@@ -3396,6 +3412,8 @@ MonoBehaviour:
   displayDetails: {fileID: 1229135400}
   dd: {fileID: 1229135402}
   bl_main: {fileID: 242413103}
+  pressureFillImage: {fileID: 710821657}
+  pressureColors: {fileID: 710821659}
 --- !u!1 &870506371
 GameObject:
   m_ObjectHideFlags: 0
@@ -3406,7 +3424,7 @@ GameObject:
   - component: {fileID: 870506372}
   - component: {fileID: 870506373}
   m_Layer: 5
-  m_Name: Slider (6)
+  m_Name: PrimaryO2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3426,7 +3444,7 @@ RectTransform:
   - {fileID: 1140222640}
   - {fileID: 1498281475}
   m_Father: {fileID: 869073743}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4200,8 +4218,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: -1.13, y: 0}
+  m_SizeDelta: {x: -2.26, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1188968078
 GameObject:
@@ -4435,40 +4453,6 @@ MonoBehaviour:
   mouse: {fileID: 1906025923057554, guid: 1c82f15755e170f4a8056a0b7f52cf0c, type: 2}
   leftHand: {fileID: 1747030157760962, guid: 0ff07ad2c7f9337489d2f7559b172d5d, type: 2}
   rightHand: {fileID: 1198379067318554, guid: 6baba202b5cc7954193562351570ad62, type: 2}
---- !u!1 &1246642712
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1246642713}
-  m_Layer: 5
-  m_Name: Handle Slide Area
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1246642713
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1246642712}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1607016560}
-  m_Father: {fileID: 1802733513}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1266867092
 GameObject:
   m_ObjectHideFlags: 0
@@ -4711,7 +4695,7 @@ GameObject:
   - component: {fileID: 1378449150}
   - component: {fileID: 1378449151}
   m_Layer: 5
-  m_Name: Slider (3)
+  m_Name: SecondaryO2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4731,7 +4715,7 @@ RectTransform:
   - {fileID: 1561678273}
   - {fileID: 1582994983}
   m_Father: {fileID: 869073743}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5945,7 +5929,7 @@ GameObject:
   - component: {fileID: 1588656511}
   - component: {fileID: 1588656512}
   m_Layer: 5
-  m_Name: Slider (5)
+  m_Name: Battery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5965,7 +5949,7 @@ RectTransform:
   - {fileID: 858706295}
   - {fileID: 1574001245}
   m_Father: {fileID: 869073743}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6072,74 +6056,6 @@ MonoBehaviour:
   Axis0Destination: 0
   Axis1Destination: 2
   Axis2Destination: 6
---- !u!1 &1607016559
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1607016560}
-  - component: {fileID: 1607016562}
-  - component: {fileID: 1607016561}
-  m_Layer: 5
-  m_Name: Handle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1607016560
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1607016559}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1246642713}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1607016561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1607016559}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1607016562
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1607016559}
 --- !u!1 &1624029778
 GameObject:
   m_ObjectHideFlags: 0
@@ -7035,7 +6951,7 @@ GameObject:
   - component: {fileID: 1802733513}
   - component: {fileID: 1802733514}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: SuitPressure
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7053,7 +6969,6 @@ RectTransform:
   m_Children:
   - {fileID: 1402294561}
   - {fileID: 1162464191}
-  - {fileID: 1246642713}
   m_Father: {fileID: 869073743}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7097,9 +7012,9 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1607016561}
+  m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 710821656}
-  m_HandleRect: {fileID: 1607016560}
+  m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
   m_MaxValue: 1
@@ -7457,22 +7372,22 @@ Prefab:
     - target: {fileID: 114651492203267428, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}
       propertyPath: threshold2Percentage
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114651492203267428, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}
       propertyPath: initial
-      value: 0
+      value: 4.9
       objectReference: {fileID: 0}
     - target: {fileID: 114651492203267428, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}
       propertyPath: increment
-      value: 0.1
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 114651492203267428, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}
       propertyPath: current
-      value: 15.9
+      value: 4.9
       objectReference: {fileID: 0}
     - target: {fileID: 114324679799464102, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}
@@ -7621,7 +7536,7 @@ GameObject:
   - component: {fileID: 2004492424}
   - component: {fileID: 2004492425}
   m_Layer: 5
-  m_Name: Slider (2)
+  m_Name: BodyTemperature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7854,7 +7769,7 @@ Canvas:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2089724449}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 1655562324}
