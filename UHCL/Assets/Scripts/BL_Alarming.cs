@@ -29,7 +29,7 @@ public class BL_Alarming {
             }
             else
             {
-                return alarms.alarms[index];
+                return alarms.alarms[0];
             }
         }
     }
@@ -101,13 +101,13 @@ public class BL_Alarming {
     //Constructor
     public BL_Alarming()
     {
-        SuitPressure = commonData.SuitPressureValue;
-        HeartRate = commonData.HeartRateValue;
-        BodyTemperature = commonData.BodyTemperatureValue;
-        PrimaryOxygen = commonData.OxygenOneValue;
-        SecondaryOxygen = commonData.OxygenTwoValue;
-        Water = commonData.WaterValue;
-        Battery = commonData.BatteryValue;
+        //SuitPressure = commonData.SuitPressureValue;
+        //HeartRate = commonData.HeartRateValue;
+        //BodyTemperature = commonData.BodyTemperatureValue;
+        //PrimaryOxygen = commonData.OxygenOneValue;
+        //SecondaryOxygen = commonData.OxygenTwoValue;
+        //Water = commonData.WaterValue;
+        //Battery = commonData.BatteryValue;
     }
 
     public void AcknowldegeAlarmFunction()
@@ -225,6 +225,7 @@ public class BL_Alarming {
     //HearRate
     private void ProcessHeartRate ()
     {
+        HeartRate = commonData.HeartRateValue;
         if (HeartRate >= commonData.HeartRateMin && HeartRate <= commonData.HeartRateMax)
         {
 
@@ -287,6 +288,7 @@ public class BL_Alarming {
     //BodyTemperature
     private void ProcessBodyTemperature()
     {
+        BodyTemperature = commonData.BodyTemperatureValue;
         if (BodyTemperature >= commonData.BodyTemperatureMin && BodyTemperature <= commonData.BodyTemperatureMax)
         {
 
@@ -350,6 +352,7 @@ public class BL_Alarming {
     //PrimaryOxygen
     private void ProcessPrimaryOxygen()
     {
+        PrimaryOxygen = commonData.OxygenOneValue;
         if (PrimaryOxygen >= commonData.PrimaryOxygenMin && PrimaryOxygen <= commonData.PrimaryOxygenMax)
         {
 
@@ -374,6 +377,7 @@ public class BL_Alarming {
     //SecondaryOxygen
     private void ProcessSecondaryOxygen()
     {
+        SecondaryOxygen = commonData.OxygenTwoValue;
         if (SecondaryOxygen >= commonData.SecondaryOxygenMin && SecondaryOxygen <= commonData.SecondaryOxygenMax)
         {
             if (SecondaryOxygenLoEn == true)
@@ -409,6 +413,7 @@ public class BL_Alarming {
     //Water
     private void ProcessWater()
     {
+        Water = commonData.WaterValue;
         if (Water >= commonData.WaterMin && Water <= commonData.WaterMax)
         {
             if (WaterLoEn == true)
@@ -444,6 +449,7 @@ public class BL_Alarming {
     //Battery
     private void ProcessBattery()
     {
+        Battery = commonData.BatteryValue;
         if (Battery >= commonData.BatteryMin && Battery <= commonData.BatteryMax)
         {
             if (BatteryLoEn == true)

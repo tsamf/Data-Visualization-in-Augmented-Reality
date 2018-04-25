@@ -10,8 +10,8 @@ public class PrimaryO2 : MonoBehaviour {
     public float radius = 100.0f;
     public Image obj;
     public float currentHealth;
-   // public GameObject busLayer;
-   //private BL_Main pressurelog;
+    // public GameObject busLayer;
+    public BL_Main bl_main;
     public ColorCode ccPO;
 
     public CommonData commonData = CommonData.GetInstance();
@@ -35,38 +35,23 @@ public class PrimaryO2 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        float normalizedOxygen = commonData.OxygenOneValue;
+        float scaledValue = bl_main.GetComponent<BL_Main>().bl_scaling.scallingPrimaryOxygen();
 
-        radius = normalizedOxygen;
+        radius = scaledValue;
 
 
-        if (normalizedOxygen >= 50.00f)
-        {  //  Debug.Log("HH");
-            ccPO.HHCol();
-            obj.color = ccPO.HHColor;
-        }
-        else if (49.99f >= normalizedOxygen && normalizedOxygen >= 31.00f)
+        if (commonData.OxygenOneValue > commonData.PrimaryOxygenLoDB)
         { // Debug.Log("H");
             ccPO.HCol();
             obj.color = ccPO.HColor;
         }
-        else if (30.99 >= normalizedOxygen && normalizedOxygen >= 21.00f)
+        else if (commonData.OxygenOneValue <= commonData.PrimaryOxygenLoDB)
         {  //  Debug.Log("L");
-            ccPO.HCol();
-            obj.color = ccPO.HColor;
-        }
-        else if (20.99f >= normalizedOxygen )
-        { //  Debug.Log("LL");
             ccPO.LCol();
             obj.color = ccPO.LColor;
         }
+       
 
-      //  else
-        // Debug.Log("Error");
-
-
-
-        if (normalizedOxygen >= 0.009f)
             obj.transform.localScale = new Vector3(radius/100, radius/100, 1.0f);
     }
 }
