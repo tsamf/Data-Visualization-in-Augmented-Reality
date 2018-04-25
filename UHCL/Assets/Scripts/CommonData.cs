@@ -168,4 +168,14 @@ public class CommonData {
     {
         return CommonData.notgreen;
     }
+
+    public void setGreen(bool flag)
+    {
+        CommonData.green = flag;
+    }
+
+    public void setNotGreen(bool flag)
+    {
+        CommonData.notgreen = flag;
+    }
 }

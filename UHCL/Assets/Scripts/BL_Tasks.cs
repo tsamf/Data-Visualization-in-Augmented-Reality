@@ -108,6 +108,8 @@ public class BL_Tasks {
                 commonData.currentTask.text = "Task Complete!";
                 commonData.currentTask.stepNumber = procedure.tasks.Count;
                 commonData.previousTask = new UITask();
+                commonData.setGreen(false);
+                commonData.setNotGreen(false);
             }
             else if (index == procedure.tasks.Count -2)
             {
