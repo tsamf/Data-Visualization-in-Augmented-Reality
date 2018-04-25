@@ -66,7 +66,7 @@ public class BL_Scalling {
         commonData.SecondaryOxygenMax = 3600.0f;
         commonData.SecondaryOxygenMin = 0.036f;
 
-        commonData.SecondaryOxygenHiDB = 3550.0f;
+        commonData.SecondaryOxygenHiDB = 3575.0f;
 
         commonData.SecondaryOxygenLoDB = 1440.0f;
 

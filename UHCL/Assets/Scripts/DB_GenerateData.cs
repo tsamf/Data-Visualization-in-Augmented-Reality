@@ -31,8 +31,19 @@ public class DB_GenerateData : MonoBehaviour {
     public float increment;
     public bool isActive;
     System.Random random = new System.Random();
-
     public CommonData commonData = CommonData.GetInstance();
+
+
+    void Awake()
+    {
+        commonData.WaterValue = current;
+        commonData.OxygenOneValue = current;
+        commonData.OxygenTwoValue = current;
+        commonData.BatteryValue = current;
+        commonData.SuitPressureValue = current;
+        commonData.BodyTemperatureValue = current;
+        commonData.HeartRateValue = current;
+    }
 
     // Use this for initialization
     void Start () {

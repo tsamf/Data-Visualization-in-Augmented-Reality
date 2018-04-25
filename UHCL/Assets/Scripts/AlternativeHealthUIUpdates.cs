@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,12 +22,15 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
     public Slider SecondaryOxygenSlider;
     public Image secondaryO2Image;
 
+    public Slider WaterSilder;
     public Image WaterImage;
+
+    public Slider BatterySilder;
     public Image BatteryImage;
 
     public ColorCode flagColors;
 
-    public 
+    
 
     CommonData commonData = CommonData.GetInstance();
 
@@ -53,6 +57,44 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
         UpdateBodyTemperature();
         UpdatePrimaryO2();
         UpdateSecondaryO2();
+        UpdateWater();
+        UpdateBattery();
+    }
+
+    private void UpdateBattery()
+    {
+        BatterySilder.value = bl_main.bl_scaling.scallingBattery() / 100;
+
+        if(commonData.BatteryValue > commonData.BatteryLoDB)
+        {
+            BatteryImage.color = flagColors.HColor;
+        }
+        else if(commonData.BatteryLoDB > commonData.BatteryValue && commonData.BatteryValue > commonData.BatteryLoLoDB)
+        {
+            BatteryImage.color = flagColors.LColor;
+        }
+        else if(commonData.BatteryLoLoDB > commonData.BatteryValue)
+        {
+            BatteryImage.color = flagColors.LLColor;
+        }
+    }
+
+    private void UpdateWater()
+    {
+        WaterSilder.value = bl_main.bl_scaling.scallingWater() / 100;
+        
+        if(commonData.WaterLoDB < commonData.WaterValue)
+        {
+            WaterImage.color = flagColors.HColor;
+        }
+        else if(commonData.WaterLoDB > commonData.WaterValue && commonData.WaterValue > commonData.WaterLoLoDB)
+        {
+            WaterImage.color = flagColors.LColor;
+        }
+        else if(commonData.WaterLoLoDB > commonData.WaterValue)
+        {
+            WaterImage.color = flagColors.LLColor;
+        }
     }
 
     void UpdatePressureSlider()
@@ -159,7 +201,22 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
     {
         SecondaryOxygenSlider.value = bl_main.bl_scaling.scallingSeondaryOxygen() / 100;
 
-
+        if(commonData.OxygenTwoValue > commonData.SecondaryOxygenHiDB)
+        {
+            secondaryO2Image.color = flagColors.HHColor;
+        }
+        else if (commonData.SecondaryOxygenHiDB > commonData.OxygenTwoValue && commonData.OxygenTwoValue > commonData.SecondaryOxygenLoDB)
+        {
+            secondaryO2Image.color = flagColors.HColor;
+        }
+        else if(commonData.SecondaryOxygenLoDB > commonData.OxygenTwoValue && commonData.OxygenTwoValue > commonData.SecondaryOxygenLoLoDB)
+        {
+            secondaryO2Image.color = flagColors.LColor;
+        }
+        else if(commonData.OxygenTwoValue < commonData.SecondaryOxygenLoLoDB)
+        {
+            secondaryO2Image.color = flagColors.LLColor;
+        } 
     }
 
 
