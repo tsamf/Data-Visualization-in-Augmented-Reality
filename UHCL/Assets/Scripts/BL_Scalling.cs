@@ -103,8 +103,7 @@ public class BL_Scalling {
     //Sending out actual suitpressure value
     public float actualSuitPressure ()
     {
-        float num = commonData.SuitPressureValue / (commonData.SuitPressureMax - commonData.SuitPressureMin);
-        return (num*12)/10 + 3.9f;
+        return commonData.SuitPressureValue;
     }
 
     //Scaling from number to percentage
@@ -112,7 +111,7 @@ public class BL_Scalling {
         )
     {
         commonData.SuitPressureValue = BLScalingLimiting(commonData.SuitPressureValue);
-        float SuitPressure_normalize = (commonData.SuitPressureValue*100) / (commonData.SuitPressureMax - commonData.SuitPressureMin);
+        float SuitPressure_normalize = ((commonData.SuitPressureValue-commonData.SuitPressureMin)*100) / (commonData.SuitPressureMax - commonData.SuitPressureMin);
         return SuitPressure_normalize;
     }
 
@@ -141,7 +140,7 @@ public class BL_Scalling {
     public float scallingHeartRate()
     {
         commonData.HeartRateValue = BLScalingLimitingHeartRate(commonData.HeartRateValue);
-        float heartrate_normalize = (commonData.HeartRateValue * 100) / (commonData.HeartRateMax - commonData.HeartRateMin);
+        float heartrate_normalize = ((commonData.HeartRateValue -commonData.HeartRateMin)* 100) / (commonData.HeartRateMax - commonData.HeartRateMin);
         return heartrate_normalize;
     }
 
@@ -170,7 +169,7 @@ public class BL_Scalling {
     public float scallingBodyTemperature()
     {
         commonData.BodyTemperatureValue = BLScalingLimitingBodyTemperature(commonData.BodyTemperatureValue);
-        float bodytemperature_normalize = (commonData.BodyTemperatureValue * 100) / (commonData.BodyTemperatureMax - commonData.BodyTemperatureMin);
+        float bodytemperature_normalize = (commonData.BodyTemperatureValue - commonData.BodyTemperatureMin) / (commonData.BodyTemperatureMax - commonData.BodyTemperatureMin);
         return bodytemperature_normalize;
     }
 
@@ -200,7 +199,7 @@ public class BL_Scalling {
     public float scallingPrimaryOxygen()
     {
         commonData.OxygenOneValue = BLScalingLimitingPrimaryOxygen(commonData.OxygenOneValue);
-        float primaryoxygen_normalize = ((commonData.PrimaryOxygenMax- commonData.OxygenOneValue) * 100) / (commonData.PrimaryOxygenMax - commonData.PrimaryOxygenMin);
+        float primaryoxygen_normalize = ((commonData.OxygenOneValue-commonData.PrimaryOxygenMin) * 100) / (commonData.PrimaryOxygenMax - commonData.PrimaryOxygenMin);
         return primaryoxygen_normalize;
     }
 
@@ -229,7 +228,7 @@ public class BL_Scalling {
     public float scallingSeondaryOxygen()
     {
         commonData.OxygenTwoValue= BLScalingLimitingSecondaryOxygen(commonData.OxygenTwoValue);
-        float secondaryoxygen_normalize = ((commonData.SecondaryOxygenMax - commonData.OxygenTwoValue) * 100) / (commonData.SecondaryOxygenMax - commonData.SecondaryOxygenMin);
+        float secondaryoxygen_normalize = ((commonData.OxygenTwoValue-commonData.SecondaryOxygenMin) * 100) / (commonData.SecondaryOxygenMax - commonData.SecondaryOxygenMin);
         return secondaryoxygen_normalize;
     }
 
@@ -258,7 +257,7 @@ public class BL_Scalling {
     public float scallingWater()
     {
         commonData.OxygenTwoValue = BLScalingLimitingWater(commonData.WaterValue);
-        float water_normalize = ((commonData.WaterMax - commonData.WaterValue) * 100) / (commonData.WaterMax - commonData.WaterMin);
+        float water_normalize = ((commonData.WaterValue-commonData.WaterMin) * 100) / (commonData.WaterMax - commonData.WaterMin);
         return water_normalize;
     }
 
@@ -287,7 +286,7 @@ public class BL_Scalling {
     public float scallingBattery()
     {
         commonData.BatteryValue = BLScalingLimitingBattery(commonData.BatteryValue);
-        float battery_normalize = ((commonData.BatteryMax - commonData.BatteryValue) * 100) / (commonData.BatteryMax - commonData.BatteryMin);
+        float battery_normalize = ((commonData.BatteryValue-commonData.BatteryMin) * 100) / (commonData.BatteryMax - commonData.BatteryMin);
         return battery_normalize;
     }
 
