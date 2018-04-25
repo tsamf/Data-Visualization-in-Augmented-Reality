@@ -10,56 +10,55 @@ public class BTemperature : MonoBehaviour {
 
     public float radius = 1.0f;
     public Image objBT;
-    public float currentBT;
+    public float bodyTemperature;
     public ColorCode cc;
     public GameObject bl_main;
+    public CommonData commonData;
     void Start () {
+        commonData = CommonData.GetInstance();
     }
 	
 	// Update is called once per frame
 	void Update () {
 
-        currentBT = (bl_main.GetComponent<BL_Main>().bl_scaling.scallingBodyTemperature());
-        radius = currentBT;
+        bodyTemperature = commonData.BodyTemperatureValue;
+       radius = bl_main.GetComponent<BL_Main>().bl_scaling.scallingBodyTemperature();
+       
 
 
-        if (currentBT >= 0.80f)
+        if (bodyTemperature >= commonData.BodyTemperatureHiHiDB && bodyTemperature <= commonData.BodyTemperatureHiHiSP)
         {
             // Debug.Log("HH");
             cc.LLCol();
             objBT.color = cc.LLColor;
         }
-        else if (0.79f >= currentBT && currentBT >= 0.61f)
+        else if (bodyTemperature >= commonData.BodyTemperatureHiDB && bodyTemperature <= commonData.BodyTemperatureHiSP)
         {
             // Debug.Log("H");
             cc.LCol();
             objBT.color = cc.LColor;
         }
-        else if (0.60 >= currentBT && currentBT >= 0.41f)
+        else if (bodyTemperature <= commonData.BodyTemperatureHiDB && bodyTemperature >= commonData.BodyTemperatureLoDB)
         {
             //  Debug.Log("Ideal");
             cc.HCol();
             objBT.color = cc.HColor;
         }
-        else if (0.40f >= currentBT && currentBT >= 0.21f)
+        else if (bodyTemperature >= commonData.BodyTemperatureLoSP && bodyTemperature <= commonData.BodyTemperatureLoDB)
         {
             //   Debug.Log("L");
             cc.LCol();
             objBT.color = cc.LColor;
         }
-        else if (0.20f >= currentBT && currentBT >= 0.01f)
+        else if (bodyTemperature >= commonData.BodyTemperatureLoLoSP && bodyTemperature <= commonData.BodyTemperatureLoLoDB)
         {
             // Debug.Log("LL");
             cc.LLCol();
             objBT.color = cc.LLColor;
         }
 
-        else
-        {// Debug.Log(" unable to record heart Rate Error");
-        }
 
-        if (currentBT >= 0.009f)
-            objBT.transform.localScale = new Vector3(radius, radius, 1.0f);
+            objBT.transform.localScale = new Vector3(radius/100, radius/100, 1.0f);
 
     }
 }
