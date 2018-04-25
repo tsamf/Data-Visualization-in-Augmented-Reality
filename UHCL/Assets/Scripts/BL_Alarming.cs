@@ -262,7 +262,7 @@ public class BL_Alarming {
                 {
                     if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.HeartRateLoStatus) == null)
                     {
-                        Alarm alarm = new Alarm(AlarmType.HeartRateLoLoStatus, "Low Heart Rate");
+                        Alarm alarm = new Alarm(AlarmType.HeartRateLoStatus, "Low Heart Rate");
                         alarms.alarms.Insert(0, alarm);
                     }
                 }
