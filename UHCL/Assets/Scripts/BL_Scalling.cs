@@ -8,35 +8,35 @@ public class BL_Scalling {
     {
 
         //Suit Pressure
-        commonData.SuitPressureMax = 20;
-        commonData.SuitPressureMin = 0;
+        commonData.SuitPressureMax = 5.2f;
+        commonData.SuitPressureMin = 3.9f;
 
-        commonData.SuitPressHiHiSP = 18.0f;
-        commonData.SuitPressHiHiDB = 17.8f;
+        commonData.SuitPressHiHiSP = 5.2f;
+        commonData.SuitPressHiHiDB = 5.0f;
 
-        commonData.SuitPressHiSP = 16.0f;
-        commonData.SuitPressHiDB = 15.8f;
+        commonData.SuitPressHiSP = 4.99f;
+        commonData.SuitPressHiDB = 4.8f;
 
-        commonData.SuitPressLoSP = 4.0f;
-        commonData.SuitPressLoDB = 4.2f;
+        commonData.SuitPressLoSP = 4.1f;
+        commonData.SuitPressLoDB = 4.3f;
 
-        commonData.SuitPressLoLoSP = 3.0f;
-        commonData.SuitPressLoLoDB = 3.2f;
+        commonData.SuitPressLoLoSP = 3.9f;
+        commonData.SuitPressLoLoDB = 4.09f;
 
         //Heart Rate
         commonData.HeartRateMax = 80.0f;
         commonData.HeartRateMin = 55.0f;
 
         commonData.HeartRateHiHiSP = 80.0f;
-        commonData.HeartRateHiHiDB = 76.0f;
+        commonData.HeartRateHiHiDB = 75.0f;
 
-        commonData.HeartRateHiSP = 71.0f;
-        commonData.HeartRateHiDB = 75.0f;
+        commonData.HeartRateHiSP = 70.0f;
+        commonData.HeartRateHiDB = 74.99f;
 
-        commonData.HeartRateLoSP = 61.0f;
-        commonData.HeartRateLoDB = 58.0f;
+        commonData.HeartRateLoSP = 64.99f;
+        commonData.HeartRateLoDB = 60.0f;
 
-        commonData.HeartRateLoLoSP = 57.0f;
+        commonData.HeartRateLoLoSP = 59.99f;
         commonData.HeartRateLoLoDB = 55.0f;
 
         //Body temprature
@@ -44,15 +44,15 @@ public class BL_Scalling {
         commonData.BodyTemperatureMin = 90.0f;
 
         commonData.BodyTemperatureHiHiSP = 110.0f;
-        commonData.BodyTemperatureHiHiDB = 108.0f;
+        commonData.BodyTemperatureHiHiDB = 107.0f;
 
-        commonData.BodyTemperatureHiSP = 107.0f;
+        commonData.BodyTemperatureHiSP = 106.99f;
         commonData.BodyTemperatureHiDB = 104.0f;
 
-        commonData.BodyTemperatureLoSP = 94.0f;
-        commonData.BodyTemperatureLoDB = 92.0f;
+        commonData.BodyTemperatureLoSP = 96.0f;
+        commonData.BodyTemperatureLoDB = 93.0f;
 
-        commonData.BodyTemperatureLoLoSP = 92.0f;
+        commonData.BodyTemperatureLoLoSP = 92.99f;
         commonData.BodyTemperatureLoLoDB = 90.0f;
 
 

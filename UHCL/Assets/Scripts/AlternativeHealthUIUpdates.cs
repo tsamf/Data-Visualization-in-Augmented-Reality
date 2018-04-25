@@ -45,9 +45,13 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
         float SuitPressure = commonData.SuitPressureValue;
         if (SuitPressure >= commonData.SuitPressHiHiDB && SuitPressure <= commonData.SuitPressHiHiSP)
         {
-            pressureFillImage.color = pressureColors.HHColor;
+            pressureFillImage.color = pressureColors.LLColor;
         }
         else if (SuitPressure >= commonData.SuitPressHiDB && SuitPressure <= commonData.SuitPressHiSP)
+        {
+            pressureFillImage.color = pressureColors.LColor;
+        }
+        else if(SuitPressure <= commonData.SuitPressHiDB && SuitPressure >= commonData.SuitPressLoDB)
         {
             pressureFillImage.color = pressureColors.HColor;
         }
