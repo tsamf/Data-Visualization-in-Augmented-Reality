@@ -9,7 +9,7 @@ public class Pressure : MonoBehaviour {
 
     public float radius = 100.0f;
     public Image objP;
-    public float actualP;
+    public float suitPressure;
     public CommonData commonData;
     public EmergencyWindow ewindow;
    
@@ -27,28 +27,29 @@ public class Pressure : MonoBehaviour {
     {
 
         radius = bl_main.GetComponent<BL_Main>().bl_scaling.ScalingFunction();
-        actualP = bl_main.GetComponent<BL_Main>().bl_scaling.actualSuitPressure();
-        if (radius >= 80.00)
+        suitPressure = commonData.SuitPressureValue;
+
+        if (suitPressure >= commonData.SuitPressHiHiDB && suitPressure <= commonData.SuitPressHiHiSP)
         {
             cc.LLCol();
             objP.color = cc.LLColor;
         }
-        else if (79.99f >= radius && radius >= 71.00f)
+        else if (suitPressure >= commonData.SuitPressHiDB && suitPressure <= commonData.SuitPressHiSP)
         {
             cc.LCol();
             objP.color = cc.LColor;
         }
-        else if (70.99 >= radius && radius >= 41.00f)
+        else if (suitPressure <= commonData.SuitPressHiDB && suitPressure >= commonData.SuitPressLoDB)
         {
             cc.HCol();
             objP.color = cc.HColor;
         }
-        else if (40.99f >= radius && radius >= 21.00f)
+        else if (suitPressure >= commonData.SuitPressLoSP && suitPressure <= commonData.SuitPressLoDB)
         {
             cc.LCol();
             objP.color = cc.LColor;
         }
-        else if (20.99f >= radius && radius >= 0.01f)
+        else if (suitPressure >= commonData.SuitPressLoLoSP && suitPressure <= commonData.SuitPressLoLoDB)
         {
             cc.LLCol();
             objP.color = cc.LLColor;
@@ -56,11 +57,8 @@ public class Pressure : MonoBehaviour {
           //    "Pressure:" + actualP);
         }
 
-        else
-            Debug.Log(" unable to record pressure Error");
 
-
-        if (commonData.SuitPressureValue >= 0.009f)
+        
             objP.transform.localScale = new Vector3(radius/100, radius/100, 1.0f);
 
 
