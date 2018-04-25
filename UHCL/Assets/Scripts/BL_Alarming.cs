@@ -123,7 +123,7 @@ public class BL_Alarming {
         alarmsHistory.alarms.Insert(0, ackAlarm);
 
         //if we clear the last alarm we have to shrink the index
-        if(index > alarms.alarms.Count-1)
+        if(index > alarms.alarms.Count-1 && index != 0)
         {
             index--;
         }
