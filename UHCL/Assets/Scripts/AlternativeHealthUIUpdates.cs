@@ -12,7 +12,21 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
     public BL_Main bl_main;
 
     public Image pressureFillImage;
-    public ColorCode pressureColors;
+    public Image heartRateImage;
+    public Image bodyTemperatureImage;
+
+    public Slider PrimaryOxygenSlider;
+    public Image PrimaryO2Image;
+
+    public Slider SecondaryOxygenSlider;
+    public Image secondaryO2Image;
+
+    public Image WaterImage;
+    public Image BatteryImage;
+
+    public ColorCode flagColors;
+
+    public 
 
     CommonData commonData = CommonData.GetInstance();
 
@@ -35,6 +49,10 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
     void UpdateSliders()
     {
         UpdatePressureSlider();
+        UpdateHeartRateSlider();
+        UpdateBodyTemperature();
+        UpdatePrimaryO2();
+        UpdateSecondaryO2();
     }
 
     void UpdatePressureSlider()
@@ -45,26 +63,104 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
         float SuitPressure = commonData.SuitPressureValue;
         if (SuitPressure >= commonData.SuitPressHiHiDB && SuitPressure <= commonData.SuitPressHiHiSP)
         {
-            pressureFillImage.color = pressureColors.LLColor;
+            pressureFillImage.color = flagColors.LLColor;
         }
         else if (SuitPressure >= commonData.SuitPressHiDB && SuitPressure <= commonData.SuitPressHiSP)
         {
-            pressureFillImage.color = pressureColors.LColor;
+            pressureFillImage.color = flagColors.LColor;
         }
         else if(SuitPressure <= commonData.SuitPressHiDB && SuitPressure >= commonData.SuitPressLoDB)
         {
-            pressureFillImage.color = pressureColors.HColor;
+            pressureFillImage.color = flagColors.HColor;
         }
         else if (SuitPressure >= commonData.SuitPressLoSP && SuitPressure <= commonData.SuitPressLoDB)
         {
-            pressureFillImage.color = pressureColors.LColor;
+            pressureFillImage.color = flagColors.LColor;
         }
         else if (SuitPressure >= commonData.SuitPressLoLoSP && SuitPressure <= commonData.SuitPressLoLoDB)
         {
-            pressureFillImage.color = pressureColors.LLColor;
+            pressureFillImage.color = flagColors.LLColor;
         }
     }
 
+    void UpdateHeartRateSlider()
+    {
+        float newHeartRatePosition = bl_main.bl_scaling.scallingHeartRate().Map(0f, 100f, 12.5f, 148f);
+        heartRateImage.rectTransform.localPosition = new Vector3(newHeartRatePosition -80f, 0f, 0f);
+
+        float heartRate = commonData.HeartRateValue;
+
+        if (heartRate >= commonData.HeartRateHiHiDB && heartRate <= commonData.HeartRateHiHiSP)
+        {
+            heartRateImage.color = flagColors.LLColor;
+        }
+        else if (heartRate >= commonData.HeartRateHiDB && heartRate <= commonData.HeartRateHiSP)
+        {
+            heartRateImage.color = flagColors.LColor;
+        }
+        else if (heartRate <= commonData.HeartRateHiDB && heartRate >= commonData.HeartRateLoDB)
+        {
+            heartRateImage.color = flagColors.HColor;
+        }
+        else if (heartRate >= commonData.HeartRateLoSP && heartRate <= commonData.HeartRateLoDB)
+        {
+            heartRateImage.color = flagColors.LColor;
+        }
+        else if (heartRate >= commonData.HeartRateLoLoSP && heartRate <= commonData.HeartRateLoLoDB)
+        {
+            heartRateImage.color = flagColors.LLColor;
+        }
+    }
+
+    void UpdateBodyTemperature()
+    {
+        float newBodyTemperaturePosition = bl_main.bl_scaling.scallingBodyTemperature().Map(0f, 100f, 8f, 142f);
+        bodyTemperatureImage.rectTransform.localPosition = new Vector3(newBodyTemperaturePosition - 70f, 0f, 0f);
+
+        float bodyTemperature = commonData.BodyTemperatureValue;
+
+        if (bodyTemperature >= commonData.BodyTemperatureHiHiDB && bodyTemperature <= commonData.BodyTemperatureHiHiSP)
+        {
+            bodyTemperatureImage.color = flagColors.LLColor;
+        }
+        else if (bodyTemperature >= commonData.BodyTemperatureHiDB && bodyTemperature <= commonData.BodyTemperatureHiSP)
+        {
+            bodyTemperatureImage.color = flagColors.LColor;
+        }
+        else if (bodyTemperature <= commonData.BodyTemperatureHiDB && bodyTemperature >= commonData.BodyTemperatureLoDB)
+        {
+            bodyTemperatureImage.color = flagColors.HColor;
+        }
+        else if (bodyTemperature >= commonData.BodyTemperatureLoSP && bodyTemperature <= commonData.BodyTemperatureLoDB)
+        {
+            bodyTemperatureImage.color = flagColors.LColor;
+        }
+        else if (bodyTemperature >= commonData.BodyTemperatureLoLoSP && bodyTemperature <= commonData.BodyTemperatureLoLoDB)
+        {
+            bodyTemperatureImage.color = flagColors.LLColor;
+        }
+    }
+
+    void UpdatePrimaryO2()
+    {
+        PrimaryOxygenSlider.value = bl_main.bl_scaling.scallingPrimaryOxygen() / 100;
+
+        if(commonData.OxygenOneValue >commonData.PrimaryOxygenLoDB)
+        {
+            PrimaryO2Image.color = flagColors.HColor;
+        }
+        else if(commonData.OxygenOneValue <= commonData.PrimaryOxygenLoDB)
+        {
+            PrimaryO2Image.color = flagColors.LColor;
+        }
+    }
+
+    void UpdateSecondaryO2()
+    {
+        SecondaryOxygenSlider.value = bl_main.bl_scaling.scallingSeondaryOxygen() / 100;
+
+
+    }
 
 
     void UpdateDetailPiePanel()

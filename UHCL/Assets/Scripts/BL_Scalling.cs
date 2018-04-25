@@ -30,14 +30,14 @@ public class BL_Scalling {
         commonData.HeartRateHiHiSP = 80.0f;
         commonData.HeartRateHiHiDB = 75.0f;
 
-        commonData.HeartRateHiSP = 70.0f;
-        commonData.HeartRateHiDB = 74.99f;
+        commonData.HeartRateHiSP = 74.99f;
+        commonData.HeartRateHiDB = 70.0f; 
 
-        commonData.HeartRateLoSP = 64.99f;
-        commonData.HeartRateLoDB = 60.0f;
+        commonData.HeartRateLoSP = 60.0f;
+        commonData.HeartRateLoDB = 64.99f; 
 
-        commonData.HeartRateLoLoSP = 59.99f;
-        commonData.HeartRateLoLoDB = 55.0f;
+        commonData.HeartRateLoLoSP = 55.0f;
+        commonData.HeartRateLoLoDB =  59.99f;
 
         //Body temprature
         commonData.BodyTemperatureMax = 110.0f;
@@ -49,11 +49,11 @@ public class BL_Scalling {
         commonData.BodyTemperatureHiSP = 106.99f;
         commonData.BodyTemperatureHiDB = 104.0f;
 
-        commonData.BodyTemperatureLoSP = 96.0f;
-        commonData.BodyTemperatureLoDB = 93.0f;
+        commonData.BodyTemperatureLoSP = 93.0f;
+        commonData.BodyTemperatureLoDB = 96.0f; 
 
-        commonData.BodyTemperatureLoLoSP = 92.99f;
-        commonData.BodyTemperatureLoLoDB = 90.0f;
+        commonData.BodyTemperatureLoLoSP = 90.0f;
+        commonData.BodyTemperatureLoLoDB = 92.99f; 
 
 
         //Primary Oxygen
@@ -65,6 +65,8 @@ public class BL_Scalling {
         //Secondary Oxygen
         commonData.SecondaryOxygenMax = 3600.0f;
         commonData.SecondaryOxygenMin = 0.036f;
+
+        commonData.SecondaryOxygenHiDB = 3550.0f;
 
         commonData.SecondaryOxygenLoDB = 1440.0f;
 
@@ -169,7 +171,7 @@ public class BL_Scalling {
     public float scallingBodyTemperature()
     {
         commonData.BodyTemperatureValue = BLScalingLimitingBodyTemperature(commonData.BodyTemperatureValue);
-        float bodytemperature_normalize = (commonData.BodyTemperatureValue - commonData.BodyTemperatureMin) / (commonData.BodyTemperatureMax - commonData.BodyTemperatureMin);
+        float bodytemperature_normalize = ((commonData.BodyTemperatureValue - commonData.BodyTemperatureMin) * 100) / (commonData.BodyTemperatureMax - commonData.BodyTemperatureMin);
         return bodytemperature_normalize;
     }
 

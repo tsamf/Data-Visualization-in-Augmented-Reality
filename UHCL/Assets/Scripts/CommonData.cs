@@ -159,6 +159,7 @@ public class CommonData {
     public string[][] NEXT { get; set; }
 
     public string[][] TASK_TABLE { get; set; }
+    public float SecondaryOxygenHiDB { get; internal set; }
 
     public bool getGreen()
     {

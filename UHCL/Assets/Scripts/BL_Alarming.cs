@@ -281,7 +281,6 @@ public class BL_Alarming {
         }
         else
         {
-            Debug.Log("Heart Rate Something wrong here!");
         }
     }
 
@@ -368,7 +367,7 @@ public class BL_Alarming {
         }
         else
         {
-            Debug.Log("Primary Oxygen Something wrong here!");
+           
         }
     }
 
@@ -403,7 +402,7 @@ public class BL_Alarming {
         }
         else
         {
-            Debug.Log("Secondary Oxygen Something wrong here!");
+            
         }
     }
 
@@ -438,7 +437,7 @@ public class BL_Alarming {
         }
         else
         {
-            Debug.Log("Water Something wrong here!");
+      
         }
     }
 
@@ -473,7 +472,7 @@ public class BL_Alarming {
         }
         else
         {
-            Debug.Log("Battery Something wrong here!");
+          
         }
     }
 
