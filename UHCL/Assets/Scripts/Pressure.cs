@@ -11,7 +11,7 @@ public class Pressure : MonoBehaviour {
     public Image objP;
     public float suitPressure;
     public CommonData commonData;
-    
+    public EmergencyWindow ewindow;
    
     public ColorCode cc;
 

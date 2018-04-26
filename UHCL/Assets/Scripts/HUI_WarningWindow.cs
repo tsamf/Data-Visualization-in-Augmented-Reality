@@ -11,13 +11,13 @@ public class HUI_WarningWindow : MonoBehaviour {
     public Text currentwarning;
     public Text nextwarning;
     public Text WarningText;
-    public GameObject singleWarningDisplay;
+        public GameObject singleWarningDisplay;
 
 
 	// Use this for initialization
 	void Start () {
 
-       // warningDetailPanel.SetActive(true);
+        warningDetailPanel.SetActive(true);
         singleWarningDisplay.SetActive(false);
 	}
 
