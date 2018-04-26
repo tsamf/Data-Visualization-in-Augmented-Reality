@@ -9,6 +9,7 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
     //public GameObject detailedPie;
 
     public GameObject displayDetails;
+    public GameObject DetailPanel;
     public DisplayDetails dd;
     public BL_Main bl_main;
 
@@ -40,6 +41,7 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
         //detailedPie.SetActive(false);
         
         displayDetails.SetActive(false);
+        DetailPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -47,6 +49,7 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
     {
         UpdateDetailPiePanel();
         UpdateViewDetails();
+        UpdateWarningWindow();
         UpdateSliders();
     }
 
@@ -249,6 +252,22 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
             Debug.Log("CLose DEtail");
         }
     }
+
+    void UpdateWarningWindow()
+    {
+        if (commonData.viewWarnings)
+        {
+            DetailPanel.SetActive(true);
+
+
+            commonData.viewWarnings = false;
+        }
+        else if (commonData.closeWarnings)
+        {
+            DetailPanel.SetActive(false);
+            commonData.closeWarnings = false;
+        }
+    }
 }
 
 public static class ExtensionMethods
@@ -258,3 +277,4 @@ public static class ExtensionMethods
         return low2 + (value - low1) * (high2 - low2) / (high1 - low1);
     }
 }
+
