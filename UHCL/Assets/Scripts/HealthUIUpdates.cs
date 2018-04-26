@@ -49,12 +49,12 @@ public class HealthUIUpdates : MonoBehaviour {
 
     void UpdateViewDetails()
     {
-        if(commonData.viewPressure)
+        if (commonData.viewPressure)
         {
             displayDetails.SetActive(true);
             Debug.Log("view Pressure");
-            dd.Display("Suit Pressure Details", "Pressure value " + bl_main.GetComponent<BL_Main >().bl_scaling.actualSuitPressure() + '\n' + '\n' + "Primary O2: " + (commonData.OxygenOneValue) + "psi" + '\n' + '\n' + "Secondary O2: " + (commonData.OxygenTwoValue) + "psi");
-
+            dd.Display("Suit Pressure Details", "Pressure value " + bl_main.GetComponent<BL_Main>().bl_scaling.actualSuitPressure() + "PSI" + '\n' + '\n' + "Primary O2: " + (commonData.OxygenOneValue) + "psi" + '\n' + '\n' + "Secondary O2: " + (commonData.OxygenTwoValue) + "psi");
+            commonData.viewPressure = false;
         }
         else if (commonData.viewPrimaryOTwo)
         {
@@ -62,6 +62,7 @@ public class HealthUIUpdates : MonoBehaviour {
             Po2 = Mathf.Round(Po2 * 100f) / 100; ;
             displayDetails.SetActive(true);
             dd.Display("Primary Oxygen Details", "Primary O2 left: " + Po2 + "%" + '\n' + '\n' + "Primary O2: " + (commonData.OxygenOneValue) + "psi");
+            commonData.viewPrimaryOTwo = false;
         }
 
         else if (commonData.viewSecondaryOTwo)
@@ -70,6 +71,7 @@ public class HealthUIUpdates : MonoBehaviour {
             So2 = Mathf.Round(So2 * 100f) / 100;
             displayDetails.SetActive(true);
             dd.Display("Secondary Oxygen Details", "Secondary O2 left: " + So2 + "%" + '\n' + '\n' + "Secondary O2: " + (commonData.OxygenTwoValue) + "psi");
+            commonData.viewSecondaryOTwo = false;
         }
 
         else if (commonData.viewBattery)
@@ -78,20 +80,22 @@ public class HealthUIUpdates : MonoBehaviour {
             bat = Mathf.Round(bat * 100f) / 100;
             displayDetails.SetActive(true);
             dd.Display("Battery Details", "Battery left: " + bat + "%");
+            commonData.viewBattery = false;
         }
 
         else if (commonData.viewBodyTemperature)
         {
             displayDetails.SetActive(true);
             dd.Display("Temperature Details", "Body Temperature: " + (bl_main.bl_scaling.scallingBodyTemperature()) + " F");
+            commonData.viewBodyTemperature = false;
         }
 
         else if (commonData.viewHeartRate)
         {
             displayDetails.SetActive(true);
             dd.Display("Heart Details", "Heart Rate: " + (bl_main.bl_scaling.scallingHeartRate()) + " bpm");
+            commonData.viewHeartRate = false;
         }
-
         else if (commonData.viewHTwoO)
         {
 
@@ -99,11 +103,13 @@ public class HealthUIUpdates : MonoBehaviour {
             water = Mathf.Round(water * 100f) / 100;
             displayDetails.SetActive(true);
             dd.Display("H2O Details", "H2O left: " + water + "%" + '\n' + '\n' + "H2O :" + commonData.WaterValue + " lbs");
+            commonData.viewHTwoO = false;
         }
         else if (commonData.closeDetailWindow)
         {
             displayDetails.SetActive(false);
-          //  Debug.Log("Close DEtail");
+            //  Debug.Log("Close DEtail");
+            commonData.closeDetailWindow = false;
         }
     }
 
