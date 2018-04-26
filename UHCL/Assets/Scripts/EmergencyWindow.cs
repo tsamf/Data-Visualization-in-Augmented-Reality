@@ -13,8 +13,8 @@ public class EmergencyWindow : MonoBehaviour {
     // Displays the indicated emergency nessage in the pop-up window
     public void Show (string message)
     {
-        //messageField.text = message;
-       // window.SetActive(true);
+       messageField.text = message;
+       window.SetActive(true);
     }
 
     // Hide Window

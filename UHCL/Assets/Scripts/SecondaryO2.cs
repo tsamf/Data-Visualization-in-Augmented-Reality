@@ -12,43 +12,44 @@ public class SecondaryO2 : MonoBehaviour
     public Image objSO2;
     public float intialSO2 = 1.0f;
     public ColorCode ccSO;
-    public CommonData commanData;
+    public CommonData commonData;
     public EmergencyWindow ewindow;
+    public BL_Main bl_main;
     void Start()
     {
-        commanData = CommonData.GetInstance();
+        commonData = CommonData.GetInstance();
    
     }
 
     // Update is called once per frame
     void Update()
     {
-        radius = commanData.OxygenTwoValue / 100;
+        radius = bl_main.bl_scaling.scallingSeondaryOxygen() / 100;
 
 
-        if (commanData.OxygenOneValue <= 0.9f)
+        if (commonData.OxygenOneValue <= 0.9f)
         { 
 
-            if (radius >= 0.80)
+            if (commonData.OxygenTwoValue > commonData.SecondaryOxygenHiDB)
             {
                 // Debug.Log("HH");
                 ccSO.HHCol();
                 objSO2.color = ccSO.HHColor;
             }
-            else if (0.79f >= radius && radius >= 0.50f)
+            else if (commonData.SecondaryOxygenHiDB > commonData.OxygenTwoValue && commonData.OxygenTwoValue > commonData.SecondaryOxygenLoDB)
             {
                 // Debug.Log("H");
                 ccSO.HCol();
                 objSO2.color = ccSO.HColor;
             }
-            else if (0.49 >= radius && radius >= 0.25f)
+            else if (commonData.SecondaryOxygenLoDB > commonData.OxygenTwoValue && commonData.OxygenTwoValue > commonData.SecondaryOxygenLoLoDB)
             {
                 //Debug.Log("L");
                 ccSO.LCol();
                 objSO2.color = ccSO.LColor;
             }
 
-            else if (0.24 >= radius && radius >= 0.01f)
+            else if (commonData.OxygenTwoValue < commonData.SecondaryOxygenLoLoDB)
             {
                 //Debug.Log("LL");
                 ccSO.LLCol();
@@ -57,11 +58,6 @@ public class SecondaryO2 : MonoBehaviour
               //"Secondary O2:" + commanData.OxygenTwoValue);
             }
 
-            //  else
-            // Debug.Log("Secondary O2 Error");
-
-
-            if (radius >= 0.009f)
                 objSO2.transform.localScale = new Vector3(radius, radius, 1.0f);
         }
     }

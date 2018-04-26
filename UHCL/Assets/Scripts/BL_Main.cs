@@ -20,6 +20,7 @@ public class BL_Main : MonoBehaviour
         bl_scaling = new BL_Scalling();
         bl_alarming = new BL_Alarming();
         bl_task = new BL_Tasks();
+       
     }
 
     // Update is called once per frame

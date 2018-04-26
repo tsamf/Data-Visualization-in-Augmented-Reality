@@ -11,10 +11,11 @@ public class HealthUIUpdates : MonoBehaviour {
     public GameObject DetailPanel;
     public DisplayDetails dd;
     public BL_Main bl_main;
-   
+    public GameObject ewindow;
 
     CommonData commonData = CommonData.GetInstance();
 
+   
     // Use this for initialization
     void Start () {
         detailedPie.SetActive(false);
@@ -28,6 +29,7 @@ public class HealthUIUpdates : MonoBehaviour {
         UpdateDetailPiePanel();
         UpdateViewDetails();
         UpdateWarningWindow();
+        updateEmergencyMessage();
     }
 
     void UpdateDetailPiePanel()
@@ -87,6 +89,31 @@ public class HealthUIUpdates : MonoBehaviour {
         {
             DetailPanel.SetActive(false);
              commonData.closeWarnings = false;
+        }
+    }
+
+    void updateEmergencyMessage()
+    {
+        if ((commonData.SuitPressureValue >= commonData.SuitPressHiHiDB && commonData.SuitPressureValue <= commonData.SuitPressHiHiSP) || (commonData.SuitPressureValue >= commonData.SuitPressLoLoSP && commonData.SuitPressureValue <= commonData.SuitPressLoLoDB))
+        {
+
+            ewindow.SetActive(true);
+            ewindow.GetComponent<EmergencyWindow>().Show("Suit Pressure Low. Return Back to the Ship." + '\n' +
+           "Pressure:" + commonData.SuitPressureValue + "psi");
+        }
+
+        if ((commonData.HeartRateValue >= commonData.HeartRateHiHiDB && commonData.HeartRateValue <= commonData.HeartRateHiHiSP) || (commonData.HeartRateValue>= commonData.HeartRateLoLoSP && commonData.HeartRateValue <= commonData.HeartRateLoLoDB))
+        {
+            ewindow.SetActive(true);
+            ewindow.GetComponent<EmergencyWindow>().Show("Heart Rate Abnormal. Return Back to the Ship" + '\n' +
+           "Pressure:" + commonData.HeartRateValue + "bpm");
+        }
+
+        if ((commonData.BodyTemperatureValue >= commonData.BodyTemperatureHiHiDB && commonData.BodyTemperatureValue <= commonData.BodyTemperatureHiHiSP) || (commonData.BodyTemperatureValue >= commonData.BodyTemperatureLoLoSP && commonData.BodyTemperatureValue <= commonData.BodyTemperatureLoLoDB))
+        {
+            ewindow.SetActive(true);
+            ewindow.GetComponent<EmergencyWindow>().Show("Body Temperature Abnormal. Return Back to the Ship" + '\n' +
+           "Body Temperature:" + commonData.BodyTemperatureValue + "F");
         }
     }
 }
