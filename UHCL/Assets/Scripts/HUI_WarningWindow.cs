@@ -35,6 +35,7 @@ public class HUI_WarningWindow : MonoBehaviour {
         }
         else
         {
+            singleWarningDisplay.SetActive(false);
             currentwarning.text = "";
             WarningText.text = "";
         }

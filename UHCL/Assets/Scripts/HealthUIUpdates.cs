@@ -127,6 +127,14 @@ public class HealthUIUpdates : MonoBehaviour {
             DetailPanel.SetActive(false);
              commonData.closeWarnings = false;
         }
+
+        if (DetailPanel.active)
+        {
+            if (bl_main.bl_alarming.GetCurrentAlarm == null)
+            {
+                DetailPanel.SetActive(false);
+            }
+        }
     }
 
     void updateEmergencyMessage()
