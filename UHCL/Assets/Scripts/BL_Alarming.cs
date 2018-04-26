@@ -186,7 +186,7 @@ public class BL_Alarming {
 
                     if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.SuitPressureHiStatus) == null)
                     {
-                        Alarm alarm = new Alarm(AlarmType.SuitPressureHiStatus, "Hi Suit Pressure");
+                        Alarm alarm = new Alarm(AlarmType.SuitPressureHiStatus, "High Suit Pressure");
                         alarms.alarms.Insert(0, alarm);
                     }
                 }
@@ -250,7 +250,7 @@ public class BL_Alarming {
 
                     if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.HeartRateHiStatus) == null)
                     {
-                        Alarm alarm = new Alarm(AlarmType.HeartRateHiStatus, "Hi Heart Rate");
+                        Alarm alarm = new Alarm(AlarmType.HeartRateHiStatus, "High Heart Rate");
                         alarms.alarms.Insert(0, alarm);
                     }
                 }
@@ -262,7 +262,7 @@ public class BL_Alarming {
                 {
                     if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.HeartRateLoStatus) == null)
                     {
-                        Alarm alarm = new Alarm(AlarmType.HeartRateLoStatus, "Low Heart Rate");
+                        Alarm alarm = new Alarm(AlarmType.HeartRateLoLoStatus, "Low Heart Rate");
                         alarms.alarms.Insert(0, alarm);
                     }
                 }
@@ -313,7 +313,7 @@ public class BL_Alarming {
 
                     if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.BodyTemperatureHiStatus) == null)
                     {
-                        Alarm alarm = new Alarm(AlarmType.BodyTemperatureHiStatus, "Hi Body Temperature");
+                        Alarm alarm = new Alarm(AlarmType.BodyTemperatureHiStatus, "High Body Temperature");
                         alarms.alarms.Insert(0, alarm);
                     }
                 }
