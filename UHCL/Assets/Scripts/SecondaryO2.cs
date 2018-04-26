@@ -10,26 +10,24 @@ public class SecondaryO2 : MonoBehaviour
     // Use this for initialization
     public float radius = 1.0f;
     public Image objSO2;
-    public float intialSO2 = 1.0f;
     public ColorCode ccSO;
     public CommonData commonData;
     public BL_Main bl_main;
-   
+
     void Start()
     {
         commonData = CommonData.GetInstance();
-   
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        radius = bl_main.bl_scaling.scallingSeondaryOxygen() / 100;
+        radius = (bl_main.GetComponent<BL_Main>().bl_scaling.scallingSeondaryOxygen());
 
 
-        if (commonData.OxygenOneValue <= commonData.PrimaryOxygenMin)
-        { 
-
+      //  if (commonData.OxygenOneValue < 1.00f)
+      //  {
             if (commonData.OxygenTwoValue > commonData.SecondaryOxygenHiDB)
             {
                 // Debug.Log("HH");
@@ -54,11 +52,10 @@ public class SecondaryO2 : MonoBehaviour
                 //Debug.Log("LL");
                 ccSO.LLCol();
                 objSO2.color = ccSO.LLColor;
-              
             }
 
-                objSO2.transform.localScale = new Vector3(radius, radius, 1.0f);
+            objSO2.transform.localScale = new Vector3(radius/100, radius/100, 1.0f);
         }
     }
-}
+//}
 

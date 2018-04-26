@@ -3659,7 +3659,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 1
   objSO2: {fileID: 941126081}
-  intialSO2: 1
   ccSO: {fileID: 941126083}
   bl_main: {fileID: 242413103}
 --- !u!114 &941126081
@@ -3674,7 +3673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.39215687, g: 0.5686275, b: 0.9764706, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7633,7 +7632,7 @@ Prefab:
     - target: {fileID: 114324679799464102, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}
       propertyPath: isActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114322198404303584, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}
@@ -7653,6 +7652,11 @@ Prefab:
     - target: {fileID: 114470457978547934, guid: e483ad673f90da545ace027a9ffcbb10,
         type: 2}
       propertyPath: current
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114324679799464102, guid: e483ad673f90da545ace027a9ffcbb10,
+        type: 2}
+      propertyPath: initial
       value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
