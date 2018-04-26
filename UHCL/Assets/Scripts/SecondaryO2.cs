@@ -17,7 +17,8 @@ public class SecondaryO2 : MonoBehaviour
     void Start()
     {
         commonData = CommonData.GetInstance();
-
+        ccSO.HHCol();
+        objSO2.color = ccSO.HHColor;
     }
 
     // Update is called once per frame
@@ -26,8 +27,8 @@ public class SecondaryO2 : MonoBehaviour
         radius = (bl_main.GetComponent<BL_Main>().bl_scaling.scallingSeondaryOxygen());
 
 
-      //  if (commonData.OxygenOneValue < 1.00f)
-      //  {
+      if (commonData.OxygenOneValue < 1.00f)
+      {
             if (commonData.OxygenTwoValue > commonData.SecondaryOxygenHiDB)
             {
                 // Debug.Log("HH");
@@ -57,5 +58,5 @@ public class SecondaryO2 : MonoBehaviour
             objSO2.transform.localScale = new Vector3(radius/100, radius/100, 1.0f);
         }
     }
-//}
+}
 

@@ -53,21 +53,53 @@ public class HealthUIUpdates : MonoBehaviour {
         {
             displayDetails.SetActive(true);
             Debug.Log("view Pressure");
-            dd.Display("Suit Pressure Details", "Pressure value " + bl_main.GetComponent<BL_Main >().bl_scaling.actualSuitPressure());
+            dd.Display("Suit Pressure Details", "Pressure value " + bl_main.GetComponent<BL_Main >().bl_scaling.actualSuitPressure() + '\n' + '\n' + "Primary O2: " + (commonData.OxygenOneValue) + "psi" + '\n' + '\n' + "Secondary O2: " + (commonData.OxygenTwoValue) + "psi");
 
         }
         else if (commonData.viewPrimaryOTwo)
         {
+            float Po2 = bl_main.bl_scaling.scallingPrimaryOxygen();
+            Po2 = Mathf.Round(Po2 * 100f) / 100; ;
             displayDetails.SetActive(true);
-            dd.Display("Primary Oxygen Details", "Primary O2 left: " + (commonData.OxygenOneValue) + "%" + '\n' + "Primary O2: " + bl_main.bl_scaling.actualPrimaryOxygen());
+            dd.Display("Primary Oxygen Details", "Primary O2 left: " + Po2 + "%" + '\n' + '\n' + "Primary O2: " + (commonData.OxygenOneValue) + "psi");
         }
 
         else if (commonData.viewSecondaryOTwo)
         {
+            float So2 = bl_main.bl_scaling.scallingSeondaryOxygen();
+            So2 = Mathf.Round(So2 * 100f) / 100;
             displayDetails.SetActive(true);
-            dd.Display("Secondary Oxygen Details", "Secondary O2 left: " + (commonData.OxygenTwoValue) + "%");
+            dd.Display("Secondary Oxygen Details", "Secondary O2 left: " + So2 + "%" + '\n' + '\n' + "Secondary O2: " + (commonData.OxygenTwoValue) + "psi");
         }
 
+        else if (commonData.viewBattery)
+        {
+            float bat = bl_main.bl_scaling.scallingBattery();
+            bat = Mathf.Round(bat * 100f) / 100;
+            displayDetails.SetActive(true);
+            dd.Display("Battery Details", "Battery left: " + bat + "%");
+        }
+
+        else if (commonData.viewBodyTemperature)
+        {
+            displayDetails.SetActive(true);
+            dd.Display("Temperature Details", "Body Temperature: " + (bl_main.bl_scaling.scallingBodyTemperature()) + " F");
+        }
+
+        else if (commonData.viewHeartRate)
+        {
+            displayDetails.SetActive(true);
+            dd.Display("Heart Details", "Heart Rate: " + (bl_main.bl_scaling.scallingHeartRate()) + " bpm");
+        }
+
+        else if (commonData.viewHTwoO)
+        {
+
+            float water = bl_main.bl_scaling.scallingWater();
+            water = Mathf.Round(water * 100f) / 100;
+            displayDetails.SetActive(true);
+            dd.Display("H2O Details", "H2O left: " + water + "%" + '\n' + '\n' + "H2O :" + commonData.WaterValue + " lbs");
+        }
         else if (commonData.closeDetailWindow)
         {
             displayDetails.SetActive(false);
@@ -115,15 +147,15 @@ public class HealthUIUpdates : MonoBehaviour {
            "Body Temperature:" + commonData.BodyTemperatureValue + "F");
         }
 
-      /*  if (commonData.OxygenOneValue < 1)
-        {
+      
+        
             if (commonData.OxygenTwoValue <= commonData.SecondaryOxygenLoLoDB)
             {
                 ewindow.SetActive(true);
                 ewindow.GetComponent<EmergencyWindow>().Show("Low Oxygen Levels. Return Back to the Ship" + '\n' +
                "Oxygen:" + bl_main.bl_scaling.scallingSeondaryOxygen() + "%");
             }
-        }*/
+
 
         if(commonData.WaterLoLoDB > commonData.WaterValue)
         {
