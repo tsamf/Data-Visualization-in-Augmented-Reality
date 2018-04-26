@@ -17,7 +17,7 @@ public class HUI_WarningWindow : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        warningDetailPanel.SetActive(true);
+       // warningDetailPanel.SetActive(true);
         singleWarningDisplay.SetActive(false);
 	}
 
@@ -32,7 +32,6 @@ public class HUI_WarningWindow : MonoBehaviour {
             singleWarningDisplay.SetActive(true);
             currentwarning.text = bl_main.GetComponent<BL_Main>().bl_alarming.GetCurrentAlarm.message;
             WarningText.text = bl_main.GetComponent<BL_Main>().bl_alarming.GetCurrentAlarm.message;
-            Debug.Log(bl_main.GetComponent<BL_Main>().bl_alarming.GetCurrentAlarm.message);
         }
         else
         {

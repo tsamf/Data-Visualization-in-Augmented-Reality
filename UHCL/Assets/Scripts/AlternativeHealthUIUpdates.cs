@@ -202,6 +202,8 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
 
     void UpdateSecondaryO2()
     {
+
+        Debug.Log(bl_main.bl_scaling.scallingSeondaryOxygen() / 100);
         SecondaryOxygenSlider.value = bl_main.bl_scaling.scallingSeondaryOxygen() / 100;
 
         if(commonData.OxygenTwoValue > commonData.SecondaryOxygenHiDB)

@@ -36,13 +36,31 @@ public class DB_GenerateData : MonoBehaviour {
 
     void Awake()
     {
-        commonData.WaterValue = current;
-        commonData.OxygenOneValue = current;
-        commonData.OxygenTwoValue = current;
-        commonData.BatteryValue = current;
-        commonData.SuitPressureValue = current;
-        commonData.BodyTemperatureValue = current;
-        commonData.HeartRateValue = current;
+        switch (type)
+        {
+            case consumableType.Water:
+                commonData.WaterValue = current;
+                break;
+            case consumableType.Oxygen:
+                commonData.OxygenOneValue = current;
+                break;
+            case consumableType.Oxygen2:
+                commonData.OxygenTwoValue = current;
+                break;
+            case consumableType.Battery:
+                commonData.BatteryValue = current;
+                break;
+            case consumableType.SuitPressure:
+                commonData.SuitPressureValue = current;
+                break;
+            case consumableType.BodyTemperature:
+                commonData.BodyTemperatureValue = current;
+                break;
+            case consumableType.HeartRate:
+                commonData.HeartRateValue = current;
+                break;
+
+        }
     }
 
     // Use this for initialization

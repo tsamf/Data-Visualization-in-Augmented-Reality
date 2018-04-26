@@ -258,7 +258,7 @@ public class BL_Scalling {
     //Sending out scalling value
     public float scallingWater()
     {
-        commonData.OxygenTwoValue = BLScalingLimitingWater(commonData.WaterValue);
+        commonData.WaterValue = BLScalingLimitingWater(commonData.WaterValue);
         float water_normalize = ((commonData.WaterValue-commonData.WaterMin) * 100) / (commonData.WaterMax - commonData.WaterMin);
         return water_normalize;
     }
