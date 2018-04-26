@@ -11,7 +11,7 @@ public class Pressure : MonoBehaviour {
     public Image objP;
     public float suitPressure;
     public CommonData commonData;
-    public EmergencyWindow ewindow;
+   
    
     public ColorCode cc;
 
@@ -53,12 +53,9 @@ public class Pressure : MonoBehaviour {
         {
             cc.LLCol();
             objP.color = cc.LLColor;
-          //ewindow.Show("Suit Pressure Low. Return Back to the Ship." + '\n' +
-          //    "Pressure:" + actualP);
+          
         }
-
-
-        
+     
             objP.transform.localScale = new Vector3(radius/100, radius/100, 1.0f);
 
 
