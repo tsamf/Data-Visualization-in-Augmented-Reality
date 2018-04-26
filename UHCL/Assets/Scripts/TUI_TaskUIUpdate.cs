@@ -86,10 +86,10 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
             currentTask.text = bl_tasks.currentTask.text;
             //String voiceData = bl_tasks.currentTask.text;
             nextTask.text = bl_tasks.nextTask.text;
-            imagePanel.gameObject.SetActive(true);
-
-            imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>(Convert.ToString(bl_tasks.currentTask.images));
+       
+            
             cautionPanel.gameObject.SetActive(false);
+            imagePanel.gameObject.SetActive(false);
 
 
 
@@ -98,6 +98,13 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
             string images = bl_tasks.currentTask.images.ToString();
 
 
+            if (images != "")
+            {
+                imagePanel.gameObject.SetActive(true);
+
+                imagePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>(Convert.ToString(bl_tasks.currentTask.images));
+
+            }
             if (warning != "")
             {
                 cautionPanel.gameObject.SetActive(true);

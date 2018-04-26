@@ -307,7 +307,7 @@ public class BL_Tasks {
         task5.images = "";
         UITask task6 = new UITask();
         task6.stepNumber = 6;
-        task6.text = "Locate the E-stop button and gently press down to temporarily disable the alarm";
+        task6.text = "Locate the E-stop button, insert keys into it and turn it to off ";
         task6.warning = "";
         task6.holograms = "E-Stop";
         task6.images = "6";
@@ -521,14 +521,14 @@ public class BL_Tasks {
         task3.text = "Undo the BATTERY PACK LEADS from the AUX. POWER INPUT";
         task3.caution = "";
         task3.warning = "";
-        task3.holograms = "";
+        task3.holograms = "Aux_PowerInput";
         task3.images = "2.3";
         UITask task4 = new UITask();
         task4.stepNumber = 4;
         task4.text = "Remove BATTERY PACK from AUX. POWER INPUT";
         task4.caution = "";
         task4.warning = "";
-        task4.holograms = "";
+        task4.holograms = "Aux_PowerInput";
         task4.images = "";
         UITask task5 = new UITask();
         task5.stepNumber = 5;
@@ -591,7 +591,7 @@ public class BL_Tasks {
         task13.text = "In STORAGE, locate the GRAY 220 Volt PLUG";
         task13.caution = "";
         task13.warning = "";
-        task13.holograms = "Aux_PowerInput";
+        task13.holograms = "";
         task13.images = "";
         UITask task14 = new UITask();
         task14.stepNumber = 14;
@@ -605,7 +605,7 @@ public class BL_Tasks {
         task15.text = "Locate the metal BUSS BAR and verify there are BLACK, GREEN & WHITE BUSSES, each with 2 openings";
         task15.caution = "";
         task15.warning = "";
-        task15.holograms = "";
+        task15.holograms = "BusBars";
         task15.images = "";
         UITask task16 = new UITask();
         task16.stepNumber = 16;
@@ -633,7 +633,7 @@ public class BL_Tasks {
         task19.text = "Make sure the METAL LEADS are not sticking out the BACK of the BUSS BAR";
         task19.caution = "";
         task19.warning = "";
-        task19.holograms = "";
+        task19.holograms = "BusBars";
         task19.images = "";
         UITask task20 = new UITask();
         task20.stepNumber = 20;
@@ -654,7 +654,7 @@ public class BL_Tasks {
         task22.text = "Install it into POWER IN";
         task22.caution = "Lift cover with one hand while installing PLUG into the outlet with the other. The lid is spring-loaded";
         task22.warning = "";
-        task22.holograms = "";
+        task22.holograms = "Aux_PowerInput";
         task22.images = "2.21";
         UITask task23 = new UITask();
         task23.stepNumber = 23;
@@ -693,10 +693,10 @@ public class BL_Tasks {
         task27.images = "2.25";
         UITask task28 = new UITask();
         task28.stepNumber = 28;
-        task28.text = "Insert the KEY into the E-STOP and TURN to the RIGHT and the button will pop up";
+        task28.text = "Insert the KEY into the E-STOP and TURN it to ON position";
         task28.caution = "";
         task28.warning = "";
-        task28.holograms = "";
+        task28.holograms = "E-Stop";
         task28.images = "2.26";
         UITask task29 = new UITask();
         task29.stepNumber = 29;
