@@ -150,6 +150,11 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
                     NextStep();
                     break;
                 }
+            case "repeat step":
+                {
+                    RepeatStep();
+                    break;
+                }
             case "previous step":
                 {
                     PreviousStep();
@@ -210,10 +215,17 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
                     NotGreen();
                     break;
                 }
+            
 
             default:
                 break;
         }
+    }
+
+    private void RepeatStep()
+    {
+        testText.text = "Repeat Step";
+        data.repeatStep = true;
     }
 
     private void NotGreen()

@@ -145,6 +145,12 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
                 if (num == 2) bl_tasks.previousFunction2(true);
                 commonData.previousStep = false;
             }
+            if (commonData.repeatStep)
+            {
+                textToSpeech.StartSpeaking(bl_tasks.currentTask.text);
+                commonData.repeatStep = false;
+
+            }
         }
     }
 }
