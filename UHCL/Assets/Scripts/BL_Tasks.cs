@@ -12,12 +12,14 @@ public class BL_Tasks {
     public UITask previousTask;
     public UITask currentTask;
     public UITask nextTask;
+    public UITask repeatTask;
 
     public void AwakeFunction()
     {
         previousTask = new UITask();
         currentTask = new UITask();
         nextTask = new UITask();
+        repeatTask = new UITask();
 
         procedure = new Procedure();
 
@@ -30,6 +32,7 @@ public class BL_Tasks {
     {
         return procedure;
     }
+
 
 
     public BL_Tasks ()
@@ -199,6 +202,7 @@ public class BL_Tasks {
     }
 
     
+
     public void previousFunction(
         bool previousStep
         )

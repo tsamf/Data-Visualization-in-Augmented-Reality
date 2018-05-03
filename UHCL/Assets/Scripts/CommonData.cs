@@ -25,10 +25,12 @@ public class CommonData {
     public UITask previousTask;
     public UITask currentTask;
     public UITask nextTask;
+    public UITask repeatTask;
 
     public UITask GetPreviousTask { get { return previousTask; } }
     public UITask GetCurrentTask { get { return currentTask; } }
     public UITask GetNextTask { get { return nextTask; } }
+    public UITask GetRepeatTask { get { return repeatTask; } }
 
 
     public bool viewPieDetails = false;
@@ -53,6 +55,7 @@ public class CommonData {
     public bool previousWarning = false;
 
     public bool startProcedure = false;
+    public bool repeatStep = false;
     public bool nextStep = false;
     public bool previousStep = false;
     public bool showStepImage = false;
@@ -157,6 +160,7 @@ public class CommonData {
     public string[][] PREVIOUS { get; set; }
     public string[][] CURRENT { get; set; }
     public string[][] NEXT { get; set; }
+    public string[][] REPEAT { get; set; }
 
     public string[][] TASK_TABLE { get; set; }
     public float SecondaryOxygenHiDB { get; internal set; }
