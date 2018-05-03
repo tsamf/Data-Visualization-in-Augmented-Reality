@@ -52,7 +52,7 @@ public class DisplayDetails : MonoBehaviour
         {
             case displayType.SuitPressure:
                 {
-                    Display("Suit Pressure Details", "Pressure value " + bl_main.GetComponent<BL_Main>().bl_scaling.actualSuitPressure() + "PSI" + '\n' + '\n' + "Primary O2: " + (commonData.OxygenOneValue) + "psi" + '\n' + '\n' + "Secondary O2: " + (commonData.OxygenTwoValue) + "psi");
+                    Display("Suit Pressure Details", "Pressure value " + bl_main.GetComponent<BL_Main>().bl_scaling.actualSuitPressure() + "psi" + '\n' + "Primary O2: " + (commonData.OxygenOneValue) + "psi" + '\n' + "Secondary O2: " + (commonData.OxygenTwoValue) + "psi");
                     break;
                 }
             case displayType.Oxygen:
@@ -78,12 +78,12 @@ public class DisplayDetails : MonoBehaviour
                 }
             case displayType.BodyTemperature:
                 {
-                    Display("Temperature Details", "Body Temperature: " + (bl_main.bl_scaling.scallingBodyTemperature()) + " F");
+                    Display("Temperature Details", "Body Temperature: " + (bl_main.bl_scaling.actualBodyTemperature()) + " F");
                     break;
                 }
             case displayType.HeartRate:
                 {
-                    Display("Heart Details", "Heart Rate: " + (bl_main.bl_scaling.scallingHeartRate()) + " bpm");
+                    Display("Heart Details", "Heart Rate: " + '\n' + (bl_main.bl_scaling.actualHearRate()) + " bpm");
                     break;
                 }
             case displayType.Water:
