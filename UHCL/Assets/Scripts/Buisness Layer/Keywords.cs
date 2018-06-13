@@ -14,7 +14,7 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
     public TextMesh testText;
 
 
-    private CommonData data;
+    private FlagStore data;
 
     private void OnEnable()
     {
@@ -23,7 +23,7 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
 
     void Awake()
     {
-        data = CommonData.GetInstance();
+        data = FlagStore.GetInstance();
     }
 
     public void OnSpeechKeywordRecognized(SpeechEventData eventData)
@@ -231,13 +231,13 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
     private void NotGreen()
     {
         testText.text = "Not Green light";
-        CommonData.notgreen = true;
+        FlagStore.notgreen = true;
     }
 
     private void Green()
     {
         testText.text = "Green light";
-        CommonData.green = true;
+        FlagStore.green = true;
     }
 
     private void WarningAcknowledged()

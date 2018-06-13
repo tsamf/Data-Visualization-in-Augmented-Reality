@@ -10,7 +10,7 @@ public class Pressure : MonoBehaviour {
     public float radius = 100.0f;
     public Image objP;
     public float suitPressure;
-    public CommonData commonData;
+    public FlagStore commonData;
    
    
     public ColorCode cc;
@@ -19,7 +19,7 @@ public class Pressure : MonoBehaviour {
 
     // public Color HHColor = new Color(0.39f, 0.58f, 0.93f, 1.0f);
     void Start () {
-        commonData = CommonData.GetInstance();
+        commonData = FlagStore.GetInstance();
     }
 
     // Update is called once per frame

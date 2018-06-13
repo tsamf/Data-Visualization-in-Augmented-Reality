@@ -31,7 +31,7 @@ public class DB_GenerateData : MonoBehaviour {
     public float increment;
     public bool isActive;
     System.Random random = new System.Random();
-    public CommonData commonData = CommonData.GetInstance();
+    public FlagStore commonData = FlagStore.GetInstance();
 
 
     void Awake()

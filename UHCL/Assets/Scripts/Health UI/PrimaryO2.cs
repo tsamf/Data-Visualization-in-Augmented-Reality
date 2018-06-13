@@ -14,7 +14,7 @@ public class PrimaryO2 : MonoBehaviour {
     public BL_Main bl_main;
     public ColorCode ccPO;
 
-    public CommonData commonData = CommonData.GetInstance();
+    public FlagStore commonData = FlagStore.GetInstance();
 
     void Start () {
         //Assign max value to cuurent health status for initialization

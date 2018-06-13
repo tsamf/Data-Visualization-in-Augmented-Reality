@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CommonData {
+public class FlagStore {
     
-    private static CommonData _commonData;
+    private static FlagStore _commonData;
 
-    private CommonData() { }
+    private FlagStore() { }
 
-    public static CommonData GetInstance()
+    public static FlagStore GetInstance()
     {
         if(_commonData == null)
         {
-            _commonData = new CommonData();
+            _commonData = new FlagStore();
         }
 
         return _commonData;
@@ -22,15 +22,15 @@ public class CommonData {
     private bool editMode = false;
 	public bool EditMode { get { return editMode; } set { editMode = value; } }
 
-    public UITask previousTask;
-    public UITask currentTask;
-    public UITask nextTask;
-    public UITask repeatTask;
+    public EVATask previousTask;
+    public EVATask currentTask;
+    public EVATask nextTask;
+    public EVATask repeatTask;
 
-    public UITask GetPreviousTask { get { return previousTask; } }
-    public UITask GetCurrentTask { get { return currentTask; } }
-    public UITask GetNextTask { get { return nextTask; } }
-    public UITask GetRepeatTask { get { return repeatTask; } }
+    public EVATask GetPreviousTask { get { return previousTask; } }
+    public EVATask GetCurrentTask { get { return currentTask; } }
+    public EVATask GetNextTask { get { return nextTask; } }
+    public EVATask GetRepeatTask { get { return repeatTask; } }
 
 
     public bool viewPieDetails = false;
@@ -167,20 +167,20 @@ public class CommonData {
 
     public bool getGreen()
     {
-        return CommonData.green;
+        return FlagStore.green;
     }
     public bool getNotGreen()
     {
-        return CommonData.notgreen;
+        return FlagStore.notgreen;
     }
 
     public void setGreen(bool flag)
     {
-        CommonData.green = flag;
+        FlagStore.green = flag;
     }
 
     public void setNotGreen(bool flag)
     {
-        CommonData.notgreen = flag;
+        FlagStore.notgreen = flag;
     }
 }

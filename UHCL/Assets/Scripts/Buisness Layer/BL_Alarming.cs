@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class BL_Alarming {
 
-    private CommonData commonData = CommonData.GetInstance();
+    private FlagStore commonData = FlagStore.GetInstance();
     private Alarms alarms = new Alarms();
     private Alarms alarmsHistory = new Alarms();
   

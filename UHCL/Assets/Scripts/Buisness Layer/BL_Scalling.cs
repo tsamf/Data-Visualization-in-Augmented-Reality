@@ -90,7 +90,7 @@ public class BL_Scalling {
 
     }
 
-    private CommonData commonData = CommonData.GetInstance();
+    private FlagStore commonData = FlagStore.GetInstance();
 
 
     //Sending out actual oxygen2

@@ -33,7 +33,7 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
 
     
 
-    CommonData commonData = CommonData.GetInstance();
+    FlagStore commonData = FlagStore.GetInstance();
 
     // Use this for initialization
     void Start()

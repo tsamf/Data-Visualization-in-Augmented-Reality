@@ -11,12 +11,12 @@ public class SecondaryO2 : MonoBehaviour
     public float radius = 1.0f;
     public Image objSO2;
     public ColorCode ccSO;
-    public CommonData commonData;
+    public FlagStore commonData;
     public BL_Main bl_main;
 
     void Start()
     {
-        commonData = CommonData.GetInstance();
+        commonData = FlagStore.GetInstance();
         ccSO.HHCol();
         objSO2.color = ccSO.HHColor;
     }

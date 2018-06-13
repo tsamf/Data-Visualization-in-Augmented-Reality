@@ -21,7 +21,7 @@ public class DisplayDetails : MonoBehaviour
     public GameObject displaywindow;
     public Text title;
     public Text content;
-    public CommonData commonData = CommonData.GetInstance();
+    public FlagStore commonData = FlagStore.GetInstance();
     public BL_Main bl_main;
 
     public displayType displayingType;

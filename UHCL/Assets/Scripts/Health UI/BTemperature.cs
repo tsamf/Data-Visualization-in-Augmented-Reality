@@ -13,9 +13,9 @@ public class BTemperature : MonoBehaviour {
     public float bodyTemperature;
     public ColorCode cc;
     public GameObject bl_main;
-    public CommonData commonData;
+    public FlagStore commonData;
     void Start () {
-        commonData = CommonData.GetInstance();
+        commonData = FlagStore.GetInstance();
     }
 	
 	// Update is called once per frame

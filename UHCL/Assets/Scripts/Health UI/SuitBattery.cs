@@ -11,12 +11,12 @@ public class SuitBattery : MonoBehaviour
     public float radius;
     public Image objB;
  
-    public CommonData commonData;
+    public FlagStore commonData;
     public ColorCode cc;
     public BL_Main bl_main;
     void Start()
     {
-        commonData = CommonData.GetInstance();
+        commonData = FlagStore.GetInstance();
         //Assign max value to current health status for initialization
     }
 

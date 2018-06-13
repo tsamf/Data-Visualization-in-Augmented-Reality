@@ -74,14 +74,14 @@ namespace HoloToolkit.Unity.InputModule
         private Rigidbody hostRigidbody;
 
         //########################################################
-        private CommonData data;
+        private FlagStore data;
 
         private WorldAnchorStore store;
         private WorldAnchor worldAnchor;
 
         void Awake()
         {
-            data = CommonData.GetInstance();
+            data = FlagStore.GetInstance();
         }
 
         void RemoveAnchor()

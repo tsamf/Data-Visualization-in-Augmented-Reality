@@ -10,14 +10,14 @@ public class Water : MonoBehaviour {
     public float radius = 1.0f;
     public Image objW;
   
-    public CommonData commonData;
+    public FlagStore commonData;
     public ColorCode cc;
     public BL_Main bl_main;
 
 
     
     void Start () {
-        commonData = CommonData.GetInstance();
+        commonData = FlagStore.GetInstance();
     }
 	
 	// Update is called once per frame

@@ -10,12 +10,12 @@ public class AlternateO2 : MonoBehaviour {
     public float intialSO2 = 1.0f;
     public Slider slider;
     public ColorCode ccSO;
-    public CommonData commanData;
+    public FlagStore commanData;
     public Image fillImage;
 
     void Start()
     {
-        commanData = CommonData.GetInstance();
+        commanData = FlagStore.GetInstance();
 
     }
 

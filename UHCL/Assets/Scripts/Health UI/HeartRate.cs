@@ -12,9 +12,9 @@ public class HeartRate : MonoBehaviour {
     public float heartRate;
     public ColorCode cc;
     public GameObject bl_main;
-    public CommonData commonData;
+    public FlagStore commonData;
     void Start () {
-        commonData = CommonData.GetInstance();
+        commonData = FlagStore.GetInstance();
     }
 	
 	// Update is called once per frame

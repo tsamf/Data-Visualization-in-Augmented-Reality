@@ -6,7 +6,7 @@ using System;
 using HoloToolkit.Unity;
 
 public class TUI_TaskUIUpdate : MonoBehaviour {
-    CommonData commonData = CommonData.GetInstance();
+    FlagStore commonData = FlagStore.GetInstance();
     public TextToSpeech textToSpeech;
 
     

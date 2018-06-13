@@ -13,7 +13,7 @@ public class HealthUIUpdates : MonoBehaviour {
     public BL_Main bl_main;
     public GameObject ewindow;
 
-    CommonData commonData = CommonData.GetInstance();
+    FlagStore commonData = FlagStore.GetInstance();
 
     // Use this for initialization
     void Start () {

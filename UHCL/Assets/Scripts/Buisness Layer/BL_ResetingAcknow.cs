@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BL_ResetingAcknow : MonoBehaviour {
 
-    private CommonData commonData = CommonData.GetInstance();
+    private FlagStore commonData = FlagStore.GetInstance();
 
     // Reseting function for High Suit Pressure only
     public bool BLResetingAcknow(

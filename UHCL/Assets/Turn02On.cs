@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Turn02On : MonoBehaviour {
 
-    CommonData commonData;
+    FlagStore commonData;
     public DB_GenerateData oxygen2;
 
 
 	// Use this for initialization
 	void Start () {
-        commonData = CommonData.GetInstance();
+        commonData = FlagStore.GetInstance();
 	}
 	
 	// Update is called once per frame
