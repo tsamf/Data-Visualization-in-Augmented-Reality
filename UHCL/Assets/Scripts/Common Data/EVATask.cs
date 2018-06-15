@@ -16,7 +16,7 @@ public class EVATask
     public string images = "";
 
     //TODO estimated time should be required and needs to be converted from seconds
-    EVATask(int stepNumber, float estimatedTaskTime = 0, string text = "",string caution = "", string warning = "", string holograms = "", string images = "")
+    public EVATask(int stepNumber, float estimatedTaskTime = 0, string text = "",string caution = "", string warning = "", string holograms = "", string images = "")
     {
         this.stepNumber = stepNumber;
         this.text = text;

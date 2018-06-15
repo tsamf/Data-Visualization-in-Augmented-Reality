@@ -15,6 +15,11 @@ public class EVAProcedure
         tasks = new List<EVATask>();
     }
 
+    public void AddTask(EVATask task)
+    {
+        tasks.Add(task);
+    }
+
     public EVATask GetCurrentTask()
     {
         return tasks[currentTask];

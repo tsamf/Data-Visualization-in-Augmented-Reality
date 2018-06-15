@@ -9,20 +9,32 @@ public class TestReader : MonoBehaviour {
     public TextMesh testText;
     // Use this for initialization
     void Start () {
+        TaskDAC.LoadActivity();
+
         //StreamReader reader = new StreamReader(new FileStream(Path.Combine(Application.streamingAssetsPath , "test.csv"), FileMode.Open));
 
-        string fileData = "";
-        string fileName = Path.Combine(Application.streamingAssetsPath, "test.csv");
-        byte[] bytes = UnityEngine.Windows.File.ReadAllBytes(fileName);
+        //string fileData = "";
+        //string fileName = Path.Combine(Application.streamingAssetsPath, "Canned Task.txt");
+        //byte[] bytes = UnityEngine.Windows.File.ReadAllBytes(fileName);
 
-        fileData = System.Text.Encoding.ASCII.GetString(bytes);
+        //fileData = System.Text.Encoding.ASCII.GetString(bytes);
 
-        fileData.Replace('\r', ' ');
-        string[] lines = fileData.Split('\n');
 
-        Debug.Log(lines[0]);
+        //fileData = fileData.Replace('\r', ' ');
+        //string[] procedures = fileData.Split('$');
 
-        testText.text = lines[0];
+        //foreach(string procedure in procedures)
+        //{
+        //    string[] tasks = fileData.Split('\n');
+
+        //    for(int i = 2; i < tasks.Length; i++)
+        //    {
+        //        string[] task = tasks[i].Split('\t');
+        //    }
+        //}
+
+
+
 
         // testText.text = Application.streamingAssetsPath;
         // reader.Dispose();
