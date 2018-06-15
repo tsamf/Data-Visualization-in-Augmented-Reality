@@ -4,16 +4,26 @@ using UnityEngine;
 
 public class EVATask
 {
-    private float time = 0;
+    private int stepNumber;
+    private float totalTime = 0;
     private float estimatedTaskTime;
+    private string text = "";
+    private string caution = "";
+    private string warning = "";
+    private string holograms = "";
+    private string images = "";
 
-    //Make these private
-    public int stepNumber;
-    public string text = "";
-    public string caution = "";
-    public string warning = "";
-    public string holograms = "";
-    public string images = "";
+
+    public int StepNumer { get { return stepNumber; }}
+    public float TotalTime { get { return TotalTime; }}
+    public float EstimatedTaskTime { get { return estimatedTaskTime; } }
+    public string Text { get { return text; } }
+    public string Caution { get { return caution; } }
+    public string Warning { get { return warning; } }
+    public string Holograms { get { return holograms; } }
+    public string Images { get { return images; } }
+    
+
 
     //TODO estimated time should be required and needs to be converted from seconds
     public EVATask(int stepNumber, float estimatedTaskTime = 0, string text = "",string caution = "", string warning = "", string holograms = "", string images = "")
@@ -27,20 +37,9 @@ public class EVATask
         this.estimatedTaskTime = estimatedTaskTime;
     }
 
-    //TODO get rid of this once the objects are being created correctly
-    public EVATask()
-    {
-
-    }
-
-    public float GetTime()
-    {
-        return time;
-    }
-
     public float UpdateTime(float deltaTime)
     {
-        time += deltaTime;
-        return time;
+        totalTime += deltaTime;
+        return totalTime;
     }
 }

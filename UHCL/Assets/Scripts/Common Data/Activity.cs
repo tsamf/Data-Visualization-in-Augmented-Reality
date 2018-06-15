@@ -36,6 +36,13 @@ public class Activity {
 
     public EVAProcedure GetCurrentProcedure()
     {
-        return procedures[currentProcedure];
+        if (procedures.Count != 0)
+        {
+            return procedures[currentProcedure];
+        }
+        else
+        {
+            return null;
+        }
     }
 }

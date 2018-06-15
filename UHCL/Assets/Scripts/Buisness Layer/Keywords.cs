@@ -152,27 +152,23 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
                 {
                     testText.text = "Next Task";
                     taskUIController.NextTask();
-                    NextTask();
                     break;
                 }
             case "repeat task":
                 {
                     testText.text = "Repeat task";
                     taskUIController.RepeatTask();
-                    RepeatTask();
                     break;
                 }
             case "previous task":
                 {
                     testText.text = "Previous Task";
                     taskUIController.PreviousTask();
-                    PreviousTask();
                     break;
                 }
             case "show task image":
                 {
                     testText.text = "Show task Image";
-                    ShowTaskImage();
                     break;
                 }
             case "hide task image":
@@ -237,30 +233,7 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
                 break;
         }
     }
-
-    //TODO delete all of these
-    private void ShowTaskImage()
-    {
-        
-        data.showStepImage = true;
-    }
-
-    public void RepeatTask()
-    {
-        data.repeatStep = true;
-    }
-
-    private void PreviousTask()
-    {
-        
-        data.previousStep = true;
-    }
-
-    private void NextTask()
-    {
-        
-        data.nextStep = true;
-    }
+   
 
 
     private void NotGreen()
