@@ -2,34 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Activity : MonoBehaviour {
+public class Activity {
 
     private static Activity _instance;
-
     private List<EVAProcedure> procedures;
+
     private int currentProcedure = 0;
 
-    private void Awake()
+    private Activity()
     {
-        if(_instance == null)
-        {
-            _instance = this;
-        }
-        else
-        {
-            Debug.LogWarning(gameObject.name + ": there can only be one activity per scene.");
-            GameObject.Destroy(gameObject);
-        }
-
         procedures = new List<EVAProcedure>();
     }
 
-    private void Update()
+    public static Activity GetInstance()
     {
-        if(procedures != null)
+        if(_instance == null)
         {
-            procedures[currentProcedure].GetCurrentTask().UpdateTime(Time.deltaTime);
+            _instance = new Activity();
         }
+
+        return _instance;
     }
 
     public void AddProcedure(EVAProcedure procedure)
@@ -40,5 +32,10 @@ public class Activity : MonoBehaviour {
     public void SetProcedures(List<EVAProcedure> procedures)
     {
         this.procedures = procedures;
-    }  
+    }
+
+    public EVAProcedure GetCurrentProcedure()
+    {
+        return procedures[currentProcedure];
+    }
 }

@@ -13,8 +13,8 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
     public bool IsGlobalListener = true;
     public TextMesh testText;
 
-
     private FlagStore data;
+    private TaskUIController taskUIController;
 
     private void OnEnable()
     {
@@ -24,6 +24,7 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
     void Awake()
     {
         data = FlagStore.GetInstance();
+        taskUIController = GameObject.FindObjectOfType<TaskUIController>();
     }
 
     public void OnSpeechKeywordRecognized(SpeechEventData eventData)
@@ -145,29 +146,38 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
                     StartProcedure();
                     break;
                 }
-            case "next step":
+
+                //TODO remove old references we arent calling methods in this class anymore
+            case "next task":
                 {
-                    NextStep();
+                    testText.text = "Next Task";
+                    taskUIController.NextTask();
+                    NextTask();
                     break;
                 }
-            case "repeat step":
+            case "repeat task":
                 {
-                    RepeatStep();
+                    testText.text = "Repeat task";
+                    taskUIController.RepeatTask();
+                    RepeatTask();
                     break;
                 }
-            case "previous step":
+            case "previous task":
                 {
-                    PreviousStep();
+                    testText.text = "Previous Task";
+                    taskUIController.PreviousTask();
+                    PreviousTask();
                     break;
                 }
-            case "show step image":
+            case "show task image":
                 {
-                    ShowStepImage();
+                    testText.text = "Show task Image";
+                    ShowTaskImage();
                     break;
                 }
-            case "hide step image":
+            case "hide task image":
                 {
-                    HideStepImage();
+                    HideTaskImage();
                     break;
                 }
             case "pin task list":
@@ -206,13 +216,19 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
                     break;
                 }
             case "green":
-            {
-                    Green();
-                    break;
-             }
+                {
+                        Green();
+                        break;
+                }
             case "not green":
                 {
                     NotGreen();
+                    break;
+                }
+            case "load activity":
+                {
+                    testText.text = "Load Activity";
+                    taskUIController.LoadActivity();
                     break;
                 }
             
@@ -222,11 +238,30 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
         }
     }
 
-    private void RepeatStep()
+    //TODO delete all of these
+    private void ShowTaskImage()
     {
-        testText.text = "Repeat Step";
+        
+        data.showStepImage = true;
+    }
+
+    public void RepeatTask()
+    {
         data.repeatStep = true;
     }
+
+    private void PreviousTask()
+    {
+        
+        data.previousStep = true;
+    }
+
+    private void NextTask()
+    {
+        
+        data.nextStep = true;
+    }
+
 
     private void NotGreen()
     {
@@ -283,28 +318,10 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
         data.pinTaskList = true;
     }
 
-    private void HideStepImage()
+    private void HideTaskImage()
     {
         testText.text = "Hide Step Image";
         data.hideStepImage = true;
-    }
-
-    private void ShowStepImage()
-    {
-        testText.text = "Show Step Image";
-        data.showStepImage = true;
-    }
-
-    private void PreviousStep()
-    {
-        testText.text = "Previous Step";
-        data.previousStep = true;
-    }
-
-    private void NextStep()
-    {
-        testText.text = "Next Step";
-        data.nextStep = true;
     }
 
     private void StartProcedure()

@@ -9,9 +9,6 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
     FlagStore commonData = FlagStore.GetInstance();
     public TextToSpeech textToSpeech;
 
-    
-
-
     public Text previousTask;
     public Text currentTask;
     public Text nextTask;

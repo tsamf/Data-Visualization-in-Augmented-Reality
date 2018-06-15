@@ -14,7 +14,7 @@ public class TaskDAC {
 
     private static void PopulateActivity(string file)
     {
-        Activity activity = GameObject.FindObjectOfType<Activity>();
+        Activity activity = Activity.GetInstance();
 
         string fileData = file.Replace('\r', ' ');
         fileData = file.Replace('"', ' ');
