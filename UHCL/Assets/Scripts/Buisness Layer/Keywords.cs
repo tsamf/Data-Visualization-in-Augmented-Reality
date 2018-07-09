@@ -143,7 +143,9 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
                 }
             case "start procedure":
                 {
-                    StartProcedure();
+                    
+                    testText.text = "Start Procedure";
+                    taskUIController.StartPocedure();
                     break;
                 }
 
@@ -295,12 +297,6 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
     {
         testText.text = "Hide Step Image";
         data.hideStepImage = true;
-    }
-
-    private void StartProcedure()
-    {
-        testText.text = "Start Procedure";
-        data.startProcedure = true;
     }
 
     private void PreviousWarning()

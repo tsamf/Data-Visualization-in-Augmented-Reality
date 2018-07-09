@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class TaskUIView : MonoBehaviour {
 
+    public Text taskHeaderText;
     public Text previousTask;
     public Text currentTask;
     public Text nextTask;
@@ -15,31 +16,8 @@ public class TaskUIView : MonoBehaviour {
     public GameObject cautionPanel;
     public Image cautionImage;
 
-    public Activity activity;
-
-    // Use this for initialization
-    void Start() {
-        activity = Activity.GetInstance();
-    }
-
-    // Update is called once per frame
-    void Update() {
-
-        //If procedure is loaded populate task fields
-        if (activity.GetCurrentProcedure() != null)
-        {
-            PopulatePerviousTask();
-            PopulateCurrentTask();
-            PopulateNextTask();
-
-            PopulateImage();
-        }
-    }
-
-    private void PopulateImage()
+    private void PopulateImage(EVATask task)
     {
-        EVATask task = activity.GetCurrentProcedure().GetCurrentTask();
-
         if (task != null && task.Images != "")
         {
             taskImage.gameObject.SetActive(true);
@@ -51,42 +29,23 @@ public class TaskUIView : MonoBehaviour {
         }
     }
     
-    private void PopulatePerviousTask()
+    public void DisplayProcedures(Activity activity)
     {
-        EVATask task = activity.GetCurrentProcedure().GetPreviousTask();
-        if (task != null)
-        {
-            previousTask.text = task.Text;
-        }
-        else
-        {
-            previousTask.text = "";
-        }
+        taskHeaderText.text = "Procedures";
+        previousTask.text = "procedure1";
+        currentTask.text = "procedure2";
+        nextTask.text = "procedure3";
     }
 
-    private void PopulateCurrentTask()
+    public void DisplayTasks(EVAProcedure procedure)
     {
-        EVATask task = activity.GetCurrentProcedure().GetCurrentTask();
-        if (task != null)
-        {
-            currentTask.text = task.Text;
-        }
-        else
-        {
-            currentTask.text = "";
-        }
-    }
+        //Populate Task Window
+        taskHeaderText.text = "Tasks";
+        previousTask.text = procedure.GetPreviousTask() != null ? procedure.GetPreviousTask().Text : "" ;
+        currentTask.text = procedure.GetCurrentTask() != null ? procedure.GetCurrentTask().Text : "";
+        nextTask.text = procedure.GetNextTask() != null ? procedure.GetNextTask().Text : "";
 
-    private void PopulateNextTask()
-    {
-        EVATask task = activity.GetCurrentProcedure().GetNextTask();
-        if(task != null)
-        {
-            nextTask.text = task.Text;
-        }
-        else
-        {
-            nextTask.text = "";
-        }
+        //PopulateImage
+        PopulateImage(procedure.GetCurrentTask());
     }
 }

@@ -5510,7 +5510,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1009569297
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8295,6 +8295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1db98d1877a2a714086c3dd21e40f877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  taskHeaderText: {fileID: 780575659}
   previousTask: {fileID: 1954594665}
   currentTask: {fileID: 1493390079}
   nextTask: {fileID: 1188968080}
