@@ -34,6 +34,22 @@ public class TaskUIController : MonoBehaviour {
         taskUIView.DisplayTasks(activity.GetCurrentProcedure());
     }
 
+    public void NextProcedure()
+    {
+        if(activity.GetCurrentProcedure().IsEndOfProcedure())
+        {
+            if(activity.NextProcedure())
+            {
+                taskUIView.DisplayTasks(activity.GetCurrentProcedure());
+            }
+            else
+            {
+                taskUIView.DisplayEndOfActivity();
+            }
+            
+        }
+    }
+
     public void RepeatTask()
     {
       
@@ -47,7 +63,13 @@ public class TaskUIController : MonoBehaviour {
 
     public void NextTask()
     {
-        activity.GetCurrentProcedure().NextTask();
-        taskUIView.DisplayTasks(activity.GetCurrentProcedure());
+        if(activity.GetCurrentProcedure().NextTask())
+        {
+            taskUIView.DisplayTasks(activity.GetCurrentProcedure());
+        }
+        else
+        {
+            taskUIView.DisplayEndOfTask();
+        }
     }
 }

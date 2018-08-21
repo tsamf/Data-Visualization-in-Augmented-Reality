@@ -31,6 +31,8 @@ public class TaskUIView : MonoBehaviour {
     
     public void DisplayProcedures(Activity activity)
     {
+        taskPanel.gameObject.SetActive(true);
+
         taskHeaderText.text = "Procedures";
         previousTask.text = "procedure1";
         currentTask.text = "procedure2";
@@ -45,7 +47,62 @@ public class TaskUIView : MonoBehaviour {
         currentTask.text = procedure.GetCurrentTask() != null ? procedure.GetCurrentTask().Text : "";
         nextTask.text = procedure.GetNextTask() != null ? procedure.GetNextTask().Text : "";
 
+        //Update cautions and warnings 
+        if (procedure.GetCurrentTask().Warning != "")
+        {
+            cautionPanel.gameObject.SetActive(true);
+            cautionPanel.GetComponent<Image>().color = new Color32(208, 46, 40, 214);
+            cautionText.text = procedure.GetCurrentTask().Warning;
+        }
+         else if (procedure.GetCurrentTask().Caution != "")
+        {
+            cautionPanel.gameObject.SetActive(true);
+            cautionPanel.GetComponent<Image>().color = new Color32(255, 255, 114, 249);
+            cautionText.text = procedure.GetCurrentTask().Caution;
+        }
+        else
+        {
+            cautionPanel.gameObject.SetActive(false);
+        }
+
         //PopulateImage
         PopulateImage(procedure.GetCurrentTask());
+
+        //Update Holograms
+        UpdateHolograms(procedure.GetCurrentTask());
+    }
+
+    public void UpdateHolograms(EVATask task)
+    {
+        //find all the holograms in the scene
+        GameObject[] holograms =  GameObject.FindGameObjectsWithTag("Hologram");
+
+        //turn all holograms off
+        for(int i = 0; i < holograms.Length; i++)
+        {
+            holograms[i].gameObject.GetComponent<Renderer>().enabled = false;
+        }
+
+        //turn on specific holograms
+        if(task.Holograms != "")
+        {
+            GameObject hologram = GameObject.Find(task.Holograms);
+            hologram.GetComponent<Renderer>().enabled = true;
+        }
+    }
+
+    public void DisplayEndOfTask()
+    {
+        taskHeaderText.text = "Tasks";
+        previousTask.text = "";
+        currentTask.text = "Procedure complete, say next procedure to continue.";
+        nextTask.text = "";
+    }
+    public void DisplayEndOfActivity()
+    {
+        taskHeaderText.text = "";
+        previousTask.text = "";
+        currentTask.text = "Activity Complete!";
+        nextTask.text = "";
     }
 }

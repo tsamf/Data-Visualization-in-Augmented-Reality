@@ -18,6 +18,9 @@ public class FlagStore {
         return _commonData;
     }
 
+    public int userID = 1;
+    public bool pieUI = true;
+
     //The common data  (flags and alarm definitions will go here)
     private bool editMode = false;
 	public bool EditMode { get { return editMode; } set { editMode = value; } }
@@ -27,10 +30,10 @@ public class FlagStore {
     public EVATask nextTask;
     public EVATask repeatTask;
 
-    public EVATask GetPreviousTask { get { return previousTask; } }
-    public EVATask GetCurrentTask { get { return currentTask; } }
-    public EVATask GetNextTask { get { return nextTask; } }
-    public EVATask GetRepeatTask { get { return repeatTask; } }
+    //public EVATask GetPreviousTask { get { return previousTask; } }
+    //public EVATask GetCurrentTask { get { return currentTask; } }
+    //public EVATask GetNextTask { get { return nextTask; } }
+    //public EVATask GetRepeatTask { get { return repeatTask; } }
 
 
     public bool viewPieDetails = false;

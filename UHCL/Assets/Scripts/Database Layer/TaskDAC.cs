@@ -30,13 +30,13 @@ public class TaskDAC {
     {
         string[] taskStrings = taskString.Split('\t');
         EVATask task = new EVATask(
-            Convert.ToInt32(taskStrings[0]),
-            float.Parse(taskStrings[1]),
-            taskStrings[2],
-            taskStrings[3],
-            taskStrings[4],
-            taskStrings[5],
-            taskStrings[6]);
+            Convert.ToInt32(taskStrings[0].Replace("\r", "")),
+            float.Parse(taskStrings[1].Replace("\r", "")),
+            taskStrings[2].Replace("\r", ""),
+            taskStrings[3].Replace("\r", ""),
+            taskStrings[4].Replace("\r", ""),
+            taskStrings[5].Replace("\r", ""),
+            taskStrings[6].Replace("\r", ""));
         return task;
     }
 

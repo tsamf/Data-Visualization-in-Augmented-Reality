@@ -24,15 +24,12 @@ Data\Resources\unity default resources
 Data\Resources\unity_builtin_extra
 Data\sharedassets0.assets
 Data\sharedassets0.assets.resS
-Data\StreamingAssets\Disabling Alarm Procedure Write Test.csv
-Data\StreamingAssets\Disabling Alarm Procedure.csv
+Data\StreamingAssets\Canned Task.txt
 Data\StreamingAssets\LowPressure.csv
 Data\StreamingAssets\test.csv
 GpuTiming.dll
-GpuTiming.pdb
 PlaneFinding.dll
 Properties\Default.rd.xml
 Resource.res
 SharingClient.dll
 SpatialUnderstanding.dll
-SpatialUnderstanding.pdb

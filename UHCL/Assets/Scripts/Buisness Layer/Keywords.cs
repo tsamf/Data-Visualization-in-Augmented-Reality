@@ -229,6 +229,12 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
                     taskUIController.LoadActivity();
                     break;
                 }
+            case "next procedure":
+                {
+                    testText.text = "Next Procedure";
+                    taskUIController.NextProcedure();
+                    break;
+                }
             
 
             default:

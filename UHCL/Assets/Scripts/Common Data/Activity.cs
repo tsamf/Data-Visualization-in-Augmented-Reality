@@ -45,4 +45,18 @@ public class Activity {
             return null;
         }
     }
+
+    public bool NextProcedure()
+    {
+        if (currentProcedure >= procedures.Count - 1)
+        {
+            return false;
+        }
+        else
+        {
+            currentProcedure++;
+        }
+
+        return true;
+    }
 }

@@ -19,6 +19,18 @@ public class EVAProcedure
         tasks.Add(task);
     }
 
+    public bool IsEndOfProcedure()
+    {
+        if(currentTask == tasks.Count -1)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     public int GetTaskCount()
     {
         return tasks.Count;
