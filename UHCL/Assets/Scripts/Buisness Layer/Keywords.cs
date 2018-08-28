@@ -12,13 +12,20 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
     //Need Instance of buisnees layer 
     public bool IsGlobalListener = true;
     public TextMesh testText;
+    public GameObject alternatePIEUI;
+    public GameObject pieUI;
+
+    public WriteFile writeFile;
 
     private FlagStore data;
     private TaskUIController taskUIController;
 
     private void OnEnable()
     {
+        alternatePIEUI = GameObject.FindGameObjectWithTag("AlternatePieUI");
+        pieUI = GameObject.FindGameObjectWithTag("PieUI");
         InputManager.Instance.AddGlobalListener(gameObject);
+        writeFile = GameObject.FindGameObjectWithTag("Insturmenting").GetComponent<WriteFile>();
     }
 
     void Awake()
@@ -31,121 +38,80 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
     {
         switch (eventData.RecognizedText.ToLower())
         {
-            case "start edit mode":
+            case "reset pressure":
                 {
-                    StartEditMode();
+                    writeFile.WriteLine("reset pressure");
+                    testText.text = "Reset Pressure";
                     break;
                 }
-            case "stop edit mode":
+            case "reset heart rate":
                 {
-                    StopEditMode();
+                    writeFile.WriteLine("reset heart rate");
+                    testText.text = "Reset Heart Rate";
                     break;
                 }
-            case "view pie details":
+            case "reset body temp":
                 {
-                    ViewPieDetails();
+                    writeFile.WriteLine("reset body temp");
+                    testText.text = "Reset Body Temp";
                     break;
                 }
-            case "close pie details":
+            case "reset oxygen":
                 {
-                    ClosePieDetails();
+                    writeFile.WriteLine("reset oxygen");
+                    testText.text = "Reset Oxygen";
                     break;
                 }
-            case "view battery":
+            case "reset water":
                 {
-                    ViewBattery();
+                    writeFile.WriteLine("reset water");
+                    testText.text = "Reset Water";
                     break;
                 }
-            case "view primary o two":
+            case "reset battery":
                 {
-                    ViewPrimaryOTwo();
+                    writeFile.WriteLine("reset battery");
+                    testText.text = "Reset Battery";
                     break;
                 }
-            case "view secondary o two":
+            case "show details":
                 {
-                    ViewSecondaryOTwo();
+                    writeFile.WriteLine("show Details");
+                    testText.text = "Show Details";
+                    if(data.pieUI)
+                    {
+                        pieUI.GetComponent<RectTransform>().localScale = new Vector3(.002f, .002f, .002f);
+                        pieUI.GetComponent<RectTransform>().position = new Vector3(.36f, .18f, 1);
+                    }
+                    else
+                    {
+                        alternatePIEUI.GetComponent<RectTransform>().localScale = new Vector3(.002f, .002f, .002f);
+                        alternatePIEUI.GetComponent<RectTransform>().position = new Vector3(.36f, .18f, 1);
+                    }
+
                     break;
                 }
-            case "view body temperature":
+            case "close details":
                 {
-                    ViewBodyTemperature();
-                    break;
-                }
-            case "view pressure":
-                {
-                    ViewPressure();
-                    break;
-                }
-            case "view h two o":
-                {
-                    ViewHTwoO();
-                    break;
-                }
-            case "view heart rate":
-                {
-                    ViewHeartRate();
-                    break;
-                }
-            case "close detail window":
-                {
-                    CloseDetailWindow();
-                    break;
-                }
-            case "pin detail window":
-                {
-                    PinDetailWindow();
-                    break;
-                }
-            case "close pinned windows":
-                {
-                    ClosePinnedWindows();
-                    break;
-                }
-            case "view errors":
-                {
-                    ViewErrors();
-                    break;
-                }
-            case "close errors":
-                {
-                    CloseErrors();
-                    break;
-                }
-            case "next error":
-                {
-                    NextError();
-                    break;
-                }
-            case "previous error":
-                {
-                    PreviousError();
-                    break;
-                }
-            case "view warnings":
-                {
-                    ViewWarnings();
-                    break;
-                }
-            case "close warnings":
-                {
-                    CloseWarnings();
-                    break;
-                }
-            case "next warning":
-                {
-                    NextWarning();
-                    break;
-                }
-            case "previous warning":
-                {
-                    PreviousWarning();
+                    writeFile.WriteLine("close details");
+                    testText.text = "Close Details";
+                    if (data.pieUI)
+                    {
+                        pieUI.GetComponent<RectTransform>().localScale = new Vector3(.001f, .001f, .001f);
+                        pieUI.GetComponent<RectTransform>().position = new Vector3(0, 0, 1);
+                    }
+                    else
+                    {
+                        alternatePIEUI.GetComponent<RectTransform>().localScale = new Vector3(.001f, .001f, .001f);
+                        alternatePIEUI.GetComponent<RectTransform>().position = new Vector3(0, 0, 1);
+                    }
                     break;
                 }
             case "start procedure":
                 {
-                    
                     testText.text = "Start Procedure";
                     taskUIController.StartPocedure();
+                    writeFile.WriteLine("Start procedure");
                     break;
                 }
 
@@ -154,90 +120,39 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
                 {
                     testText.text = "Next Task";
                     taskUIController.NextTask();
+                    writeFile.WriteLine("Next task");
                     break;
                 }
             case "repeat task":
                 {
                     testText.text = "Repeat task";
                     taskUIController.RepeatTask();
+                    writeFile.WriteLine("Repeat task");
                     break;
                 }
             case "previous task":
                 {
                     testText.text = "Previous Task";
                     taskUIController.PreviousTask();
-                    break;
-                }
-            case "show task image":
-                {
-                    testText.text = "Show task Image";
-                    break;
-                }
-            case "hide task image":
-                {
-                    HideTaskImage();
-                    break;
-                }
-            case "pin task list":
-                {
-                    PinTaskList();
-                    break;
-                }
-            case "close task list":
-                {
-                    CloseTaskList();
-                    break;
-                }
-            case "display pie":
-                {
-                    DisplayPie();
-                    break;
-                }
-            case "display alternate":
-                {
-                    DisplayAlternate();
-                    break;
-                }
-            case "load task one":
-                {
-                    LoadTaskOne();
-                    break;
-                }
-            case "load task two":
-                {
-                    LoadTaskTwo();
-                    break;
-                }
-            case "warning acknowledged":
-                {
-                    WarningAcknowledged();
-                    break;
-                }
-            case "green":
-                {
-                        Green();
-                        break;
-                }
-            case "not green":
-                {
-                    NotGreen();
+                    writeFile.WriteLine("Previous Task");
                     break;
                 }
             case "load activity":
                 {
                     testText.text = "Load Activity";
                     taskUIController.LoadActivity();
+                    writeFile.WriteLine("Load activity");
                     break;
                 }
             case "next procedure":
                 {
                     testText.text = "Next Procedure";
                     taskUIController.NextProcedure();
+                    writeFile.WriteLine("Next Procedure");
                     break;
                 }
-            
-
             default:
+                writeFile.WriteLine("voice command failed");
                 break;
         }
     }

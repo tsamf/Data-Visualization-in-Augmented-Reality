@@ -144,7 +144,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -0.87999725, y: 0}
   m_SizeDelta: {x: 8.23, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1746,6 +1746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb53a0c94dd40864fa4635184a69ce3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textToSpeech: {fileID: 1519171552}
 --- !u!1 &244856540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1984,7 +1985,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2413,7 +2414,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -0.87999725, y: 0}
   m_SizeDelta: {x: 8.23, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2496,6 +2497,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsGlobalListener: 1
   testText: {fileID: 1475318303}
+  alternatePIEUI: {fileID: 0}
+  pieUI: {fileID: 0}
+  writeFile: {fileID: 0}
 --- !u!114 &364275673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2511,50 +2515,22 @@ MonoBehaviour:
   PersistentKeywords: 0
   RecognizerStart: 0
   Keywords:
-  - Keyword: Start Edit Mode
-    KeyCode: 0
-  - Keyword: Stop Edit Mode
-    KeyCode: 0
-  - Keyword: View Pie Details
-    KeyCode: 0
-  - Keyword: Close Pie Details
-    KeyCode: 0
-  - Keyword: View Battery
-    KeyCode: 0
-  - Keyword: 'View Primary O Two '
-    KeyCode: 0
-  - Keyword: View Secondary O Two
-    KeyCode: 0
-  - Keyword: View Body Temperature
-    KeyCode: 0
-  - Keyword: View Pressure
-    KeyCode: 0
-  - Keyword: View H Two O
-    KeyCode: 0
-  - Keyword: 'View Heart Rate '
-    KeyCode: 0
-  - Keyword: Close Detail Window
-    KeyCode: 0
-  - Keyword: Pin Detail Window
-    KeyCode: 0
-  - Keyword: Close Pinned Windows
-    KeyCode: 0
-  - Keyword: View Errors
-    KeyCode: 0
-  - Keyword: Close Errors
-    KeyCode: 0
-  - Keyword: Next Error
-    KeyCode: 0
-  - Keyword: Previous Error
-    KeyCode: 0
-  - Keyword: View Warnings
+  - Keyword: Reset Pressure
+    KeyCode: 113
+  - Keyword: Reset Heart Rate
+    KeyCode: 119
+  - Keyword: Reset Body Temp
+    KeyCode: 101
+  - Keyword: Reset Oxygen
+    KeyCode: 114
+  - Keyword: Reset Water
+    KeyCode: 116
+  - Keyword: Reset Battery
+    KeyCode: 121
+  - Keyword: Show Details
     KeyCode: 44
-  - Keyword: Close Warnings
+  - Keyword: Close Details
     KeyCode: 59
-  - Keyword: Next Warning
-    KeyCode: 40
-  - Keyword: Previous Warning
-    KeyCode: 0
   - Keyword: Start Procedure
     KeyCode: 32
   - Keyword: Next Task
@@ -2579,14 +2555,12 @@ MonoBehaviour:
     KeyCode: 50
   - Keyword: Warning Acknowledged
     KeyCode: 53
-  - Keyword: Green
-    KeyCode: 51
-  - Keyword: Not Green
-    KeyCode: 52
-  - Keyword: Repeat step
+  - Keyword: Reapeat Task
     KeyCode: 54
   - Keyword: Load Activity
     KeyCode: 57
+  - Keyword: Next Procedure
+    KeyCode: 112
   recognitionConfidenceLevel: 1
 --- !u!1 &373300835
 GameObject:
@@ -3712,7 +3686,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4195,7 +4169,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 79, y: 0}
   m_SizeDelta: {x: 25, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4820,7 +4794,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &869073743
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4896,7 +4870,7 @@ Canvas:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 869073742}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 1655562324}
@@ -5069,7 +5043,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -0.87999725, y: 0}
   m_SizeDelta: {x: 8.23, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6351,7 +6325,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6941,7 +6915,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8921,6 +8895,53 @@ MonoBehaviour:
   Axis0Destination: 0
   Axis1Destination: 2
   Axis2Destination: 6
+--- !u!1 &1647694076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1647694078}
+  - component: {fileID: 1647694077}
+  m_Layer: 0
+  m_Name: Insturmenting
+  m_TagString: Insturmenting
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1647694077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1647694076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ba01c2fd6cbb1f44a5da8e12fb889bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oxygen: {fileID: 549925638}
+  oxygen2: {fileID: 52130912}
+  suitPressure: {fileID: 506250274}
+  battery: {fileID: 605343258}
+  bodyTemperature: {fileID: 639861346}
+  water: {fileID: 1529716908}
+  heartRate: {fileID: 57093288}
+--- !u!4 &1647694078
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1647694076}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1655562322
 GameObject:
   m_ObjectHideFlags: 0
@@ -9092,7 +9113,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -9701,7 +9722,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -10123,7 +10144,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -0.87999725, y: 0}
   m_SizeDelta: {x: 8.23, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -10962,7 +10983,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2089724450
 RectTransform:
   m_ObjectHideFlags: 0

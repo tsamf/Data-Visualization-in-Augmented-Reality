@@ -1,0 +1,80 @@
+event type	camera position	camera rotation	oxygen	oxygen two	suit pressure	battery	body temperature	water	heart rate	timestamp	task text	task setp	procedure number	
+Start procedure	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	839.7025	3600	4.689001	99.63992	99.88998	6.964003	66.05001	8/28/2018 12:41:46 AM	On the RIGHT side of the EVA Kit, locate the PANEL ACCESS KEY.	1	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	839.0027	3600	4.690001	99.60992	99.89998	6.961003	66.04001	8/28/2018 12:41:46 AM	Use the PANEL ACCESS KEY to unlock the PANEL ACCESS DOOR LOCKS.	2	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	838.8027	3600	4.690001	99.59991	99.89998	6.960003	66.05001	8/28/2018 12:41:46 AM	Carefully return keys to the side of the EVA kit.	3	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	838.6028	3600	4.689001	99.58991	99.88998	6.959003	66.04001	8/28/2018 12:41:47 AM	Insert your fingers in the CENTER OPENING and secure the PANEL ACCESS DOOR in an OPEN position.	4	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	838.6028	3600	4.691	99.58991	99.90998	6.959003	66.05001	8/28/2018 12:41:47 AM	On your belt, use the BLUE CARABINEER to securely tether to the TETHER CABLE inside the STORAGE.	5	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	838.3029	3600	4.690001	99.57991	99.89998	6.958003	66.05001	8/28/2018 12:41:47 AM	Locate the E-stop button, insert keys into it and turn it to off	6	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	838.0029	3600	4.688001	99.55991	99.87997	6.956003	66.04001	8/28/2018 12:41:47 AM	Locate the FUSIBLE DISCONNECT box	7	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	837.803	3600	4.688001	99.55991	99.87997	6.956003	66.03001	8/28/2018 12:41:47 AM	Tether the BLUE CARABINEER to the TETHER CABLE	8	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	837.803	3600	4.688001	99.55991	99.87997	6.956003	66.01	8/28/2018 12:41:47 AM	Remove the BLUE CARABINEER from the FUSIBLE DISCONNECT BOX	9	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	837.5031	3600	4.690001	99.55991	99.89998	6.956003	66.02	8/28/2018 12:41:47 AM	Transfer the BLUE CARABINEER to STORAGE	10	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	837.2031	3600	4.691	99.5499	99.90998	6.955003	66.02	8/28/2018 12:41:48 AM	Open the FUSIBLE DISCONNECT box and secure the lid in the open position	11	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	837.1031	3600	4.692	99.5499	99.91998	6.955003	66	8/28/2018 12:41:48 AM	Locate the BLACK DISCONNECT	12	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	836.8032	3600	4.692	99.5299	99.91998	6.953003	65.96999	8/28/2018 12:41:48 AM	Tether it to the TETHER CABLE	13	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	836.7032	3600	4.692	99.5199	99.91998	6.952003	65.96999	8/28/2018 12:41:48 AM	Remove the DISCONNECT	14	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	836.5033	3600	4.694	99.5199	99.93999	6.952003	65.94999	8/28/2018 12:41:48 AM	Place the DISCONNECT in the STORAGE	15	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	836.0034	3600	4.693	99.49989	99.92999	6.950004	65.92999	8/28/2018 12:41:48 AM	Tether the FUSE ACCESS PANEL to the TETHER CABLE	16	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	835.7035	3600	4.694	99.49989	99.93999	6.950004	65.91998	8/28/2018 12:41:49 AM	Remove the FUSE ACCESS PANEL by pulling straght up	17	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	835.4036	3600	4.691	99.46989	99.90998	6.947004	65.91998	8/28/2018 12:41:49 AM	Place the FUSE ACCESS PANEL into STORAGE	18	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	834.9037	3600	4.690001	99.43988	99.89998	6.944004	65.90998	8/28/2018 12:41:49 AM	Tether the ALARM FUSE to the TETHER CABLE	19	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	834.7037	3600	4.693	99.43988	99.92999	6.944004	65.90998	8/28/2018 12:41:49 AM	In Storage, locate the BLUE FUSE PULLER	20	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	834.4038	3600	4.692	99.42988	99.91998	6.943004	65.90998	8/28/2018 12:41:49 AM	Use the BLUE FUSE PULLER to remove ONLY the ALARM FUSE	21	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	834.1039	3600	4.693	99.42988	99.92999	6.943004	65.91998	8/28/2018 12:41:49 AM	Return the ALARM FUSE and the FUSE PULLER to STORAGE	22	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	833.704	3600	4.690001	99.39987	99.89998	6.940004	65.90998	8/28/2018 12:41:50 AM	In STORAGE, locate the FUSE ACCESS PANEL and reinstall it into the FUSIBLE DISCONNECT box.	23	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	833.504	3600	4.691	99.39987	99.90998	6.940004	65.88998	8/28/2018 12:41:50 AM	Remove the FUSE ACCESS PANEL tether from the TETHER CABLE and stow inside	24	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	833.1041	3600	4.692	99.38987	99.91998	6.939004	65.91998	8/28/2018 12:41:50 AM	In STORAGE, locate the DISCONNECT and reinstall it into the FUSIBLE DISCONNECT box	25	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	832.8042	3600	4.692	99.37987	99.91998	6.938004	65.90998	8/28/2018 12:41:50 AM	Remove the DISCONNECT tether from the TETHER CABLE	26	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	832.6042	3600	4.690001	99.35986	99.89998	6.936005	65.87997	8/28/2018 12:41:50 AM	Close the FUSIBLE DISCONNECT box cover	27	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	832.3043	3600	4.690001	99.35986	99.89998	6.936005	65.87997	8/28/2018 12:41:50 AM	In STORAGE, use the BLUE CARABINEER to clip and lock the FUSIBLE DISCONNECT box cover	28	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	832.0044	3600	4.691	99.34986	99.90998	6.935005	65.87997	8/28/2018 12:41:50 AM	Remove the BLUE CARABINEER?s tether from the TETHER CABLE	29	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	831.9044	3600	4.692	99.33986	99.91998	6.934005	65.86997	8/28/2018 12:41:51 AM	Remove the BLUE CARABINEER?s tether from the TETHER CABLE	29	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	831.7045	3600	4.693	99.32986	99.92999	6.933005	65.86997	8/28/2018 12:41:51 AM	Remove the BLUE CARABINEER?s tether from the TETHER CABLE	29	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	831.2046	3600	4.693	99.31985	99.92999	6.932005	65.85997	8/28/2018 12:41:51 AM	Remove the BLUE CARABINEER?s tether from the TETHER CABLE	29	1	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	831.1046	3600	4.693	99.30985	99.92999	6.931005	65.86997	8/28/2018 12:41:51 AM	Remove the BLUE CARABINEER?s tether from the TETHER CABLE	29	1	
+Next Procedure	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	829.405	3600	4.692	99.25984	99.91998	6.926005	65.84997	8/28/2018 12:41:52 AM	Locate the Aux. Power Input	1	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	828.4053	3600	4.692	99.23984	99.91998	6.924006	65.78996	8/28/2018 12:41:52 AM	Locate BATTERY PACK and tether to TETHER CABLE	2	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	827.7054	3600	4.692	99.22984	99.91998	6.923006	65.77995	8/28/2018 12:41:53 AM	Undo the BATTERY PACK LEADS from the AUX. POWER INPUT	3	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	827.5055	3600	4.693	99.22984	99.92999	6.923006	65.76995	8/28/2018 12:41:53 AM	Remove BATTERY PACK from AUX. POWER INPUT	4	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	827.4055	3600	4.695	99.22984	99.94999	6.923006	65.77995	8/28/2018 12:41:53 AM	Locate the ON/OFF switch on the back of the BATTERY PACK and switch it to the OFF position.	5	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	827.0056	3600	4.693	99.20983	99.92999	6.921006	65.76995	8/28/2018 12:41:53 AM	Place the BATTERY PACK into STORAGE	6	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	826.5057	3600	4.691	99.18983	99.90998	6.919006	65.73994	8/28/2018 12:41:53 AM	In STORAGE, find the replacement BATTERY PACK	7	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	826.3058	3600	4.693	99.18983	99.92999	6.919006	65.73994	8/28/2018 12:41:53 AM	Locate the ON/OFF switch on the back of the BATTERY PACK and switch it to the ON position	8	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	826.0059	3600	4.695	99.18983	99.94999	6.919006	65.72994	8/28/2018 12:41:53 AM	Attach the replacement BATTERY PACK onto the AUX. POWER INPUT by the Velcro	9	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	825.7059	3600	4.694	99.17982	99.93999	6.918006	65.74995	8/28/2018 12:41:54 AM	Insert the BATTERY PACK leads back into same colored ports	10	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	825.506	3600	4.693	99.15982	99.92999	6.916006	65.76995	8/28/2018 12:41:54 AM	Conduct a GENTLE PULL TEST on the wires	11	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	825.2061	3600	4.693	99.15982	99.92999	6.916006	65.76995	8/28/2018 12:41:54 AM	Remove the BATTERY PACK tether from the TETHER CABLE	12	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	824.8062	3600	4.691	99.13982	99.90998	6.914006	65.74995	8/28/2018 12:41:54 AM	In STORAGE, locate the GRAY 220 Volt PLUG	13	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	824.6062	3600	4.692	99.13982	99.91998	6.914006	65.73994	8/28/2018 12:41:54 AM	Install it into the POWER OUT	14	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	824.2063	3600	4.692	99.13982	99.91998	6.914006	65.73994	8/28/2018 12:41:54 AM	Locate the metal BUSS BAR and verify there are BLACK, GREEN & WHITE BUSSES, each with 2 openings	15	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	823.6064	3600	4.690001	99.11981	99.89998	6.912006	65.70994	8/28/2018 12:41:55 AM	Insert the WHITE 220 VOLT LEAD into the LEFT WHITE BUSS opening and GENTLY TIGHTEN the thumbscrew	16	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	823.0066	3600	4.688001	99.08981	99.87997	6.909007	65.71994	8/28/2018 12:41:55 AM	Insert the GREEN 220 VOLT LEAD into the LEFT GREEN BUS opening	17	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	822.7067	3600	4.687001	99.0798	99.86997	6.908007	65.70994	8/28/2018 12:41:55 AM	Insert the BLACK 220 VOLT LEAD into the LEFT BLACK BUS opening	18	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	822.6067	3600	4.688001	99.0798	99.87997	6.908007	65.70994	8/28/2018 12:41:55 AM	Make sure the METAL LEADS are not sticking out the BACK of the BUSS BAR	19	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	822.2068	3600	4.687001	99.0698	99.86997	6.907007	65.69994	8/28/2018 12:41:55 AM	Conduct a Gentle PULL TEST on each cable	20	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	821.6069	3600	4.686001	99.0498	99.85997	6.905007	65.66993	8/28/2018 12:41:55 AM	In STORAGE, locate the 110 VOLT PLUG	21	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	821.507	3600	4.686001	99.03979	99.85997	6.904007	65.64993	8/28/2018 12:41:56 AM	Install it into POWER IN	22	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	821.207	3600	4.685001	99.01979	99.84997	6.902007	65.64993	8/28/2018 12:41:56 AM	Insert the WHITE 110 VOLT PLUG LEAD into the RIGHT WHITE BUS opening	23	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	820.9071	3600	4.685001	99.00979	99.84997	6.901007	65.64993	8/28/2018 12:41:56 AM	Insert the GREEN 110 VOLT PLUG LEAD into the RIGHT GREEN BUS opening	24	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	820.5072	3600	4.685001	98.99979	99.84997	6.900007	65.64993	8/28/2018 12:41:56 AM	Insert the BLACK 110 VOLT PLUG LEAD into the RIGHT BLACK BUS opening	25	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	820.1073	3600	4.684001	98.97978	99.83997	6.898007	65.65993	8/28/2018 12:41:56 AM	Conduct a Gentle PULL TEST on each cable	26	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	819.6074	3600	4.683001	98.96978	99.82996	6.897007	65.67993	8/28/2018 12:41:56 AM	In STORAGE, locate the E-STOP KEY	27	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	819.2075	3600	4.682001	98.95978	99.81996	6.896008	65.68993	8/28/2018 12:41:57 AM	Insert the KEY into the E-STOP and TURN it to ON position	28	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	819.0076	3600	4.682001	98.94978	99.81996	6.895008	65.68993	8/28/2018 12:41:57 AM	Remove the KEY and place it in STORAGE	29	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	818.8076	3600	4.683001	98.94978	99.82996	6.895008	65.69994	8/28/2018 12:41:57 AM	Locate the AUX. POWER SWITCH on the POWER IN box and switch it to the ?ON? position	30	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	818.5077	3600	4.685001	98.94978	99.84997	6.895008	65.67993	8/28/2018 12:41:57 AM	Can you please say whether the SYSTEM GO indicator light is GREEN or NOT GREEN?	31	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	818.3077	3600	4.684001	98.93977	99.83997	6.894008	65.66993	8/28/2018 12:41:57 AM	EVA 1, this is Houston Mission Control. Congratulations. PHALCON is reporting that they are reading a successful power restoration on their console. You are a go to untether from the TETHER CABLE and return to space station. Mission Control out	32	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	818.1078	3600	4.684001	98.92977	99.83997	6.893008	65.67993	8/28/2018 12:41:57 AM	EVA 1, this is Houston Mission Control. PHALCON confirms and is not able to report a successful power restoration on their console. EVA-1, please be advised that we have prepared some trouble-shooting steps for you to conduct on a future spacewalk	33	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	817.5079	3600	4.682001	98.90977	99.81996	6.891008	65.68993	8/28/2018 12:41:58 AM	There might be problem with power going into the circuit, Please go through the following check points	34	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	817.408	3600	4.683001	98.90977	99.82996	6.891008	65.70994	8/28/2018 12:41:58 AM	BATTERY PACK is switched OFF	35	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	817.108	3600	4.685001	98.90977	99.84997	6.891008	65.69994	8/28/2018 12:41:58 AM	BATTERY PACK leads are not inserted into their ports	36	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	816.5082	3600	4.682001	98.87976	99.81996	6.888008	65.69994	8/28/2018 12:41:58 AM	220V PLUG or leads where not installed correctly	37	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	816.2083	3600	4.683001	98.86976	99.82996	6.887008	65.68993	8/28/2018 12:41:58 AM	110V PLUG or leads where not installed correctly	38	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	816.1083	3600	4.683001	98.86976	99.82996	6.887008	65.67993	8/28/2018 12:41:58 AM	AUX. POWER SWITCH is in the OFF position	39	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	815.8083	3600	4.683001	98.85976	99.82996	6.886008	65.67993	8/28/2018 12:41:59 AM	E-STOP is still engaged	40	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	815.6084	3600	4.682001	98.84975	99.81996	6.885008	65.68993	8/28/2018 12:41:59 AM	Batteries in the BATTERY PACK are depleted	41	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	815.0085	3600	4.682001	98.83975	99.81996	6.884008	65.67993	8/28/2018 12:41:59 AM	Batteries in the BATTERY PACK are depleted	41	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	814.8086	3600	4.682001	98.82975	99.81996	6.883008	65.65993	8/28/2018 12:41:59 AM	Batteries in the BATTERY PACK are depleted	41	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	814.6086	3600	4.681001	98.81975	99.80996	6.882009	65.66993	8/28/2018 12:41:59 AM	Batteries in the BATTERY PACK are depleted	41	2	
+Next task	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	814.3087	3600	4.681001	98.81975	99.80996	6.882009	65.64993	8/28/2018 12:41:59 AM	Batteries in the BATTERY PACK are depleted	41	2	
+Next Procedure	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	813.109	3600	4.685001	98.78974	99.84997	6.879009	65.68993	8/28/2018 12:42:00 AM	Batteries in the BATTERY PACK are depleted	41	2	

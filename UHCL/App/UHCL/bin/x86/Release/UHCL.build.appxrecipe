@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>218eca1f-213f-4a5b-9f86-c7f3bf2ab633</PackageIdentityName>
     <PackageIdentityPublisher>CN=DefaultCompany</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\obj\x86\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>Z:\copied documents\Git\UHCL\UHCL\App\UHCL\obj\x86\Release\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\bin\x86\Release\AppX</LayoutDir>
+    <LayoutDir>Z:\copied documents\Git\UHCL\UHCL\App\UHCL\bin\x86\Release\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\bin\x86\Release\Core\AppxManifest.xml">
+    <AppXManifest Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\bin\x86\Release\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\bin\x86\Release\UHCL.exe">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\bin\x86\Release\UHCL.exe">
       <PackagePath>entrypoint\UHCL.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lol\.nuget\packages\microsoft.applicationinsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
@@ -349,7 +349,7 @@
     <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\UnityEngineProxy.dll">
       <PackagePath>UnityEngineProxy.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Unprocessed\WinRTLegacy.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Unprocessed\WinRTLegacy.dll">
       <PackagePath>WinRTLegacy.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\UnityPlayer.dll">
@@ -373,275 +373,275 @@
     <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\WinRTBridge.winmd">
       <PackagePath>WinRTBridge.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Resource.res">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Resource.res">
       <PackagePath>Resource.res</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Assets\Square310x310Logo.scale-100.png">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Assets\Square310x310Logo.scale-100.png">
       <PackagePath>Assets\Square310x310Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Assets\Square310x310Logo.scale-125.png">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Assets\Square310x310Logo.scale-125.png">
       <PackagePath>Assets\Square310x310Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Assets\Square310x310Logo.scale-150.png">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Assets\Square310x310Logo.scale-150.png">
       <PackagePath>Assets\Square310x310Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Assets\Square310x310Logo.scale-200.png">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Assets\Square310x310Logo.scale-200.png">
       <PackagePath>Assets\Square310x310Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Assets\Square310x310Logo.scale-400.png">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Assets\Square310x310Logo.scale-400.png">
       <PackagePath>Assets\Square310x310Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\PlaneFinding.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\PlaneFinding.dll">
       <PackagePath>PlaneFinding.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\GpuTiming.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\GpuTiming.dll">
       <PackagePath>GpuTiming.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\SharingClient.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\SharingClient.dll">
       <PackagePath>SharingClient.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\SpatialUnderstanding.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\SpatialUnderstanding.dll">
       <PackagePath>SpatialUnderstanding.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Data\boot.config">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Data\globalgamemanagers">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Data\level0">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Data\level0">
       <PackagePath>Data\level0</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Data\Resources\unity default resources">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Data\Resources\unity_builtin_extra">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Data\globalgamemanagers.assets">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Data\resources.assets">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Data\resources.assets">
       <PackagePath>Data\resources.assets</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Data\sharedassets0.assets">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Data\level0.resS">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Data\resources.assets.resS">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Data\resources.assets.resS">
       <PackagePath>Data\resources.assets.resS</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Data\sharedassets0.assets.resS">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Data\managedAssemblies.txt">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Data\nativePlugins.txt">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\Canned Task.txt">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\Canned Task.txt">
       <PackagePath>Data\StreamingAssets\Canned Task.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\LowPressure.csv">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\LowPressure.csv">
       <PackagePath>Data\StreamingAssets\LowPressure.csv</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\test.csv">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\test.csv">
       <PackagePath>Data\StreamingAssets\test.csv</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\bin\x86\Release\resources.pri">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\bin\x86\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.TilemapModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.TextRenderingModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.TextRenderingModule.dll">
       <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UIModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UIElementsModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.SpriteMaskModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.ScreenCaptureModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.PhysicsModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.PhysicsModule.dll">
       <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.TerrainPhysicsModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.TerrainModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.StyleSheetsModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.StyleSheetsModule.dll">
       <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UNETModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UNETModule.dll">
       <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.VRModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.VideoModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.VehiclesModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.VehiclesModule.dll">
       <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.WindModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.WebModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.WebModule.dll">
       <PackagePath>UnityEngine.WebModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UnityWebRequestAudioModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UnityConnectModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UnityAnalyticsModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UnityAnalyticsModule.dll">
       <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UnityWebRequestWWWModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UnityWebRequestTextureModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UnityWebRequestModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UnityWebRequestModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.ClothModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.AudioModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.AudioModule.dll">
       <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.ARModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.ARModule.dll">
       <PackagePath>UnityEngine.ARModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.DirectorModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.CrashReportingModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.CrashReportingModule.dll">
       <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.CoreModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Assembly-CSharp.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.AnimationModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.AnimationModule.dll">
       <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.AIModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.AIModule.dll">
       <PackagePath>UnityEngine.AIModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.AccessibilityModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.ParticlesLegacyModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.JSONSerializeModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.Physics2DModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.Physics2DModule.dll">
       <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.PerformanceReportingModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.ParticleSystemModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.ParticleSystemModule.dll">
       <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.GridModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.GridModule.dll">
       <PackagePath>UnityEngine.GridModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.GameCenterModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.GameCenterModule.dll">
       <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.InputModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.InputModule.dll">
       <PackagePath>UnityEngine.InputModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.IMGUIModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.IMGUIModule.dll">
       <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.ImageConversionModule.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.ImageConversionModule.dll">
       <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.Timeline.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\nunit.framework.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UI.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.HoloLens.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.Networking.dll">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lol\Documents\Git\UHCL\UHCL\App\UHCL\bin\x86\Release\Core\UHCL.exe">
+    <AppxPackagedFile Include="Z:\copied documents\Git\UHCL\UHCL\App\UHCL\bin\x86\Release\Core\UHCL.exe">
       <PackagePath>UHCL.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

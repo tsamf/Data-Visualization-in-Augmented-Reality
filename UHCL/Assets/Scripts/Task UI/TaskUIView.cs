@@ -16,6 +16,12 @@ public class TaskUIView : MonoBehaviour {
     public GameObject cautionPanel;
     public Image cautionImage;
 
+    private void Awake()
+    {
+        cautionPanel.gameObject.SetActive(false);
+        cautionText.gameObject.SetActive(false);
+    }
+
     private void PopulateImage(EVATask task)
     {
         if (task != null && task.Images != "")
@@ -33,10 +39,10 @@ public class TaskUIView : MonoBehaviour {
     {
         taskPanel.gameObject.SetActive(true);
 
-        taskHeaderText.text = "Procedures";
-        previousTask.text = "procedure1";
-        currentTask.text = "procedure2";
-        nextTask.text = "procedure3";
+        taskHeaderText.text = "";
+        previousTask.text = "";
+        currentTask.text = "Activity loaded, say start procedure to continue.";
+        nextTask.text = "";
     }
 
     public void DisplayTasks(EVAProcedure procedure)
@@ -50,12 +56,14 @@ public class TaskUIView : MonoBehaviour {
         //Update cautions and warnings 
         if (procedure.GetCurrentTask().Warning != "")
         {
+            cautionText.gameObject.SetActive(true);
             cautionPanel.gameObject.SetActive(true);
             cautionPanel.GetComponent<Image>().color = new Color32(208, 46, 40, 214);
             cautionText.text = procedure.GetCurrentTask().Warning;
         }
          else if (procedure.GetCurrentTask().Caution != "")
         {
+            cautionText.gameObject.SetActive(true);
             cautionPanel.gameObject.SetActive(true);
             cautionPanel.GetComponent<Image>().color = new Color32(255, 255, 114, 249);
             cautionText.text = procedure.GetCurrentTask().Caution;
@@ -91,7 +99,7 @@ public class TaskUIView : MonoBehaviour {
         }
     }
 
-    public void DisplayEndOfTask()
+    public void DisplayEndOfProcedure()
     {
         taskHeaderText.text = "Tasks";
         previousTask.text = "";

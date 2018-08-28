@@ -9,6 +9,7 @@ TagManager:
   - PieUI
   - AlternatePieUI
   - Hologram
+  - Insturmenting
   layers:
   - Default
   - TransparentFX

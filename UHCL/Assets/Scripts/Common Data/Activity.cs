@@ -59,4 +59,9 @@ public class Activity {
 
         return true;
     }
+
+    public int GetProcedureNumber()
+    {
+        return currentProcedure + 1;
+    }
 }

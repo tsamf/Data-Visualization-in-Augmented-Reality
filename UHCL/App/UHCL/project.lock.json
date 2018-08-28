@@ -15778,12 +15778,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\lol\\Documents\\Git\\UHCL\\UHCL\\App\\UHCL\\UHCL.csproj",
+      "projectUniqueName": "Z:\\copied documents\\Git\\UHCL\\UHCL\\App\\UHCL\\UHCL.csproj",
       "projectName": "UHCL",
-      "projectPath": "C:\\Users\\lol\\Documents\\Git\\UHCL\\UHCL\\App\\UHCL\\UHCL.csproj",
-      "projectJsonPath": "C:\\Users\\lol\\Documents\\Git\\UHCL\\UHCL\\App\\UHCL\\project.json",
+      "projectPath": "Z:\\copied documents\\Git\\UHCL\\UHCL\\App\\UHCL\\UHCL.csproj",
+      "projectJsonPath": "Z:\\copied documents\\Git\\UHCL\\UHCL\\App\\UHCL\\project.json",
       "packagesPath": "C:\\Users\\lol\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lol\\Documents\\Git\\UHCL\\UHCL\\App\\UHCL\\obj\\",
+      "outputPath": "Z:\\copied documents\\Git\\UHCL\\UHCL\\App\\UHCL\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
         "C:\\Users\\lol\\AppData\\Roaming\\NuGet\\NuGet.Config",
