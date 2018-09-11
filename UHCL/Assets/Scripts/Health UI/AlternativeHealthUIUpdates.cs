@@ -47,9 +47,9 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        UpdateDetailPiePanel();
-        UpdateViewDetails();
-        UpdateWarningWindow();
+        //UpdateDetailPiePanel();
+        //UpdateViewDetails();
+        //UpdateWarningWindow();
         UpdateSliders();
     }
 

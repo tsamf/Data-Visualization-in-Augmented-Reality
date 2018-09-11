@@ -26,38 +26,38 @@ public class HUI_WarningWindow : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-       if (bl_main.GetComponent<BL_Main>().bl_alarming.GetCurrentAlarm != null)
-       {
+       //if (bl_main.GetComponent<BL_Main>().bl_alarming.GetCurrentAlarm != null)
+       //{
        
-            singleWarningDisplay.SetActive(true);
-            currentwarning.text = bl_main.GetComponent<BL_Main>().bl_alarming.GetCurrentAlarm.message;
-            WarningText.text = bl_main.GetComponent<BL_Main>().bl_alarming.GetCurrentAlarm.message;
-        }
-        else
-        {
-            singleWarningDisplay.SetActive(false);
-            currentwarning.text = "";
-            WarningText.text = "";
-        }
+       //     singleWarningDisplay.SetActive(true);
+       //     currentwarning.text = bl_main.GetComponent<BL_Main>().bl_alarming.GetCurrentAlarm.message;
+       //     WarningText.text = bl_main.GetComponent<BL_Main>().bl_alarming.GetCurrentAlarm.message;
+       // }
+       // else
+       // {
+       //     singleWarningDisplay.SetActive(false);
+       //     currentwarning.text = "";
+       //     WarningText.text = "";
+       // }
 
-        if (bl_main.GetComponent<BL_Main>().bl_alarming.GetPerviousAlarm != null)
-        {
+       // if (bl_main.GetComponent<BL_Main>().bl_alarming.GetPerviousAlarm != null)
+       // {
    
-        prevwarning.text = bl_main.GetComponent<BL_Main>().bl_alarming.GetPerviousAlarm.message;
-        }
-        else
-        {
-            prevwarning.text = "";
-        }
-       if (bl_main.GetComponent<BL_Main>().bl_alarming.GetNextAlarm != null)
-        {
+       // prevwarning.text = bl_main.GetComponent<BL_Main>().bl_alarming.GetPerviousAlarm.message;
+       // }
+       // else
+       // {
+       //     prevwarning.text = "";
+       // }
+       //if (bl_main.GetComponent<BL_Main>().bl_alarming.GetNextAlarm != null)
+       // {
          
-            nextwarning.text = bl_main.GetComponent<BL_Main>().bl_alarming.GetNextAlarm.message;
-        }
-       else
-        {
-            nextwarning.text = "";
-        }
+       //     nextwarning.text = bl_main.GetComponent<BL_Main>().bl_alarming.GetNextAlarm.message;
+       // }
+       //else
+       // {
+       //     nextwarning.text = "";
+       // }
     }
 }
 

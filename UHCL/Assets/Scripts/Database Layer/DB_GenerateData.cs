@@ -70,7 +70,7 @@ public class DB_GenerateData : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        switch(type)
+        switch (type)
         {
             case consumableType.Water:
                 commonData.WaterValue = current;
@@ -101,7 +101,7 @@ public class DB_GenerateData : MonoBehaviour {
         {
             return;
         }
-       
+
         //Get random number between 0 and 100
         int nextRandom = random.Next(0, 101);
 
@@ -126,5 +126,10 @@ public class DB_GenerateData : MonoBehaviour {
                 current += increment;
             }
         }
+    }
+
+    public void ResetConsumable()
+    {
+        current = initial;
     }
 }

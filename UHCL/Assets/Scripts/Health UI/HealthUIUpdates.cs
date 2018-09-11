@@ -27,8 +27,8 @@ public class HealthUIUpdates : MonoBehaviour {
 	void Update () {
         UpdateDetailPiePanel();
         UpdateViewDetails();
-        UpdateWarningWindow();
-        updateEmergencyMessage();
+        //UpdateWarningWindow();
+        //updateEmergencyMessage();
     }
 
     void UpdateDetailPiePanel()

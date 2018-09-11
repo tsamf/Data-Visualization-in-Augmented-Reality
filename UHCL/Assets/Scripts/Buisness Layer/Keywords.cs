@@ -15,10 +15,22 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
     public GameObject alternatePIEUI;
     public GameObject pieUI;
 
+    public DB_GenerateData pressure;
+    public DB_GenerateData heartRate;
+    public DB_GenerateData bodyTemp;
+    public DB_GenerateData oxygen;
+    public DB_GenerateData water;
+    public DB_GenerateData battery;
+
     public WriteFile writeFile;
+
+    private BL_Alarming bL_Alarming;
+    public BL_Main bl_Main;
 
     private FlagStore data;
     private TaskUIController taskUIController;
+
+    private bool zoomed = false;
 
     private void OnEnable()
     {
@@ -30,6 +42,7 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
 
     void Awake()
     {
+        bL_Alarming = bl_Main.Bl_alarming; 
         data = FlagStore.GetInstance();
         taskUIController = GameObject.FindObjectOfType<TaskUIController>();
     }
@@ -40,38 +53,110 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
         {
             case "reset pressure":
                 {
-                    writeFile.WriteLine("reset pressure");
-                    testText.text = "Reset Pressure";
+                    if (zoomed)
+                    {
+                        writeFile.WriteLine("reset pressure");
+                        pressure.ResetConsumable();
+                        testText.text = "Reset Pressure";
+
+                        bL_Alarming.suitPressureRedHigh = false;
+                        bL_Alarming.suitPressureRedLow = false;
+                        bL_Alarming.suitPressureYellowHigh = false;
+                        bL_Alarming.suitPressureYellowLow = false;
+                    }
+                    else
+                    {
+                        writeFile.WriteLine("tried reset pressure not zoomed");
+                    }
                     break;
                 }
             case "reset heart rate":
                 {
-                    writeFile.WriteLine("reset heart rate");
-                    testText.text = "Reset Heart Rate";
+                    if (zoomed)
+                    {
+                        writeFile.WriteLine("reset heart rate");
+                        heartRate.ResetConsumable();
+                        testText.text = "Reset Heart Rate";
+
+                        bL_Alarming.heartRateRedHigh = false;
+                        bL_Alarming.heartRateRedLow = false;
+                        bL_Alarming.heartRateYellowLow = false;
+                        bL_Alarming.heartRateYellowHigh = false;
+                    }
+                    else
+                    {
+                        writeFile.WriteLine("tried reset heart rate not zoomed");
+                    }
                     break;
                 }
             case "reset body temp":
                 {
-                    writeFile.WriteLine("reset body temp");
-                    testText.text = "Reset Body Temp";
+                    if (zoomed)
+                    {
+                        writeFile.WriteLine("reset body temp");
+                        bodyTemp.ResetConsumable();
+                        testText.text = "Reset Body Temp";
+
+                        bL_Alarming.bodyTemperatureRedHigh = false;
+                        bL_Alarming.bodyTemperatureRedLow = false;
+                        bL_Alarming.bodyTemperatureYellowLow = false;
+                        bL_Alarming.bodyTemperatureYellowHigh = false;
+                    }
+                    else
+                    {
+                        writeFile.WriteLine("tried reset body temp not zoomed");
+                    }
                     break;
                 }
             case "reset oxygen":
                 {
-                    writeFile.WriteLine("reset oxygen");
-                    testText.text = "Reset Oxygen";
+                    if (zoomed)
+                    {
+                        writeFile.WriteLine("reset oxygen");
+                        oxygen.ResetConsumable();
+                        testText.text = "Reset Oxygen";
+
+                        bL_Alarming.primaryOxygenRed = false;
+                        bL_Alarming.primaryOxygenYellow = false;
+                    }
+                    else
+                    {
+                        writeFile.WriteLine("tried reset oxygen not zoomed");
+                    }
                     break;
                 }
             case "reset water":
                 {
-                    writeFile.WriteLine("reset water");
-                    testText.text = "Reset Water";
+                    if (zoomed)
+                    {
+                        writeFile.WriteLine("reset water");
+                        water.ResetConsumable();
+                        testText.text = "Reset Water";
+
+                        bL_Alarming.waterYellow = false;
+                        bL_Alarming.waterRed = false;
+                    }
+                    else
+                    {
+                        writeFile.WriteLine("tried reset water not zoomed");
+                    }
                     break;
                 }
             case "reset battery":
                 {
-                    writeFile.WriteLine("reset battery");
-                    testText.text = "Reset Battery";
+                    if (zoomed)
+                    {
+                        writeFile.WriteLine("reset battery");
+                        battery.ResetConsumable();
+                        testText.text = "Reset Battery";
+
+                        bL_Alarming.batteryYellow = false;
+                        bL_Alarming.batteryRed = false;
+                    }
+                    else
+                    {
+                        writeFile.WriteLine("tried reset battery not zoomed");
+                    }
                     break;
                 }
             case "show details":
@@ -81,12 +166,14 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
                     if(data.pieUI)
                     {
                         pieUI.GetComponent<RectTransform>().localScale = new Vector3(.002f, .002f, .002f);
-                        pieUI.GetComponent<RectTransform>().position = new Vector3(.36f, .18f, 1);
+                        pieUI.GetComponent<RectTransform>().localPosition = new Vector3(.36f, .18f, 1);
+                        zoomed = true;
                     }
                     else
                     {
                         alternatePIEUI.GetComponent<RectTransform>().localScale = new Vector3(.002f, .002f, .002f);
-                        alternatePIEUI.GetComponent<RectTransform>().position = new Vector3(.36f, .18f, 1);
+                        alternatePIEUI.GetComponent<RectTransform>().localPosition = new Vector3(.36f, .18f, 1);
+                        zoomed = true;
                     }
 
                     break;
@@ -98,12 +185,14 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
                     if (data.pieUI)
                     {
                         pieUI.GetComponent<RectTransform>().localScale = new Vector3(.001f, .001f, .001f);
-                        pieUI.GetComponent<RectTransform>().position = new Vector3(0, 0, 1);
+                        pieUI.GetComponent<RectTransform>().localPosition = new Vector3(0, 0, 1);
+                        zoomed = false;
                     }
                     else
                     {
                         alternatePIEUI.GetComponent<RectTransform>().localScale = new Vector3(.001f, .001f, .001f);
-                        alternatePIEUI.GetComponent<RectTransform>().position = new Vector3(0, 0, 1);
+                        alternatePIEUI.GetComponent<RectTransform>().localPosition = new Vector3(0, 0, 1);
+                        zoomed = false;
                     }
                     break;
                 }

@@ -144,7 +144,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: -0.87999725, y: 0}
   m_SizeDelta: {x: 8.23, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -809,7 +809,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: H2O
+  m_Text: Water
 --- !u!222 &139552470
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1735,6 +1735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tickSpeed: 0.05
+  writeFile: {fileID: 1647694077}
 --- !u!114 &242413104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1985,7 +1986,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2414,7 +2415,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: -0.87999725, y: 0}
   m_SizeDelta: {x: 8.23, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2499,7 +2500,14 @@ MonoBehaviour:
   testText: {fileID: 1475318303}
   alternatePIEUI: {fileID: 0}
   pieUI: {fileID: 0}
+  pressure: {fileID: 506250274}
+  heartRate: {fileID: 57093288}
+  bodyTemp: {fileID: 639861346}
+  oxygen: {fileID: 549925638}
+  water: {fileID: 1529716908}
+  battery: {fileID: 605343258}
   writeFile: {fileID: 0}
+  bl_Main: {fileID: 242413103}
 --- !u!114 &364275673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3035,7 +3043,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Temperature
+  m_Text: Body Temp
 --- !u!222 &438621004
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3209,7 +3217,7 @@ MonoBehaviour:
   threshold1Percentage: 10
   threshold2: 0
   threshold2Percentage: 10
-  initial: 4.5
+  initial: 4.7
   current: 4.7
   increment: 0.001
   isActive: 1
@@ -3295,7 +3303,7 @@ MonoBehaviour:
   threshold1Percentage: 30
   threshold2: -100
   threshold2Percentage: 0
-  initial: 100
+  initial: 850
   current: 850
   increment: 0.1
   isActive: 1
@@ -3686,7 +3694,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4169,7 +4177,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 79, y: 0}
   m_SizeDelta: {x: 25, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4395,7 +4403,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: P-O2
+  m_Text: Oxygen
 --- !u!222 &750108399
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4794,7 +4802,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &869073743
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5043,7 +5051,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: -0.87999725, y: 0}
   m_SizeDelta: {x: 8.23, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6325,7 +6333,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6915,7 +6923,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -9113,7 +9121,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -9722,7 +9730,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -9846,7 +9854,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Heart
+  m_Text: Heart Rate
 --- !u!222 &1771686960
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10144,7 +10152,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: -0.87999725, y: 0}
   m_SizeDelta: {x: 8.23, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -10983,7 +10991,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2089724450
 RectTransform:
   m_ObjectHideFlags: 0

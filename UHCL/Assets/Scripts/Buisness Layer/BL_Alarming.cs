@@ -18,6 +18,33 @@ public class BL_Alarming {
     public double Water;
     public double Battery;
 
+    public WriteFile writeFile;
+
+    public bool suitPressureYellowLow;
+    public bool suitPressureYellowHigh;
+    public bool suitPressureRedLow;
+    public bool suitPressureRedHigh;
+
+    public bool heartRateYellowLow;
+    public bool heartRateYellowHigh;
+    public bool heartRateRedLow;
+    public bool heartRateRedHigh;
+
+    public bool bodyTemperatureYellowLow;
+    public bool bodyTemperatureYellowHigh;
+    public bool bodyTemperatureRedLow;
+    public bool bodyTemperatureRedHigh;
+
+    public bool primaryOxygenYellow;
+    public bool primaryOxygenRed;
+
+    public bool waterYellow;
+    public bool waterRed;
+
+    public bool batteryYellow;
+    public bool batteryRed;
+
+
     int index = 0;
 
     public Alarm GetCurrentAlarm
@@ -99,15 +126,9 @@ public class BL_Alarming {
     private bool BatteryLoLoEn = true;
 
     //Constructor
-    public BL_Alarming()
+    public BL_Alarming(WriteFile writeFile)
     {
-        //SuitPressure = commonData.SuitPressureValue;
-        //HeartRate = commonData.HeartRateValue;
-        //BodyTemperature = commonData.BodyTemperatureValue;
-        //PrimaryOxygen = commonData.OxygenOneValue;
-        //SecondaryOxygen = commonData.OxygenTwoValue;
-        //Water = commonData.WaterValue;
-        //Battery = commonData.BatteryValue;
+        this.writeFile = writeFile;
     }
 
     public void AcknowldegeAlarmFunction()
@@ -175,6 +196,11 @@ public class BL_Alarming {
                         Alarm alarm = new Alarm(AlarmType.SuitPressureHiHiStatus, "HiHi Suit Pressure");
                         alarms.alarms.Insert(0, alarm);
 
+                        if (!suitPressureRedHigh)
+                        {
+                            writeFile.WriteLine("Suit Pressure High Red");
+                            suitPressureRedHigh = true;
+                        }
                     }
                 }
             }
@@ -188,6 +214,12 @@ public class BL_Alarming {
                     {
                         Alarm alarm = new Alarm(AlarmType.SuitPressureHiStatus, "High Suit Pressure");
                         alarms.alarms.Insert(0, alarm);
+
+                        if(!suitPressureYellowHigh)
+                        {
+                            writeFile.WriteLine("suit Pressure High Yellow");
+                            suitPressureYellowHigh = true;
+                        }
                     }
                 }
             }
@@ -200,6 +232,12 @@ public class BL_Alarming {
                     {
                         Alarm alarm = new Alarm(AlarmType.SuitPressureLoStatus, "Low Suit Pressure");
                         alarms.alarms.Insert(0, alarm);
+
+                        if (!suitPressureYellowLow)
+                        {
+                            writeFile.WriteLine("suit Pressure Low Yellow");
+                            suitPressureYellowLow = true;
+                        }
                     }
                 }
             }
@@ -212,6 +250,12 @@ public class BL_Alarming {
                     {
                         Alarm alarm = new Alarm(AlarmType.SuitPressureLoLoStatus, "LowLow Suit Pressure");
                         alarms.alarms.Insert(0, alarm);
+
+                        if(!suitPressureRedLow)
+                        {
+                            writeFile.WriteLine("Suit Pressure Low Red");
+                            suitPressureRedLow = true;
+                        }
                     }
                 }
             }
@@ -239,6 +283,11 @@ public class BL_Alarming {
                         Alarm alarm = new Alarm(AlarmType.HeartRateHiHiStatus, "HiHi Heart rate");
                         alarms.alarms.Insert(0, alarm);
 
+                        if(!heartRateRedHigh)
+                        {
+                            writeFile.WriteLine("Heart Rate Red High");
+                            heartRateRedHigh = true;
+                        }
                     }
                 }
             }
@@ -252,6 +301,12 @@ public class BL_Alarming {
                     {
                         Alarm alarm = new Alarm(AlarmType.HeartRateHiStatus, "High Heart Rate");
                         alarms.alarms.Insert(0, alarm);
+
+                        if(!heartRateYellowHigh)
+                        {
+                            writeFile.WriteLine("Heart Rate Yellow High");
+                            heartRateYellowHigh = true;
+                        }
                     }
                 }
             }
@@ -264,6 +319,12 @@ public class BL_Alarming {
                     {
                         Alarm alarm = new Alarm(AlarmType.HeartRateLoStatus, "Low Heart Rate");
                         alarms.alarms.Insert(0, alarm);
+
+                        if(!heartRateYellowLow)
+                        {
+                            writeFile.WriteLine("Heart Rate Yellow Low");
+                            heartRateYellowLow = true;
+                        }
                     }
                 }
             }
@@ -276,6 +337,12 @@ public class BL_Alarming {
                     {
                         Alarm alarm = new Alarm(AlarmType.HeartRateLoLoStatus, "LowLow Heart Rate");
                         alarms.alarms.Insert(0, alarm);
+
+                        if(!heartRateRedLow)
+                        {
+                            writeFile.WriteLine("Heart Rate Red Low");
+                            heartRateRedLow = true;
+                        }
                     }
                 }
             }
@@ -302,6 +369,11 @@ public class BL_Alarming {
                         Alarm alarm = new Alarm(AlarmType.BodyTemperatureHiHiStatus, "HiHi Body Temperature");
                         alarms.alarms.Insert(0, alarm);
 
+                        if(!bodyTemperatureRedHigh)
+                        {
+                            writeFile.WriteLine("Body Temperature Red High");
+                            bodyTemperatureRedHigh = true;
+                        }
                     }
                 }
             }
@@ -315,6 +387,12 @@ public class BL_Alarming {
                     {
                         Alarm alarm = new Alarm(AlarmType.BodyTemperatureHiStatus, "High Body Temperature");
                         alarms.alarms.Insert(0, alarm);
+
+                        if(!bodyTemperatureYellowHigh)
+                        {
+                            writeFile.WriteLine("Body Temperature Yellow High");
+                            bodyTemperatureYellowHigh = true;
+                        }
                     }
                 }
             }
@@ -327,6 +405,12 @@ public class BL_Alarming {
                     {
                         Alarm alarm = new Alarm(AlarmType.BodyTemperatureLoStatus, "Low Body Temperature");
                         alarms.alarms.Insert(0, alarm);
+
+                        if(!bodyTemperatureYellowLow)
+                        {
+                            writeFile.WriteLine("Body Temperature Yellow Low");
+                            bodyTemperatureYellowLow = false;
+                        }
                     }
                 }
             }
@@ -339,6 +423,12 @@ public class BL_Alarming {
                     {
                         Alarm alarm = new Alarm(AlarmType.BodyTemperatureLoLoStatus, "Low Low Body Temperature");
                         alarms.alarms.Insert(0, alarm);
+
+                        if(!bodyTemperatureRedLow)
+                        {
+                            writeFile.WriteLine("Body Temperature Red Low");
+                            bodyTemperatureRedLow = false;
+                        }
                     }
                 }
             }
@@ -364,6 +454,12 @@ public class BL_Alarming {
                     {
                         Alarm alarm = new Alarm(AlarmType.PrimaryOxygenLoStatus, "Low Primary Oxygen");
                         alarms.alarms.Insert(0, alarm);
+
+                        if(!primaryOxygenYellow)
+                        {
+                            writeFile.WriteLine("Oxygen Low Yellow");
+                            primaryOxygenYellow = true;
+                        }
                     }
                 }
             }
@@ -388,6 +484,7 @@ public class BL_Alarming {
                     {
                         Alarm alarm = new Alarm(AlarmType.SecondaryOxygenLoStatus, "Low Secondary Oxygen");
                         alarms.alarms.Insert(0, alarm);
+
                     }
                 }
             }
@@ -424,6 +521,12 @@ public class BL_Alarming {
                     {
                         Alarm alarm = new Alarm(AlarmType.SecondaryOxygenLoStatus, "Low Water");
                         alarms.alarms.Insert(0, alarm);
+
+                        if(!waterYellow)
+                        {
+                            writeFile.WriteLine("Water Low Yellow");
+                            waterYellow = true;
+                        }
                     }
                 }
             }
@@ -436,6 +539,12 @@ public class BL_Alarming {
                     {
                         Alarm alarm = new Alarm(AlarmType.WaterLoLoStatus, "Low Low Water");
                         alarms.alarms.Insert(0, alarm);
+
+                        if(!waterRed)
+                        {
+                            writeFile.WriteLine("Water Low Red");
+                            waterRed = true;
+                        }
                     }
                 }
             }
@@ -460,6 +569,12 @@ public class BL_Alarming {
                     {
                         Alarm alarm = new Alarm(AlarmType.BatteryLoStatus, "Low Battery");
                         alarms.alarms.Insert(0, alarm);
+
+                        if(!batteryYellow)
+                        {
+                            writeFile.WriteLine("Battery Low yellow");
+                            batteryYellow = true;
+                        }
                     }
                 }
             }
@@ -472,6 +587,12 @@ public class BL_Alarming {
                     {
                         Alarm alarm = new Alarm(AlarmType.BatteryLoLoStatus, "Low Low Battery");
                         alarms.alarms.Insert(0, alarm);
+
+                        if(!batteryRed)
+                        {
+                            writeFile.WriteLine("Battery Low Red");
+                            batteryRed = true;
+                        }
                     }
                 }
             }

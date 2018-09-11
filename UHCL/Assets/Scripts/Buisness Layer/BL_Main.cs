@@ -12,13 +12,14 @@ public class BL_Main : MonoBehaviour
     public BL_Alarming bl_alarming;
     public BL_Scalling bl_scaling;
     public BL_Tasks bl_task;
+    public WriteFile writeFile;
 
+    public BL_Alarming Bl_alarming { get { return bl_alarming; } }
 
-    // Use this for initialization
-    void Start()
+    private void Awake()
     {
         bl_scaling = new BL_Scalling();
-        bl_alarming = new BL_Alarming();
+        bl_alarming = new BL_Alarming(writeFile);
         bl_task = new BL_Tasks();
     }
 

@@ -1,0 +1,8 @@
+event type	camera position	camera rotation	oxygen	oxygen two	suit pressure	battery	body temperature	water	heart rate	timestamp	task text	task setp	procedure number	
+show Details	(0.0, 0.0, 0.0)	(-0.1, -0.5, -0.1, 0.8)	835.2036	3600	4.693	99.42988	99.92999	6.943004	66.01	9/10/2018 10:56:15 PM	On the RIGHT side of the EVA Kit, locate the PANEL ACCESS KEY.	1	1	
+close details	(0.0, 0.0, 0.0)	(-0.1, -0.5, -0.1, 0.8)	821.207	3600	4.697	98.99979	99.96999	6.900007	65.75995	9/10/2018 10:56:23 PM	On the RIGHT side of the EVA Kit, locate the PANEL ACCESS KEY.	1	1	
+close details	(0.0, 0.0, 0.0)	(-0.1, -0.5, -0.1, 0.8)	816.3082	3600	4.693	98.84975	99.92999	6.885008	65.69994	9/10/2018 10:56:25 PM	On the RIGHT side of the EVA Kit, locate the PANEL ACCESS KEY.	1	1	
+show Details	(0.0, 0.0, 0.0)	(-0.1, -0.5, -0.1, 0.8)	813.309	3600	4.696	98.76974	99.95999	6.877009	65.77995	9/10/2018 10:56:27 PM	On the RIGHT side of the EVA Kit, locate the PANEL ACCESS KEY.	1	1	
+close details	(0.0, 0.0, 0.0)	(-0.1, -0.5, -0.1, 0.8)	812.3092	3600	4.693	98.72973	99.92999	6.873009	65.75995	9/10/2018 10:56:27 PM	On the RIGHT side of the EVA Kit, locate the PANEL ACCESS KEY.	1	1	
+show Details	(0.0, 0.0, 0.0)	(-0.1, -0.5, -0.1, 0.8)	810.8096	3600	4.688001	98.65971	99.87997	6.86601	65.71994	9/10/2018 10:56:28 PM	On the RIGHT side of the EVA Kit, locate the PANEL ACCESS KEY.	1	1	
+close details	(0.0, 0.0, 0.0)	(-0.1, -0.5, -0.1, 0.8)	810.1097	3600	4.690001	98.63971	99.89998	6.86401	65.74995	9/10/2018 10:56:28 PM	On the RIGHT side of the EVA Kit, locate the PANEL ACCESS KEY.	1	1	

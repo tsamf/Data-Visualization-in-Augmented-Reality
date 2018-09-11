@@ -19,7 +19,7 @@ public class FlagStore {
     }
 
     public int userID = 1;
-    public bool pieUI = false;
+    public bool pieUI = true;
 
     //The common data  (flags and alarm definitions will go here)
     private bool editMode = false;

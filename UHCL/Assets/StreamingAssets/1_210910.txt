@@ -1,0 +1,2 @@
+event type	camera position	camera rotation	oxygen	oxygen two	suit pressure	battery	body temperature	water	heart rate	timestamp	task text	task setp	procedure number	
+Oxygen Low Yellow	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	249.3	3600	4.697	98.92977	99.96999	6.893008	66.15003	9/10/2018 9:52:56 PM	On the RIGHT side of the EVA Kit, locate the PANEL ACCESS KEY.	1	1	
