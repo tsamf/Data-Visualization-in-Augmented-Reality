@@ -1,0 +1,4 @@
+event type	camera position	camera rotation	oxygen	oxygen two	suit pressure	battery	body temperature	water	heart rate	timestamp	task text	task setp	procedure number	
+suit Pressure Low Yellow	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	849.5996	3600	4.299991	99.59991	99.59991	6.599991	65.59991	9/23/2018 3:39:24 PM	On the RIGHT side of the EVA Kit, locate the PANEL ACCESS KEY.	1	1	
+Suit Pressure Low Red	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	849.3894	3600	4.089986	99.38987	99.38987	6.389986	65.38987	9/23/2018 3:39:26 PM	On the RIGHT side of the EVA Kit, locate the PANEL ACCESS KEY.	1	1	
+Heart Rate Yellow Low	(0.0, 0.0, 0.0)	(0.0, 0.0, 0.0, 1.0)	848.989	3600	3.689984	98.98978	98.98978	5.989977	64.98978	9/23/2018 3:39:30 PM	On the RIGHT side of the EVA Kit, locate the PANEL ACCESS KEY.	1	1	

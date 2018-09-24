@@ -96,36 +96,36 @@ public class DB_GenerateData : MonoBehaviour {
 
         }
 
-        //If the pipe has been deactivated return with out advancing
-        if (!isActive)
-        {
-            return;
-        }
+        ////If the pipe has been deactivated return with out advancing
+        //if (!isActive)
+        //{
+        //    return;
+        //}
 
-        //Get random number between 0 and 100
-        int nextRandom = random.Next(0, 101);
+        ////Get random number between 0 and 100
+        //int nextRandom = random.Next(0, 101);
 
-        //If less than first threshold subtract by increment amount
-        if (nextRandom <= threshold1Percentage)
-        {
-            if (current - increment > min)
-            {
-                current -= increment;
-            }
-        }
-        //Stay the same if between both thresholds
-        else if (nextRandom <= 100.0f - threshold2Percentage)
-        {
+        ////If less than first threshold subtract by increment amount
+        //if (nextRandom <= threshold1Percentage)
+        //{
+        //    if (current - increment > min)
+        //    {
+        //        current -= increment;
+        //    }
+        //}
+        ////Stay the same if between both thresholds
+        //else if (nextRandom <= 100.0f - threshold2Percentage)
+        //{
 
-        }
-        //If greater than second threshold add by increment amount
-        else
-        {
-            if (current + increment < max)
-            {
-                current += increment;
-            }
-        }
+        //}
+        ////If greater than second threshold add by increment amount
+        //else
+        //{
+        //    if (current + increment < max)
+        //    {
+        //        current += increment;
+        //    }
+        //}
     }
 
     public void ResetConsumable()

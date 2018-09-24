@@ -18,6 +18,8 @@ public class FlagStore {
         return _commonData;
     }
 
+    public bool procedureStarted = false;
+
     public int userID = 1;
     public bool pieUI = true;
 

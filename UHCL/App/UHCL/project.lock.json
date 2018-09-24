@@ -12572,10 +12572,11 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.0.0": {
-      "sha512": "0N77OwGZpXqUco2C/ynv1os7HqdFYifvNIbveLDKqL5PZaz05Rl9enCwVBjF61aumHKueLWIJ3prnmdAXxww4A==",
+      "sha512": "7fQNS0TGcZ3ICt7wwkxtbOURvTEkFxBg7zDpxUqcghGj1Mg1cO8COme08TglCREo6AlqlxWaxvGxt9i6SZ1EMA==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.0.0",
       "files": [
+        ".signature.p7s",
         "microsoft.netcore.platforms.1.0.0.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
         "runtime.json"
@@ -14138,10 +14139,11 @@
       ]
     },
     "System.Net.Http/4.0.0": {
-      "sha512": "mZuAl7jw/mFY8jUq4ITKECxVBh9a8SJt9BC/+lJbmo7cRKspxE3PsITz+KiaCEsexN5WYPzwBOx0oJH/0HlPyQ==",
+      "sha512": "RufQzPFmwqt1jsD6LR+TuAQJckoW8nDgKHuNZh5eZPA62BVpU58mjKrUkk8lR0tYb6T6yLC9f+b+GGI5gnOjBA==",
       "type": "package",
       "path": "system.net.http/4.0.0",
       "files": [
+        ".signature.p7s",
         "lib/DNXCore50/System.Net.Http.dll",
         "lib/net45/_._",
         "lib/netcore50/System.Net.Http.dll",
@@ -15774,19 +15776,19 @@
     "UAP,Version=v10.0.10240": []
   },
   "packageFolders": {
-    "C:\\Users\\lol\\.nuget\\packages\\": {}
+    "C:\\Users\\TravisSamford\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "Z:\\copied documents\\Git\\UHCL\\UHCL\\App\\UHCL\\UHCL.csproj",
+      "projectUniqueName": "C:\\Users\\TravisSamford\\Documents\\Git\\UHCL\\UHCL\\App\\UHCL\\UHCL.csproj",
       "projectName": "UHCL",
-      "projectPath": "Z:\\copied documents\\Git\\UHCL\\UHCL\\App\\UHCL\\UHCL.csproj",
-      "projectJsonPath": "Z:\\copied documents\\Git\\UHCL\\UHCL\\App\\UHCL\\project.json",
-      "packagesPath": "C:\\Users\\lol\\.nuget\\packages\\",
-      "outputPath": "Z:\\copied documents\\Git\\UHCL\\UHCL\\App\\UHCL\\obj\\",
+      "projectPath": "C:\\Users\\TravisSamford\\Documents\\Git\\UHCL\\UHCL\\App\\UHCL\\UHCL.csproj",
+      "projectJsonPath": "C:\\Users\\TravisSamford\\Documents\\Git\\UHCL\\UHCL\\App\\UHCL\\project.json",
+      "packagesPath": "C:\\Users\\TravisSamford\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\TravisSamford\\Documents\\Git\\UHCL\\UHCL\\App\\UHCL\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
-        "C:\\Users\\lol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\TravisSamford\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "sources": {

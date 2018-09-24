@@ -8,7 +8,6 @@ public class WriteFile : MonoBehaviour {
 
     FlagStore flagStore;
     
-
     public DB_GenerateData oxygen;
     public DB_GenerateData oxygen2;
     public DB_GenerateData suitPressure;
@@ -31,10 +30,12 @@ public class WriteFile : MonoBehaviour {
         flagStore = FlagStore.GetInstance();
         camera = GameObject.FindGameObjectWithTag("MainCamera");
         activity = Activity.GetInstance();
+
+        CreateFile();
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 
@@ -71,15 +72,20 @@ public class WriteFile : MonoBehaviour {
         data += line;
     }
 
-    void WriteToFile()
+    void CreateFile()
     {
         filename = flagStore.userID + "_" + DateTime.Now.ToString("HHMMss") + ".txt";
-        var myfile =File.Create(Path.Combine(Application.streamingAssetsPath, filename));
-        myfile.Close();
+        //var myfile =File.Create(Path.Combine(Application.streamingAssetsPath, filename));
+        var myfile = File.Create(Path.Combine(Application.persistentDataPath, filename));
+        myfile.Dispose();
+    }
 
+    void WriteToFile()
+    {
         try
         {
-            string path = Path.Combine(Application.streamingAssetsPath, filename);
+            //string path = Path.Combine(Application.streamingAssetsPath, filename);
+            string path = Path.Combine(Application.persistentDataPath, filename);
             byte[] bytes = System.Text.Encoding.ASCII.GetBytes(data);
             UnityEngine.Windows.File.WriteAllBytes(path, bytes);
         }
@@ -88,6 +94,14 @@ public class WriteFile : MonoBehaviour {
             Debug.LogWarning("File write error!");
         }
     }
+
+    private void OnApplicationFocus(bool focus)
+    {
+        if (!focus)
+        {
+            WriteToFile();
+        }
+    } 
 
     private void OnDestroy()
     {

@@ -31,13 +31,19 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
 
     public ColorCode flagColors;
 
-    
-
     FlagStore commonData = FlagStore.GetInstance();
+
+    private void Awake()
+    {
+        if (commonData.pieUI)
+        {
+            gameObject.SetActive(false);
+        }   
+    }
 
     // Use this for initialization
     void Start()
-    {
+    { 
         //detailedPie.SetActive(false);
         
         displayDetails.SetActive(false);

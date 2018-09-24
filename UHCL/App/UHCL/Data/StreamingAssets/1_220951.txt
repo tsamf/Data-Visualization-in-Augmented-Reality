@@ -1,0 +1,1 @@
+event type	camera position	camera rotation	oxygen	oxygen two	suit pressure	battery	body temperature	water	heart rate	timestamp	task text	task setp	procedure number	

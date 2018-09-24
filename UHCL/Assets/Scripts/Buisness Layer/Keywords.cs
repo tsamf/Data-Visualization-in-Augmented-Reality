@@ -198,6 +198,7 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
                 }
             case "start procedure":
                 {
+                    data.procedureStarted = true;
                     testText.text = "Start Procedure";
                     taskUIController.StartPocedure();
                     writeFile.WriteLine("Start procedure");
