@@ -1,5 +1,0 @@
-event type	camera position	camera rotation	oxygen	oxygen two	suit pressure	battery	body temperature	water	heart rate	timestamp	task text	task setp	procedure number	
-voice command failed	(0.0, 0.0, 0.0)	(0.0, 0.1, 0.0, 1.0)	849.3002	3600	4.698	99.98	99.98	6.998	65.98	9/10/2018 10:59:10 PM	On the RIGHT side of the EVA Kit, locate the PANEL ACCESS KEY.	1	1	
-tried reset heart rate not zoomed	(2.8, 0.0, 0.3)	(-0.1, -0.1, 0.0, 1.0)	848.7003	3600	4.701	99.98	100.01	6.998	66.02	9/10/2018 10:59:11 PM	On the RIGHT side of the EVA Kit, locate the PANEL ACCESS KEY.	1	1	
-show Details	(4.4, 0.1, 0.8)	(-0.4, 0.4, 0.2, 0.8)	842.8018	3600	4.712999	99.82996	100.13	6.983001	66.13003	9/10/2018 10:59:14 PM	On the RIGHT side of the EVA Kit, locate the PANEL ACCESS KEY.	1	1	
-show Details	(4.4, 0.1, 0.8)	(-0.4, 0.4, 0.2, 0.8)	840.7023	3600	4.718998	99.78996	100.19	6.979002	66.19004	9/10/2018 10:59:16 PM	On the RIGHT side of the EVA Kit, locate the PANEL ACCESS KEY.	1	1	

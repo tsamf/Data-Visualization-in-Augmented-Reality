@@ -427,6 +427,15 @@
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\Vuforia\VuforiaMars_Images.xml">
+      <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_Images.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.xml">
+      <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.xml">
+      <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\PlaneFinding.dll">
       <PackagePath>PlaneFinding.dll</PackagePath>
     </AppxPackagedFile>
@@ -436,8 +445,14 @@
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\SharingClient.dll">
       <PackagePath>SharingClient.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\VuforiaWrapper.dll">
+      <PackagePath>VuforiaWrapper.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\SpatialUnderstanding.dll">
       <PackagePath>SpatialUnderstanding.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Vuforia.dll">
+      <PackagePath>Vuforia.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
@@ -490,99 +505,6 @@
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_140906.txt">
-      <PackagePath>Data\StreamingAssets\1_140906.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_140941.txt">
-      <PackagePath>Data\StreamingAssets\1_140941.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_140947.txt">
-      <PackagePath>Data\StreamingAssets\1_140947.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_150903.txt">
-      <PackagePath>Data\StreamingAssets\1_150903.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_150907.txt">
-      <PackagePath>Data\StreamingAssets\1_150907.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_150923.txt">
-      <PackagePath>Data\StreamingAssets\1_150923.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_150935.txt">
-      <PackagePath>Data\StreamingAssets\1_150935.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_150948.txt">
-      <PackagePath>Data\StreamingAssets\1_150948.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_150950.txt">
-      <PackagePath>Data\StreamingAssets\1_150950.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_150951.txt">
-      <PackagePath>Data\StreamingAssets\1_150951.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_210907.txt">
-      <PackagePath>Data\StreamingAssets\1_210907.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_210910.txt">
-      <PackagePath>Data\StreamingAssets\1_210910.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220901.txt">
-      <PackagePath>Data\StreamingAssets\1_220901.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220902.txt">
-      <PackagePath>Data\StreamingAssets\1_220902.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220903.txt">
-      <PackagePath>Data\StreamingAssets\1_220903.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220905.txt">
-      <PackagePath>Data\StreamingAssets\1_220905.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220910.txt">
-      <PackagePath>Data\StreamingAssets\1_220910.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220918.txt">
-      <PackagePath>Data\StreamingAssets\1_220918.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220921.txt">
-      <PackagePath>Data\StreamingAssets\1_220921.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220936.txt">
-      <PackagePath>Data\StreamingAssets\1_220936.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220937.txt">
-      <PackagePath>Data\StreamingAssets\1_220937.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220940.txt">
-      <PackagePath>Data\StreamingAssets\1_220940.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220942.txt">
-      <PackagePath>Data\StreamingAssets\1_220942.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220944.txt">
-      <PackagePath>Data\StreamingAssets\1_220944.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220948.txt">
-      <PackagePath>Data\StreamingAssets\1_220948.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220951.txt">
-      <PackagePath>Data\StreamingAssets\1_220951.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_230912.txt">
-      <PackagePath>Data\StreamingAssets\1_230912.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_230925.txt">
-      <PackagePath>Data\StreamingAssets\1_230925.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_230930.txt">
-      <PackagePath>Data\StreamingAssets\1_230930.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_230944.txt">
-      <PackagePath>Data\StreamingAssets\1_230944.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_230950.txt">
-      <PackagePath>Data\StreamingAssets\1_230950.txt</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\Canned Consumable.txt">
       <PackagePath>Data\StreamingAssets\Canned Consumable.txt</PackagePath>
     </AppxPackagedFile>
@@ -595,6 +517,15 @@
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\test.csv">
       <PackagePath>Data\StreamingAssets\test.csv</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\Vuforia\VuforiaMars_Images.dat">
+      <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_Images.dat</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.dat">
+      <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.dat</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.dat">
+      <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.dat</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
@@ -605,8 +536,8 @@
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.TextRenderingModule.dll">
-      <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UNETModule.dll">
+      <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
@@ -614,14 +545,17 @@
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.StyleSheetsModule.dll">
+      <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.PhysicsModule.dll">
-      <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.TextRenderingModule.dll">
+      <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
@@ -629,11 +563,11 @@
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.StyleSheetsModule.dll">
-      <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UnityAnalyticsModule.dll">
+      <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UNETModule.dll">
-      <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.WebModule.dll">
+      <PackagePath>UnityEngine.WebModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
@@ -641,14 +575,11 @@
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.VehiclesModule.dll">
-      <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.WebModule.dll">
-      <PackagePath>UnityEngine.WebModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UnityWebRequestModule.dll">
+      <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
@@ -656,8 +587,8 @@
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UnityAnalyticsModule.dll">
-      <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.VehiclesModule.dll">
+      <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
@@ -665,8 +596,8 @@
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.UnityWebRequestModule.dll">
-      <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.PhysicsModule.dll">
+      <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
@@ -745,6 +676,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Vuforia.UnityExtensions.dll">
+      <PackagePath>Vuforia.UnityExtensions.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>

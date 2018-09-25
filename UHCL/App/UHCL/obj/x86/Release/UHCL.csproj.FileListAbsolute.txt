@@ -1194,3 +1194,5 @@ C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\obj\x86\Release\qualifie
 C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\obj\x86\Release\qualifiers.txt.intermediate
 C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\obj\x86\Release\MultipleQualifiersPerDimensionFound.txt
 C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\obj\x86\Release\ProjectArchitectures.txt
+C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\bin\x86\Release\Vuforia.UnityExtensions.dll
+C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\bin\x86\Release\Vuforia.UnityExtensions.pdb
