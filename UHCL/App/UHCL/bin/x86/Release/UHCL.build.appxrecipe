@@ -448,9 +448,6 @@
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\level0">
       <PackagePath>Data\level0</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\level1">
-      <PackagePath>Data\level1</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
     </AppxPackagedFile>
@@ -466,14 +463,8 @@
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\sharedassets1.assets">
-      <PackagePath>Data\sharedassets1.assets</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\level1.resS">
-      <PackagePath>Data\level1.resS</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\resources.assets.resS">
       <PackagePath>Data\resources.assets.resS</PackagePath>
@@ -481,107 +472,11 @@
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\sharedassets1.assets.resS">
-      <PackagePath>Data\sharedassets1.assets.resS</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_140906.txt">
-      <PackagePath>Data\StreamingAssets\1_140906.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_140941.txt">
-      <PackagePath>Data\StreamingAssets\1_140941.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_140947.txt">
-      <PackagePath>Data\StreamingAssets\1_140947.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_150903.txt">
-      <PackagePath>Data\StreamingAssets\1_150903.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_150907.txt">
-      <PackagePath>Data\StreamingAssets\1_150907.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_150923.txt">
-      <PackagePath>Data\StreamingAssets\1_150923.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_150935.txt">
-      <PackagePath>Data\StreamingAssets\1_150935.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_150948.txt">
-      <PackagePath>Data\StreamingAssets\1_150948.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_150950.txt">
-      <PackagePath>Data\StreamingAssets\1_150950.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_150951.txt">
-      <PackagePath>Data\StreamingAssets\1_150951.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_210907.txt">
-      <PackagePath>Data\StreamingAssets\1_210907.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_210910.txt">
-      <PackagePath>Data\StreamingAssets\1_210910.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220901.txt">
-      <PackagePath>Data\StreamingAssets\1_220901.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220902.txt">
-      <PackagePath>Data\StreamingAssets\1_220902.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220903.txt">
-      <PackagePath>Data\StreamingAssets\1_220903.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220905.txt">
-      <PackagePath>Data\StreamingAssets\1_220905.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220910.txt">
-      <PackagePath>Data\StreamingAssets\1_220910.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220918.txt">
-      <PackagePath>Data\StreamingAssets\1_220918.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220921.txt">
-      <PackagePath>Data\StreamingAssets\1_220921.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220936.txt">
-      <PackagePath>Data\StreamingAssets\1_220936.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220937.txt">
-      <PackagePath>Data\StreamingAssets\1_220937.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220940.txt">
-      <PackagePath>Data\StreamingAssets\1_220940.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220942.txt">
-      <PackagePath>Data\StreamingAssets\1_220942.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220944.txt">
-      <PackagePath>Data\StreamingAssets\1_220944.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220948.txt">
-      <PackagePath>Data\StreamingAssets\1_220948.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_220951.txt">
-      <PackagePath>Data\StreamingAssets\1_220951.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_230912.txt">
-      <PackagePath>Data\StreamingAssets\1_230912.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_230925.txt">
-      <PackagePath>Data\StreamingAssets\1_230925.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_230930.txt">
-      <PackagePath>Data\StreamingAssets\1_230930.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_230944.txt">
-      <PackagePath>Data\StreamingAssets\1_230944.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\1_230950.txt">
-      <PackagePath>Data\StreamingAssets\1_230950.txt</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TravisSamford\Documents\Git\UHCL\UHCL\App\UHCL\Data\StreamingAssets\Canned Consumable.txt">
       <PackagePath>Data\StreamingAssets\Canned Consumable.txt</PackagePath>

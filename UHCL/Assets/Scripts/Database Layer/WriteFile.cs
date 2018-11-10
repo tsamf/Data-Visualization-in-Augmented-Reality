@@ -4,6 +4,12 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
+#if UNITY_WINRT
+using File = UnityEngine.Windows.File;
+#else
+using File = System.IO.File;
+#endif
+
 public class WriteFile : MonoBehaviour {
 
     FlagStore flagStore;
@@ -75,8 +81,7 @@ public class WriteFile : MonoBehaviour {
     void CreateFile()
     {
         filename = flagStore.userID + "_" + DateTime.Now.ToString("HHMMss") + ".txt";
-        //var myfile =File.Create(Path.Combine(Application.streamingAssetsPath, filename));
-        var myfile = File.Create(Path.Combine(Application.persistentDataPath, filename));
+        var myfile = System.IO.File.Create(Path.Combine(Application.persistentDataPath, filename));
         myfile.Dispose();
     }
 
@@ -84,10 +89,10 @@ public class WriteFile : MonoBehaviour {
     {
         try
         {
-            //string path = Path.Combine(Application.streamingAssetsPath, filename);
             string path = Path.Combine(Application.persistentDataPath, filename);
             byte[] bytes = System.Text.Encoding.ASCII.GetBytes(data);
-            UnityEngine.Windows.File.WriteAllBytes(path, bytes);
+  
+           File.WriteAllBytes(path, bytes);
         }
         catch
         {

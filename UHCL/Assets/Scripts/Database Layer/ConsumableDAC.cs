@@ -4,6 +4,12 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
+#if UNITY_WINRT
+using File = UnityEngine.Windows.File;
+#else
+using File = System.IO.File;
+#endif
+
 public class ConsumableDAC : MonoBehaviour {
 
     //List<ConsumableLine> consumables();
@@ -46,7 +52,9 @@ public class ConsumableDAC : MonoBehaviour {
         try
         {
             string fileName = Path.Combine(Application.streamingAssetsPath, filename);
-            byte[] bytes = UnityEngine.Windows.File.ReadAllBytes(fileName);
+            byte[] bytes = File.ReadAllBytes(fileName);
+
+
             return System.Text.Encoding.ASCII.GetString(bytes);
         }
         catch
