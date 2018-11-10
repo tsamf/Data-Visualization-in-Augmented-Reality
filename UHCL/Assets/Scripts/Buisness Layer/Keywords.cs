@@ -241,6 +241,19 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
                     writeFile.WriteLine("Next Procedure");
                     break;
                 }
+            case "start":
+                {
+                    if(data.currentState == FlagStore.GameState.editMode)
+                    {
+                        data.currentState = FlagStore.GameState.playing;
+                    }
+                    else if(data.currentState == FlagStore.GameState.tutorial)
+                    {
+                        data.currentState = FlagStore.GameState.playing;
+                    }
+
+                    break;
+                }
             default:
                 writeFile.WriteLine("voice command failed");
                 break;
@@ -436,17 +449,5 @@ public class Keywords : MonoBehaviour,ISpeechHandler {
         data.viewBodyTemperature = false;
         data.viewHTwoO = false;
         data.closeDetailWindow = true;
-    }
-
-    private void StopEditMode()
-    {
-        testText.text = "Stop edit mode.";
-        data.EditMode = false;
-    }
-
-    private void StartEditMode()
-    {
-        testText.text = "Start edit mode.";
-        data.EditMode = true;
     }
 }

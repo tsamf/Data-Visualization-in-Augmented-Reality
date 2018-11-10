@@ -18,14 +18,14 @@ public class FlagStore {
         return _commonData;
     }
 
+    public enum GameState { editMode,tutorial,playing };
+
+    public GameState currentState = GameState.editMode;
+
     public bool procedureStarted = false;
 
     public int userID = 1;
     public bool pieUI = true;
-
-    //The common data  (flags and alarm definitions will go here)
-    private bool editMode = false;
-	public bool EditMode { get { return editMode; } set { editMode = value; } }
 
     public EVATask previousTask;
     public EVATask currentTask;

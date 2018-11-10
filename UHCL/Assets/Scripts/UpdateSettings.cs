@@ -15,7 +15,7 @@ public class UpdateSettings : MonoBehaviour {
     {
         store.userID = int.Parse(dropDownText.text);
         store.pieUI = uiToggle.isOn;
-
-        SceneManager.LoadScene(1);
+        store.currentState = FlagStore.GameState.tutorial;
+        gameObject.SetActive(false);
     }
 }

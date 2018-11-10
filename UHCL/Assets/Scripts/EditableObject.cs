@@ -396,7 +396,7 @@ namespace HoloToolkit.Unity.InputModule
         public void OnInputDown(InputEventData eventData)
         {
 
-            if (data.EditMode == true)
+            if (data.currentState == FlagStore.GameState.editMode)
             {
                 RemoveAnchor();
             }
@@ -404,7 +404,6 @@ namespace HoloToolkit.Unity.InputModule
             {
                 return;
             }
-              
 
             if (isDragging)
             {
