@@ -1,4 +1,7 @@
-﻿using HoloToolkit.Unity.InputModule;
+﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License. See LICENSE in the project root for license information.
+
+using HoloToolkit.Unity.InputModule;
 using HoloToolkit.Unity.SpatialMapping;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -44,7 +47,7 @@ namespace HoloToolkit.Unity.SharingWithUNET
         private int layerMask;
         private InputManager inputManager;
         public Vector3 movementOffset = Vector3.zero;
-        private bool isOpaque;
+        private bool isOpaque = false;
 
         // Use this for initialization
         private void Start()
