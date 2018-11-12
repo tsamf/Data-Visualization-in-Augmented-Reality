@@ -21,10 +21,10 @@ public class TUI_TaskUIUpdate : MonoBehaviour {
 
     public BL_Tasks bl_tasks;
 
-    private int currentstep = 0;
-    private bool spoke = false;
+    //private int currentstep = 0;
+    //private bool spoke = false;
 
-    private int num = 1;
+    //rivate int num = 1;
 
     void Start () {
         bl_tasks = new BL_Tasks();

@@ -10,6 +10,12 @@ public class UpdateSettings : MonoBehaviour {
     public Text dropDownText;
     public Toggle uiToggle;
     FlagStore store = FlagStore.GetInstance();
+    public TaskUIController taskController;
+
+    public GameObject pie;
+    public GameObject barChart;
+    public GameObject taskInterface;
+    public Tutorial tutorial;
 
 	public void UpdateAndChangeScenes()
     {
@@ -17,5 +23,22 @@ public class UpdateSettings : MonoBehaviour {
         store.pieUI = uiToggle.isOn;
         store.currentState = FlagStore.GameState.tutorial;
         gameObject.SetActive(false);
+        
+        if(store.pieUI == true)
+        {
+            pie.SetActive(true);
+            barChart.SetActive(false);
+        }
+        else
+        {
+            pie.SetActive(false);
+            barChart.SetActive(true);
+        }
+
+        taskInterface.SetActive(true);
+
+        tutorial.CreateTutorial();
+
+        taskController.StartPocedure();
     }
 }

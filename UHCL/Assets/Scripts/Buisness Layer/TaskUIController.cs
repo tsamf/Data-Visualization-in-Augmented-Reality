@@ -8,17 +8,13 @@ public class TaskUIController : MonoBehaviour {
     public TextToSpeech textToSpeech;
 
     Activity activity;
-    TaskUIView taskUIView;
+    public TaskUIView taskUIView;
 
     //TODO where do these flags go
     enum ActivityState {  programStarted, acitvityLoaded, inProcedure }
 
-
-	// Use this for initialization
 	void Start () {
         activity = Activity.GetInstance();
-        taskUIView = GameObject.FindObjectOfType<TaskUIView>();
-        LoadActivity();
 	}
 	
 	// Update is called once per frame
