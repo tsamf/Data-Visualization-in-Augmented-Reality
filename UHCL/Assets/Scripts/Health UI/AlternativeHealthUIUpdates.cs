@@ -312,7 +312,7 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
             commonData.closeWarnings = false;
         }
 
-        if(DetailPanel.active)
+        if(DetailPanel.activeSelf)
         {
             if(bl_main.bl_alarming.GetCurrentAlarm == null)
             {

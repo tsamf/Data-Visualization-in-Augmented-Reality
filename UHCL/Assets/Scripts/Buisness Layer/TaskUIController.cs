@@ -66,15 +66,8 @@ public class TaskUIController : MonoBehaviour {
 
     public void NextTask()
     {
-        if(activity.GetCurrentProcedure().NextTask())
-        {
-            taskUIView.DisplayTasks(activity.GetCurrentProcedure());
-            textToSpeech.StartSpeaking(activity.GetCurrentProcedure().GetCurrentTask().Text);
-        }
-        else
-        {
-            taskUIView.DisplayEndOfProcedure();
-            textToSpeech.StartSpeaking("Procedure complete, say next procedure to continue.");
-        }
+        activity.GetCurrentProcedure().NextTask();
+        taskUIView.DisplayTasks(activity.GetCurrentProcedure());
+        textToSpeech.StartSpeaking(activity.GetCurrentProcedure().GetCurrentTask().Text);
     }
 }
