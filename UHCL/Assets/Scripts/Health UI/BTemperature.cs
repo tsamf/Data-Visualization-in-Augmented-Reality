@@ -37,18 +37,21 @@ public class BTemperature : MonoBehaviour {
             // Debug.Log("H");
             cc.LCol();
             objBT.color = cc.LColor;
+            objBT.transform.localScale = new Vector3(radius / 100, radius / 100, 1.0f);
         }
         else if (bodyTemperature <= commonData.BodyTemperatureHiDB && bodyTemperature >= commonData.BodyTemperatureLoDB)
         {
             //  Debug.Log("Ideal");
             cc.HCol();
             objBT.color = cc.HColor;
+            objBT.transform.localScale = new Vector3(radius / 100, radius / 100, 1.0f);
         }
         else if (bodyTemperature >= commonData.BodyTemperatureLoSP && bodyTemperature <= commonData.BodyTemperatureLoDB)
         {
             //   Debug.Log("L");
             cc.LCol();
             objBT.color = cc.LColor;
+            objBT.transform.localScale = new Vector3(radius / 100, radius / 100, 1.0f);
         }
         else if (bodyTemperature >= commonData.BodyTemperatureLoLoSP && bodyTemperature <= commonData.BodyTemperatureLoLoDB)
         {
@@ -56,9 +59,5 @@ public class BTemperature : MonoBehaviour {
             cc.LLCol();
             objBT.color = cc.LLColor;
         }
-
-
-            objBT.transform.localScale = new Vector3(radius/100, radius/100, 1.0f);
-
     }
 }

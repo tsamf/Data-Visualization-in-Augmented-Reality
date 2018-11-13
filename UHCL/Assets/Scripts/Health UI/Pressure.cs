@@ -38,26 +38,26 @@ public class Pressure : MonoBehaviour {
         {
             cc.LCol();
             objP.color = cc.LColor;
+            objP.transform.localScale = new Vector3(radius / 100, radius / 100, 1.0f);
         }
         else if (suitPressure <= commonData.SuitPressHiDB && suitPressure >= commonData.SuitPressLoDB)
         {
             cc.HCol();
             objP.color = cc.HColor;
+            objP.transform.localScale = new Vector3(radius / 100, radius / 100, 1.0f);
         }
         else if (suitPressure >= commonData.SuitPressLoSP && suitPressure <= commonData.SuitPressLoDB)
         {
             cc.LCol();
             objP.color = cc.LColor;
+            objP.transform.localScale = new Vector3(radius / 100, radius / 100, 1.0f);
         }
         else if (suitPressure >= commonData.SuitPressLoLoSP && suitPressure <= commonData.SuitPressLoLoDB)
         {
             cc.LLCol();
             objP.color = cc.LLColor;
-          
         }
      
-            objP.transform.localScale = new Vector3(radius/100, radius/100, 1.0f);
-
-
+            //objP.transform.localScale = new Vector3(radius/100, radius/100, 1.0f);
     }
 }

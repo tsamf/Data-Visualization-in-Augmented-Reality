@@ -34,18 +34,21 @@ public class HeartRate : MonoBehaviour {
             // Debug.Log("H");
             cc.LCol();
             objHR.color = cc.LColor;
+            objHR.transform.localScale = new Vector3(radius, radius, 1.0f);
         }
         else if (heartRate <= commonData.HeartRateHiDB && heartRate >= commonData.HeartRateLoDB)
         {
             // Debug.Log("Ideal");
             cc.HCol();
             objHR.color = cc.HColor;
+            objHR.transform.localScale = new Vector3(radius, radius, 1.0f);
         }
         else if (heartRate >= commonData.HeartRateLoSP && heartRate <= commonData.HeartRateLoDB)
         {
             //Debug.Log("L");
             cc.LCol();
             objHR.color = cc.LColor;
+            objHR.transform.localScale = new Vector3(radius, radius, 1.0f);
         }
         else if (heartRate >= commonData.HeartRateLoLoSP && heartRate <= commonData.HeartRateLoLoDB)
         {
@@ -54,7 +57,7 @@ public class HeartRate : MonoBehaviour {
             objHR.color = cc.LLColor;
         }
 
-            objHR.transform.localScale = new Vector3(radius, radius, 1.0f);
+            
     }
 }
 

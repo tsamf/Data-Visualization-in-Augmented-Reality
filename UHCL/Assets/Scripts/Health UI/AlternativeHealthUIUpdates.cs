@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class AlternativeHealthUIUpdates : MonoBehaviour {
 
     //public GameObject detailedPie;
-
     public GameObject displayDetails;
     public GameObject DetailPanel;
     public DisplayDetails dd;
@@ -35,10 +34,7 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
 
     private void Awake()
     {
-        if (commonData.pieUI)
-        {
-            gameObject.SetActive(false);
-        }   
+          
     }
 
     // Use this for initialization
@@ -72,15 +68,15 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
 
     private void UpdateBattery()
     {
-        BatterySilder.value = bl_main.bl_scaling.scallingBattery() / 100;
-
         if(commonData.BatteryValue > commonData.BatteryLoDB)
         {
             BatteryImage.color = flagColors.HColor;
+            BatterySilder.value = bl_main.bl_scaling.scallingBattery() / 100;
         }
         else if(commonData.BatteryLoDB > commonData.BatteryValue && commonData.BatteryValue > commonData.BatteryLoLoDB)
         {
             BatteryImage.color = flagColors.LColor;
+            BatterySilder.value = bl_main.bl_scaling.scallingBattery() / 100;
         }
         else if(commonData.BatteryLoLoDB > commonData.BatteryValue)
         {
@@ -89,16 +85,16 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
     }
 
     private void UpdateWater()
-    {
-        WaterSilder.value = bl_main.bl_scaling.scallingWater() / 100;
-        
+    { 
         if(commonData.WaterLoDB < commonData.WaterValue)
         {
             WaterImage.color = flagColors.HColor;
+            WaterSilder.value = bl_main.bl_scaling.scallingWater() / 100;
         }
         else if(commonData.WaterLoDB > commonData.WaterValue && commonData.WaterValue > commonData.WaterLoLoDB)
         {
             WaterImage.color = flagColors.LColor;
+            WaterSilder.value = bl_main.bl_scaling.scallingWater() / 100;
         }
         else if(commonData.WaterLoLoDB > commonData.WaterValue)
         {
@@ -109,7 +105,6 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
     void UpdatePressureSlider()
     {
         float newPressurePosition = bl_main.bl_scaling.ScalingFunction().Map(0, 100, -66, 68);
-        pressureFillImage.rectTransform.localPosition = new Vector3(newPressurePosition, 0f, 0f);
 
         float SuitPressure = commonData.SuitPressureValue;
         if (SuitPressure >= commonData.SuitPressHiHiDB && SuitPressure <= commonData.SuitPressHiHiSP)
@@ -118,14 +113,17 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
         }
         else if (SuitPressure >= commonData.SuitPressHiDB && SuitPressure <= commonData.SuitPressHiSP)
         {
+            pressureFillImage.rectTransform.localPosition = new Vector3(newPressurePosition, 0f, 0f);
             pressureFillImage.color = flagColors.LColor;
         }
         else if(SuitPressure <= commonData.SuitPressHiDB && SuitPressure >= commonData.SuitPressLoDB)
         {
+            pressureFillImage.rectTransform.localPosition = new Vector3(newPressurePosition, 0f, 0f);
             pressureFillImage.color = flagColors.HColor;
         }
         else if (SuitPressure >= commonData.SuitPressLoSP && SuitPressure <= commonData.SuitPressLoDB)
         {
+            pressureFillImage.rectTransform.localPosition = new Vector3(newPressurePosition, 0f, 0f);
             pressureFillImage.color = flagColors.LColor;
         }
         else if (SuitPressure >= commonData.SuitPressLoLoSP && SuitPressure <= commonData.SuitPressLoLoDB)
@@ -137,7 +135,6 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
     void UpdateHeartRateSlider()
     {
         float newHeartRatePosition = bl_main.bl_scaling.scallingHeartRate().Map(0f, 100f, 12.5f, 148f);
-        heartRateImage.rectTransform.localPosition = new Vector3(newHeartRatePosition -80f, 0f, 0f);
 
         float heartRate = commonData.HeartRateValue;
 
@@ -148,14 +145,17 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
         else if (heartRate >= commonData.HeartRateHiDB && heartRate <= commonData.HeartRateHiSP)
         {
             heartRateImage.color = flagColors.LColor;
+            heartRateImage.rectTransform.localPosition = new Vector3(newHeartRatePosition - 80f, 0f, 0f);
         }
         else if (heartRate <= commonData.HeartRateHiDB && heartRate >= commonData.HeartRateLoDB)
         {
             heartRateImage.color = flagColors.HColor;
+            heartRateImage.rectTransform.localPosition = new Vector3(newHeartRatePosition - 80f, 0f, 0f);
         }
         else if (heartRate >= commonData.HeartRateLoSP && heartRate <= commonData.HeartRateLoDB)
         {
             heartRateImage.color = flagColors.LColor;
+            heartRateImage.rectTransform.localPosition = new Vector3(newHeartRatePosition - 80f, 0f, 0f);
         }
         else if (heartRate >= commonData.HeartRateLoLoSP && heartRate <= commonData.HeartRateLoLoDB)
         {
@@ -166,7 +166,6 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
     void UpdateBodyTemperature()
     {
         float newBodyTemperaturePosition = bl_main.bl_scaling.scallingBodyTemperature().Map(0f, 100f, 8f, 142f);
-        bodyTemperatureImage.rectTransform.localPosition = new Vector3(newBodyTemperaturePosition - 70f, 0f, 0f);
 
         float bodyTemperature = commonData.BodyTemperatureValue;
 
@@ -177,14 +176,17 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
         else if (bodyTemperature >= commonData.BodyTemperatureHiDB && bodyTemperature <= commonData.BodyTemperatureHiSP)
         {
             bodyTemperatureImage.color = flagColors.LColor;
+            bodyTemperatureImage.rectTransform.localPosition = new Vector3(newBodyTemperaturePosition - 70f, 0f, 0f);
         }
         else if (bodyTemperature <= commonData.BodyTemperatureHiDB && bodyTemperature >= commonData.BodyTemperatureLoDB)
         {
             bodyTemperatureImage.color = flagColors.HColor;
+            bodyTemperatureImage.rectTransform.localPosition = new Vector3(newBodyTemperaturePosition - 70f, 0f, 0f);
         }
         else if (bodyTemperature >= commonData.BodyTemperatureLoSP && bodyTemperature <= commonData.BodyTemperatureLoDB)
         {
             bodyTemperatureImage.color = flagColors.LColor;
+            bodyTemperatureImage.rectTransform.localPosition = new Vector3(newBodyTemperaturePosition - 70f, 0f, 0f);
         }
         else if (bodyTemperature >= commonData.BodyTemperatureLoLoSP && bodyTemperature <= commonData.BodyTemperatureLoLoDB)
         {
@@ -194,11 +196,10 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
 
     void UpdatePrimaryO2()
     {
-        PrimaryOxygenSlider.value = bl_main.bl_scaling.scallingPrimaryOxygen() / 100;
-
         if(commonData.OxygenOneValue >commonData.PrimaryOxygenLoDB)
         {
             PrimaryO2Image.color = flagColors.HColor;
+            PrimaryOxygenSlider.value = bl_main.bl_scaling.scallingPrimaryOxygen() / 100;
         }
         else if(commonData.OxygenOneValue <= commonData.PrimaryOxygenLoDB)
         {
@@ -208,8 +209,6 @@ public class AlternativeHealthUIUpdates : MonoBehaviour {
 
     void UpdateSecondaryO2()
     {
-
-        
         SecondaryOxygenSlider.value = bl_main.bl_scaling.scallingSeondaryOxygen() / 100;
 
         if(commonData.OxygenTwoValue > commonData.SecondaryOxygenHiDB)

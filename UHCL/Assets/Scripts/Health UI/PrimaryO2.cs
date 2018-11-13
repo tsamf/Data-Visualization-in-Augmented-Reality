@@ -17,23 +17,9 @@ public class PrimaryO2 : MonoBehaviour {
     public FlagStore commonData = FlagStore.GetInstance();
 
     void Start () {
-        //Assign max value to cuurent health status for initialization
-       // currentHealth = (Console.Read());
-
-        //Attach the pressurelog from the buslayer if the buslayer was assigned in the editor
-      /*  if (busLayer != null)
-        {
-            pressurelog = busLayer.GetComponent<BL_Main>();
-        }
-        //If not attached in the editor find one in the current scene
-        else
-        {
-            busLayer = GameObject.FindGameObjectWithTag("Bus Layer");
-            pressurelog = busLayer.GetComponent<BL_Main>();
-        }*/
+     
     }
 	
-	// Update is called once per frame
 	void Update () {
         float scaledValue = bl_main.GetComponent<BL_Main>().bl_scaling.scallingPrimaryOxygen();
 
@@ -44,14 +30,12 @@ public class PrimaryO2 : MonoBehaviour {
         { // Debug.Log("H");
             ccPO.HCol();
             obj.color = ccPO.HColor;
+            obj.transform.localScale = new Vector3(radius / 100, radius / 100, 1.0f);
         }
         else if (commonData.OxygenOneValue <= commonData.PrimaryOxygenLoDB)
         {  //  Debug.Log("L");
             ccPO.LCol();
             obj.color = ccPO.LColor;
         }
-       
-
-            obj.transform.localScale = new Vector3(radius/100, radius/100, 1.0f);
     }
 }

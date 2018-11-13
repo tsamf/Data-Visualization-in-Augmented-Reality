@@ -430,6 +430,7 @@ GameObject:
   - component: {fileID: 82894640}
   - component: {fileID: 82894639}
   - component: {fileID: 82894638}
+  - component: {fileID: 82894642}
   m_Layer: 0
   m_Name: PowerBox
   m_TagString: Hologram
@@ -525,6 +526,24 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 82894636}
   m_Mesh: {fileID: 4300000, guid: e116176c84950de4d82cb44a6455e19d, type: 3}
+--- !u!114 &82894642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 82894636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06268bae060df4b45ba5282ee214677d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  max: {r: 0, g: 0.8352942, b: 1, a: 0.6862745}
+  min: 0.2
+  isFading: 1
+  incrementAmount: 0.05
+  currentAlpha: 0
+  frequencyInSeconds: 0.1
+  timeSinceLastUpdate: 0
 --- !u!1 &86627522
 GameObject:
   m_ObjectHideFlags: 0
@@ -1830,6 +1849,7 @@ GameObject:
   - component: {fileID: 248965891}
   - component: {fileID: 248965890}
   - component: {fileID: 248965889}
+  - component: {fileID: 248965893}
   m_Layer: 0
   m_Name: PowerOutputBox
   m_TagString: Hologram
@@ -1925,6 +1945,24 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 248965887}
   m_Mesh: {fileID: 4300000, guid: 924f15c7137488348926b83e4f5090b6, type: 3}
+--- !u!114 &248965893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 248965887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06268bae060df4b45ba5282ee214677d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  max: {r: 0, g: 0.8352942, b: 1, a: 0.6862745}
+  min: 0.2
+  isFading: 1
+  incrementAmount: 0.05
+  currentAlpha: 0
+  frequencyInSeconds: 0.1
+  timeSinceLastUpdate: 0
 --- !u!1 &274772590
 GameObject:
   m_ObjectHideFlags: 0
@@ -2873,6 +2911,7 @@ GameObject:
   - component: {fileID: 425854068}
   - component: {fileID: 425854067}
   - component: {fileID: 425854066}
+  - component: {fileID: 425854070}
   m_Layer: 0
   m_Name: Aux_PowerInput
   m_TagString: Hologram
@@ -2968,6 +3007,24 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 425854064}
   m_Mesh: {fileID: 4300000, guid: 2ff45ffb7082f204b904669696c1b960, type: 3}
+--- !u!114 &425854070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 425854064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06268bae060df4b45ba5282ee214677d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  max: {r: 0, g: 0.8352942, b: 1, a: 0.6862745}
+  min: 0.2
+  isFading: 1
+  incrementAmount: 0.05
+  currentAlpha: 0
+  frequencyInSeconds: 0.1
+  timeSinceLastUpdate: 0
 --- !u!1 &438621001
 GameObject:
   m_ObjectHideFlags: 0
@@ -5496,6 +5553,7 @@ GameObject:
   - component: {fileID: 993413057}
   - component: {fileID: 993413056}
   - component: {fileID: 993413055}
+  - component: {fileID: 993413059}
   m_Layer: 0
   m_Name: IndicatorBox
   m_TagString: Hologram
@@ -5591,6 +5649,24 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 993413053}
   m_Mesh: {fileID: 4300000, guid: 75d3f9f372d310b44bfcdaddab017ec8, type: 3}
+--- !u!114 &993413059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 993413053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06268bae060df4b45ba5282ee214677d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  max: {r: 0, g: 0.8352942, b: 1, a: 0.6862745}
+  min: 0.2
+  isFading: 1
+  incrementAmount: 0.05
+  currentAlpha: 0
+  frequencyInSeconds: 0.1
+  timeSinceLastUpdate: 0
 --- !u!114 &1008906476 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114199450302412498, guid: 708b7b6ce2b4a324a9ae62af06198dfd,
@@ -6717,6 +6793,7 @@ GameObject:
   - component: {fileID: 1178274066}
   - component: {fileID: 1178274065}
   - component: {fileID: 1178274064}
+  - component: {fileID: 1178274068}
   m_Layer: 0
   m_Name: BusBars
   m_TagString: Hologram
@@ -6812,6 +6889,24 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1178274062}
   m_Mesh: {fileID: 4300000, guid: 77a5d18ef0ff46748bdeee2dca9b2a41, type: 3}
+--- !u!114 &1178274068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1178274062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06268bae060df4b45ba5282ee214677d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  max: {r: 0, g: 0.8352942, b: 1, a: 0.6862745}
+  min: 0.2
+  isFading: 1
+  incrementAmount: 0.05
+  currentAlpha: 0
+  frequencyInSeconds: 0.1
+  timeSinceLastUpdate: 0
 --- !u!1 &1188968078
 GameObject:
   m_ObjectHideFlags: 0
@@ -9734,6 +9829,7 @@ GameObject:
   - component: {fileID: 1730738395}
   - component: {fileID: 1730738394}
   - component: {fileID: 1730738393}
+  - component: {fileID: 1730738397}
   m_Layer: 0
   m_Name: E-Stop
   m_TagString: Hologram
@@ -9829,6 +9925,24 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1730738391}
   m_Mesh: {fileID: 4300000, guid: 444434f5d7e012e4e875188f72941c26, type: 3}
+--- !u!114 &1730738397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1730738391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06268bae060df4b45ba5282ee214677d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  max: {r: 0, g: 0.8352942, b: 1, a: 0.6862745}
+  min: 0.2
+  isFading: 1
+  incrementAmount: 0.05
+  currentAlpha: 0
+  frequencyInSeconds: 0.1
+  timeSinceLastUpdate: 0
 --- !u!1 &1764793479
 GameObject:
   m_ObjectHideFlags: 0
@@ -10458,6 +10572,7 @@ GameObject:
   - component: {fileID: 1862134259}
   - component: {fileID: 1862134258}
   - component: {fileID: 1862134257}
+  - component: {fileID: 1862134261}
   m_Layer: 0
   m_Name: FusibleDisconnectBox
   m_TagString: Hologram
@@ -10553,6 +10668,24 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1862134255}
   m_Mesh: {fileID: 4300000, guid: 177cc65dcd88e7f458d76ea1d70fcde3, type: 3}
+--- !u!114 &1862134261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1862134255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06268bae060df4b45ba5282ee214677d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  max: {r: 0, g: 0.8352942, b: 1, a: 0.6862745}
+  min: 0.2
+  isFading: 1
+  incrementAmount: 0.05
+  currentAlpha: 0
+  frequencyInSeconds: 0.1
+  timeSinceLastUpdate: 0
 --- !u!1 &1863612041
 GameObject:
   m_ObjectHideFlags: 0

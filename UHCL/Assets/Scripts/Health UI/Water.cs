@@ -34,12 +34,14 @@ public class Water : MonoBehaviour {
             //   Debug.Log("H");
             cc.HCol();
             objW.color = cc.HColor;
+            objW.transform.localScale = new Vector3(radius, radius, 1.0f);
         }
         else if (commonData.WaterLoDB > commonData.WaterValue && commonData.WaterValue > commonData.WaterLoLoDB)
         {
             // Debug.Log("L");
             cc.LCol();
             objW.color = cc.LColor;
+            objW.transform.localScale = new Vector3(radius, radius, 1.0f);
         }
 
         else if (commonData.WaterLoLoDB > commonData.WaterValue)
@@ -47,10 +49,7 @@ public class Water : MonoBehaviour {
             //Debug.Log("LL");
              cc.LLCol();
             objW.color = cc.LLColor; 
-        }
-
-       
-            objW.transform.localScale = new Vector3(radius, radius, 1.0f);
+        }    
     }
 }
 
