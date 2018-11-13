@@ -191,17 +191,14 @@ public class BL_Alarming {
             {
                 if (SuitPressure >= commonData.SuitPressHiHiDB && SuitPressure <= commonData.SuitPressHiHiSP)
                 {
-                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.SuitPressureHiHiStatus) == null)
-                    {
-                        Alarm alarm = new Alarm(AlarmType.SuitPressureHiHiStatus, "HiHi Suit Pressure");
-                        alarms.alarms.Insert(0, alarm);
+                   
 
                         if (!suitPressureRedHigh)
                         {
                             writeFile.WriteLine("Suit Pressure High Red");
                             suitPressureRedHigh = true;
                         }
-                    }
+                    
                 }
             }
 
@@ -210,17 +207,14 @@ public class BL_Alarming {
                 if (SuitPressure >= commonData.SuitPressHiDB && SuitPressure <= commonData.SuitPressHiSP)
                 {
 
-                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.SuitPressureHiStatus) == null)
-                    {
-                        Alarm alarm = new Alarm(AlarmType.SuitPressureHiStatus, "High Suit Pressure");
-                        alarms.alarms.Insert(0, alarm);
+                   
 
                         if(!suitPressureYellowHigh)
                         {
                             writeFile.WriteLine("suit Pressure High Yellow");
                             suitPressureYellowHigh = true;
                         }
-                    }
+                    
                 }
             }
 
@@ -228,17 +222,13 @@ public class BL_Alarming {
             {
                 if (SuitPressure >= commonData.SuitPressLoSP && SuitPressure <= commonData.SuitPressLoDB)
                 {
-                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.SuitPressureLoStatus) == null)
-                    {
-                        Alarm alarm = new Alarm(AlarmType.SuitPressureLoStatus, "Low Suit Pressure");
-                        alarms.alarms.Insert(0, alarm);
-
+                   
                         if (!suitPressureYellowLow)
                         {
                             writeFile.WriteLine("suit Pressure Low Yellow");
                             suitPressureYellowLow = true;
                         }
-                    }
+                    
                 }
             }
 
@@ -246,17 +236,14 @@ public class BL_Alarming {
             {
                 if (SuitPressure >= commonData.SuitPressLoLoSP && SuitPressure <= commonData.SuitPressLoLoDB)
                 {
-                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.SuitPressureLoLoStatus) == null)
-                    {
-                        Alarm alarm = new Alarm(AlarmType.SuitPressureLoLoStatus, "LowLow Suit Pressure");
-                        alarms.alarms.Insert(0, alarm);
+                    
 
                         if(!suitPressureRedLow)
                         {
                             writeFile.WriteLine("Suit Pressure Low Red");
                             suitPressureRedLow = true;
                         }
-                    }
+                    
                 }
             }
         }
@@ -278,17 +265,14 @@ public class BL_Alarming {
             {
                 if (HeartRate >= commonData.HeartRateHiHiDB && HeartRate <= commonData.HeartRateHiHiSP)
                 {
-                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.HeartRateHiHiStatus) == null)
-                    {
-                        Alarm alarm = new Alarm(AlarmType.HeartRateHiHiStatus, "HiHi Heart rate");
-                        alarms.alarms.Insert(0, alarm);
+                   
 
                         if(!heartRateRedHigh)
                         {
                             writeFile.WriteLine("Heart Rate Red High");
                             heartRateRedHigh = true;
                         }
-                    }
+                    
                 }
             }
 
@@ -297,17 +281,13 @@ public class BL_Alarming {
                 if (HeartRate >= commonData.HeartRateHiDB && HeartRate <= commonData.HeartRateHiSP)
                 {
 
-                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.HeartRateHiStatus) == null)
-                    {
-                        Alarm alarm = new Alarm(AlarmType.HeartRateHiStatus, "High Heart Rate");
-                        alarms.alarms.Insert(0, alarm);
-
+                   
                         if(!heartRateYellowHigh)
                         {
                             writeFile.WriteLine("Heart Rate Yellow High");
                             heartRateYellowHigh = true;
                         }
-                    }
+                    
                 }
             }
 
@@ -315,17 +295,14 @@ public class BL_Alarming {
             {
                 if (HeartRate >= commonData.HeartRateLoSP && HeartRate <= commonData.HeartRateLoDB)
                 {
-                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.HeartRateLoStatus) == null)
-                    {
-                        Alarm alarm = new Alarm(AlarmType.HeartRateLoStatus, "Low Heart Rate");
-                        alarms.alarms.Insert(0, alarm);
+                    
 
                         if(!heartRateYellowLow)
                         {
                             writeFile.WriteLine("Heart Rate Yellow Low");
                             heartRateYellowLow = true;
                         }
-                    }
+                    
                 }
             }
 
@@ -333,17 +310,14 @@ public class BL_Alarming {
             {
                 if (HeartRate >= commonData.HeartRateLoLoSP && HeartRate <= commonData.HeartRateLoLoDB)
                 {
-                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.HeartRateLoLoStatus) == null)
-                    {
-                        Alarm alarm = new Alarm(AlarmType.HeartRateLoLoStatus, "LowLow Heart Rate");
-                        alarms.alarms.Insert(0, alarm);
+                   
 
                         if(!heartRateRedLow)
                         {
                             writeFile.WriteLine("Heart Rate Red Low");
                             heartRateRedLow = true;
                         }
-                    }
+                    
                 }
             }
         }
@@ -364,17 +338,14 @@ public class BL_Alarming {
             {
                 if (BodyTemperature >= commonData.BodyTemperatureHiHiDB && BodyTemperature <= commonData.BodyTemperatureHiHiSP)
                 {
-                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.BodyTemperatureHiHiStatus) == null)
-                    {
-                        Alarm alarm = new Alarm(AlarmType.BodyTemperatureHiHiStatus, "HiHi Body Temperature");
-                        alarms.alarms.Insert(0, alarm);
+                    
 
                         if(!bodyTemperatureRedHigh)
                         {
                             writeFile.WriteLine("Body Temperature Red High");
                             bodyTemperatureRedHigh = true;
                         }
-                    }
+                    
                 }
             }
 
@@ -383,17 +354,14 @@ public class BL_Alarming {
                 if (BodyTemperature >= commonData.BodyTemperatureHiDB && BodyTemperature <= commonData.BodyTemperatureHiSP)
                 {
 
-                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.BodyTemperatureHiStatus) == null)
-                    {
-                        Alarm alarm = new Alarm(AlarmType.BodyTemperatureHiStatus, "High Body Temperature");
-                        alarms.alarms.Insert(0, alarm);
+                    
 
                         if(!bodyTemperatureYellowHigh)
                         {
                             writeFile.WriteLine("Body Temperature Yellow High");
                             bodyTemperatureYellowHigh = true;
                         }
-                    }
+                    
                 }
             }
 
@@ -401,17 +369,14 @@ public class BL_Alarming {
             {
                 if (BodyTemperature >= commonData.BodyTemperatureLoSP && BodyTemperature <= commonData.BodyTemperatureLoDB)
                 {
-                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.BodyTemperatureLoStatus) == null)
-                    {
-                        Alarm alarm = new Alarm(AlarmType.BodyTemperatureLoStatus, "Low Body Temperature");
-                        alarms.alarms.Insert(0, alarm);
+                   
 
                         if(!bodyTemperatureYellowLow)
                         {
                             writeFile.WriteLine("Body Temperature Yellow Low");
                             bodyTemperatureYellowLow = false;
                         }
-                    }
+                    
                 }
             }
 
@@ -419,17 +384,14 @@ public class BL_Alarming {
             {
                 if (BodyTemperature >= commonData.BodyTemperatureLoLoSP && BodyTemperature <= commonData.BodyTemperatureLoLoDB)
                 {
-                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.BodyTemperatureLoLoStatus) == null)
-                    {
-                        Alarm alarm = new Alarm(AlarmType.BodyTemperatureLoLoStatus, "Low Low Body Temperature");
-                        alarms.alarms.Insert(0, alarm);
+                    
 
                         if(!bodyTemperatureRedLow)
                         {
                             writeFile.WriteLine("Body Temperature Red Low");
                             bodyTemperatureRedLow = false;
                         }
-                    }
+                    
                 }
             }
         }
@@ -450,17 +412,14 @@ public class BL_Alarming {
             {
                 if (PrimaryOxygen <= commonData.PrimaryOxygenLoDB)
                 {
-                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.PrimaryOxygenLoStatus) == null)
-                    {
-                        Alarm alarm = new Alarm(AlarmType.PrimaryOxygenLoStatus, "Low Primary Oxygen");
-                        alarms.alarms.Insert(0, alarm);
+                    
 
                         if(!primaryOxygenYellow)
                         {
                             writeFile.WriteLine("Oxygen Low Yellow");
                             primaryOxygenYellow = true;
                         }
-                    }
+                    
                 }
             }
         }
@@ -480,12 +439,7 @@ public class BL_Alarming {
             {
                 if (SecondaryOxygen <= commonData.SecondaryOxygenLoDB)
                 {
-                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.SecondaryOxygenLoStatus) == null)
-                    {
-                        Alarm alarm = new Alarm(AlarmType.SecondaryOxygenLoStatus, "Low Secondary Oxygen");
-                        alarms.alarms.Insert(0, alarm);
-
-                    }
+                    
                 }
             }
 
@@ -493,11 +447,7 @@ public class BL_Alarming {
             {
                 if (SecondaryOxygen <= commonData.SecondaryOxygenLoLoDB)
                 {
-                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.SecondaryOxygenLoLoStatus) == null)
-                    {
-                        Alarm alarm = new Alarm(AlarmType.SecondaryOxygenLoLoStatus, "Low Low Secondary Oxygen");
-                        alarms.alarms.Insert(0, alarm);
-                    }
+                    
                 }
             }
         }
@@ -517,17 +467,14 @@ public class BL_Alarming {
             {
                 if (Water <= commonData.WaterLoDB)
                 {
-                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.WaterLoStatus) == null)
-                    {
-                        Alarm alarm = new Alarm(AlarmType.SecondaryOxygenLoStatus, "Low Water");
-                        alarms.alarms.Insert(0, alarm);
+                   
 
                         if(!waterYellow)
                         {
                             writeFile.WriteLine("Water Low Yellow");
                             waterYellow = true;
                         }
-                    }
+                    
                 }
             }
 
@@ -535,17 +482,14 @@ public class BL_Alarming {
             {
                 if (Water <= commonData.WaterLoLoDB)
                 {
-                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.WaterLoLoStatus) == null)
-                    {
-                        Alarm alarm = new Alarm(AlarmType.WaterLoLoStatus, "Low Low Water");
-                        alarms.alarms.Insert(0, alarm);
+                    
 
                         if(!waterRed)
                         {
                             writeFile.WriteLine("Water Low Red");
                             waterRed = true;
                         }
-                    }
+                    
                 }
             }
         }
@@ -565,17 +509,14 @@ public class BL_Alarming {
             {
                 if (Battery <= commonData.BatteryLoDB)
                 {
-                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.BatteryLoStatus) == null)
-                    {
-                        Alarm alarm = new Alarm(AlarmType.BatteryLoStatus, "Low Battery");
-                        alarms.alarms.Insert(0, alarm);
+                    
 
                         if(!batteryYellow)
                         {
                             writeFile.WriteLine("Battery Low yellow");
                             batteryYellow = true;
                         }
-                    }
+                    
                 }
             }
 
@@ -583,17 +524,14 @@ public class BL_Alarming {
             {
                 if (Battery <= commonData.BatteryLoLoDB)
                 {
-                    if (alarms.alarms.FirstOrDefault(x => x.type == AlarmType.BatteryLoLoStatus) == null)
-                    {
-                        Alarm alarm = new Alarm(AlarmType.BatteryLoLoStatus, "Low Low Battery");
-                        alarms.alarms.Insert(0, alarm);
+                    
 
                         if(!batteryRed)
                         {
                             writeFile.WriteLine("Battery Low Red");
                             batteryRed = true;
                         }
-                    }
+                    
                 }
             }
         }

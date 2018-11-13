@@ -5537,6 +5537,11 @@ Prefab:
       propertyPath: taskController
       value: 
       objectReference: {fileID: 242413104}
+    - target: {fileID: 114188789044508358, guid: 8091d1361a1db4b47b3e1de5b38f7258,
+        type: 2}
+      propertyPath: writeFile
+      value: 
+      objectReference: {fileID: 1647694077}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8091d1361a1db4b47b3e1de5b38f7258, type: 2}
   m_IsPrefabParent: 0

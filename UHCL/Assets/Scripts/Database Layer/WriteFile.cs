@@ -26,7 +26,7 @@ public class WriteFile : MonoBehaviour {
 
     string filename = "testwriting.txt";
     string data = "";
-    string header = "event type\tcamera position\tcamera rotation\toxygen\toxygen two\tsuit pressure\tbattery\tbody temperature\twater\theart rate\ttimestamp\ttask text\ttask setp\tprocedure number\t\n";
+    string header = "event type\tcamera position\tcamera rotation\toxygen\toxygen two\tsuit pressure\tbattery\tbody temperature\twater\theart rate\ttimestamp\tseconds passed in game\ttask text\ttask setp\tprocedure number\t\n";
 
     GameObject camera;
 
@@ -37,7 +37,7 @@ public class WriteFile : MonoBehaviour {
         camera = GameObject.FindGameObjectWithTag("MainCamera");
         activity = Activity.GetInstance();
 
-        CreateFile();
+        //CreateFile();
     }
 
     // Update is called once per frame
@@ -59,7 +59,8 @@ public class WriteFile : MonoBehaviour {
         line += water.current + "\t";
         line += heartRate.current;
         line += "\t";
-        line += DateTime.Now.ToString() + "\t";
+        line += DateTime.Now.ToString("HH:MM:ss.fff") + "\t";
+        line += Time.time + "\t";
 
         if(activity.GetCurrentProcedure()!= null)
         {
@@ -78,7 +79,7 @@ public class WriteFile : MonoBehaviour {
         data += line;
     }
 
-    void CreateFile()
+    public void CreateFile()
     {
         filename = flagStore.userID + "_" + DateTime.Now.ToString("HHMMss") + ".txt";
         var myfile = System.IO.File.Create(Path.Combine(Application.persistentDataPath, filename));

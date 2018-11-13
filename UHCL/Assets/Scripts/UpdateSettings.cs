@@ -15,6 +15,7 @@ public class UpdateSettings : MonoBehaviour {
     public GameObject pie;
     public GameObject barChart;
     public GameObject taskInterface;
+    public WriteFile writeFile;
     public Tutorial tutorial;
 
 	public void UpdateAndChangeScenes()
@@ -40,5 +41,7 @@ public class UpdateSettings : MonoBehaviour {
         tutorial.CreateTutorial();
 
         taskController.StartPocedure();
+
+        writeFile.CreateFile();
     }
 }

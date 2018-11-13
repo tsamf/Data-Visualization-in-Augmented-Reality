@@ -7,8 +7,7 @@ using HoloToolkit.Unity;
 
 public class TUI_TaskUIUpdate : MonoBehaviour {
 
-    
-   
+      
 }
 	
 
