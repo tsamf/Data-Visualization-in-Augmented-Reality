@@ -22,9 +22,7 @@ public class BTemperature : MonoBehaviour {
 	void Update () {
 
         bodyTemperature = commonData.BodyTemperatureValue;
-       radius = bl_main.GetComponent<BL_Main>().bl_scaling.scallingBodyTemperature();
-       
-
+        radius = bl_main.GetComponent<BL_Main>().bl_scaling.scallingBodyTemperature();
 
         if (bodyTemperature >= commonData.BodyTemperatureHiHiDB && bodyTemperature <= commonData.BodyTemperatureHiHiSP)
         {
