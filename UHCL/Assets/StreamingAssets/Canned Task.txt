@@ -1,74 +1,70 @@
 $Procedure 1						
 Step 	Expected Time	text	caution	warning	holograms	images
-1	0	On the RIGHT side of the EVA Kit, locate the PANEL ACCESS KEY.	The keys are on a tension-spring cable			
-2	0	Use the PANEL ACCESS KEY to unlock the PANEL ACCESS DOOR LOCKS.				2
-3	0	Carefully return keys to the side of the EVA kit.				
-4	0	Insert your fingers in the CENTER OPENING and secure the PANEL ACCESS DOOR in an OPEN position.		Door can accidentally close. 		4
-5	0	On your belt, use the BLUE CARABINEER to securely tether to the TETHER CABLE inside the STORAGE.	Notice the TETHER CABLE is adjustable			
-6	0	Locate the E-stop button, insert keys into it and turn it to off			E-Stop	6
-7	0	Locate the FUSIBLE DISCONNECT box			FusibleDisconnectBox	
-8	0	Tether the BLUE CARABINEER to the TETHER CABLE				
-9	0	Remove the BLUE CARABINEER from the FUSIBLE DISCONNECT BOX			FusibleDisconnectBox	9
-10	0	Transfer the BLUE CARABINEER to STORAGE				
-11	0	Open the FUSIBLE DISCONNECT box and secure the lid in the open position	Pull the locking tab towards STORAGE with the thumb		FusibleDisconnectBox	11
-12	0	Locate the BLACK DISCONNECT			FusibleDisconnectBox	
-13	0	Tether it to the TETHER CABLE				
-14	0	Remove the DISCONNECT	Pull up with the index and middle fingers while pushing down on the FUSE ACCESS PANEL with the thumb		FusibleDisconnectBox	14
-15	0	Place the DISCONNECT in the STORAGE				
-16	0	Tether the FUSE ACCESS PANEL to the TETHER CABLE				
-17	0	Remove the FUSE ACCESS PANEL by pulling straght up				17
-18	0	Place the FUSE ACCESS PANEL into STORAGE				
-19	0	Tether the ALARM FUSE to the TETHER CABLE				
-20	0	In Storage, locate the BLUE FUSE PULLER				
-21	0	Use the BLUE FUSE PULLER to remove ONLY the ALARM FUSE	Rock the ALARM FUSE with the FUSE PULLER when pulling up			21
-22	0	Return the ALARM FUSE and the FUSE PULLER to STORAGE				
-23	0	In STORAGE, locate the FUSE ACCESS PANEL and reinstall it into the FUSIBLE DISCONNECT box.			FusibleDisconnectBox	23
-24	0	Remove the FUSE ACCESS PANEL tether from the TETHER CABLE and stow inside		All tethers are under  spring tension and can retract quickly		
-25	0	In STORAGE, locate the DISCONNECT and reinstall it into the FUSIBLE DISCONNECT box	The DISCONNECT must read ON in the upper right corner to restore Conductivity		FusibleDisconnectBox	25
-26	0	Remove the DISCONNECT tether from the TETHER CABLE		All tethers are under spring tension and can retract quickly		
-27	0	Close the FUSIBLE DISCONNECT box cover			FusibleDisconnectBox	
-28	0	In STORAGE, use the BLUE CARABINEER to clip and lock the FUSIBLE DISCONNECT box cover			FusibleDisconnectBox	28
-29	0	Remove the BLUE CARABINEER’s tether from the TETHER CABLE		All tethers are under spring tension and can retract quickly		
+1	0	"On your belt, use the blue carabiner to securely tether to the tether cable inside the storage area."	Notice the tether cable is adjustable.		ToolArea	
+2	0	Locate the E-stop key inside the storage area.			ToolArea	
+3	0	"Locate the E-stop button, insert keys into it and turn it to off."			E-Stop	6
+4	0	Locate the fusable disconnect box.			FusibleDisconnectBox	
+5	0	Attach a carabiner from the storage area to the blue carabiner on the fusible disconnect box.			FusibleDisconnectBox	
+6	0	Remove the blue carabiner from the fusible disconnect box.			FusibleDisconnectBox	9
+7	0	Transfer the blue carabiner to storage.			ToolArea	
+8	0	"Open the fusible disconnect box, and secure the lid in the open position."	Pull the locking tab towards STORAGE with the thumb		FusibleDisconnectBox	11
+9	0	Locate the black disconnect in the top of the fusible disconnect box.			FuseBoxTop	
+10	0	Attache a carabiner from the storage area to the black disconnect.			FuseBoxTop	
+11	0	Remove the disconnect.	Pull up with the index and middle fingers while pushing down on the FUSE ACCESS PANEL with the thumb		FuseBoxTop	14
+12	0	Place the disconnect in the storage area.			ToolArea	
+13	0	Locate the fuse access panel in the bottom of the fusible disconnect box.			FuseBoxBottom	
+14	0	Attach a carabiner from the storage area to the fuse access panel.			FuseBoxBottom	
+15	0	Remove the fuse access panel by pulling straight up.			FuseBoxBottom	17
+16	0	Place the fuse access panel in the storage area.			ToolArea	
+17	0	Locate the alarm fuse to the left in the fusible disconnect box.			FuseBoxFuse	
+18	0	Attach a carabiner from the storage area to the alarm fuse.			FuseBoxFuse	
+19	0	"In the storage area, locate the blue fuse puller."			ToolArea	
+20	0	Use the blue fuse puller to remove the alarm fuse in the left of the fusible disconnect box.	Rock the ALARM FUSE with the FUSE PULLER when pulling up		FuseBoxFuse	21
+21	0	"Return the alarm fuse, and alarm puller to the storage area."			ToolArea	
+22	0	"In the storage area, locate the fuse access panel from the bottom of the fusible disconnect box."			ToolArea	23
+23	0	Reinstall the fuse access panel into the bottom of the fusible disconnect box.			FuseBoxBottom	23
+24	0	Remove the carabiner from the fuse access panel and store it in the storage area.		All tethers are under  spring tension and can retract quickly	ToolArea	
+25	0	"In the storage area, locate the black disconnect from the top of the fusible disconnect box."			ToolArea	25
+26	0	Reinstall the black disconnect into the top of the fusible disconnect box.	The DISCONNECT must read ON in the upper right corner to restore Conductivity		FuseBoxTop	25
+27	0	Remove the carabiner from the black disconnect and store it in the storage area.		All tethers are under spring tension and can retract quickly	ToolArea	
+28	0	Close the fusible disconnect box cover.			FusibleDisconnectBox	
+29	0	Locate the small blue carabiner for the fusible disconnect box in the storage area.			ToolArea	28
+30	0	Attach the small blue carabiner to the fusible disconnect box.			FusibleDisconnectBox	28
+31	0	Remove the carabiner attached to the small blue carabiner and return it to the storage area.		All tethers are under spring tension and can retract quickly	ToolArea	
+32	0	Procedure complete. Say Next Procedure to continue.				
 $Procedure 2						
 Step 	Expected Time	text	caution	warning	holograms	images
-1	0	Locate the Aux. Power Input			Aux_PowerInput	
-2	0	Locate BATTERY PACK and tether to TETHER CABLE	Depress the red and black plastic hammers on the side of the AUX. POWER INPUT and pull the leads straight up			
-3	0	Undo the BATTERY PACK LEADS from the AUX. POWER INPUT			Aux_PowerInput	2.3
-4	0	Remove BATTERY PACK from AUX. POWER INPUT			Aux_PowerInput	
-5	0	Locate the ON/OFF switch on the back of the BATTERY PACK and switch it to the OFF position.				2.5
-6	0	Place the BATTERY PACK into STORAGE				
-7	0	In STORAGE, find the replacement BATTERY PACK				
-8	0	Locate the ON/OFF switch on the back of the BATTERY PACK and switch it to the ON position				
-9	0	Attach the replacement BATTERY PACK onto the AUX. POWER INPUT by the Velcro			Aux_PowerInput	
-10	0	Insert the BATTERY PACK leads back into same colored ports	Depress the red and black plastic hammers on the side of the AUX. POWER INPUT and push leads straight into their ports			
-11	0	Conduct a GENTLE PULL TEST on the wires				
-12	0	Remove the BATTERY PACK tether from the TETHER CABLE		All tethers are under spring tension and can retract quickly		
-13	0	In STORAGE, locate the GRAY 220 Volt PLUG				
-14	0	Install it into the POWER OUT	Outlet and plug mate are stiff, ensure the full engagement of the plug into the outlet		PowerOutputBox	2.12
-15	0	Locate the metal BUSS BAR and verify there are BLACK, GREEN & WHITE BUSSES, each with 2 openings			BusBars	
-16	0	Insert the WHITE 220 VOLT LEAD into the LEFT WHITE BUSS opening and GENTLY TIGHTEN the thumbscrew	DO NOT over tighten the thumbscrew			2.16
-17	0	Insert the GREEN 220 VOLT LEAD into the LEFT GREEN BUS opening	DO NOT over tighten the thumbscrew			2.17
-18	0	Insert the BLACK 220 VOLT LEAD into the LEFT BLACK BUS opening	DO NOT over tighten the thumbscrew			2.18
-19	0	Make sure the METAL LEADS are not sticking out the BACK of the BUSS BAR			BusBars	
-20	0	Conduct a Gentle PULL TEST on each cable				
-21	0	In STORAGE, locate the 110 VOLT PLUG				2.21
-22	0	Install it into POWER IN	Lift cover with one hand while installing PLUG into the outlet with the other. The lid is spring-loaded		Aux_PowerInput	2.21
-23	0	Insert the WHITE 110 VOLT PLUG LEAD into the RIGHT WHITE BUS opening	DO NOT over tighten the thumbscrew			2.22
-24	0	Insert the GREEN 110 VOLT PLUG LEAD into the RIGHT GREEN BUS opening	DO NOT over tighten the thumbscrew			2.23
-25	0	Insert the BLACK 110 VOLT PLUG LEAD into the RIGHT BLACK BUS opening	DO NOT over tighten the thumbscrew			2.24
-26	0	Conduct a Gentle PULL TEST on each cable				
-27	0	In STORAGE, locate the E-STOP KEY				2.25
-28	0	Insert the KEY into the E-STOP and TURN it to ON position			E-Stop	2.26
-29	0	Remove the KEY and place it in STORAGE				
-30	0	Locate the AUX. POWER SWITCH on the POWER IN box and switch it to the “ON” position			Aux_PowerInput	2.28
-31	0	Can you please say whether the SYSTEM GO indicator light is GREEN or NOT GREEN?				2.last
-32	0	EVA 1, this is Houston Mission Control. Congratulations. PHALCON is reporting that they are reading a successful power restoration on their console. You are a go to untether from the TETHER CABLE and return to space station. Mission Control out				
-33	0	EVA 1, this is Houston Mission Control. PHALCON confirms and is not able to report a successful power restoration on their console. EVA-1, please be advised that we have prepared some trouble-shooting steps for you to conduct on a future spacewalk				
-34	0	There might be problem with power going into the circuit, Please go through the following check points				
-35	0	BATTERY PACK is switched OFF				
-36	0	BATTERY PACK leads are not inserted into their ports				
-37	0	220V PLUG or leads where not installed correctly				
-38	0	110V PLUG or leads where not installed correctly				
-39	0	AUX. POWER SWITCH is in the OFF position				
-40	0	E-STOP is still engaged				
-41	0	Batteries in the BATTERY PACK are depleted				
+1	0	Locate the auxiliary power input.			Aux_PowerInput	
+2	0	"Locate the battery to the left of the auxilary power input, and attach a carabiner from the storage area."	Depress the red and black plastic hammers on the side of the AUX. POWER INPUT and pull the leads straight up		BatteryArea	
+3	0	Undo the battery pack leads from the auxiliary power input.			Aux_PowerInput	2.3
+4	0	Pick up the battery pack from the EVA kit.			BatteryArea	
+5	0	Locate the ON/OFF switch on the top of the battery pack and switch it to the off position.			BatteryArea	2.5
+6	0	Plase the battery pack in the storage area.			ToolArea	
+7	0	In the storage area find the replacment battery pack.			ToolArea	
+8	0	Locate the ON/OFF switch on the top of the battery pack and switch it to the on position.			ToolArea	
+9	0	Attach the replacment battery to the velcro to the left of the auxiliary power input.			BatteryArea	
+10	0	Insert the battery pack leads into the same colored ports on the auxiliary power input.	Depress the red and black plastic hammers on the side of the AUX. POWER INPUT and push leads straight into their ports		Aux_PowerInput	
+11	0	Conduct a GENTLE PULL TEST on the wires			Aux_PowerInput	
+12	0	"Remove the carabiner from the battery pack, and store it in the storage area."		All tethers are under spring tension and can retract quickly	ToolArea	
+13	0	"In the storage area, locate the 220 volt plug."			ToolArea	
+14	0	Locate the power out box and install the 220 volt plug.	"Outlet and plug mate are stiff, ensure the full engagement of the plug into the outlet"		PowerOutputBox	2.12
+15	0	"Locate the metal buss bars and verify there are black, green and white busses, each with 2 openings."			BusBars	
+16	0	Insert the white 220 volt lead into the left white buss opening and gently tighten the thumbscrew.	DO NOT over tighten the thumbscrew		BusBars	2.16
+17	0	Insert the green 220 volt lead into the left green buss opening and gently tighten the thumbscrew.	DO NOT over tighten the thumbscrew		BusBars	2.17
+18	0	Insert the black 220 volt lead into the left black buss opening and gently tighten the thumbscrew.	DO NOT over tighten the thumbscrew		BusBars	2.18
+19	0	Make sure the metal leads are not sticking out the back of the buss bars.			BusBars	
+20	0	Locate the wrench in the storage area. Use this to gently tighten the buss bars.			ToolArea	
+21	0	Conduct a Gentle pull test on each cable.			BusBars	
+22	0	In the storage area locate the 110 vold plug.			ToolArea	2.21
+23	0	"Locate the power in box, and install the 110 volt plug in the top plug."	Lift cover with one hand while installing PLUG into the outlet with the other. The lid is spring-loaded		PowerBox	2.21
+24	0	Insert the white 100 volt lead into the right white buss opening and gently tighten the thumbscrew.	DO NOT over tighten the thumbscrew		BusBars	2.22
+25	0	Insert the green 110 volt lead into the right green buss opening and gently tighten the thumbscrew.	DO NOT over tighten the thumbscrew		BusBars	2.23
+26	0	Insert the black 110 volt lead into the right black buss opening and gently tighten the thumbscrew.	DO NOT over tighten the thumbscrew		BusBars	2.24
+27	0	Make sure the metal leads are not sticking out the back of the buss bars.			BusBars	
+28	0	Locate the wrench in the storage area. Use this to gently tighten the buss bars.			ToolArea	
+29	0	Conduct a gental pull test on each cable.			BusBars	
+30	0	"In the storage area, locate the E-STOP key."			ToolArea	2.25
+31	0	"Inser the key into the E-stop, and turn it to the on position."			E-Stop	2.26
+32	0	Remove the key and place it in storage.			ToolArea	
+33	0	"Locate the auxiliary power switch on the power in box, and switch it to the “ON” position."			PowerBox	2.28
+34	0	Procedure complete. Say Next Procedure to continue.				

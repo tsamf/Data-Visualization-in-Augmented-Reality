@@ -177,6 +177,7 @@ public class BL_Alarming {
         ProcessSecondaryOxygen();
         ProcessWater();
         ProcessBattery();
+        ProcessBodyTemperature();
     }
 
     //SuitPressure
@@ -338,8 +339,6 @@ public class BL_Alarming {
             {
                 if (BodyTemperature >= commonData.BodyTemperatureHiHiDB && BodyTemperature <= commonData.BodyTemperatureHiHiSP)
                 {
-                    
-
                         if(!bodyTemperatureRedHigh)
                         {
                             writeFile.WriteLine("Body Temperature Red High");
@@ -353,15 +352,11 @@ public class BL_Alarming {
             {
                 if (BodyTemperature >= commonData.BodyTemperatureHiDB && BodyTemperature <= commonData.BodyTemperatureHiSP)
                 {
-
-                    
-
                         if(!bodyTemperatureYellowHigh)
                         {
                             writeFile.WriteLine("Body Temperature Yellow High");
                             bodyTemperatureYellowHigh = true;
                         }
-                    
                 }
             }
 
@@ -374,7 +369,7 @@ public class BL_Alarming {
                         if(!bodyTemperatureYellowLow)
                         {
                             writeFile.WriteLine("Body Temperature Yellow Low");
-                            bodyTemperatureYellowLow = false;
+                            bodyTemperatureYellowLow = true;
                         }
                     
                 }
@@ -384,14 +379,11 @@ public class BL_Alarming {
             {
                 if (BodyTemperature >= commonData.BodyTemperatureLoLoSP && BodyTemperature <= commonData.BodyTemperatureLoLoDB)
                 {
-                    
-
                         if(!bodyTemperatureRedLow)
                         {
                             writeFile.WriteLine("Body Temperature Red Low");
-                            bodyTemperatureRedLow = false;
+                            bodyTemperatureRedLow = true;
                         }
-                    
                 }
             }
         }

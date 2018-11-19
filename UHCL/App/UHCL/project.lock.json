@@ -12572,11 +12572,10 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.0.0": {
-      "sha512": "7fQNS0TGcZ3ICt7wwkxtbOURvTEkFxBg7zDpxUqcghGj1Mg1cO8COme08TglCREo6AlqlxWaxvGxt9i6SZ1EMA==",
+      "sha512": "0N77OwGZpXqUco2C/ynv1os7HqdFYifvNIbveLDKqL5PZaz05Rl9enCwVBjF61aumHKueLWIJ3prnmdAXxww4A==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.0.0",
       "files": [
-        ".signature.p7s",
         "microsoft.netcore.platforms.1.0.0.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
         "runtime.json"
@@ -12673,7 +12672,7 @@
       ]
     },
     "Microsoft.NETCore.Runtime.CoreCLR-arm/1.0.0": {
-      "sha512": "vUQyaKbHCa7BJAAzdfCP2FfBYOSt0YnDw7VMJLmD1/k68HIJgw1QO7GAfHhqoa39zkkvimC47QBH27wG4C5OGQ==",
+      "sha512": "hoJfIl981eXwn9Tz8onO/J1xaYApIfp/YrhjSh9rRhml1U5Wj80LBgyp/6n+KI3VlvcAraThhnHnCTp+M3Uh+w==",
       "type": "package",
       "path": "microsoft.netcore.runtime.coreclr-arm/1.0.0",
       "files": [
@@ -14139,11 +14138,10 @@
       ]
     },
     "System.Net.Http/4.0.0": {
-      "sha512": "RufQzPFmwqt1jsD6LR+TuAQJckoW8nDgKHuNZh5eZPA62BVpU58mjKrUkk8lR0tYb6T6yLC9f+b+GGI5gnOjBA==",
+      "sha512": "mZuAl7jw/mFY8jUq4ITKECxVBh9a8SJt9BC/+lJbmo7cRKspxE3PsITz+KiaCEsexN5WYPzwBOx0oJH/0HlPyQ==",
       "type": "package",
       "path": "system.net.http/4.0.0",
       "files": [
-        ".signature.p7s",
         "lib/DNXCore50/System.Net.Http.dll",
         "lib/net45/_._",
         "lib/netcore50/System.Net.Http.dll",
@@ -15776,20 +15774,25 @@
     "UAP,Version=v10.0.10240": []
   },
   "packageFolders": {
-    "C:\\Users\\TravisSamford\\.nuget\\packages\\": {}
+    "C:\\Users\\samfo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\TravisSamford\\Documents\\Git\\UHCL\\UHCL\\App\\UHCL\\UHCL.csproj",
+      "projectUniqueName": "C:\\Users\\samfo\\Desktop\\uhcl copy\\UHCL\\App\\UHCL\\UHCL.csproj",
       "projectName": "UHCL",
-      "projectPath": "C:\\Users\\TravisSamford\\Documents\\Git\\UHCL\\UHCL\\App\\UHCL\\UHCL.csproj",
-      "projectJsonPath": "C:\\Users\\TravisSamford\\Documents\\Git\\UHCL\\UHCL\\App\\UHCL\\project.json",
-      "packagesPath": "C:\\Users\\TravisSamford\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TravisSamford\\Documents\\Git\\UHCL\\UHCL\\App\\UHCL\\obj\\",
+      "projectPath": "C:\\Users\\samfo\\Desktop\\uhcl copy\\UHCL\\App\\UHCL\\UHCL.csproj",
+      "projectJsonPath": "C:\\Users\\samfo\\Desktop\\uhcl copy\\UHCL\\App\\UHCL\\project.json",
+      "packagesPath": "C:\\Users\\samfo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\samfo\\Desktop\\uhcl copy\\UHCL\\App\\UHCL\\obj\\",
       "projectStyle": "ProjectJson",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\TravisSamford\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\samfo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
