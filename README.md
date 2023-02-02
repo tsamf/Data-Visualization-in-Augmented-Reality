@@ -1,4 +1,4 @@
-# UHCL
+# Data-Visualization-in-Augmented-Reality
 
 IDE: Visual Studio 2017 express edition  
 Tool Kit: HoloToolkit V2017.2  
