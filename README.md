@@ -2,7 +2,7 @@
 The NASA Spacesuit User Interface Technologies for Students (NASA S.U.I.T.S.) 2018 design challenge was an opportunity for student groups to be involved in the design of the new spacesuit. This challenge focused on designing the informatics system of the suit Heads Up Display (HUD) using the Microsoft HoloLens® to simulate this environment. The system was responsible for displaying the needed information to successfully complete an EVA. The project was developed using the Unity game engine with a HoloLens as the target platform to simulate the HUD. 
 
 <img src="/Documentation/Group_Photo2.jpeg" width="500">
-
+  
 IDE: Visual Studio 2017 express edition  
 Tool Kit: HoloToolkit V2017.2  
 Unity Version: 2017.2.1f1  
@@ -15,10 +15,7 @@ on the board. This includes steps like locating objects of interest on the task 
 interacting with them to complete the procedure.  
 <img src="Documentation/box.png" width="500">  
 
-Some of the task steps required tools. There is a fuse puller, backup battery packs,
-and power cables for rerouting power. The subjects were asked to wear gloves to mimic
-16 the environment that an astronaut works in. In an EVA, an astronaut cannot work with
-their bare hands, reducing their refined motor controls and their sense of touch.  
+Some of the task steps required tools. There is a fuse puller, backup battery packs, and power cables for rerouting power. The subjects were asked to wear gloves to mimic the environment that an astronaut works in. In an EVA, an astronaut cannot work with their bare hands, reducing their refined motor controls and their sense of touch.  
 <img src="/Documentation/tools.png" width="500">  
 
 <img src="Documentation/software_architecture.png" width="500"> 
